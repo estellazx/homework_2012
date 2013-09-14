@@ -1,0 +1,447 @@
+<base href="http://www.cesj.com/chemistry.html">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Versita Publishing - Versita</title><meta name="keywords" content="publisher, on line, open access - Versita" /><meta name="description" content="We are publishers. We are scholarly publishers. We publish journals and books. They are written by scientists for scientists to support new research." />	
+	<link type="image/x-icon" rel="icon" href="/favicon.ico" />
+
+    <script type="text/javascript" src="/static/js/FSite2/FSite2_full.js"></script>
+	<script type="text/javascript" src="/static/js/main.js"></script>
+  	<script type="text/javascript" src="/static/js/menu.js"></script>
+  	
+  	<script type="text/javascript" src="/journalmenu.php"></script>	
+	<link type="text/css" href="/static/css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" media="print" href="/static/css/print.css" />
+	
+	
+	
+	</head>
+<body onload="initialize()">
+	<div class="navigation" onclick="hideFeedBackLayer();">
+		<div class="content">
+			<a href="/" style="float:left;"><img src="/static/img/logo.gif" alt="Versita" /></a>
+			<div class="menu">	
+						<div class="search">
+		<form name="search" method="post" action="./?" enctype="multipart/form-data" onkeypress="if (event.keyCode==13) {if (Form_OnSubmit(document.search)) this.submit()}" onsubmit="return Form_OnSubmit(this)"><div><input type="hidden" name="search" value="process" />					<div>				
+						<input type="submit" class="submit" value="" name="submit" />
+						<input type="text" name="searchText" class="text"/>						
+						
+						<div class="clear"></div>
+					</div>
+					
+					<div style="padding-top:10px;padding-right:45px;">	
+											
+														
+					<a href="/?advancedSearch=show" class="advanced">advanced search</a>	
+					<div class="clear"></div>
+					</div>
+		</div></form>			</div>		
+				
+			<div style="padding-left: 5px;">
+			
+					<div class="button" onmouseover="hover(this,'button active');" onmouseout="hover(this,'button');">
+						<a href="/Home/">Home</a>
+					</div>				
+					
+					<div class="button" onmouseover="hover(this,'button active');" onmouseout="hover(this,'button');">
+						<a href="/About_us/">About us</a>
+					</div>				
+					
+					<div class="button" onmouseover="hover(this,'button active');" onmouseout="hover(this,'button');">
+						<a href="/Press/">Press</a>
+					</div>				
+					
+					<div class="button" onmouseover="hover(this,'button active');" onmouseout="hover(this,'button');">
+						<a href="/Career/">Career</a>
+					</div>				
+					
+					<div class="button" onmouseover="hover(this,'button active');" onmouseout="hover(this,'button');">
+						<a href="/People/">People</a>
+					</div>				
+								</div>														
+			</div>
+		</div>
+	</div>
+
+	<div class="main" onclick="hideFeedBackLayer();">
+
+		<div class="categories">
+	<div class="content">
+		<div class="animation">  
+			<div style="padding-top:13px;color:white;padding-bottom:6px;padding-left:20px;">
+			SEE ALSO <a target="_blank" href="http://versitaopen.com/">VERSITA OPEN</a>, OUR NEW OPEN ACCESS PLATFORM
+			</div>
+			<div class="clear" ></div>
+			<div class="anim" onmouseover="showYou();" onmouseout="hideSlow(0,'hideYou();');" id="anim1">
+				<img src="/static/img/you.gif" alt="Versita Open" onmouseover="cancelHide(0);"/> 
+				<img id="buttonyou" src="/static/img/buttons/you.gif" alt="Versita Open" onmouseover="cancelHide(0);"/> 
+			</div>
+			<div class="anim" onmouseover="showSubjects();" onmouseout="hideSlow(1,'hideSubjects();');" id="anim2">
+				<img src="/static/img/subjects.gif" alt="Versita Open" onmouseover="cancelHide(1);"/> 
+				<img id="buttonsubject" src="/static/img/buttons/subject.gif" alt="Versita Open" onmouseover="cancelHide(1);"/> 
+			</div>
+			<div class="anim" onmouseover="showJournals();" onmouseout="hideSlow(2,'hideJournals();');" id="anim3">
+				<img src="/static/img/journals.gif" alt="Versita Open" onmouseover="cancelHide(2);" />		
+				<img id="buttonjournal" src="/static/img/buttons/journal.gif" alt="Versita Open" onmouseover="cancelHide(2);" /> 
+			</div>
+
+		
+			<div class="clear"></div>								
+		</div>  
+		<div class="clear"></div>
+
+		<div class="journals" style="display:none;" id="journals" onmouseover="cancelHide(2);" onmouseout="hideSlow(2,'hideJournals();');">
+		<div class="header" id="jorunalsMenuHeader" onmouseover="cancelHide(0);">choose letter:
+			<script type="text/javascript">
+				Menu.generateHeader('jorunalsMenuHeader');
+			</script>
+		</div>
+			<div class="navLeft" style="float:left;" onclick="Menu.moveLeft();return false;" onmousedown="return false;"></div>
+			<div class="navRight" style="float:right;" onclick="Menu.moveRight();return false;" onmousedown="return false;"></div>
+			<div style="width: 956px;overflow:hidden;height: 244px;margin-top:5px;" id="all">	
+			<div style="width:1000px">
+				<div id="div1" class="subject">
+				</div>		
+				<div id="div2" class="subject">
+
+				</div>	
+				<div id="div3" class="subject">
+				</div>	
+				<div id="div4" class="subject">
+				</div>																			
+			</div>
+			<script type="text/javascript">
+				Menu.generateContent("A",0);
+			</script>	
+			</div>	
+					 	
+		</div>
+			
+		<div class="you" style="display:none;margin-left:4px;" id="you" onmouseover="cancelHide(0);" onmouseout="hideSlow(0,'hideYou();');">
+			<ul>
+				<li style="overflow:hidden;" onmouseover="show('menu_11');" onmouseout="hide('menu_11');">
+							<div id="menu_11" style="display:none;margin-left:-21px; min-width:293px; cursor:pointer" class="popout" 
+							onclick="location.href = '/Journal_Editor/'"
+							>
+								<a href="/Journal_Editor/">Journal or Series Editor</a>
+							</div>	
+							<a href="/Journal_Editor/">Journal or Series Editor</a>
+							
+							</li><li style="overflow:hidden;" onmouseover="show('menu_22');" onmouseout="hide('menu_22');">
+							<div id="menu_22" style="display:none;margin-left:-21px; min-width:293px; cursor:pointer" class="popout" 
+							onclick="location.href = '/Book_Author/'"
+							>
+								<a href="/Book_Author/">Book Author</a>
+							</div>	
+							<a href="/Book_Author/">Book Author</a>
+							
+							</li><li style="overflow:hidden;" onmouseover="show('menu_8');" onmouseout="hide('menu_8');">
+							<div id="menu_8" style="display:none;margin-left:-21px; min-width:293px; cursor:pointer" class="popout" 
+							onclick="location.href = '/Reader/'"
+							>
+								<a href="/Reader/">Reader</a>
+							</div>	
+							<a href="/Reader/">Reader</a>
+							
+							</li><li style="overflow:hidden;" onmouseover="show('menu_23');" onmouseout="hide('menu_23');">
+							<div id="menu_23" style="display:none;margin-left:-21px; min-width:293px; cursor:pointer" class="popout" 
+							onclick="location.href = '/Journal_Author/'"
+							>
+								<a href="/Journal_Author/">Journal Author</a>
+							</div>	
+							<a href="/Journal_Author/">Journal Author</a>
+							
+							</li><li style="overflow:hidden;" onmouseover="show('menu_12');" onmouseout="hide('menu_12');">
+							<div id="menu_12" style="display:none;margin-left:-21px; min-width:293px; cursor:pointer" class="popout" 
+							onclick="location.href = '/Librarian/'"
+							>
+								<a href="/Librarian/">Librarian</a>
+							</div>	
+							<a href="/Librarian/">Librarian</a>
+							
+							</li>			</ul>
+		</div>	
+		<div class="subjects" style="margin-left: 331px;display:none;" id="subjects" onmouseover="cancelHide(1);" onmouseout="hideSlow(1,'hideSubjects();');">
+	
+				<ul><li style="overflow:hidden;" onmouseover="show('menu_1563');" onmouseout="hide('menu_1563');">
+					<div id="menu_1563" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/agriculture/'"
+					>
+						<a href="/agriculture/">Agriculture, Veterinary Sciences, Forestry</a>
+					</div>								
+					<a href="/agriculture/">Agriculture, Veterinary Sciences, Forestry</a></li><li style="overflow:hidden;" onmouseover="show('menu_2217');" onmouseout="hide('menu_2217');">
+					<div id="menu_2217" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/arts/'"
+					>
+						<a href="/arts/">Arts, Music, Architecture</a>
+					</div>								
+					<a href="/arts/">Arts, Music, Architecture</a></li><li style="overflow:hidden;" onmouseover="show('menu_1562');" onmouseout="hide('menu_1562');">
+					<div id="menu_1562" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/chemistry/'"
+					>
+						<a href="/chemistry/">Chemistry, Chemical Technology</a>
+					</div>								
+					<a href="/chemistry/">Chemistry, Chemical Technology</a></li><li style="overflow:hidden;" onmouseover="show('menu_1564');" onmouseout="hide('menu_1564');">
+					<div id="menu_1564" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/computerscience/'"
+					>
+						<a href="/computerscience/">Computer Science</a>
+					</div>								
+					<a href="/computerscience/">Computer Science</a></li><li style="overflow:hidden;" onmouseover="show('menu_2218');" onmouseout="hide('menu_2218');">
+					<div id="menu_2218" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/culture/'"
+					>
+						<a href="/culture/">Culture</a>
+					</div>								
+					<a href="/culture/">Culture</a></li><li style="overflow:hidden;" onmouseover="show('menu_1569');" onmouseout="hide('menu_1569');">
+					<div id="menu_1569" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/earthsciences/'"
+					>
+						<a href="/earthsciences/">Earth Sciences</a>
+					</div>								
+					<a href="/earthsciences/">Earth Sciences</a></li><li style="overflow:hidden;" onmouseover="show('menu_2220');" onmouseout="hide('menu_2220');">
+					<div id="menu_2220" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/economics/'"
+					>
+						<a href="/economics/">Economics</a>
+					</div>								
+					<a href="/economics/">Economics</a></li><li style="overflow:hidden;" onmouseover="show('menu_1565');" onmouseout="hide('menu_1565');">
+					<div id="menu_1565" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/education/'"
+					>
+						<a href="/education/">Education</a>
+					</div>								
+					<a href="/education/">Education</a></li><li style="overflow:hidden;" onmouseover="show('menu_1566');" onmouseout="hide('menu_1566');">
+					<div id="menu_1566" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/engineering/'"
+					>
+						<a href="/engineering/">Engineering, Industry, Transportation</a>
+					</div>								
+					<a href="/engineering/">Engineering, Industry, Transportation</a></li><li style="overflow:hidden;" onmouseover="show('menu_1567');" onmouseout="hide('menu_1567');">
+					<div id="menu_1567" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/environment/'"
+					>
+						<a href="/environment/">Environmental Studies</a>
+					</div>								
+					<a href="/environment/">Environmental Studies</a></li><li style="overflow:hidden;" onmouseover="show('menu_1568');" onmouseout="hide('menu_1568');">
+					<div id="menu_1568" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/geography/'"
+					>
+						<a href="/geography/">Geography</a>
+					</div>								
+					<a href="/geography/">Geography</a></li><li style="overflow:hidden;" onmouseover="show('menu_2216');" onmouseout="hide('menu_2216');">
+					<div id="menu_2216" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/history/'"
+					>
+						<a href="/history/">History, Archaeology</a>
+					</div>								
+					<a href="/history/">History, Archaeology</a></li><li style="overflow:hidden;" onmouseover="show('menu_1574');" onmouseout="hide('menu_1574');">
+					<div id="menu_1574" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/linguistics/'"
+					>
+						<a href="/linguistics/">Language, Literature</a>
+					</div>								
+					<a href="/linguistics/">Language, Literature</a></li><li style="overflow:hidden;" onmouseover="show('menu_1572');" onmouseout="hide('menu_1572');">
+					<div id="menu_1572" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/law/'"
+					>
+						<a href="/law/">Law, Public Administration</a>
+					</div>								
+					<a href="/law/">Law, Public Administration</a></li><li style="overflow:hidden;" onmouseover="show('menu_1573');" onmouseout="hide('menu_1573');">
+					<div id="menu_1573" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/lifesciences/'"
+					>
+						<a href="/lifesciences/">Life Sciences</a>
+					</div>								
+					<a href="/lifesciences/">Life Sciences</a></li><li style="overflow:hidden;" onmouseover="show('menu_1580');" onmouseout="hide('menu_1580');">
+					<div id="menu_1580" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/management/'"
+					>
+						<a href="/management/">Management, Business, Finance</a>
+					</div>								
+					<a href="/management/">Management, Business, Finance</a></li><li style="overflow:hidden;" onmouseover="show('menu_1575');" onmouseout="hide('menu_1575');">
+					<div id="menu_1575" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/mathematics/'"
+					>
+						<a href="/mathematics/">Mathematics, Statistics, Logic, Systems Science</a>
+					</div>								
+					<a href="/mathematics/">Mathematics, Statistics, Logic, Systems Science</a></li><li style="overflow:hidden;" onmouseover="show('menu_1576');" onmouseout="hide('menu_1576');">
+					<div id="menu_1576" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/medicine/'"
+					>
+						<a href="/medicine/">Medicine, Pharmacy, Public Health</a>
+					</div>								
+					<a href="/medicine/">Medicine, Pharmacy, Public Health</a></li><li style="overflow:hidden;" onmouseover="show('menu_2219');" onmouseout="hide('menu_2219');">
+					<div id="menu_2219" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/philosophy/'"
+					>
+						<a href="/philosophy/">Philosophy</a>
+					</div>								
+					<a href="/philosophy/">Philosophy</a></li><li style="overflow:hidden;" onmouseover="show('menu_1577');" onmouseout="hide('menu_1577');">
+					<div id="menu_1577" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/physics/'"
+					>
+						<a href="/physics/">Physics, Materials Science, Astronomy</a>
+					</div>								
+					<a href="/physics/">Physics, Materials Science, Astronomy</a></li><li style="overflow:hidden;" onmouseover="show('menu_2224');" onmouseout="hide('menu_2224');">
+					<div id="menu_2224" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/politicalscience/'"
+					>
+						<a href="/politicalscience/">Political Science</a>
+					</div>								
+					<a href="/politicalscience/">Political Science</a></li><li style="overflow:hidden;" onmouseover="show('menu_1578');" onmouseout="hide('menu_1578');">
+					<div id="menu_1578" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/psychology/'"
+					>
+						<a href="/psychology/">Psychology</a>
+					</div>								
+					<a href="/psychology/">Psychology</a></li><li style="overflow:hidden;" onmouseover="show('menu_1579');" onmouseout="hide('menu_1579');">
+					<div id="menu_1579" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/sociology/'"
+					>
+						<a href="/sociology/">Sociology</a>
+					</div>								
+					<a href="/sociology/">Sociology</a></li><li style="overflow:hidden;" onmouseover="show('menu_2221');" onmouseout="hide('menu_2221');">
+					<div id="menu_2221" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/sport/'"
+					>
+						<a href="/sport/">Sport, Physical Education</a>
+					</div>								
+					<a href="/sport/">Sport, Physical Education</a></li><li style="overflow:hidden;" onmouseover="show('menu_2215');" onmouseout="hide('menu_2215');">
+					<div id="menu_2215" style="display:none;margin-left:-20px; min-width: 293px; cursor:pointer;" class="popout" 
+					onclick = "location.href = '/theology/'"
+					>
+						<a href="/theology/">Theology, Religious Studies</a>
+					</div>								
+					<a href="/theology/">Theology, Religious Studies</a></li></ul>
+		</div>						
+	</div>		
+</div>  
+		
+		
+		<div class="grad">
+		
+			<div class="panels">
+				
+			
+		<table class="panels">
+			<thead>
+				<tr>
+					<td class="aboutus">
+						<h1>About us</h1>
+					</td>
+					
+					<td class="empty">
+					</td>
+					
+					<td class="news">
+						<h1>News</h1>	
+					</td>
+					
+					<td class="empty">
+					</td>
+					
+					<td class="contact">
+						<h1>Contact</h1>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="aboutuscontent">
+						<p>
+	We are publishers. We are scholarly publishers. We publish journals and books. They are written by scientists for scientists to support new research. They are in English, as English is the main international language of science today. All our publications are available online. Versita publishes in two models: subscription model and open access model. In subscription model, we co-publish journals with <a href="http://springer.com" target="_blank">Springer</a><a href="http://www.springer.com"> </a>and journals and books with <a href="http://www.degruyter.com" target="_blank">de Gruyter</a>. The principal destination for our open access publications is <a href="http://versitaopen.com" target="_blank">Versita Open</a> site.</p>
+	
+					</td>
+					
+					<td class="empty">
+					</td>
+					
+					<td class="newscontent">
+						<div class="news"><h3>2012-08-17</h3><div class="title"><b>Feel Invited! Versita’s Open Access Seminars in September</b></div><div class="content">
+	We are pleased to invite researchers, journal and series editors, book publishers and book authors to the presentations of Open<a href="/Home/60-Feel_Invited!_Versita’s_Open_Access_Seminars_in_September.html"> Read more...</a></div></div><div class="news"><h3>2012-07-31</h3><div class="title"><b>First Hungarian Journal In Versita’s Open Access Collection</b></div><div class="content">
+	Versita has entered into a partnership with the University of West Hungary to publish&nbsp;Acta Silvatica.
+<a href="/Home/59-First_Hungarian_Journal_In_Versita’s_Open_Access_Collection.html"> Read more...</a></div></div><div class="news"><h3>2012-07-18</h3><div class="title"><b>Verista Becomes a Publishing Partner of Association of Universities for Textiles (AUTEX)</b></div><div class="content">
+	Association of Universities for Textiles (AUTEX) has chosen Versita as a publisher for the Autex Research Journal.&nbsp;
+<a href="/Home/58-Verista_Becomes_a_Publishing_Partner_of_Association_of_Universities_for_Textiles_(AUTEX).html"> Read more...</a></div></div>					</td>
+					
+					<td class="empty">
+					</td>
+					
+					<td class="contactcontent">
+					  
+						<b>Versita Ltd</b><br />
+						78 York Street<br />
+						London W1H 1DP<br />
+						Great Britain<br /><br />
+						Tel: +44 (0) 20 7692 4902<br />
+						<a href="mailto:info@versita.com" style="text-decoration:underline;">info@versita.com</a> 
+							            	
+					</td>
+				</tr>
+			</tbody>			
+		</table>
+
+
+	<div class="icons" style="border-top:0;">
+		<div class="left">
+		<h2 class="gray" >Partners</h2>
+		<a target="_blank" href="http://www.springer.com/"><img style="width:105px;height:45px;" id="color_8" src="/grayscale.php?file=/files-site/files/objects/8/6/partner_1.gif" alt="Springer" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a><a target="_blank" href="http://www.degruyter.de/indexEn.cfm"><img style="width:105px;height:45px;" id="color_5" src="/grayscale.php?file=/files-site/files/objects/5/6/partner_2.gif" alt="DeGruyter" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a><a target="_blank" href="http://www.metapress.com/"><img style="width:105px;height:45px;" id="color_7" src="/grayscale.php?file=/files-site/files/objects/7/6/partner_3.gif" alt="MetaPress" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a><a target="_blank" href="http://www.edmgr.com/"><img style="width:105px;height:45px;" id="color_3" src="/grayscale.php?file=/files-site/files/objects/3/6/partner_4.png" alt="Aries" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a><a target="_blank" href="http://www.ebrary.com/"><img style="width:105px;height:45px;" id="color_6" src="/grayscale.php?file=/files-site/files/objects/6/6/partner_5.gif" alt="Ebrary" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a>		<div class="clear"></div>
+		</div>
+		<div class="right" >
+		<h2 class="gray">Members</h2>
+		<a target="_blank" href="http://www.crossref.org/"><img style="width:105px;height:45px;" id="color_4" src="/grayscale.php?file=/files-site/files/objects/4/6/member_2.gif" alt="Cross Ref" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a><a target="_blank" href="http://www.stm-assoc.org"><img style="width:105px;height:45px;" id="color_9" src="/grayscale.php?file=/files-site/files/objects/9/6/member_3.gif" alt="STM" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a><a target="_blank" href="http://alpsp.org/"><img style="width:105px;height:45px;" id="color_2" src="/grayscale.php?file=/files-site/files/objects/2/6/member_1.gif" alt="Alpsp" onmouseout="grayscale(true,this);" onmouseover="grayscale(false,this);"/></a>		
+		<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+		
+	
+				
+				<div class="clear"></div>
+			</div>
+		
+		
+		</div>
+	</div>
+	<div class="footer" onclick="">
+		<div class="content">
+			<div class="left">
+				<div class="menu">
+					<ul style="float:left">
+						<li class="selected"><a class="selected" href="/Home/">Home</a></li><li><a href="/About_us/">About us</a></li><li><a href="/Press/">Press</a></li><li><a href="/Career/">Career</a></li><li><a href="/People/">People</a></li><li><a href="/News/">News</a></li><li><a href="/Contact/">Contact</a></li>					</ul>	
+					<ul style="float: right;">
+						<li><a href="/?sitemap=show">Sitemap</a></li>
+						<li><a href="#" onclick="showFeedBackLayer();return false;">Feedback</a></li>
+						<li><a href="#" onclick="window.print();return false;">Print</a></li>
+						
+					</ul>								
+				</div>
+				<a style="display:inline" target="_blank" href="http://www.facebook.com/VersitaPublishing"><img src="/files-site/files/objects/36/10/fb.jpg" alt="facebook" /></a><a style="display:inline" target="_blank" href="http://twitter.com/VersitaPub"><img src="/files-site/files/objects/37/10/twitter icon.png" alt="Twitter" /></a>			<p style="float:right">
+            <a style="color:#aeaeae;" href="http://fsi.pl/" target="_blank" title="tworzenie stron internetowych, projektowanie stron www">Fabryka Stron Internetowych Sp. z o.o.</a>&nbsp;&nbsp; <a style="color:#aeaeae;" href="http://www.fsite.pl" title="system zarządzania treścią" target="_blank">CMS - FSite</a>
+  			</p>				
+			</div>
+		</div>
+	</div>
+	<div id="feedbacklayerBackground" class="feedbackBackground" style="display:none;"  onclick="hideFeedBackLayer();">
+	</div>
+		<div id="feedbacklayer" class="feedback" style="display:none;">
+					</div>	
+		<div id="fb-root"></div>
+		<script src="http://connect.facebook.net/en_US/all.js#appId=189108871153961&amp;xfbml=1"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18553390-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+Name : Shun Zhang
+EID  : sz4554
+
+Part B
+
+i)
+The Big Cheese
+
+ii)
+Marie Bertrand
+
+iv)
+SELECT City
+FROM customers
+ORDER BY Country ASC, City ASC
+

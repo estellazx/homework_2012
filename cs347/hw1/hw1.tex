@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{latexsym}
+\usepackage{qtree}
+\title{Problem Set 1}
+\author{Shun Zhang (sz4554)}
+\begin{document}
+\maketitle
+
+2.4.1
+
+a) $\pi_{model}\sigma_{speed\geq 3.00}(\sigma_{type='pc'}(Product)\Join PC)$
+
+c) $\pi_{model,price}\sigma_{maker='B'}(Product\Join (\pi_{model,price}(PC)\cup \pi_{model,price}(Laptop)\cup \pi_{model,price}(Printer)))$
+
+e) $\pi_{maker}(\sigma_{type='laptop'}(Product)-\sigma_{type='PC'}(Product))$
+
+f) $\pi_{hd}\sigma_{model\neq model'}(PC\Join \rho_{PC'(model',hd)}(\pi_{model,hd}(PC)))$
+
+i) $\pi_{maker}(Product\Join (\pi_{model}(PC)-\pi_{model}(\sigma_{speed<speed'}(PC\times \rho_{PC'(speed')}(\pi_{speed}(PC))))))$
+\\
+
+2.4.2
+
+a) \Tree [.$\pi_{model}$ [.$\sigma_{speed\geq 3.00}$ [.$\Join$ [.$\sigma_{type='pc'}$ Product ] PC ] ] ]
+
+c) \Tree [.$\pi_{model,price}$ [.$\sigma_{maker='B'}$ [.$\Join$ Product [.$\cup$ [.$\pi_{model,price}$ PC ] [.$\pi_{model,price}$ Laptop ] [.$\pi_{model,price}$ Printer ] ] ] ] ]
+
+e) \Tree [.$\pi_{maker}$ [.- [.$\sigma_{type='laptop'}$ Product ] [.$\sigma_{type='PC'}$ Product ] ] ]
+
+f) \Tree [.$\pi_{hd}$ [.$\sigma_{model\neq model'}$ [.$\Join$ PC [.$\rho_{PC'(model',hd)}$ [.$\pi_{model,hd}$ PC ] ] ] ] ]
+
+i) \Tree [.$\pi_{maker}$ [.$\Join$ Product [.- [.$\pi_{model}$ PC ] [.$\pi_{model}$ [.$\sigma_{speed<speed'}$ [.$\times$ PC [.$\rho_{PC'(speed')}$ [.$\pi_{speed}$ PC ] ] ] ] ] ] ] ]
+\\
+
+5.1.3a
+
+As a set,
+
+\begin{tabular}{l}
+	bore \\
+	\hline \hline
+	15 \\
+	16 \\
+	14 \\
+	18
+\end{tabular}\\
+
+As a bag,
+
+\begin{tabular}{l}
+	bore \\
+	\hline \hline
+	15 \\
+	16 \\
+	14 \\
+	16 \\
+	15 \\
+	15 \\
+	14 \\
+	18
+\end{tabular}\\
+
+\end{document}

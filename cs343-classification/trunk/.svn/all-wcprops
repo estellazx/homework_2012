@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/cs343-classification/!svn/ver/6/trunk
+END
+commands.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cs343-classification/!svn/ver/2/trunk/commands.txt
+END
+mira.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cs343-classification/!svn/ver/6/trunk/mira.py
+END
+projects.css
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cs343-classification/!svn/ver/2/trunk/projects.css
+END
+classificationMethod.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cs343-classification/!svn/ver/2/trunk/classificationMethod.py
+END
+minicontest.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/cs343-classification/!svn/ver/2/trunk/minicontest.py
+END
+mostFrequent.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cs343-classification/!svn/ver/2/trunk/mostFrequent.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/cs343-classification/!svn/ver/2/trunk/util.py
+END
+dataClassifier.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cs343-classification/!svn/ver/2/trunk/dataClassifier.py
+END
+perceptron.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cs343-classification/!svn/ver/6/trunk/perceptron.py
+END
+data.zip
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/cs343-classification/!svn/ver/2/trunk/data.zip
+END
+samples.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cs343-classification/!svn/ver/2/trunk/samples.py
+END
+naiveBayes.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/cs343-classification/!svn/ver/6/trunk/naiveBayes.py
+END
+classification.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cs343-classification/!svn/ver/2/trunk/classification.html
+END

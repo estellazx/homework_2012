@@ -1,0 +1,997 @@
+<base href="http://www.bio-itworld.com/">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head id="ctl00_Head1"><script id="EktronJS" type="text/javascript" src="/WorkArea/java/ektron.js"></script><script id="EktronThickBoxJS" type="text/javascript" src="/WorkArea/java/thickbox.js"></script><script id="EktronJsonJS" type="text/javascript" src="/WorkArea/java/ektron_json.js"></script><script id="EktronDmsMenuJS" type="text/javascript" src="/WorkArea/DmsMenu/DmsMenu.js"></script><script id="EktronRegisteredJs" type="text/javascript" src="/workarea/java/ektronJs.ashx?id=EktronWebToolBarJS"></script><script id="AjaxScript" type="text/javascript" src="/WebResource.axd?d=2pxveDD0BARjSOs4izlAg8tHAkCeTn7ZFXo2l4hI4Yrr6KDY58mVoTfnFcfiGOp3S8RTiYa5VT8gntFqXpkCrAceGxwozsS9p_gMiassQloJMIZepSyrLFaEjvx794PwOvQmgQ2&amp;t=634246524290000000"></script><link id="EktronRegisteredCss" rel="stylesheet" type="text/css" href="/workarea/csslib/ektronCss.ashx?id=EktronModalCss+EktronThickBoxCss+EktronBubbleCss" /><meta name="Keywords" content="Bio-IT World; BioIT; Drug Discovery; eClinical Trials; Bioinformatics; Bio-IT; IT Infrastructure; IT Workflow; High Performance Computing; Grid Computing; IT Hardware; Data Storage; Data Mining; Data Management; Knowledge Management; Data Integration; Cloud Computing; IT Compliance; Electronic Data Capture; Research Informatics; Clinical informatics; Medical informatics; Health informatics; Biomedical informatics; Drug Development; Drug Design; Drug Safety; Drug Approval Process; Clinical Trials; Clinical Trials Management; eClinical Trials Management; FDA Regulations; GMP; Clinical Trials Operations; Computational Biology; Pharmaceutical Technology; Pharmaceutical Research; Predictive Biology; Personalized Medicine; Sequencing; Sequencing Technology; Genome Sequencing; Systems Pharmacology; Lead Optimization; Personal Genomics; Life Sciences; Patient Recruitment; Biopharmaceuticals; Pharmacovigilance; Pathway Genomics" />
+<meta name="Description" content="From systems biology and in silico modeling to cheminformatics and electronic data capture, Bio-IT World shows how predictive information is the key to improving the efficiency of drug discovery, all the way through clinical trials. Critical to the goal of modeling and exploiting information is the IT and informatics infrastructure -- the hardware and software that facilitates the creation of databases, text mining and the conversion of information into hypotheses, models, and conclusions." />
+<meta property="og:image" content="/template_images/BioIT/Bio-ITWorld-og.jpg" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	Bio-IT World
+</title><base href="http://www.bio-itworld.com/" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/Reset.css" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/main.css" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/noprint.css" media="print" />
+<link rel="'stylesheet'" type="'text/css'" href="'http://fonts.googleapis.com/css?family=Droid+Sans:400,700'" />
+<script src="/Javascript/basic.js" type="text/javascript" language="javascript"></script><script src="/Javascript/swfobject.js" type="text/javascript" language="javascript"></script><link rel="shortcut icon" type="image/x-icon" href="../template_images/BioIT/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/bit-slider-default.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/bit-slider.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/bit-slider-style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/bioitdig.css" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/themes/bioit/jquery-ui-1.8.18.custom.css" />
+<link rel="stylesheet" type="text/css" href="/Stylesheets/shadowbox.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script><script src="/Javascript/jquery.watermark.js" type="text/javascript"></script><script type="text/javascript"><!--
+$(document).ready(function () {
+            $("#accordion").accordion();
+            $("#accordion").accordion("option", "clearStyle", true);
+            $("#accordion").accordion("option", "icons", false);
+            $(".SearchTextAndButton input[type='text']").watermark("Search");
+            $("#ctl00_ctl00_cphContent_cphContent_ContentBlock_MainContent font").attr("face","").attr("size","");
+        });
+--></script><script src="/tweet/jquery.tweet.js" type="text/javascript" language="javascript"></script><link rel="stylesheet" type="text/css" href="/tweet/jquery.tweet.css" media="all" />
+<script type="text/javascript"><!--
+jQuery(function ($) {
+            $(".tweet").tweet({
+                username: "bioitworld",
+                join_text: "auto",
+                avatar_size: 32,
+                count: 3,
+                auto_join_text_default: "",
+                auto_join_text_ed: "",
+                auto_join_text_ing: "",
+                auto_join_text_reply: "",
+                auto_join_text_url: "",
+                loading_text: "loading tweets..."
+            });
+        });
+--></script><script type="text/javascript"><!--
+$(function () {
+                $("#tabs").tabs();
+            });
+--></script><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="text/javascript"><!--
+function onLinkedInLoad() {
+            IN.Event.on(IN, "auth", onLinkedInAuth);
+        }
+
+        function onLinkedInAuth() {
+            IN.API.Raw("/groups/3141702:(id,name,short-description,relation-to-viewer:(membership-state),site-group-url,num-members)").result(function groupCallback(result) {
+                $("LinkedInGroup").append(result);
+            });
+        }
+--></script><script type="text/javascript"><!--
+function loadData() {
+            $("button").click(function () {
+                JoinGroup();
+            });
+
+        }
+
+        function JoinGroup() {
+            IN.API.Raw("people/~/group-memberships/3141702")
+           .method("PUT")
+           .body(JSON.stringify({ "membershipState": { "code": "member"} }))
+           .result(function (result) { alert("Group Joined") }).
+           error(function (result) {
+               alert(JSON.stringify(result));
+           });
+        }
+--></script><script type="text/javascript"><!--
+$(function () {
+            $("#tabs").tabs();
+        });
+--></script><script src="/Javascript/shadowbox.js" type="text/javascript"></script><script type="text/javascript"><!--
+Shadowbox.init({
+            // let's skip the automatic setup because we don't have any
+            // properly configured link elements on the page
+            displayNav: true
+        });
+--></script><script src="/Javascript/jcarousel.js" type="text/javascript"></script><script type="text/javascript"><!--
+jQuery(document).ready(function () {
+             jQuery('#ctl00_cphContent_BioITRelatedProduct1_mycarousel').jcarousel({
+                 visible: 4
+             });
+
+             loadAds();
+         });
+--></script><script src="/Javascript/jquery.ba-jqmq.js" type="text/javascript"></script><script src="/Javascript/jquery.ba-loadadscript.js" type="text/javascript"></script><script type="text/javascript"><!--
+adRotation = 1800000;
+        axel = Math.random() + "";
+        ord = axel * 1000000000000000000;
+        ordStr = ord + "?";
+        var interstitialLoaded = 0;
+
+        function loadAds() {
+            axel = Math.random() + "";
+            ord = axel * 1000000000000000000;
+            ordStr = ord + "?";
+
+            Ads('.AdSky', 'http://ad.doubleclick.net/adj/site169.tmus;dcopt=ist;abr=!webtv;sz=120x600,150x800,160x600,150x600;' + ordStr);
+            //Ads('.AdButton1', 'http://ad.doubleclick.net/adj/site169.tmus;tile=3;sz=160x160;ord=' + ordStr);
+            //$("#AdIMU").text = '';
+            //if ($("#HiddenIMU a").length) {
+            //    $("#HiddenIMU a").appendTo("#AdIMU");
+            //} else if ($("#HiddenIMU object").length) {
+            //    $("#HiddenIMU object").appendTo("#AdIMU");
+            //}
+            // Ads('.AdButton2', 'http://ad.doubleclick.net/adj/bitw2.site169.tmus;tile=3;sz=160x160;ord=' + ordStr);
+            // Ads('.AdButton3', 'http://ad.doubleclick.net/adj/bitw3.site169.tmus;tile=3;sz=160x160;ord=' + ordStr);
+            // Ads('.AdLeaderBoardBottom', 'http://ad.doubleclick.net/adj/site169.tmus;tile=5;sz=728x90;ord=' + ordStr);
+            //Ads('.AdLeaderBoardTop', 'http://ad.doubleclick.net/adj/bitw2.site169.tmus/;dcopt=ist;sz=728x90;ord=' + ordStr);
+            // Ads('.AdLeaderBoardButton', 'http://ad.doubleclick.net/adj/bitw2.site169.tmus;sz=235x60;ord=' + ordStr);
+            // Ads('.BottomAdRight', 'http://ad.doubleclick.net/adj/bitw3.site169.tmus;sz=235x60;ord=' + ordStr);
+
+   
+            window.setTimeout(loadAds, adRotation);
+        }
+--></script><script type="text/javascript"><!--
+function Ads(divClass, Adscript) {
+
+            $(divClass).fadeOut('slow', function () {
+                $(divClass).text('');
+                if (divClass == '.AdSky' && interstitialLoaded == 0 && ( window.location.pathname == '/' || window.location.pathname == '/bioit_homepage.aspx')) {
+                    $(divClass).loadAdScript(Adscript, function () {
+                        if($("#interstitialAd").length) {
+                            Shadowbox.open({
+                                content: $("#interstitialAd").html(),
+                                player: "html",
+                                title: '',
+                                height: 500,
+                                width: 660
+                            });
+                            interstitialLoaded = 1;
+                            setTimeout(function () {
+                                Shadowbox.close();
+                            }, 7000); 
+                        }
+                    });
+                } else {
+                    $(divClass).loadAdScript(Adscript);
+                }
+            });
+            $(divClass).fadeIn('slow');
+        }
+--></script><script type="text/javascript"><!--
+$(document).ready(function () {
+            var yplayer = $("#ytplayer").get(0);
+            $(".featuredVideoContent a").click(function () {
+                Shadowbox.open({
+                    content: $("#videoHtml").html(),
+                    player: "html",
+                    title: $(".featuredVideoContent a img").attr("title"),
+                    height: 480,
+                    width: 640,
+                    onClose: function () {
+                        yplayer.stopVideo();
+                    }
+                });
+                return false;
+            });
+        });
+--></script><script type="text/javascript"><!--
+var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23020641-16']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+--></script><script src="/Javascript/bit-slider-pack.js" type="text/javascript"></script><script type="text/javascript"><!--
+$(window).load(function () {
+            $('#slider').nivoSlider({
+                effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+                slices: 15, // For slice animations
+                boxCols: 8, // For box animations
+                boxRows: 4, // For box animations
+                animSpeed: 500, // Slide transition speed
+                pauseTime: 3000, // How long each slide will show
+                startSlide: 0, // Set starting Slide (0 index)
+                directionNav: true, // Next & Prev navigation
+                directionNavHide: true, // Only show on hover
+                controlNav: true, // 1,2,3... navigation
+                controlNavThumbs: false, // Use thumbnails for Control Nav
+                controlNavThumbsFromRel: false, // Use image rel for thumbs
+                controlNavThumbsSearch: '.jpg', // Replace this with...
+                controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
+                keyboardNav: true, // Use left & right arrows
+                pauseOnHover: true, // Stop animation while hovering
+                manualAdvance: false, // Force manual transitions
+                captionOpacity: 0.8, // Universal caption opacity
+                prevText: 'Prev', // Prev directionNav text
+                nextText: 'Next', // Next directionNav text
+                randomStart: false, // Start on a random slide
+                beforeChange: function () { }, // Triggers before a slide transition
+                afterChange: function () { }, // Triggers after a slide transition
+                slideshowEnd: function () { }, // Triggers after all slides have been shown
+                lastSlide: function () { }, // Triggers when last slide is shown
+                afterLoad: function () { } // Triggers when slider has loaded
+            });
+        });
+--></script> <script type="text/javascript"><!--
+$().ready( function() {
+  $('#ctl00_cphContent_ContentBlock_SponsoredLinks a').click(function () {
+    _gaq.push(['_setAccount', 'UA-912037-7'], ['_setDomainName', 'www.bio-itworld.com'], ['_trackEvent', 'Sponsored Link', 'Click', encodeURI($(this).attr('title').replace(/ +/g,'-'))]);
+    window.open($(this).attr('href'));
+    return false;
+  }); 
+  $('#ctl00_ctl00_cphContent_ContentBlock_SponsoredLinks a').click(function () {
+    _gaq.push(['_setAccount', 'UA-912037-7'], ['_setDomainName', 'www.bio-itworld.com'], ['_trackEvent', 'Sponsored Link', 'Click', encodeURI($(this).attr('title').replace(/ +/g,'-'))]);
+    window.open($(this).attr('href'));
+    return false;
+  }); 
+});
+--></script><base href="http://www.bio-itworld.com/" /></head>
+<body>
+    <form name="aspnetForm" method="post" action="/" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_ScriptManager1_HiddenField" id="ctl00_ScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTQ4OTA1MzQyD2QWAmYPZBYCAgMQZGQWAgIHD2QWBgIFD2QWBgIBDw8WAh4FVGl0bGUFASBkZAIDDxQrAAIPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnQCBmRkFgJmD2QWDAIBD2QWCGYPFQHHATxhIHRpdGxlPSJGcm9tIEdvb2dsZSB0byBGbGF0aXJvbiBIZWFsdGggYW5kIHRoZSBGaWdodCBBZ2FpbnN0IENhbmNlciIgaHJlZj0iL2Vscy8wOC8yNC8xMi9Gcm9tLUdvb2dsZS10by1GbGF0aXJvbi1IZWFsdGgtY2FuY2VyLmh0bWwiID5Gcm9tIEdvb2dsZSB0byBGbGF0aXJvbiBIZWFsdGggYW5kIHRoZSBGaWdodCBBZ2FpbnN0IENhbmNlcjwvYT5kAgEPZBYCZg8WAh4EVGV4dAUnPHNwYW4gY2xhc3M9IkNvbnRlbnREYXRlIj5BdWcgMjQ8L3NwYW4+ZAICDxUBqgI8Zm9udCBmYWNlPSJBcmlhbCIgc2l6ZT0iMiI+PHN0cm9uZz5CdXNpbmVzcyBJbnNpZGVyIHw8L3N0cm9uZz4gQWZ0ZXIgc2VsbGluZyB0aGVpciBzdGFydC11cCwgSW52aXRlIE1lZGlhLMKgdG8gR29vZ2xlIGZvciAkODEgbWlsbGlvbiwgPGZvbnQ+TmF0IFR1cm5lciBhbmQgWmFjaCBXZWluYmVyZyBoYXZlIGZvdW5kZWQgYSBuZXcgY29tcGFueSwgRmxhdGlyb24gSGVhbHRoLCBhaW1lZCBhdCBkZXZpc2luZyB3YXlzIHRvIGhlbHAgbWluZSBjbGluaWNhbCBkYXRhIGFuZCBjdXJlIGNhbmNlci48L2ZvbnQ+wqA8L2ZvbnQ+ZAIDDw8WAh4LTmF2aWdhdGVVcmwFOC9lbHMvMDgvMjQvMTIvRnJvbS1Hb29nbGUtdG8tRmxhdGlyb24tSGVhbHRoLWNhbmNlci5odG1sZGQCAg9kFghmDxUBuAE8YSB0aXRsZT0iVmlkZW86IE5hbmN5IEtlbGxleSBvbiB0aGUgTmV3IFlvcmsgR2Vub21lIENlbnRlciIgaHJlZj0iL25ld3MvMDgvMjMvMTIvVmlkZW8tTmFuY3ktS2VsbGV5LU5ldy1Zb3JrLUdlbm9tZS1DZW50ZXIuaHRtbCIgPlZpZGVvOiBOYW5jeSBLZWxsZXkgb24gdGhlIE5ldyBZb3JrIEdlbm9tZSBDZW50ZXI8L2E+ZAIBD2QWAmYPFgIfAwUnPHNwYW4gY2xhc3M9IkNvbnRlbnREYXRlIj5BdWcgMjM8L3NwYW4+ZAICDxUB8AI8Zm9udCBmYWNlPSJBcmlhbCIgc2l6ZT0iMiI+PHN0cm9uZz5CaW8tSVQgV29ybGQgfDwvc3Ryb25nPiBWaWRlbzogPGZvbnQ+PHNwYW4+TmFuY3kgS2VsbGV5LCBmb3VuZGluZyBleGVjdXRpdmUgZGlyZWN0b3Igb2YgdGhlIE5ldyBZb3JrIEdlbm9tZSBDZW50ZXIsIHNwZWFrcyBvbiBjYW1lcmEgd2l0aCA8ZW0+QmlvLUlUIFdvcmxkIDwvZW0+ZWRpdG9yIEtldmluIERhdmllcyBhYm91dCB0aGUgcmFwaWQgcHJvZ3Jlc3MgYW5kIGZ1dHVyZSBwbGFucyBmb3IgdGhlIG5ldyBnZW5vbWUgY2VudGVyIGN1cnJlbnRseSB1bmRlciBjb25zdHJ1Y3Rpb24gaW4gdGhlIFNvSG8gZGlzdHJpY3Qgb2YgTWFuaGF0dGFuLjwvc3Bhbj48L2ZvbnQ+PC9mb250PmQCAw8PFgIfBAU9L25ld3MvMDgvMjMvMTIvVmlkZW8tTmFuY3ktS2VsbGV5LU5ldy1Zb3JrLUdlbm9tZS1DZW50ZXIuaHRtbGRkAgMPZBYIZg8VAekBPGEgdGl0bGU9IktsZWJzaWVsbGEgUG5ldW1vbmlhZSBTdXBlcmJ1ZyBLaWxsZWQgU2l4IGF0IE5JSCBDbGluaWNhbCBDZW50ZXIiIGhyZWY9Ii9lbHMvMDgvMjIvMTIvS2xlYnNpZWxsYS1QbmV1bW9uaWFlLXN1cGVyYnVnLWtpbGxlZC1zaXgtTklILUNsaW5pY2FsLUNlbnRlci5odG1sIiA+S2xlYnNpZWxsYSBQbmV1bW9uaWFlIFN1cGVyYnVnIEtpbGxlZCBTaXggYXQgTklIIENsaW5pY2FsIENlbnRlcjwvYT5kAgEPZBYCZg8WAh8DBSc8c3BhbiBjbGFzcz0iQ29udGVudERhdGUiPkF1ZyAyMjwvc3Bhbj5kAgIPFQH/Ajxmb250IGZhY2U9IkFyaWFsIj48Zm9udCBzaXplPSIyIj48c3Ryb25nPkh1ZmZpbmd0b24gUG9zdCB8PC9zdHJvbmc+IDxmb250PlNjaWVudGlzdHMgYXJlIHJlcG9ydGluZyBob3cgbmV4dC1nZW5lcmF0aW9uIHNlcXVlbmNpbmcgaWRlbnRpZmllZCBhIGRlYWRseSBhbnRpYmlvdGljLXJlc2lzdGFudCAnc3VwZXJidWcnIHRoYXQgc3ByZWFkIGFsYXJtaW5nbHkgdGhyb3VnaCB0aGUgbWVkaWNhbCBjZW50ZXIgYXQgdGhlIE5JSCwgdWx0aW1hdGVseSBjbGFpbWluZ8KgPC9mb250Pjxmb250PnNpeCBsaXZlcyBiZWZvcmUgdGhlIHNvdXJjZSBvZiBpbmZlY3Rpb24gd2FzIGNvbmZpcm1lZCBhbmQgdGhlIG1pY3JvYmUgZXJhZGljYXRlZC4gPC9mb250PjwvZm9udD48L2ZvbnQ+ZAIDDw8WAh8EBVAvZWxzLzA4LzIyLzEyL0tsZWJzaWVsbGEtUG5ldW1vbmlhZS1zdXBlcmJ1Zy1raWxsZWQtc2l4LU5JSC1DbGluaWNhbC1DZW50ZXIuaHRtbGRkAgQPZBYIZg8VAdcBPGEgdGl0bGU9ImRlQ09ERSBTdHVkeSBGaW5kcyBPbGRlciBEYWRzIFBhc3MgT24gTW9yZSBHZW5ldGljIE11dGF0aW9ucyIgaHJlZj0iL2Vscy8wOC8yMi8xMi9kZUNPREUtc3R1ZHktb2xkZXItZGFkcy1wYXNzLW1vcmUtZ2VuZXRpYy1tdXRhdGlvbnMuaHRtbCIgPmRlQ09ERSBTdHVkeSBGaW5kcyBPbGRlciBEYWRzIFBhc3MgT24gTW9yZSBHZW5ldGljIE11dGF0aW9uczwvYT5kAgEPZBYCZg8WAh8DBSc8c3BhbiBjbGFzcz0iQ29udGVudERhdGUiPkF1ZyAyMjwvc3Bhbj5kAgIPFQHzAjxmb250IGZhY2U9IkFyaWFsIj48Zm9udCBzaXplPSIyIj48c3Ryb25nPldhbGwgU3RyZWV0IEpvdXJuYWwgfCA8L3N0cm9uZz48Zm9udD5BY2NvcmRpbmcgdG8gdGhlIGxhdGVzdCBwdWJsaWNhdGlvbiBmcm9tIEljZWxhbmQncyBkZUNPREUgR2VuZXRpY3MsIGEgc2VxdWVuY2luZyBzdHVkeSByZXZlYWxzIHRoYXQgb2xkZXIgZmF0aGVycyBwYXNzIG9uIG1vcmUgbmV3IGdlbmV0aWMgbXV0YXRpb25zIHRvIHRoZWlyIGNoaWxkcmVuIHRoYW4geW91bmdlciBmYXRoZXJzLCB0aHVzIGluY3JlYXNpbmcgdGhlaXIgY2hpbGRyZW4ncyByaXNrIG9mIGF1dGlzbSwgc2NoaXpvcGhyZW5pYSBhbmQgb3RoZXIgZGlzZWFzZXMuPC9mb250PjwvZm9udD48L2ZvbnQ+ZAIDDw8WAh8EBUYvZWxzLzA4LzIyLzEyL2RlQ09ERS1zdHVkeS1vbGRlci1kYWRzLXBhc3MtbW9yZS1nZW5ldGljLW11dGF0aW9ucy5odG1sZGQCBQ9kFghmDxUB0AE8YSB0aXRsZT0iUUVEOiBIb3BraW5zIEFsZ29yaXRobSBSYW5rcyB0aGUgQmVhdXR5IG9mIERydWcgQ2hlbWlzdHJ5IiBocmVmPSIvbmV3cy8wOC8yMS8xMi9RRUQtSG9wa2lucy1BbGdvcml0aG0tcmFua3MtYmVhdXR5LWRydWctY2hlbWlzdHJ5Lmh0bWwiID5RRUQ6IEhvcGtpbnMgQWxnb3JpdGhtIFJhbmtzIHRoZSBCZWF1dHkgb2YgRHJ1ZyBDaGVtaXN0cnk8L2E+ZAIBD2QWAmYPFgIfAwUnPHNwYW4gY2xhc3M9IkNvbnRlbnREYXRlIj5BdWcgMjE8L3NwYW4+ZAICDxUBzQI8Zm9udCBmYWNlPSJBcmlhbCI+PGZvbnQgc2l6ZT0iMiI+PHN0cm9uZz5CaW8tSVQgV29ybGQgfCA8L3N0cm9uZz5Db21wYW5pZXMgc3VjaCBhcyBPcHRpYnJpdW0gYXJlIHByYWlzaW5nIHRoZSA8Zm9udD7igJxRdWFudGl0YXRpdmUgRXN0aW1hdGUgb2YgRHJ1Zy1MaWtlbmVzc+KAnSAoUUVEKSBhbGdvcml0aG0gdG8gcmFuayBjaGVtaWNhbCBjb21wb3VuZHMgYmFzZWQgb24gdGhlaXIgb3JhbCBiaW9hdmFpbGFiaWxpdHksIGRldmVsb3BlZCBieSB0aGUgVW5pdmVyc2l0eSBvZiBEdW5kZWUncyBBbmRyZXcgSG9wa2lucyBhbmQgY29sbGVhZ3Vlcy48L2ZvbnQ+PC9mb250PjwvZm9udD5kAgMPDxYCHwQFRS9uZXdzLzA4LzIxLzEyL1FFRC1Ib3BraW5zLUFsZ29yaXRobS1yYW5rcy1iZWF1dHktZHJ1Zy1jaGVtaXN0cnkuaHRtbGRkAgYPZBYIZg8VAdEBPGEgdGl0bGU9IkFtYXpvbiBXZWIgU2VydmljZXMgTGF1bmNoZXMgQW1hem9uIEdsYWNpZXIgQXJjaGl2YWwgU3RvcmFnZSIgaHJlZj0iL25ld3MvMDgvMjEvMTIvQW1hem9uLVdlYi1TZXJ2aWNlcy1HbGFjaWVyLWFyY2hpdmFsLXN0b3JhZ2UuaHRtbCIgPkFtYXpvbiBXZWIgU2VydmljZXMgTGF1bmNoZXMgQW1hem9uIEdsYWNpZXIgQXJjaGl2YWwgU3RvcmFnZTwvYT5kAgEPZBYCZg8WAh8DBSc8c3BhbiBjbGFzcz0iQ29udGVudERhdGUiPkF1ZyAyMTwvc3Bhbj5kAgIPFQHMAjxmb250IGZhY2U9IkFyaWFsIiBzaXplPSIyIj48c3Ryb25nPkJpby1JVCBXb3JsZCB8PC9zdHJvbmc+IEhvdyBkb2VzIDEgY2VudC9HaWdhYnl0ZSBzb3VuZD8gVGhhdCdzIHRoZSBwb3RlbnRpYWwgcHJpY2Vwb2ludCBvZiA8Zm9udD48c3Bhbj5BbWF6b24ncyBuZXcgQW1hem9uIEdsYWNpZXIgYXJjaGl2YWwgc3RvcmFnZSBzb2x1dGlvbiBkZXNpZ25lZCBmb3IgZGF0YSBhcmNoaXZpbmcgYW5kIGJhY2t1cCB0aGF0IGlzIGFscmVhZHkgZ2FpbmluZyB0aGUgYXR0ZW50aW9uIG9mIGNvbXBhbmllcyBzdWNoIGFzIENvbXBsZXRlIEdlbm9taWNzLsKgPC9zcGFuPjwvZm9udD48L2ZvbnQ+ZAIDDw8WAh8EBUAvbmV3cy8wOC8yMS8xMi9BbWF6b24tV2ViLVNlcnZpY2VzLUdsYWNpZXItYXJjaGl2YWwtc3RvcmFnZS5odG1sZGQCBQ8WAh4JaW5uZXJodG1sBecMPGJyIC8+PGEgaHJlZj0iL25ld3MvMDcvMTEvMTIvS2FyaS1TdGVmYW5zc29uLWRlQ09ERS1BbHpoZWltZXJzLWRpc2NvdmVyeS1mdXR1cmUtcGxhbnMuaHRtbCI+S2FyaSBTdGVmYW5zc29uIG9uIGRlQ09EReKAmXMgQWx6aGVpbWVy4oCZcyBEaXNjb3ZlcnksIEZ1dHVyZSBQbGFucyA8L2E+PGJyIC8+PGJyIC8+PGEgaHJlZj0iL25ld3MvMDcvMjUvMTIvSm9obi1SZXluZGVycy1yb2xlLVJhbmRELUluZm9ybWF0aW9uLUFzdHJhWmVuZWNhLmh0bWwiPkpvaG4gUmV5bmRlcnMgb24gdGhlIFJvbGUgb2YgUiZEIEluZm9ybWF0aW9uIGF0IEFzdHJhWmVuZWNhIDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wNy8xMy8xMi9Ta2VwdGljYWwtT3V0c2lkZXItcmVzY3VlLWxpZmUtc2NpZW5jZXMtdGVjaG5vbG9naWNhbC10b3Jwb3IuaHRtbCI+VGhlIFNrZXB0aWNhbCBPdXRzaWRlcjogSG93IHRvIFJlc2N1ZSB0aGUgTGlmZSBTY2llbmNlcyBmcm9tIFRlY2hub2xvZ2ljYWwgVG9ycG9yIDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wNy8wMi8xMi9SZXR1cm4tZmluaXNoZWQtZ2Vub21lcy1oeWJyaWQtc2VxdWVuY2luZy1ib29zdHMtUGFjQmlvLWFjY3VyYWN5LWFzc2VtYmx5Lmh0bWwiPlRoZSBSZXR1cm4gb2YgRmluaXNoZWQgR2Vub21lczogSHlicmlkIFNlcXVlbmNpbmcgU3RyYXRlZ3kgQm9vc3RzIFBhY2lmaWMgQmlvc2NpZW5jZXMgQWNjdXJhY3ksIEFzc2VtYmx5IDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wNy8xMi8xMi9CaWctRGF0YS1HaWdhU2NpZW5jZS1tYWtlcy1kZWJ1dC5odG1sIj4nQmlnIERhdGEnIEpvdXJuYWwgR2lnYVNjaWVuY2UgTWFrZXMgSXRzIERlYnV0IDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wNi8yOS8xMi9EYXRhLXRzdW5hbWktQkdJLXRyYW5zZmVycy1nZW5vbWljLWRhdGEtUGFjaWZpYy0xMC1naWdhYml0cy1zZWNvbmQuaHRtbCI+RGF0YSBUc3VuYW1pOiBCR0kgVHJhbnNmZXJzIEdlbm9taWMgRGF0YSBBY3Jvc3MgUGFjaWZpYyBhdCBOZWFybHkgMTAgR2lnYWJpdHMvU2Vjb25kIDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wNy8xNi8xMi9JbnNpZGUtdGhlLUJveC1Tb2x1dGlvbnMtZGF0YS1zaGFyaW5nLWxpZmUtc2NpZW5jZXMuaHRtbCI+SU5TSURFIFRIRSBCT1g6IFNvbHV0aW9ucyBmb3IgRGF0YSBTaGFyaW5nIGluIExpZmUgU2NpZW5jZXMgPC9hPjxiciAvPjxiciAvPjxhIGhyZWY9Ii8yMDExLzAyLzE4L3BoYXJtYS10cmVuZC1jb21tZW50Lmh0bWwiPkEgMjAxMSBXYWtldXAgQ2FsbCBmb3IgUGhhcm1hY2V1dGljYWwgQ29tcGFuaWVzIDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wNy8yMy8xMi9Jb24tVG9ycmVudC1maXJzdC1lbnRyYW50LWdlbm9taWNzLVgtUHJpemUuaHRtbCI+SW9uIFRvcnJlbnQgTmFtZWQgRmlyc3QgRW50cmFudCBpbiBHZW5vbWljcyBYIFByaXplIENvbXBldGl0aW9uIDwvYT48YnIgLz48YnIgLz48YSBocmVmPSIvbmV3cy8wMi8xNy8xMi9PeGZvcmQtc3RyaWtlcy1maXJzdC1pbi1ETkEtc2VxdWVuY2luZy1uYW5vcG9yZS13YXJzLmh0bWwiPk94Zm9yZCBTdHJpa2VzIEZpcnN0IGluIEROQSBTZXF1ZW5jaW5nIE5hbm9wb3JlIFdhcnMgPC9hPjxiciAvPmQCDQ9kFgICFw9kFgICAQ8UKwACDxYEHwFnHwICAmRkFgJmD2QWBAIBD2QWAgIBD2QWBgIBDw8WBB8EBTlodHRwOi8vd3d3LmJpby1pdHdvcmxkZXhwby5jb20vSVQtSW5mcmFzdHJ1Y3R1cmUtSGFyZHdhcmUeCEltYWdlVXJsBTBodHRwOi8vY2hpLWltYWdlaG9zdC5jb20vY21zaG9zdC9jZC8yMDEyL2l0aC5qcGdkZAIDDw8WBB8EBTlodHRwOi8vd3d3LmJpby1pdHdvcmxkZXhwby5jb20vSVQtSW5mcmFzdHJ1Y3R1cmUtSGFyZHdhcmUfAwUaSVQgSW5mcmFzdHJ1Y3R1cmUtSGFyZHdhcmVkZAIFDw8WAh8DBSFBcHJpbCAyNS0yNiwgMjAxMiDigKIgQm9zdG9uLCBNQSBkZAICD2QWAgIBD2QWBgIBDw8WBB8EBTlodHRwOi8vd3d3LmJpby1pdHdvcmxkZXhwby5jb20vSVQtSW5mcmFzdHJ1Y3R1cmUtU29mdHdhcmUfBgUwaHR0cDovL2NoaS1pbWFnZWhvc3QuY29tL2Ntc2hvc3QvY2QvMjAxMi9pc2YuanBnZGQCAw8PFgQfBAU5aHR0cDovL3d3dy5iaW8taXR3b3JsZGV4cG8uY29tL0lULUluZnJhc3RydWN0dXJlLVNvZnR3YXJlHwMFGklUIEluZnJhc3RydWN0dXJlLVNvZnR3YXJlZGQCBQ8PFgIfAwUhQXByaWwgMjUtMjYsIDIwMTIg4oCiIEJvc3RvbiwgTUEgZGQCEw9kFgQCBg9kFgoCAQ9kFgICAQ8QZGQWAGQCAw9kFgICAQ8QZGQWAGQCBQ9kFgQCAQ8QZGQWAGQCAw8QZGQWAGQCBw9kFgQCAQ9kFgRmDzwrAAgAZAICDzwrAA0BAA8WAgUPUmVuZGVySW52aXNpYmxlZ2RkAgMPZBYEZg88KwAIAGQCAg88KwANAQAPFgIFD1JlbmRlckludmlzaWJsZWdkZAILDw8WAh8EBTFodHRwOi8vd3d3LmJpby1pdHdvcmxkLmNvbS9CaW9JVC9Ub3BTZWFyY2hlcy5hc3B4ZGQCCA8WBB4KQ29udGV4dEtleQUGQmlvLUlUHg1Vc2VDb250ZXh0S2V5Z2QYAgU5Y3RsMDAkY3BoQ29udGVudCRDZW50ZXJBY2NvcmRpYW4xJEJpb0lURFZETGlzdDEkTGlzdFZpZXcxDzwrAAoCBxQrAAJkZAgCAmQFKGN0bDAwJGNwaENvbnRlbnQkVG9wSGVhZGxpbmVzMSRMaXN0VmlldzEPPCsACgIHPCsABgAIAgZk" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+ektb_pathToImage = '/WorkArea/images/application/loading_small.gif';__$BubbleCloseIconPath='/WorkArea/';ektb_pathToImage = '/WorkArea/images/application/loading_small.gif';__$BubbleCloseIconPath='/WorkArea/';//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=u8-Mki1UIk06dClhycivxVm_2403JpHg7f6aocVgnoK3PsGBwRgIK-Ir0mqBFCiNAZIXKUU9Oy5-VOMCbiCnPBt3c89qn-5tNPuFi1FXcg4HU4lI0&amp;t=4ad501bc" type="text/javascript"></script>
+<script src="/BioIT_Homepage.aspx?_TSM_HiddenField_=ctl00_ScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.40412.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a1547e793-5b7e-48fe-8490-03a375b13a33%3a475a4ef5%3a5546a2b%3ad2e10b12%3aeffe2a26%3a37e2e5c9%3a5a682656%3a12bbc599" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCAKCnODLAgKWg6H7DQLj5+qVBwKymPioCwKsmoPlCgL////bBAKN+rDYAwLVmrmEDg==" />
+</div>
+    <div style="width: 1000px; margin: auto; position: relative; background-color: #fff;">
+        
+        <!-- Begin Header-->
+        <div class="AdLeaderBoardSocial">
+            <img src="/template_images/BioIT/bit_socialnav.jpg" width="235" height="32" border="0"
+                usemap="#Map" />
+            <map name="Map" id="Map">
+                <area shape="rect" coords="2,6,23,27" href="http://www.linkedin.com/groupRegistration?gid=3141702"
+                    target="_blank" />
+                <area shape="rect" coords="145,5,169,27" href="http://www.xing.com/net/bioitworld"
+                    target="_new" />
+                <area shape="rect" coords="31,4,54,28" href="http://www.facebook.com/bioitworld"
+                    target="_blank" />
+                <area shape="rect" coords="57,4,82,30" href="https://plus.google.com/107228389778650477992/up/start/#107228389778650477992/posts"
+                    target="_blank" />
+                <area shape="rect" coords="88,5,111,27" href="http://www.youtube.com/bioitworld"
+                    target="_blank" />
+                <area shape="rect" coords="114,4,140,30" href="http://twitter.com/#!/bioitworld"
+                    target="_new" />
+            </map>
+        </div>
+        <div class="chi_logo">
+            <img src="/template_images/BioIT/chi.jpg" width="217px" height="41px" border="0" />
+        </div>
+        <div class="TopAds NoPrint">
+            <div class="AdLeaderBoardButton">
+                <script type="text/javascript"><!--
+var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4680&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+--></script><noscript><a href="http://d.adsbyisocket.com/ck.php?n=a4714a02&amp;cb=1234567890" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4680&amp;cb=1234567890&amp;n=a4714a02" border="0" alt="" /></a></noscript> 
+            </div>
+            <div class="AdLeaderBoardTop">
+                <div class="TopAdLeft">
+                    <!--/* isocket Javascript Tag v2.0 */--><script type="text/javascript"><!--
+//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4658&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//--></script><noscript><a href="http://d.adsbyisocket.com/ck.php?n=a349235d&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4658&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a349235d" border="0" alt="" /></a></noscript> 
+                </div>
+            </div>
+        </div>
+        <div class="BioitPageTop" style="background-color: White;">
+            <a title="Bio-IT World" href="/" id="Homepage"></a>
+            <div class="logo">
+            </div>
+        </div>
+        <div class="navigation">
+            <div id="navBar">
+                <div id="nav1">
+                    <ul>
+                        <li><a href="/BioIT/Subscribe.aspx">subscribe</a></li>
+                        <li><a href="bioit_top_headlines.aspx">news</a></li>
+                        <li><a href="/BioIT/Advertise.aspx">advertise</a></li>
+                        <li><a href="/BioIT/JobOpenings.aspx">careers</a></li>
+                        <li><a href="/BioIT/NewsletterArchive.aspx">archives</a></li>
+                        <li><a href="/about-us.html">about us</a></li>
+                    </ul>
+                </div>
+                <div id="nav2">
+                    <ul>
+                        <li><a href="http://www.chicorporate.com">CHI home</a></li>
+                        <li><a href="http://www.chicorporate.com/Corporate/AboutUs.aspx">about</a></li>
+                        <li><a href="http://www.chicorporate.com/Corporate/ContactUs.aspx">contact us</a></li>
+                        <li><a href="http://www.chicorporate.com/Corporate/RequestInformation.aspx">request
+                            information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Header-->
+        <!-- Content-->
+        
+    
+    <div class="Content" style="background-color: White;">
+        <table class="ContentTable">
+            <tr>
+                <!--Left Column Content -->
+                <td class="bioitContentLeft NoPrint">
+                    <div class="bioitcontentboxleft">
+                        <div id="wrapper">
+                            <div class="slider-wrapper theme-default">
+                                <div id="ctl00_cphContent_ContentBlock3">
+	<div class="nivoSlider" id="slider"><a href="http://www.bio-itworld.com/news/07/25/12/John-Reynders-role-RandD-Information-AstraZeneca.html"><img title="NEXT FEATURE: Decoding Alzheimer’s Disease" src="SWF/Bio-IT/BITW_PromoBox_AZs_JohnReynders.jpg" /></a> <a href="http://www.bio-itworld.com/news/07/11/12/Kari-Stefansson-deCODE-Alzheimers-discovery-future-plans.html"><img title="NEXT FEATURE: Cancer Trends 2012" src="SWF/Bio-IT/BITW_PromoBox_DecodingAlzheimers.jpg" /></a> <a href="http://www.youtube.com/watch?v=_y3y8SmySDA&amp;list=UUqT0BxQuquhlC6tC5rQZBbw&amp;index=1&amp;feature=plcp"><img title="NEXT FEATURE: Hybrid Assembly with PacBio reads" src="swf/Bio-it/BITW_PromoBox_CancerTrends2012.jpg" /></a> <a href="http://www.bio-itworld.com/news/07/02/12/Return-finished-genomes-hybrid-sequencing-boosts-PacBio-accuracy-assembly.html"><img title="NEXT FEATURE: Ho Headlines Inaugural Bio-IT Asia" src="swf/Bio-it/BITW_PromoBox_PacBio.jpg" /></a> <a href="http://www.bio-itworld.com/2012/04/30/a-broad-perspective-genome-data-bio-it-world-expo.html"><img title="NEXT FEATURE: Broad Intentions for Big Data" src="swf/Bio-it/BITW_PromoBox_Ho_HeadlinesBTA.jpg" /></a> <a href="http://www.bio-itworld.com/2012/04/30/a-broad-perspective-genome-data-bio-it-world-expo.html"><img title="NEXT FEATURE: Patients and Productivity at FDA" src="swf/Bio-it/BITW_BroadIntentions.jpg" /></a> <a href="http://www.bio-itworld.com/2012/05/01/eric-perakslis-informatics-prescription-fda.html"><img title="NEXT FEATURE: Hello-Siri" src="swf/Bio-it/BITW_PatientsandProductivity.jpg" /></a> <a href="http://www.bio-itworld.com/news/04/25/12/Hello-Siri-please-start-my-experiment-now.html"><img title="NEXT FEATURE: Bio-IT World 10th Anniversary" src="swf/Bio-it/Science_W_Siri.jpg" /></a> <a href="http://www.bio-itworld.com/10th-anniversary"><img title="NEXT FEATURE: Oxford strikes first in DNA sequencing" src="swf/Bio-it/bit1.jpg" /></a> <a href="http://www.bio-itworld.com/news/02/17/12/Oxford-strikes-first-in-DNA-sequencing-nanopore-wars.html"><img title="NEXT FEATURE: Bio-IT World Alerts" src="swf/Bio-it/bit4.jpg" /></a> <a href="http://www.bio-itworld.com/BioIT/Subscribe.aspx"><img title="NEXT FEATURE: AZ’s John Reynders talks R&amp;D INFORMATION" src="swf/Bio-it/bit3.jpg" /></a></div>
+</div> 
+                            </div>
+                        </div>
+                        <div>
+                            
+
+<div class="topHeadlines">
+
+<div id="tabs">
+	<ul class="tabs_buttons">
+		<li><a href="#tabs-1">DAILY NEWS</a></li>
+		<li><a href="#tabs-2">MOST POPULAR</a></li>
+	</ul>
+     	<div id="tabs-1">
+        <div class="maroonheader_left">DAILY NEWS</div>
+        <span id="ctl00_cphContent_TopHeadlines1_lsTopHeadlines"><input name="ctl00$cphContent$TopHeadlines1$lsTopHeadlines$ctl00$cphContent$TopHeadlines1$lsTopHeadlinesEktronClientManager" type="hidden" id="ctl00_cphContent_TopHeadlines1_lsTopHeadlines_ctl00_cphContent_TopHeadlines1_lsTopHeadlinesEktronClientManager" value="EktronJS,EktronThickBoxJS,EktronJsonJS,EktronDmsMenuJS,AjaxScript" /></span>
+        
+                
+                <div class="top_headline">
+                   <a title="From Google to Flatiron Health and the Fight Against Cancer" href="/els/08/24/12/From-Google-to-Flatiron-Health-cancer.html" >From Google to Flatiron Health and the Fight Against Cancer</a><br /> 
+                   <span class="ContentDate">Aug 24</span> 
+                |
+                    <font face="Arial" size="2"><strong>Business Insider |</strong> After selling their start-up, Invite Media, to Google for $81 million, <font>Nat Turner and Zach Weinberg have founded a new company, Flatiron Health, aimed at devising ways to help mine clinical data and cure cancer.</font> </font>
+                 <a id="ctl00_cphContent_TopHeadlines1_ListView1_ctrl0_HyperLink_Label_HeadlineMoreTop" title="More" href="/els/08/24/12/From-Google-to-Flatiron-Health-cancer.html"> more</a>
+                </div>
+                <br />
+            
+                <div class="top_headline">
+                   <a title="Video: Nancy Kelley on the New York Genome Center" href="/news/08/23/12/Video-Nancy-Kelley-New-York-Genome-Center.html" >Video: Nancy Kelley on the New York Genome Center</a><br /> 
+                   <span class="ContentDate">Aug 23</span> 
+                |
+                    <font face="Arial" size="2"><strong>Bio-IT World |</strong> Video: <font><span>Nancy Kelley, founding executive director of the New York Genome Center, speaks on camera with <em>Bio-IT World </em>editor Kevin Davies about the rapid progress and future plans for the new genome center currently under construction in the SoHo district of Manhattan.</span></font></font>
+                 <a id="ctl00_cphContent_TopHeadlines1_ListView1_ctrl1_HyperLink_Label_HeadlineMoreTop" title="More" href="/news/08/23/12/Video-Nancy-Kelley-New-York-Genome-Center.html"> more</a>
+                </div>
+                <br />
+            
+                <div class="top_headline">
+                   <a title="Klebsiella Pneumoniae Superbug Killed Six at NIH Clinical Center" href="/els/08/22/12/Klebsiella-Pneumoniae-superbug-killed-six-NIH-Clinical-Center.html" >Klebsiella Pneumoniae Superbug Killed Six at NIH Clinical Center</a><br /> 
+                   <span class="ContentDate">Aug 22</span> 
+                |
+                    <font face="Arial"><font size="2"><strong>Huffington Post |</strong> <font>Scientists are reporting how next-generation sequencing identified a deadly antibiotic-resistant 'superbug' that spread alarmingly through the medical center at the NIH, ultimately claiming </font><font>six lives before the source of infection was confirmed and the microbe eradicated. </font></font></font>
+                 <a id="ctl00_cphContent_TopHeadlines1_ListView1_ctrl2_HyperLink_Label_HeadlineMoreTop" title="More" href="/els/08/22/12/Klebsiella-Pneumoniae-superbug-killed-six-NIH-Clinical-Center.html"> more</a>
+                </div>
+                <br />
+            
+                <div class="top_headline">
+                   <a title="deCODE Study Finds Older Dads Pass On More Genetic Mutations" href="/els/08/22/12/deCODE-study-older-dads-pass-more-genetic-mutations.html" >deCODE Study Finds Older Dads Pass On More Genetic Mutations</a><br /> 
+                   <span class="ContentDate">Aug 22</span> 
+                |
+                    <font face="Arial"><font size="2"><strong>Wall Street Journal | </strong><font>According to the latest publication from Iceland's deCODE Genetics, a sequencing study reveals that older fathers pass on more new genetic mutations to their children than younger fathers, thus increasing their children's risk of autism, schizophrenia and other diseases.</font></font></font>
+                 <a id="ctl00_cphContent_TopHeadlines1_ListView1_ctrl3_HyperLink_Label_HeadlineMoreTop" title="More" href="/els/08/22/12/deCODE-study-older-dads-pass-more-genetic-mutations.html"> more</a>
+                </div>
+                <br />
+            
+                <div class="top_headline">
+                   <a title="QED: Hopkins Algorithm Ranks the Beauty of Drug Chemistry" href="/news/08/21/12/QED-Hopkins-Algorithm-ranks-beauty-drug-chemistry.html" >QED: Hopkins Algorithm Ranks the Beauty of Drug Chemistry</a><br /> 
+                   <span class="ContentDate">Aug 21</span> 
+                |
+                    <font face="Arial"><font size="2"><strong>Bio-IT World | </strong>Companies such as Optibrium are praising the <font>“Quantitative Estimate of Drug-Likeness” (QED) algorithm to rank chemical compounds based on their oral bioavailability, developed by the University of Dundee's Andrew Hopkins and colleagues.</font></font></font>
+                 <a id="ctl00_cphContent_TopHeadlines1_ListView1_ctrl4_HyperLink_Label_HeadlineMoreTop" title="More" href="/news/08/21/12/QED-Hopkins-Algorithm-ranks-beauty-drug-chemistry.html"> more</a>
+                </div>
+                <br />
+            
+                <div class="top_headline">
+                   <a title="Amazon Web Services Launches Amazon Glacier Archival Storage" href="/news/08/21/12/Amazon-Web-Services-Glacier-archival-storage.html" >Amazon Web Services Launches Amazon Glacier Archival Storage</a><br /> 
+                   <span class="ContentDate">Aug 21</span> 
+                |
+                    <font face="Arial" size="2"><strong>Bio-IT World |</strong> How does 1 cent/Gigabyte sound? That's the potential pricepoint of <font><span>Amazon's new Amazon Glacier archival storage solution designed for data archiving and backup that is already gaining the attention of companies such as Complete Genomics. </span></font></font>
+                 <a id="ctl00_cphContent_TopHeadlines1_ListView1_ctrl5_HyperLink_Label_HeadlineMoreTop" title="More" href="/news/08/21/12/Amazon-Web-Services-Glacier-archival-storage.html"> more</a>
+                </div>
+                <br />
+            
+            
+            <div class="th_viewmore"><a href="/bioit_top_headlines.aspx" title="View More">View More Articles</a></div><br />
+	</div>
+	<div id="tabs-2">
+     <div class="maroonheader_left">MOST POPULAR</div>
+		<div id="ctl00_cphContent_TopHeadlines1_MostReadArticle" class="tabLinks"><br /><a href="/news/07/11/12/Kari-Stefansson-deCODE-Alzheimers-discovery-future-plans.html">Kari Stefansson on deCODE’s Alzheimer’s Discovery, Future Plans </a><br /><br /><a href="/news/07/25/12/John-Reynders-role-RandD-Information-AstraZeneca.html">John Reynders on the Role of R&D Information at AstraZeneca </a><br /><br /><a href="/news/07/13/12/Skeptical-Outsider-rescue-life-sciences-technological-torpor.html">The Skeptical Outsider: How to Rescue the Life Sciences from Technological Torpor </a><br /><br /><a href="/news/07/02/12/Return-finished-genomes-hybrid-sequencing-boosts-PacBio-accuracy-assembly.html">The Return of Finished Genomes: Hybrid Sequencing Strategy Boosts Pacific Biosciences Accuracy, Assembly </a><br /><br /><a href="/news/07/12/12/Big-Data-GigaScience-makes-debut.html">'Big Data' Journal GigaScience Makes Its Debut </a><br /><br /><a href="/news/06/29/12/Data-tsunami-BGI-transfers-genomic-data-Pacific-10-gigabits-second.html">Data Tsunami: BGI Transfers Genomic Data Across Pacific at Nearly 10 Gigabits/Second </a><br /><br /><a href="/news/07/16/12/Inside-the-Box-Solutions-data-sharing-life-sciences.html">INSIDE THE BOX: Solutions for Data Sharing in Life Sciences </a><br /><br /><a href="/2011/02/18/pharma-trend-comment.html">A 2011 Wakeup Call for Pharmaceutical Companies </a><br /><br /><a href="/news/07/23/12/Ion-Torrent-first-entrant-genomics-X-Prize.html">Ion Torrent Named First Entrant in Genomics X Prize Competition </a><br /><br /><a href="/news/02/17/12/Oxford-strikes-first-in-DNA-sequencing-nanopore-wars.html">Oxford Strikes First in DNA Sequencing Nanopore Wars </a><br /></div><br />
+            <div class="th_viewmore"><a href="/bioit_top_headlines.aspx" title="View More">View More Articles</a></div><br />
+	</div>
+
+
+</div><!-- End demo -->
+</div>
+
+
+
+                        </div>
+                        <br />
+                        <div class="contentbox_left">
+                            <div class="contentboxtext_red">
+                                <div class="TextHeaderline">
+                                    <div class="TextHeadertext">
+                                        <div class="maroonheader_left lgtext">
+                                            NEW PRODUCTS</div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div>
+                                    <div id="ctl00_cphContent_ContentBlock4">
+	<div style="padding-left: 20px; float: right; padding-top: 5px; "><a title="Consumer Genetics Conference" href="http://www.consumergeneticsconference.com"><img title="Consumer Genetics Conference" alt="Consumer Genetics Conference" src="/uploadedImages/Bio-IT_World/Products/CGC-Logo DAVE.jpg" border="0" /></a>&#160;</div>
+<p style="font-size:12px">The Consumer Genetics Conference (CGC) covers the key issues facing clinical genetics, personalized medicine, molecular diagnostics, and consumer-targeted DNA applications. It provides a unique outlet where all voices can be heard: pro &amp; con, physician &amp; consumer, research &amp; clinical, academic &amp; corporate, financial &amp; regulatory. This year's event is highlighted by three keynote presentations:</p>
+<ul style="font-size:12px">
+<li style="padding-bottom:8px">Lee Silver, Ph.D., Princeton University <br /><em>Self-Discovery in the Age of Personal Genomes </em>&#160;</li>
+<li style="padding-bottom:8px">Jay Flatley, President and CEO, Illumina <br /><em>The Big Picture: Visions for Personalized Medicine&#160; </em>&#160;</li>
+<li>Kenneth Chahine, Ph.D., J.D., ancestry.com <br /><em>An Inside Look at How AncestryDNA Uses Population Genetics to Enrich Its Online Family History Experience</em>&#160;</li>
+</ul>
+<p style="font-size:12px"><em>For more information and to register, visit:&#160; <a href="http://www.consumergeneticsconference.com"><font color="#0000ff" style="font-size: 9pt; ">www.consumergeneticsconference.com</font></a></em>&#160;</p>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contentbox_featuredvideo">
+                            <div class="contentboxtext">
+                                <div class="TextHeaderline">
+                                    <div class="TextHeadertext">
+                                        <div class="maroonheader lgtext">
+                                            FEATURED VIDEO</div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript" language="javascript" defer="defer">  <!-- 
+ function __LoadListSummaryctl00_cphContent_ListSummary1(args,context){args=context+"&"+args;WebForm_DoCallback('ctl00$cphContent$ListSummary1',args,IAjax.DisplayResult,context,IAjax.DisplayError,false)}function OnListSummaryItemShow(id,tag){__LoadListSummaryctl00_cphContent_ListSummary1(IAjax.getArguements(),'pagerequest=showcontent&__ecmid='+id+'&control=ctl00_cphContent_ListSummary1&__ecmdiv='+tag);}function OnListSummaryBubble(id,width,event){__LoadListSummaryctl00_cphContent_ListSummary1(IAjax.getArguements(),'pagerequest=bubble&__ecmid='+id+'&control=ctl00_cphContent_ListSummary1&bubblewidth='+width+'&X='+EBubble.EventX(event)+'&Y='+EBubble.EventY(event));}  
+ // --> 
+  </script><input type="hidden" class="storeuserData" id="__EkAjaxHiddenctl00_cphContent_ListSummary1" name="__EkAjaxHiddenctl00_cphContent_ListSummary1" value=""/><span id="ctl00_cphContent_ListSummary1">              <div class="featuredVideoContent">        <table width="100%" style="CLEAR: both" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="100%" valign="top"><div style="FLOAT: right"><p style="FONT-FAMILY: &quot;Droid Sans&quot;, sans-serif; FONT-SIZE: 12px; FONT-WEIGHT: 700">Compliments of:</p>
+<img title="Archon Genomics Logo" alt="Archon Genomics Logo" src="/uploadedImages/Bio-IT_World/Featured_Videos/AGXP.jpg" /> </div>
+<a href="javascript:void();"><img width="176" height="96" title="Genomics X PRIZE presented by Express Scripts" alt="Genomics X PRIZE presented by Express Scripts" src="/uploadedImages/Bio-IT_World/Featured_Videos/archonGenomics.jpg" border="0" /></a>  </td>
+</tr>
+</tbody>
+</table>        <div id="videoHtml" style="display:none;visibility:hidden;">          <div style="TEXT-ALIGN: center"><div id="ytplayer"><iframe width="420" height="315" src="http://www.youtube.com/embed/oWC1knVaQHI?showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;playerapiid=ytplayer" frameborder="0" allowfullscreen="1"></iframe>
+ </div>
+</div>        </div>      </div>      <input name="ctl00$cphContent$ListSummary1$ctl00$cphContent$ListSummary1EktronClientManager" type="hidden" id="ctl00_cphContent_ListSummary1_ctl00_cphContent_ListSummary1EktronClientManager" value="EktronJS,EktronThickBoxJS,EktronJsonJS,EktronDmsMenuJS,AjaxScript" /></span>
+                                
+                            </div>
+                        </div>
+                        <br />
+                        <div class="contentbox_newsletter">
+                            <div class="contentboxtext">
+                                <div class="TextHeaderline">
+                                    <div class="TextHeadertext">
+                                        <div class="maroonheader lgtext">
+                                            LATEST NEWSLETTERS</div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="newsletterIMG">
+                                    <img src="http://www.bio-itworld.com/template_images/bioit/newsletters.jpg" width="404px"
+                                        height="45px" border="0" usemap="#Map2" />
+                                    <map name="Map2" id="Map2">
+                                        <area shape="rect" coords="2,7,217,42" href="http://www.bio-itworld.com/BioIT/WeeklyUpdateArchive.aspx" alt="Bio-It World Weekly Update" />
+                                        <area shape="rect" coords="243,2,400,43" href="http://www.ecliniqua.com/eCliniqua_Archive.aspx?t=652&id=86958" alt="Ecliniqua" />
+                                    </map>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <!--End Left Column Content -->
+                <td class="ContentDiv">
+                </td>
+                <!--Middle Column Content -->
+                <td class="bioitContentMiddle">
+                    <div class="hp_socialbm">
+                        <div id="ctl00_cphContent_ContentBlock1">
+	<div class="TextHeadertext"><div class="maroonheader lgtext">Bio-IT World is Sponsored by</div>
+</div>
+<div style="CLEAR: both">  </div>
+<table width="290" align="center" bordercolor="#0000ff" style="MARGIN-LEFT: 15px" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="33%"><p align="center"><a title="&amp;nbsp;&amp;nbsp;" href="http://www.insightpharmareports.com" target="_blank"><img width="97" height="67" title="Insight Pharma Reports" style="WIDTH: 85px; HEIGHT: 62px" alt="Insight Pharma Reports" src="/uploadedImages/Bio-IT_World/IPR_logo_121x84.jpg" border="0" /></a> </p>
+</td>
+<td width="33%"><p align="center"><a title="samsung_revisedLogo_372012" href="http://ad.doubleclick.net/clk;254362528;15189907;q?https://www.samsunggenome.com/" target="_blank"><img width="113" height="80" title="samsung_revisedLogo_372012" style="WIDTH: 83px; HEIGHT: 74px" alt="samsung_revisedLogo_372012" src="/uploadedImages/Bio-IT_World/ci_center_revised_37_2012.jpg" border="0" /></a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+                    </div>
+                    <br />
+                    
+
+
+
+
+  <script type="text/javascript" language="javascript">
+      $(document).ready(function () {
+          $("#accordion").accordion({ header: "h3", collapsible: true, active: false });
+          $("#accordion").accordion("option", "clearStyle", false);
+          $("#accordion").accordion("option", "icons", false);
+      });
+  </script>
+
+    <div id="accordion">
+	<h3>
+        <a href="#">Upcoming Industry Events and Webinars</a>
+    </h3>
+    <div>
+	    <div id="ctl00_cphContent_CenterAccordian1_cbEvents">
+	<p><a title="Recorded Webinars" href="http://www.bio-itworld.com/bio-it-webinars/"><img title="Recorded Webinars" alt="Recorded Webinars" src="/uploadedImages/Bio-IT_World/Configuration/RecWebinars_Icon_SiteBanners.jpg" border="0" /></a> </p>
+<p class="Abstract"><font style="FONT-SIZE: 9pt"><font style="FONT-SIZE: 8pt"><font style="FONT-SIZE: 8pt"><font color="#000000" face="Verdana"><a href="http://www.bio-itworldsymposia.com/Bioitsymposia_Content.aspx?ekfrm=115999">Bridging Enterprise and Cloud Infrastructure for Effective Global Collaboration in Genomic Research</a><br /><em>Sponsored by Aspera</em> </font></font></font></font> </p>
+<p class="Abstract"> <a title="Complete Webinar Listing" href="http://www.bio-itworld.com/bio-it-webinars/">Complete Webinar Listing</a> </p>
+<p><a title="Upcoming Webinars" href="http://www.bio-itworld.com/bio-it-webinars/"><img title="Upcoming Webinars" alt="Upcoming Webinars" src="/uploadedImages/Bio-IT_World/Configuration/UpWebinars_Icon_SiteBanners.jpg" border="0" /></a> </p>
+<p><font style="FONT-SIZE: 8pt"><font style="FONT-SIZE: 8pt"><a title="How Health Plans Review New Diagnostic Technology: What YouDon’t Know Can Hurt You" href="http://www.healthtech.com/zpay-sept/"><font face="Verdana" style="FONT-SIZE: 8pt">How Health Plans Review New Diagnostic Technology: What You Don’t Know Can Hurt You</font></a><font face="Verdana" style="FONT-SIZE: 8pt"><br /><font style="FONT-SIZE: 8pt"><font face="Verdana" style="FONT-SIZE: 8pt">September 20, 2012 • 11:30 AM EST</font></font></font></font></font> </p>
+<p><font style="FONT-SIZE: 8pt"><font style="FONT-SIZE: 8pt"><font face="Verdana" style="FONT-SIZE: 8pt"><font style="FONT-SIZE: 8pt"><font face="Verdana" style="FONT-SIZE: 8pt"><a title="An Informatics Framework for Translational Research 2.0" href="http://www.bio-itworld.com/bioit_webinar.aspx?id=117904">An Informatics Framework for Translational Research 2.0</a><font face="Verdana" style="FONT-SIZE: 8pt"><br /><font style="FONT-SIZE: 8pt"><font face="Verdana" style="FONT-SIZE: 8pt">September 25, 2012</font></font></font><font style="FONT-SIZE: 8pt"> </font><font face="Verdana" size="2"><font style="FONT-SIZE: 8pt">•</font> </font>1:00 PM EST</font></font> </font> </font> </font> </p>
+<p><a title="Upcoming Events" href="/Featured_Events.aspx"><img title="Upcoming Events" alt="Upcoming Events" src="/uploadedImages/Bio-IT_World/Configuration/UpEvents_Icon_SiteBanners.jpg" border="0" /></a> <font style="FONT-SIZE: 11pt"><font style="FONT-SIZE: 9pt"><font style="FONT-SIZE: 9pt"><font face="Verdana" style="FONT-SIZE: 8pt"><br /><br /></font></font><a title="Bio-IT Cloud Summit" href="http://www.bio-itcloudsummit.com/"><font face="Verdana" style="FONT-SIZE: 8pt">Bio-IT Cloud Summit</font></a><br /><font style="FONT-SIZE: 9pt"><font face="Verdana" style="FONT-SIZE: 8pt">September 11-13, 2012 • San Francisco, CA<br /><br /></font></font><a title="High Performance Computing" href="http://www.bio-itcloudsummit.com/High-Performance-Computing"><font face="Verdana" style="FONT-SIZE: 8pt">High Performance Computing</font></a><br /><font style="FONT-SIZE: 9pt"><font face="Verdana" style="FONT-SIZE: 8pt">September 11-12, 2012 • San Francisco, CA<br /><br /></font></font><a title="Cloud-Optimized Networks" href="http://www.bio-itcloudsummit.com/Cloud-Optimized-Networks"><font face="Verdana" style="FONT-SIZE: 8pt">Cloud-Optimized Networks</font></a><br /><font style="FONT-SIZE: 9pt"><font face="Verdana" style="FONT-SIZE: 8pt">September 11-12, 2012 • San Francisco, CA<br /><br /></font></font><a title="Data-Focused Cloud Applications" href="http://www.bio-itcloudsummit.com/Data-Focused-Cloud-Applications"><font face="Verdana" style="FONT-SIZE: 8pt">Data-Focused Cloud Applications</font></a><br /><font face="Verdana" style="FONT-SIZE: 8pt">September 12-13, 2012 • San Francisco, CA <br /><br /><a title="Discovery on Target" href="http://www.discoveryontarget.com/">Discovery on Target</a><br />October 1-3, 2012 • Boston, MA </font></font></font> </p>
+<p><font style="FONT-SIZE: 11pt"><font style="FONT-SIZE: 9pt"><font color="#333333" face="Verdana" size="2" style="FONT-SIZE: 8pt"><a title="Bio-IT World Conference &amp;amp; Expo Europe" href="http://www.bio-itworldexpoeurope.com/">Bio-IT World Conference &amp; Expo Europe</a><br />October 9-11, 2012 • Vienna Austria </font></font></font> </p>
+<p><font style="FONT-SIZE: 11pt"><font style="FONT-SIZE: 9pt"><font color="#333333" face="Verdana" size="2" style="FONT-SIZE: 8pt"><strong><a title="EDM and ERS/eCTD: The Content Continuum from Document Authoring through Submission Delivery" href="http://www.diahome.org/en/Meetings-and-Training/Find-Meetings-and-Training/Meeting-Details.aspx?ProductID=27425&amp;EventType=Meeting&amp;FlagshipMeetingFlag=False">EDM and ERS/eCTD: The Content Continuum from Document Authoring through Submission Delivery</a> </strong>October 9-11, 2012<font face="Verdana" size="2"> •</font> Baltimore, MD</font></font></font> </p>
+<p><font style="FONT-SIZE: 11pt"><font style="FONT-SIZE: 9pt"><font color="#333333" face="Verdana" size="2" style="FONT-SIZE: 8pt"><a title="Electronic Data in Clinical Trials" href="http://www.scopesummit.com/Electronic-Data">Electronic Data in Clinical Trials</a><br />February 5-6, 2013 • Miami, FL <br /><br /></font></font></font><font face="Verdana" style="FONT-SIZE: 8pt"> </font><a class="featured" href="/Featured_Events.aspx" target="_blank"><font face="Verdana" style="FONT-SIZE: 8pt">Complete Event Listing</font></a> </p>
+</div>
+    </div>
+	<h3><a href="#">Free Downloads: Whitepapers, Podcasts, Webinars</a></h3>
+	<div>
+        <a id="ctl00_cphContent_CenterAccordian1_HyperLink1" href="/BioIT/Whitepapers.aspx"><img src="template_images/BioIT/AccordionHeaders/Whitepapers_Icon_SiteBanners.jpg" style="border-width:0px;" /></a>        
+        <div class="contentboxtext_wp">
+            <span id="ctl00_cphContent_CenterAccordian1_coll_whitepapers"><table><tbody><tr><td class="wp_h_image"><a href="http://www.bio-itworld.com/quantum/big-data" target="_blank"><img src="/uploadedImages/Bio-IT_World/Whitepaper_SmartForms/quantum_logo.jpg" alt="Quantum1" style="border:0px" /></a></td><td class="wp_h_textblock_homepage"><div class="wp_h_title">Big Data:  Managing Explosive Growth </div><div class="wp_h_sponsoredby">
+                Sponsored by Quantum</div><div class="wp_h_download_link"><a href="http://www.bio-itworld.com/quantum/big-data" target="_blank">Complimentary Download</a></div></td></tr><tr><td class="wp_h_image"><a href="http://www.bio-itworld.com/quantum/Swiss-Institute-Bioinformatics/" target="_blank"><img src="/uploadedImages/Bio-IT_World/Whitepaper_SmartForms/quantum_logo.jpg" alt="Quantum1" style="border:0px" /></a></td><td class="wp_h_textblock_homepage"><div class="wp_h_title">The Swiss Institute of Bioinformatics Reduces Cost of Multi-Petabyte Storage by 50% with Quantum StorNext Software</div><div class="wp_h_sponsoredby">
+                Sponsored by Quantum</div><div class="wp_h_download_link"><a href="http://www.bio-itworld.com/quantum/Swiss-Institute-Bioinformatics/" target="_blank">Complimentary Download</a></div></td></tr><tr><td class="wp_h_image"><a href="http://www.bio-itworld.com/parexel/observe-research/ " target="_blank"><img src="/uploadedImages/Bio-IT_World/Whitepaper_SmartForms/Parexel_120x60.jpg" alt="PAREXEL" style="border:0px" /></a></td><td class="wp_h_textblock_homepage"><div class="wp_h_title">Unlocking the Value of Observational Research</div><div class="wp_h_subtitle">5 things every researcher must know</div><div class="wp_h_sponsoredby">
+                Sponsored by PAREXEL</div><div class="wp_h_download_link"><a href="http://www.bio-itworld.com/parexel/observe-research/ " target="_blank">Complimentary Download</a></div></td></tr></tbody></table><input name="ctl00$cphContent$CenterAccordian1$coll_whitepapers$ctl00$cphContent$CenterAccordian1$coll_whitepapersEktronClientManager" type="hidden" id="ctl00_cphContent_CenterAccordian1_coll_whitepapers_ctl00_cphContent_CenterAccordian1_coll_whitepapersEktronClientManager" value="EktronJS,EktronThickBoxJS,EktronJsonJS,EktronDmsMenuJS,AjaxScript" /></span>
+        </div>
+        <div class="aligncenter">
+            <a title="More White Papers &amp; Special Reports" href="/BioIT/Whitepapers.aspx">More Whitepapers &amp; Special Reports</a>
+        </div><br />
+        
+        <a id="ctl00_cphContent_CenterAccordian1_HyperLink2" href="/BioIT/Podcasts.aspx"><img src="template_images/BioIT/AccordionHeaders/Podcast_Icon_SiteBanners.jpg" style="border-width:0px;" /></a>        
+        <div class="contentboxtext_wp">
+            <span id="ctl00_cphContent_CenterAccordian1_coll_podcasts"><table><tbody><tr><td class="wp_h_image"><a href="http://www.bio-itworld.com/waters/analog-to-digital/" target="_blank"><img src="/uploadedImages/Bio-IT_World/Latest_Podcasts/water images.jpg" alt="Waters" style="border:0px" /></a></td><td class="wp_h_textblock_homepage"><div class="wp_h_title">Analog to Digital (A/D) Converters.  What are they and what is their role in data integrity?</div><div class="wp_h_sponsoredby">
+                Sponsored by Waters</div><div class="wp_h_download_link"><a href="http://www.bio-itworld.com/waters/analog-to-digital/" target="_blank">Listen Now</a></div></td></tr><tr><td class="wp_h_image"><a href="http://mendelspod.com/podcast" target="_blank"><img src="/uploadedImages/Bio-IT_World/Latest_Podcasts_SmartForms/MendelsPod150.jpg" alt="Mendals Pod Podcast" style="border:0px" /></a></td><td class="wp_h_textblock_homepage"><div class="wp_h_title">A Revolution in Data Gathering: John Wilbanks</div><div class="wp_h_sponsoredby">
+                Sponsored by mendelspod</div><div class="wp_h_download_link"><a href="http://mendelspod.com/podcast" target="_blank">Listen Now</a></div></td></tr><tr><td class="wp_h_image"><a href="http://www.healthtech.com/Conferences_Content.aspx?ekfrm=117097" target="_blank"><img src="/uploadedImages/Bio-IT_World/Latest_Podcasts_SmartForms/Bio-IT_locations_CLD.jpg" alt="Bio-IT Cloud Summit" style="border:0px" /></a></td><td class="wp_h_textblock_homepage"><div class="wp_h_title">Open Flow Tackles Network Automation and Programmability for Cloud Implementations</div><div class="wp_h_sponsoredby">
+                Sponsored by Bio-IT World</div><div class="wp_h_download_link"><a href="http://www.healthtech.com/Conferences_Content.aspx?ekfrm=117097" target="_blank">Listen Now</a></div></td></tr></tbody></table><input name="ctl00$cphContent$CenterAccordian1$coll_podcasts$ctl00$cphContent$CenterAccordian1$coll_podcastsEktronClientManager" type="hidden" id="ctl00_cphContent_CenterAccordian1_coll_podcasts_ctl00_cphContent_CenterAccordian1_coll_podcastsEktronClientManager" value="EktronJS,EktronThickBoxJS,EktronJsonJS,EktronDmsMenuJS,AjaxScript" /></span>
+        </div>
+           <div class="aligncenter">
+            <a title="More Podcasts" href="/BioIT/Podcasts.aspx">More Podcasts</a>
+        </div>
+	</div>
+	<h3><a href="#">Careers</a></h3>
+        <div>
+        <a id="ctl00_cphContent_CenterAccordian1_HyperLink3" href="/BioIT/JobOpenings.aspx"><img src="template_images/BioIT/AccordionHeaders/Careers_Icon_SiteBanners.jpg" style="border-width:0px;" /></a>        
+            <script type="text/javascript" language="javascript" defer="defer">  <!-- 
+ function __LoadListSummaryctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities(args,context){args=context+"&"+args;WebForm_DoCallback('ctl00$cphContent$CenterAccordian1$ListSummary_jobopportunities',args,IAjax.DisplayResult,context,IAjax.DisplayError,false)}function OnListSummaryItemShow(id,tag){__LoadListSummaryctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities(IAjax.getArguements(),'pagerequest=showcontent&__ecmid='+id+'&control=ctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities&__ecmdiv='+tag);}function OnListSummaryBubble(id,width,event){__LoadListSummaryctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities(IAjax.getArguements(),'pagerequest=bubble&__ecmid='+id+'&control=ctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities&bubblewidth='+width+'&X='+EBubble.EventX(event)+'&Y='+EBubble.EventY(event));}  
+ // --> 
+  </script><input type="hidden" class="storeuserData" id="__EkAjaxHiddenctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities" name="__EkAjaxHiddenctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities" value=""/><span id="ctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities">                    <div class="CareerPosting">                      	<p><a href="mailto:jobs@bioteam.net"><img title="bioteam logo" border="0" alt="bioteam logo" src="/uploadedImages/Bio-IT_World/Job_Opportunities/Bioteam_LOGO_CMYK_revised.jpg" /></a><br /><strong>BioTeam Consultant</strong><br />
+Contact <strong> </strong><a href="mailto:jobs@bioteam.net">jobs@bioteam.net</a></p><br />		<a href="/BioIT_Content.aspx?id=113570">read more</a>        </div>              <div class="CareerPosting">                      	<p>  <img title="NIH" alt="NIH" src="/uploadedImages/Bio-IT_World/Job_Opportunities/NIH.jpg" /> </p>
+<p><strong><font face="Calibri">Scientific Information Officer (Staff Scientist) </font> </strong><br /><font face="Calibri">National Institutes of Health - Bethesda, MD (Washington D.C. Metro Area)</font>Apply by e-mail to Michael Hansen, c/o: Brian Rabin <a href="mailto:brian.rabin@nih.gov">brian.rabin@nih.gov</a></p><br />		<a href="/BioIT_Content.aspx?id=115555">read more</a>        </div>              <div class="CareerPosting">                      	<p><a href="mailto:Recruiting@yourencore.com"><strong><img title="your encore logo" border="0" alt="your encore logo" src="/uploadedImages/Bio-IT_World/Job_Opportunities/YourEncore-Logo-lg.png" width="193" height="61" /></strong></a> <br /><strong>Senior Scientist - Microbiology<br />
+Philadelphia/NJ Area</strong>Send resume and contact information to <a href="mailto:Recruiting@yourencore.com">Recruiting@yourencore.com</a></p>
+<p> </p><br />		<a href="/BioIT_Content.aspx?id=113697">read more</a>        </div>          <input name="ctl00$cphContent$CenterAccordian1$ListSummary_jobopportunities$ctl00$cphContent$CenterAccordian1$ListSummary_jobopportunitiesEktronClientManager" type="hidden" id="ctl00_cphContent_CenterAccordian1_ListSummary_jobopportunities_ctl00_cphContent_CenterAccordian1_ListSummary_jobopportunitiesEktronClientManager" value="EktronJS,EktronThickBoxJS,EktronJsonJS,EktronDmsMenuJS,AjaxScript" /></span>
+            <br />
+            <a title="More Life Science Jobs" href="/BioIT/JobOpenings.aspx">More Life Science Jobs</a> | <a title="Add a Job Listing" href="/BioIT/AddJobOpening.aspx">Add a Job Listing</a>
+        </div>
+	<h3><a href="#">Related Products</a></h3>
+        <div>
+            <img id="ctl00_cphContent_CenterAccordian1_Image5" src="template_images/BioIT/AccordionHeaders/BonusEditions_Icon_SiteBanners.jpg" style="border-width:0px;" />
+            <div class="greysqlinks">
+                <div id="ctl00_cphContent_CenterAccordian1_ContentBlock3">
+	<br style="clear: both;" />
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td id="ViewHistory_tdcontlbl" class="title-header">&#160;</td>
+</tr>
+<tr>
+<td id="ViewHistory_divContentHtml" valign="top" height="100%"><div style="padding-left: 20px; float: right; padding-top: 5px; "><img src="http://www.bio-itworld.com/uploadedImages/Bio-IT_World/Products/BITW_BonusCloudEdition-100x130.jpg" />&#160;</div>
+<p style="padding-bottom: 10px; font-family: Arial; font-size: 14px; font-weight: bold; ">Order Today!</p>
+<ul>
+<li><a href="http://www.bio-itworld.com/Bio-ITProducts">Clinical Trials Bonus Edition – <font color="#ff0000">NEW</font></a>&#160;</li>
+<li><a href="http://www.bio-itworld.com/Bio-ITProducts">NGS Software Bonus Edition – <font color="#ff0000">NEW</font></a>&#160;</li>
+<li><a href="http://www.bio-itworld.com/Bio-ITProducts">Regulatory Issues Bonus Edition – <font color="#ff0000">NEW</font></a>&#160;</li>
+<li><a href="http://www.bio-itworld.com/Bio-ITProducts">Cloud Computing Bonus Edition</a>&#160;</li>
+<li><a href="http://www.bio-itworld.com/Bio-ITProducts">Plus DVDs and more!</a>&#160;</li>
+</ul>
+
+
+&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+            </div>
+            <img id="ctl00_cphContent_CenterAccordian1_Image6" src="template_images/BioIT/AccordionHeaders/DVDs_Icon_SiteBanners.jpg" style="border-width:0px;" />
+            <div class="TextHeaderline">
+                <div class="TextHeadertext">
+                    <div id="ctl00_cphContent_CenterAccordian1_ContentBlock4">
+	
+</div>
+                </div>
+            </div>
+            <br />
+            <div class="greysqlinks">
+                
+<style type="text/css">
+    .CDDVDList { width: 318px; }
+    .CDDVD {display: inline-block; margin: 10px 0px 0px 0px;}
+    .CDDVD-image { float: left; width: 80px; height: 58px;}
+    .CDDVD-image img { width: 80px; }
+    .CDDVD-description { padding-left: 10px; float: right; width: 218px;}
+</style>
+
+
+        <div id="upcomingCDDVDList" class="CDDVDList">
+            
+        <div id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl0_Div1" class="CDDVD">
+            <div class="CDDVD-image"><a id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl0_HyperLink2" href="http://www.bio-itworldexpo.com/IT-Infrastructure-Hardware" target="_blank"><img src="http://chi-imagehost.com/cmshost/cd/2012/ith.jpg" style="border-width:0px;" /></a></div>
+            <div class="CDDVD-description">
+                <div><a id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl0_HyperLink1" href="http://www.bio-itworldexpo.com/IT-Infrastructure-Hardware" target="_blank">IT Infrastructure-Hardware</a></div>
+                <div><span id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl0_Label2">April 25-26, 2012 • Boston, MA </span></div>
+            </div>
+        </div>
+    
+        <div id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl1_Div1" class="CDDVD">
+            <div class="CDDVD-image"><a id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl1_HyperLink2" href="http://www.bio-itworldexpo.com/IT-Infrastructure-Software" target="_blank"><img src="http://chi-imagehost.com/cmshost/cd/2012/isf.jpg" style="border-width:0px;" /></a></div>
+            <div class="CDDVD-description">
+                <div><a id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl1_HyperLink1" href="http://www.bio-itworldexpo.com/IT-Infrastructure-Software" target="_blank">IT Infrastructure-Software</a></div>
+                <div><span id="ctl00_cphContent_CenterAccordian1_BioITDVDList1_ListView1_ctrl1_Label2">April 25-26, 2012 • Boston, MA </span></div>
+            </div>
+        </div>
+    
+        </div>
+    
+
+            </div>
+        </div>
+
+       </div>
+
+                    <br />
+                    <div class="ad">
+                        <!-- IMU -->
+                        <div class="AdIMU" id="AdIMU">
+                            <!--/* isocket Javascript Tag v2.0 */--><script type="text/javascript"><!--
+//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4664&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//--></script><noscript><a href="http://d.adsbyisocket.com/ck.php?n=a7d39c62&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4664&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a7d39c62" border="0" alt="" /></a></noscript> 
+                        </div>
+                    </div>
+                    <div class="bioitcontentboxmid top_headlines">
+                        <div class="floatleft sponsored_links" style="width: 100%;">
+                            <div class="contentbox">
+                                <div class="contentboxtext">
+                                    <div class="TextHeaderline">
+                                        <div class="TextHeadertext">
+                                            <div class="maroonheader lgtext">
+                                                SPONSORED LINKS</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="greysqlinks">
+                                        <div id="ctl00_cphContent_ContentBlock_SponsoredLinks">
+	<ul>
+<li><a title="FREE DEMO – iMedNet™ EDC – Build your own studies quickly, easily, and affordably." href="http://info.mednetstudy.com/request-a-demo--bioitworld2012 ">FREE DEMO – iMedNet™ EDC – Build your own studies quickly, easily, and affordably.</a></li>
+<li><a title="Free GPU Test Drive – Run Science Apps 5x Faster with NVIDIA Kepler" href="http://www.exxactcorp.com/testdrive">Free GPU Test Drive – Run Science Apps 5x Faster with NVIDIA Kepler</a> </li>
+<li><a title=" FREE Webinar: Comprehensive modeling and simulation for drug discovery." href="https://www3.gotomeeting.com/register/968920694">FREE Webinar: Comprehensive modeling and simulation for drug discovery.</a> </li>
+<li><a title="Free whitepaper: Unlocking the value of observational research" class="blue" href="http://www.bio-itworld.com/parexel/observe-research/">FREE WHITEPAPER: Unlocking the value of observational research</a>   </li>
+<li><a title="FREE WHITEPAPER:  Big Data: Managing Explosive Growth" href="http://www.bio-itworld.com/quantum/big-data">FREE WHITEPAPER:  Big Data: Managing Explosive Growth</a> </li>
+<li><a title="FREE WHITEPAPER:  The Swiss Institute of Bioinformatics Reduces Cost of Multi-Petabyte Storage by 50%" href="http://www.bio-itworld.com/quantum/Swiss-Institute-Bioinformatics/">FREE WHITEPAPER:  The Swiss Institute of Bioinformatics Reduces Cost of Multi-Petabyte Storage by 50%</a><strong> </strong> </li>
+<li> <a title="FREE PODCAST:  Analog to Digital (A/D) Converters. What are they &amp;amp; what is their role in data integrity? " href="http://www.bio-itworld.com/waters/analog-to-digital/">FREE PODCAST:  Analog to Digital (A/D) Converters. What are they &amp; what is their role in data integrity?</a> </li>
+<li> <a title="Targeted sequencing requires targeted analysis. Click here to learn more." href="http://ad.doubleclick.net/clk;258012511;15189907;e?http://www.omixon.com">Targeted sequencing requires targeted analysis. Click here to learn more.</a>    </li>
+<li> <a title="FREE eBook: Don’t run large trials without IVRS! Read the eBook." href="http://ad.doubleclick.net/clk;258598906;15189907;f?http://ittybitty.bz/JUN-BIOIT-Text-IVRS-eBook">FREE eBook: Don’t run large trials without IVRS! Read the eBook.</a>     </li>
+<li> <a title="White Paper: Improving Drug Manufacturing Quality with a SDMS " class="blue" href="http://ad.doubleclick.net/clk;251850485;15189907;r?http://ad.doubleclick.net/clk;251740511;75825024;y">FREE WHITEPAPER: Improving Drug Manufacturing Quality with a SDMS</a>    </li>
+<li> <a title="Free WhitePaper: Increase Innovation with Improved Scientific Data Management" class="blue" href="http://ad.doubleclick.net/clk;233635522;15189907;k?http://accelrys.com/resource-center/white-papers/it-whitepaper-bioittextlink.php" target="_blank">FREE WHITEPAPER: Increase Innovation with Improved Scientific Data Management</a>        </li>
+<li> <a title="Case Study - Illumina Sequencing Lab: Improve user adoption, SpeedLIMS implementation" class="blue" href="http://ad.doubleclick.net/clk;256234918;15189907;t?http://learn.genologics.com/BioITWorldFastTrackCaseStudy_LandingPG.html">FREE CASE STUDY - Illumina Sequencing Lab: Improve user adoption, Speed LIMS implementation</a>    </li>
+<li> <a title="Discover Timaeus 5, an on-demand eClinical platform for Study Design Through Reporting  " class="blue" href="http://ad.doubleclick.net/clk;236278078;15189907;w?http://www.cmedtechnology.com/t5-preview/" target="_blank">Discover Timaeus 5, an on-demand eClinical platform for Study Design Through Reporting</a>       </li>
+</ul>
+<table width="90%" align="center" style="BORDER-BOTTOM: black 0px solid; BORDER-LEFT: black 0px solid; BORDER-TOP: black 0px solid; BORDER-RIGHT: black 0px solid" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px"><p class="Abstract"><font face="null" style="FONT-SIZE: 9pt">For more information about Sponsored Links, contact </font><font color="#000000"><font face="null" style="FONT-SIZE: 9pt"> </font><a style="FONT-WEIGHT: bold; TEXT-DECORATION: underline" href="mailto:jmulhern@healthtech.com"><font color="#000000" face="null" style="FONT-SIZE: 9pt">Jay Mulhern</font></a><font face="null" style="FONT-SIZE: 9pt"> at 781.972.1359,<br />or visit: </font></font><strong><font face="null" style="FONT-SIZE: 9pt"> </font><a href="http://www.chimediagroup.com/"><font color="#0000ff" face="null" style="FONT-SIZE: 9pt">www.chimediagroup.com</font></a><font face="null" style="FONT-SIZE: 9pt"> </font></strong><font style="FONT-SIZE: 9pt"><font face="null"><font color="#000000" style="FONT-SIZE: 9pt"> </font> </font></font> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </td>
+                <!--End Middle Column Content -->
+                <td class="ContentDiv">
+                </td>
+                <!--Right Column Content -->
+                <td class="bioitContentRight NoPrint">
+                    <div class="bioitcontentboxrt">
+                        
+
+
+<div id="ctl00_cphContent_SearchForm_pnlSearchForm">
+	
+    <div class="By">
+    
+        
+    
+    
+    </div>
+
+    <div class="SearchTextAndButton">
+        <div class="TextBox">
+            <input name="ctl00$cphContent$SearchForm$txtSearch" type="text" size="18" id="ctl00_cphContent_SearchForm_txtSearch" autocomplete="off" />
+        </div>
+        <div class="TopSearches">
+            
+        </div>
+        <div class="Button">
+        <input type="submit" name="ctl00$cphContent$SearchForm$btnSearch" value="Search" id="ctl00_cphContent_SearchForm_btnSearch" />
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+                        <br />
+                        
+
+<div class="twitterFeed">
+    <h3>TWITTER FEED</h3>
+    <div class="tweet"></div>
+</div>
+                        
+                        <br />
+                        <div class="ad NoPrint">
+                            <!-- This is the skyscraper tag -->
+                            <div class="AdSky">
+                            </div>
+                        </div>
+                        <div class="ad NoPrint">
+                            <div class="AdButton1">
+                                <!--/* isocket Javascript Tag v2.0 */--><script type="text/javascript"><!--
+//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4646&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//</span>>
+--></script><noscript><a href="http://d.adsbyisocket.com/ck.php?n=a2132b10&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4646&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a2132b10" border="0" alt="" /></a></noscript>
+                                
+                            </div>
+                            <!-- 160/160 -->
+                        </div>
+                        <div class="ad NoPrint">
+                            <div class="AdButton2">
+                                <!--/* isocket Javascript Tag v2.0 */--><script type="text/javascript"><!--
+//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4679&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//--></script><noscript><a href="http://d.adsbyisocket.com/ck.php?n=ac77285b&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4679&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=ac77285b" border="0" alt="" /></a></noscript> 
+                            </div>
+                            <!-- 160/160 -->
+                        </div>
+                        <div class="ad NoPrint">
+                            <!-- 160/160 -->
+                            <div class="AdButton3">
+                                <!--/* isocket Javascript Tag v2.0 */--><script type="text/javascript"><!--
+//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4441&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//</span>>
+--></script><noscript><a href="http://d.adsbyisocket.com/ck.php?n=a3fb6245&amp;cb=INSERT_RANDOM_NUMBER_HERE" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4441&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a3fb6245" border="0" alt="" /></a></noscript> 
+                            </div>
+                        </div>
+                        <div style="clear: both;">
+                        </div>
+                    </div>
+                </td>
+                <!--End Right Column Content -->
+            </tr>
+        </table>
+    </div>
+
+        <!-- End Content-->
+        <!-- End Content-->
+        <div class="footeradbannertop NoPrint">
+            <!-- This is the leaderboard tag for Bio-it -->
+            <div class="BottomAdRight">
+               <script type="text/javascript"><!--
+var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4681&block=1");
+   document.write ('&cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&exclude=" + document.MAX_used);
+   document.write (document.charset ? '&charset='+document.charset : (document.characterSet ? '&charset='+document.characterSet : ''));
+   document.write ("&loc=" + escape(window.location));
+   if (document.referrer) document.write ("&referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+--></script> <noscript><a href="http://d.adsbyisocket.com/ck.php?n=abd07716&amp;cb=1234567890" target="_blank"><img src="http://d.adsbyisocket.com/avw.php?zoneid=4681&amp;cb=1234567890&amp;n=abd07716" border="0" alt="" /></a></noscript> 
+            </div>
+            <div class="AdLeaderBoardBottom">
+               <!--/* isocket Javascript Tag v2.0 */--><script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d.adsbyisocket.com/ajs.php':'http://d.adsbyisocket.com/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=4665&amp;block=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//</span>>--></script><noscript><a href='http://d.adsbyisocket.com/ck.php?n=ad6beb58&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://d.adsbyisocket.com/avw.php?zoneid=4665&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=ad6beb58' border='0' alt='' /></a></noscript> 
+            </div>
+        </div>
+        <div class="fotteradbannernav">
+            <div id="ctl00_ContentBlock_FooterReprint">
+	<p><font color="#000000">For reprints and/or copyright permission, please contact </font><font color="#000000"> Jay Mulhern, (781) 972-1359,</font> <a href="mailto:jmulhern@healthtech.com">jmulhern@healthtech.com</a><font color="#000000">.</font> </p>
+</div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <!--Content-->
+    <div id="footerContainer">
+        <div id="ctl00_ContentBlock_footer">
+	<div id="footerwrapper">
+<!--[if IE]>
+<div id="footerwrapper" style="margin-top:-20px; width:1000px;">
+<![endif]-->
+
+
+<!--[if IE 8]>
+<p align="center" style="POSITION: absolute; margin-top:-60px; WIDTH: 1000px">
+<img src="http://www.chicorporate.com/swf/corporate/20-years.png" />
+</p>
+<![endif]-->
+
+<!--[if IE 7]>
+<p align="center" style="POSITION: absolute; MARGIN: -60px 0 0 -1000px; padding:0; WIDTH: 1000px">
+<img src="http://www.chicorporate.com/swf/corporate/20-years.png" />
+</p>
+<![endif]-->
+<!--[if !IE]><!-->
+<p align="center" style="POSITION: absolute; margin-top:-60px; WIDTH: 1000px">
+<img src="http://www.chicorporate.com/swf/corporate/20-years.png" />
+</p>
+<!--<![endif]-->
+
+
+
+
+<div id="contactInfo"><a href="http://www.chicorporate.com"><img title="Cambridge Healthtech Institute" alt="Cambridge Healthtech Institute" src="http://chi-imagehost.com/cmshost/footer/CHI-logo.jpg" /></a> <p>250 First Avenue Suite 300<br />Needham, MA 02494<br />P: 781.972.5400<br />F: 781.972.5425<br />E: <a href="mailto:chi@healthtech.com">chi@healthtech.com</a><br />&#160;</p>
+</div>
+<div id="portals"><div class="FooterSectionTitle"><strong>life science portals</strong>&#160;</div>
+<div id="portalsLeftColumn"><p><a href="http://biologicaltherapeutics.chicorporate.com/">biological therapeutic products</a><br /><a href="http://biomarkers.chicorporate.com/">biomarkers &amp; diagnostics</a><br /><a href="http://biopharmastrategy.chicorporate.com/">biopharma strategy</a><br /><a href="http://bioprocessing.chicorporate.com/">bioprocess &amp; manufacturing</a><br /><a href="http://chemistry.chicorporate.com/">chemistry</a><br /><a href="http://clinicaltrials.chicorporate.com/">clinical trials &amp; translational medicine</a><br /><a href="http://druganddevice.chicorporate.com/">drug &amp; device safety</a><br />&#160;</p>
+</div>
+<div id="portalsRightColumn"><p><a href="http://drugdevelopment.chicorporate.com/">drug discovery &amp; development</a><br /><a href="http://drugtargets.chicorporate.com/">drug targets</a><br /><a href="http://genomics.chicorporate.com/">genomics</a><br /><a href="http://healthcare.chicorporate.com/">healthcare</a><br /><a href="http://it.chicorporate.com/">it &amp; informatics</a><br /><a href="http://techtools.chicorporate.com/">technology &amp; tools for life science</a><br /><a href="http://therapeutics.chicorporate.com/">therapeutic indications</a><br />&#160;</p>
+</div>
+</div>
+<div id="divisions"><div class="FooterSectionTitle"><strong>chi divisions</strong>&#160;</div>
+<p><a href="http://www.healthtech.com/">conferences</a><br /><a href="http://www.insightpharmareports.com/">reports</a><br /><a href="http://www.barnettinternational.com/">barnett educational services</a><br /><a href="http://www.chacorporate.com/">consulting</a><br /><a href="http://www.chimediagroup.com/">publications &amp; <span class="lc">e</span>Newsletters</a><br /><a href="http://proservices.healthtech.com/">professional services</a><br />&#160;</p>
+</div>
+<div id="mainLinks"><p><a href="http://www.chicorporate.com/executive_team">executive team</a><br /><a href="http://www.chicorporate.com/corporate_pages.aspx?id=108787">testimonial</a>s<br /><a href="http://www.chicorporate.com/corporate_pages.aspx?id=46">chi timeline</a><br /><a href="http://www.healthtech.com/mailinglist.aspx">mailing list</a><br /><a href="http://www.chicorporate.com/corporate_pages.aspx?id=110668">careers</a>&#160;</p>
+<div id="hr" class="hr"><hr />
+&#160;</div>
+<p><a href="http://www.chicorporate.com/Corporate/RequestInformation.aspx">request information</a><br /><a href="http://www.chicorporate.com/Corporate_Content.aspx?id=86330">site map</a><br /><a href="http://www.chicorporate.com/calendars/elearning">eLearning Calendar</a><br /><a href="http://www.chicorporate.com/Corporate/PrivacyPolicy.aspx">privacy policy</a><br />&#160;</p>
+</div>
+</div>
+</div>
+    </div>
+    <!--End Footer-->
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_ScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.AutoCompleteBehavior, {"contextKey":"Bio-IT","delimiterCharacters":"","id":"ctl00_cphContent_SearchForm_autoComplete1","serviceMethod":"GetCompletionList","servicePath":"WSHelpers/AutoComplete.asmx","useContextKey":true}, null, null, $get("ctl00_cphContent_SearchForm_txtSearch"));
+});
+//]]>
+</script>
+</form>
+    <script language="javascript" type="text/javascript" src="/javascript/EktronFixes.js"></script>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct = "UA-912037-7";
+        urchinTracker();
+    </script>
+    <script type="text/javascript"><!--
+adroll_adv_id = "DCFZUIUXPFGEBLLKBFJIZP";
+adroll_pix_id = "G7LWMIQK2RARFEUMMDTGLQ";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+--></script>
+    
+</body>
+</html>

@@ -1,0 +1,511 @@
+<base href="http://www.lassp.cornell.edu/LASSPTools/LASSPTools.html">
+<HTML>
+<HEAD>
+<TITLE>LASSPTools</TITLE>
+<link rel="stylesheet" href="http://www.lassp.cornell.edu/sethna/sethna.css">
+</HEAD>
+<BODY>
+<H1>LASSPTools:</H1>
+<H2>Graphical and Numerical Extensions to Unix</H2>
+
+<A NAME="toc"><B>Table of Contents</B></A><P>
+<UL>
+<LI><A NAME="toc2" HREF="#sect2">OVERVIEW</A></LI>
+<LI><A NAME="toc3" HREF="#sect3">SETUP</A></LI>
+<LI><A NAME="toc5" HREF="#sect5">SOURCE AND BINARIES</A></LI>
+<LI><A NAME="toc6" HREF="#sect6">DESCRIPTIONS</A></LI>
+<UL>
+<LI><STRONG><A NAME="graphics.toc" HREF="#graphics">Graphics and
+Animation</A></STRONG> 
+<LI><STRONG><A NAME="input.toc" HREF="#input">Analog Input
+Devices</A></STRONG>
+<LI><STRONG><A NAME="numerical.toc" HREF="#numerical">Numerical
+Analysis</A></STRONG>
+<LI><STRONG><A NAME="filter.toc" HREF="#filter">Data filtering</A></STRONG>
+<LI><STRONG><A NAME="utils.toc" HREF="#utils">Miscellaneous
+Utilities</A></STRONG>
+</UL>
+<LI><A HREF="demos.html">DEMONSTRATIONS</A></LI>
+</UL>
+
+<A NAME="sect2" HREF="#toc2"><H2><B>OVERVIEW</B></H2></A>
+
+LASSPTools is a collection of Unix utilities for numerical analysis and
+graphics. It was written around 1990, before Linux, before the World Wide Web.
+Considering that, many of the tools remain remarkably useful.
+<P>
+
+The operating system of most computers is designed around
+their primary use: text processing.  We provide the
+same system utilities for number crunching and dynamical displays of
+results that are available for sorting, searching, and manipulating
+text files.  The files are available without charge
+<A HREF="http://www.lassp.cornell.edu/lassp_pub">via the World Wide Web.</A>
+<P>
+
+For example, it's currently an incredible pain to plot spheres on your
+screen.  We've cured this with 
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?PlotAtoms.1">
+PlotAtoms.</A>
+<P>
+
+<A HREF="pictures/PlotAtomsDemo.mpg"><IMG SRC="pictures/PlotAtomsDemo.gif">
+</A>
+<P>
+
+Pipe your coordinates to PlotAtoms, and you immediately have a movie
+of your results!  Selecting the figure above will show an mpeg film
+captured from the original: the quality and speed of the mpeg film
+is much inferior to the original.  <A HREF="mpeg.html#PlotAtoms">Other
+examples are also available.</A>
+<P>
+
+The LASSP Software toolkit is a set of more than 35 programs for assisting
+researchers in physics and engineering.  The tools are 
+<A HREF="http://www.lassp.cornell.edu/lassp_pub/">available</A>
+on Linux (recompiled April 2002), and have been compiled on a variety of
+other Unix platforms. LASSPTools was developed at Cornell University 
+as part of the Cornell-IBM Joint Study on Computing for Scientific Research.
+<P>
+
+The tools perform various functions and roughly can be grouped into the
+following categories:<P>
+
+<UL>
+<LI><STRONG><A NAME="graphics.toc" HREF="#graphics">Graphics and
+Animation:</A></STRONG> Display matrices, lattice dynamics simulations,
+polygons and polygonalized surfaces, circles and spheres: watch them
+change with time.
+
+<LI><STRONG><A NAME="input.toc" HREF="#input">Analog Input
+Devices</A></STRONG> Input numbers with slider bars, input rotation
+matrices to turn your figures in three dimensions...
+
+<LI><STRONG><A NAME="numerical.toc" HREF="#numerical">Numerical
+Analysis</A></STRONG> Fourier transforms, matrix eigenvalues,
+inversions, rotations - all as Unix filters.
+
+<LI><STRONG><A NAME="filter.toc" HREF="#filter">Data filtering</A></STRONG>
+sort, prune, histogram, ...
+
+<LI><STRONG><A NAME="utils.toc" HREF="#utils">Miscellaneous
+Utilities</A></STRONG> (some of which were written outside of our
+project). </UL>
+
+The programs typically are used together in pipelines to generate,
+manipulate and display data. For example, raw data may be run through a
+numerical transformation, a section selected via a filtering program and
+the results sent to a program to animate the results graphically.<P>
+
+
+<A NAME="sect3" HREF="#toc3"><H2><B>SETUP</B></H2></A>
+
+In our local setup, we store LASSPTools in `/usr/local/pub/tools', and
+set our path variables to search there for executables and man pages.<P>
+
+To run the programs, you must have `/usr/local/pub/tools/bin' in your
+`path' environment variable.  Here at LASSP, we have an
+example of this in `/usr/local/skel/.cshrc'.<P>
+
+To access the documentation, you must have `/usr/local/pub/tools/man' in
+your MANPATH environment variable.  Locals can see an example of this in<BR>
+`/usr/local/skel/.login'.<P>
+
+<A NAME="sect5" HREF="#toc5"><H2><B>SOURCE AND BINARIES</B></H2></A>
+The source and binaries are available without charge from 
+<A HREF="http://www.lassp.cornell.edu/lassp_pub/">the World Wide Web.</A>
+<UL>
+<LI>LASSPTools.demos.tar.Z - Demo programs and data files.
+<LI>LASSPTools.doc.tar.Z - Documentation.
+<LI>LASSPTools.linux.tar.Z - Binaries for Linux, built on a 386 machine.
+<LI>LASSPTools.rs6000.tar.Z - Binaries for the RS6000.
+<LI>LASSPTools.AIX4.1_PowerPC.tar.Z - Binaries for the PowerPC running AIX.
+<LI>LASSPTools.irix5.3.tar.Z - SGI Beta release (thanks to Sumit Bose)
+<LI>LASSPTools.sparc.tar.Z - Binaries for the Sun Sparc.
+<LI>LASSPTools.src.tar.Z - Source code.
+<LI>LASSPTools/src - Directory of source files.
+</UL>
+
+<A NAME="sect6" HREF="#toc6"><H2><B>DESCRIPTIONS</B></H2></A>
+
+The following is a list of the LASSPTools programs and a brief
+description of each program.<P>
+
+<H3><A NAME="input" HREF="#input.toc">Analog Input Devices</A></H3>
+
+<A HREF="pictures/rotate.gif">
+<IMG SRC="pictures/rotate_icon.gif"></A>
+<P>
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?rotate.1">rotate</A> -
+Rotate is an interactive data entry device which puts up a rotation ball
+with axes, and allows the user to pick a rotation matrix.<P>
+
+<A HREF="pictures/slider.gif">
+<IMG SRC="pictures/slider_small.gif"></A>
+<P>
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?slider.1">slider</A>
+- Slider is an interactive data entry device which puts up a number of
+slider widgets, and allows the user to set values within user specified
+ranges.<P>
+
+<A HREF="pictures/items.gif">
+<IMG SRC="pictures/items_small.gif"></A>
+<P>
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?items.1">items</A>
+- Items produces a data entry window, with output to stdout.  (Slider
+without the sliders.)
+<P>
+
+<A HREF="pictures/XYinput.gif">
+<IMG SRC="pictures/XYinput_small.gif">
+</A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?XYinput.1">XYinput</A>
+- XYinput is an interactive data entry device which opens a coordinates
+plane with an accompanying options menu. It allows the user to specify
+coordinate positions by clicking on the 2D plane and pipe them to
+stdout.<P>
+
+<H3><A NAME="filter" HREF="#filter.toc">Data Filtering Programs:</A></H3>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?3D-2D.1">3D-2D</A> -
+3D-2D is a simple filter for converting lines with triples on them to
+lines with pairs on them. It also allows extra material which occurs at
+the end of line to be passed unmodified.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ConvertFrames.1">ConvertFrames</A>
+- ConvertFrames uses the various line_io routines to convert frames of
+ascii triples to and from binary.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ComplexDoubleMatrices.1">ComplexDoubleMatrices</A>
+- Converts ASCII matrices to and from binary. Double version.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ComplexFloatMatrices.1">ComplexFloatMatrices</A>
+- Convert ASCII matrices to and from binary. Floating point version.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ConvertMatrices.1">ConvertMatrices</A>
+- ConvertMatrices uses the various get_matrix and put_matrix routines to
+convert ascii to and from binary, and files to and from pipes.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ComplexDoubleVectors.1">ComplexDoubleVectors</A>
+- Convert ASCII vectors to and from binary. Double version.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ComplexFloatVectors.1">ComplexFloatVectors</A>
+- Convert ASCII vectors to and from binary. Floating point version.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?ConvertVectors.1">ConvertVectors</A>
+- ConvertVectors uses the various get_vector and put_vector routines to
+convert ascii to and from binary, and files to and from pipes. Integer
+version.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?RotateFile.1">RotateFile</A>
+- RotateFile is a simple filter for rotating triples of data. It can
+input the triples only from a file.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?RotateStream.1">RotateStream</A>
+- RotateStream is a simple filter for rotating triples of data. It can
+input the triples from a file, pipe or terminal session.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?blend.1">blend</A> -
+Inserts a smooth curve through data points.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?histogram.1">histogram</A>
+- Histogram reads a list of numbers from the standard input and produces
+on the standard output a file suitable for input to axis or graph to
+make a histogram.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?rotate_echo.1">rotate_echo</A>
+- A simple program that helps RotateStream do non-blocking I/O.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?rotate_aid.1">rotate_aid</A>
+- A simple program that helps RotateStream do non-blocking I/O.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?slab.1">slab</A> -
+slab is a simple filter for passing slices of data. It allows one to use
+a slider to change the size of the slab being looked at.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?sortit.1">sortit</A>
+- Sortit is a simple filter which takes blocks of input separated by
+blank lines and sorts each block in terms of the value of the third
+column of the input, in increasing order.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?thin.1">thin</A> -
+Thin is a simple filter that reduces the amount of data going down a
+pipeline.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?translate.1">translate</A>
+- Translate is a simple filter for translating data sets. It take
+triples on lines and adds specified amounts to each coordinate. It also
+allows extra material which occurs at the end of line to be passed
+unmodified.<P>
+
+<H3><A NAME="numerical" HREF="#numerical.toc">
+Numerical Analysis Filters</A></H3>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?DI.1">DI</A> - DI is
+a linear algebra program for calculating determinants and inverses, or
+both. DI accepts matrices from standard input and writes the
+determinants and inverses to standard output. DI uses the double
+precision Linpack routines to perform its calculations.
+<A HREF="http://www.physics.cornell.edu/sethna/LASSPTools_demos/SingleMatrix.html">
+Forms Demonstration!</A><P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?Random.1">Random</A> - Random 
+is a random number generator.  It allows the use of various generators,
+generates various probability distributions, generates arrays, sums, 
+etc.
+<A HREF="http://www.physics.cornell.edu/sethna/LASSPTools_demos/Random.html">
+Forms Demonstration!</A><P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?Det.1">Det</A> - Det
+is a linear algebra program for calculating 
+determinants.  Det accepts matrices from standard input and writes
+the determinants and inverses to standard output. Det uses the double
+precision Linpack routines to perform its calculations.
+<A HREF="http://www.physics.cornell.edu/sethna/LASSPTools_demos/SingleMatrix.html">
+Forms Demonstration!</A><P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?Eigen.1">Eigen</A> -
+Eigen is a program for calculating eigenvalues, eigenvectors, or both.
+Eigen accepts matrices from standard input and writes the eigenvalues
+and eigenvectors to standard output. Eigen uses the double precision
+Eispack routines to perform its calculations.
+<A HREF="http://www.physics.cornell.edu/sethna/LASSPTools_demos/SingleMatrix.html">
+Forms Demonstration!</A><P>
+
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?Fourier.1">Fourier</A>
+- Fourier is a program for calculating fourier transforms or inverse
+fourier transforms. Fourier accepts data from standard input and writes
+the results to standard output. Fourier uses the double
+precision fftpack routines to perform its calculations. Fourier does not
+need any form of zero padding.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?Invert.1">Invert</A> -
+Invert is a linear algebra program for calculating inverses. Invert
+accepts matrices from standard input and writes the inverses to standard
+output. Invert uses the double precision Linpack routines to perform its
+calculations.
+<A HREF="http://www.physics.cornell.edu/sethna/LASSPTools_demos/SingleMatrix.html">
+Forms Demonstration!</A><P>
+
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?MMult.1">MMult</A> -
+MMult is a program for multiplying two matrices A and B in the order AB.
+MMult accepts matrices from standard input and writes the product to
+standard output. The matrix A must number of columns as the matrix B has
+rows. MMult uses the BLAS routines to perform its calculations.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?MSolve.1">MSolve</A>
+- MSolve is a program for solving linear equations of the form Ax = B,
+where A and B are known and x is unknown. MSolve accepts matrices from
+standard input and writes the solution to standard output. The matrix A
+must be invertable but B can be any matrix that has the same number of
+rows as the matrix A has columns. MSolve uses the double precision
+Linpack routines to perform its calculations.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?fit_it.1">fit_it</A>
+- Fit_it does non-linear least squares parameter fitting on a data file
+specified on the command line. See also the README in the fit_it src
+dir.<P>
+
+<H3><A NAME="graphics" HREF="#graphics.toc">
+Graphics and Animation:
+</A></H3>
+
+<A HREF="pictures/DynamicLattice.gif">
+<IMG SRC="pictures/DynamicLattice_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?DynamicLattice.1">DynamicLattice</A>
+- DynamicLattice is an X-windows graphics program to represent sites on
+a two-dimensional square (or rectangular) lattice based on their value.
+This program is &quot;dynamic&quot; in that sites are typically read
+individually from the standard input stream (stdin) and plotted one at a
+time. There are three modes of representation: shading, arrows and
+bonds. The default mode is shading, whereby sites are filled with a
+colored cell whose color represents the value of the plotted field at
+that site. In the arrow mode, an arrow is plotted at the specified site
+where its angle represents the value of the field at that site. In the
+bond mode, a specified bond is drawn from a site to a neighboring site.
+In both the arrow and bond modes, the symbol can also be colored to
+represent another quantity. If such information is not given, all
+arrows/bonds are colored the same.  <A HREF="mpeg.html#DynamicLattice">
+MPEG Demonstrations available.</A><P>
+
+<A HREF="pictures/PlotAtomsDemo.mpg">
+<IMG SRC="pictures/PlotAtomsDemo_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?PlotAtoms.1">PlotAtoms</A>
+- PlotAtoms is an X-Windows plotting package which accepts x-y pairs
+from standard input and plots these pairs in the form of spheres. It can
+also produce multiple pictures in the form of a movie.  
+<A HREF="mpeg.html#PlotAtoms">Other MPEG demonstrations available.</A><P>
+
+<A HREF="pictures/PlotM.gif">
+<IMG SRC="pictures/PlotM_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?PlotM.1">PlotM</A>
+- PlotM is an X-Windows plotting package which plots atoms in three
+dimensions, and animates them.  It has more sophisticated controls than
+PlotAtoms, and can also draw bonds between the atoms or just draw sticks
+in space. 
+<P>
+
+<A HREF="pictures/SurfPlot.gif">
+<IMG SRC="pictures/SurfPlot_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?SurfPlot.1">SurfPlot</A>
+- SurfPlot is a simple program to produce surface plots in three dimensions.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?circledraw.1">circledraw</A>
+- Circledraw is an X Window System plotting package which reads a series
+of circle specifications from standard input and draws them in color in
+a window. Circles can be drawn continuously into the window with
+optional clearing of window when specified, or the circles can be
+plotted off- screen and sent to the screen one-frame-at-atime as in an
+animation.<P>
+
+<A HREF="pictures/matrix2X.gif">
+<IMG SRC="pictures/matrix2X_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?matrix2X.1">matrix2X</A>
+- matrix2X reads a set of matrices from the standard input and produces
+a density plot in an X window. The matrices are rows of numbers
+separated by newlines and matrices separated by blank lines (double
+newlines). The plot consists of a series of rectangles mimicking the
+shape of the input matrix which are colored according to the list of
+colors specified in various possible ways.<P>
+
+<A HREF="pictures/meter.gif">
+<IMG SRC="pictures/meter_small.gif"></A>
+<P>
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?meter.1">meter</A> -
+Meter is a simple analog style output device. Its level is controlled by
+the numbers it reads from stdin and its default range is from 0 to
+100.<P>
+
+<A HREF=
+"http://www.lassp.cornell.edu/sethna/Coarsening/LogCoarsening/movie_12_late.mpg"">
+<IMG SRC="pictures/polydraw_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?polydraw.1">polydraw</A>
+- polydraw is an X Window System plotting package which reads a series
+of polygon specifications from standard input and draws them in color in
+a window. Polygons can be drawn continuously into the window with
+optional clearing of window when specified, or the polygons can be
+plotted off-screen and sent to the screen one frame at a time as in an
+animation.  <A HREF="mpeg.html#polydraw">
+MPEG Demonstrations available.</A><P>
+
+<A HREF="pictures/polydraw3D.gif">
+<IMG SRC="pictures/polydraw3D_small.gif"></A>
+<P>
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?polydraw3D.1">polydraw3D</A>
+- polydraw3D is an X Window System like polydraw but reads in one frame
+polygons in 3D coordinates and can rotate and do a simulated perspective
+of that frame.<P>
+
+<H3><A NAME="utils" HREF="#utils.toc">
+Utility Programs:
+</A></H3>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?lattice2ps.1">lattice2ps</A>
+- Lattice2ps is a filter to produce a PostScript file which shades
+elements on a two-dimensional square lattice based on their value. The
+default produces gray-scale shading from white to black based on the
+range of values input, although a restricted range can be specified.
+Color PostScript output can also be generated.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?poly2ps.1">poly2ps</A>
+- Poly2ps is filter to produce a PostScript file which draws and shades
+polygons. It is designed to read the same input file (ASCII format only)
+that polydraw reads. The default is to convert the specified RGB colors
+to grayscales. This conversion is hard to make general. It will probably
+need modification unless your color scheme is quite simple (e.g., you
+draw only red, green, and blue polygons). Alternatively, color
+postscript output can be created.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?axis.1">axis</A> -
+Axis with no options takes pairs of numbers from the standard input as
+abscissas and ordinates of a graph. Successive points are connected by
+straight lines. The graph is encoded on the standard output for display
+by the <A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?plot.1">plot</A>
+filters (for example hpgl or tek10). If the coordinates of a point are
+followed by a nonnumeric string, that string is printed as a label
+beginning on the point.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?movieaxis.1">movieaxis</A>
+- See axis. This variant allows multiple, movie style, plots to be
+generated.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?branch.1">branch</A>
+- Branch is a simple datastream splitter. It takes input from stdin and
+splits it into two output streams. One output stream is sent to the
+first command and the other to the second command. Note that both
+commands my have pipes in them.<P>
+
+<A
+HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?inter.1">inter</A> -
+Inter frees the user from the constrained input file format required by
+axis, and replaces axis's cryptic commands with real words. The user
+types commands, or inter reads them from commandfile. If you don't want
+to remember or learn the appropriate commands, inter0 asks questions
+instead of waiting for instructions.<P>
+
+<A HREF="http://www.msc.cornell.edu/cgi-bin/cgiman?laser.1">laser</A> -
+A filter for converting plot5 commands to PostScript and sending these
+to a printer.<P>
+
+
+<HR>
+
+<H1>Links Back</H1>
+<DL COMPACT>
+<DT><A HREF="demos.html">
+LASSPTools Demonstrations!
+<DT><A HREF="http://www.lassp.cornell.edu/LASSP_Science.html">
+<IMG SRC="http://www.lassp.cornell.edu/Icons/smiley.gif"> 
+Entertaining Science</A> done at</DT>
+<DT><A HREF="http://www.lassp.cornell.edu/">
+<IMG SRC="http://www.lassp.cornell.edu/Icons/LASSP_Icon.gif">LASSP.</A></DT>
+</DL>
+
+<HR>
+Last modified: May 22, 1995<P>
+<A HREF="http://www.lassp.cornell.edu/sethna/sethna.html">
+<IMG SRC="http://www.lassp.cornell.edu/Icons/sethna_icon.gif">
+<ADDRESS>Jim Sethna, sethna@lassp.cornell.edu</ADDRESS></A>
+
+
+
+</BODY>
+</HTML>

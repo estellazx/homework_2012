@@ -1,0 +1,142 @@
+<base href="http://plasma-gate.weizmann.ac.il/~fnralch/rcn.html">
+<!DOCTYPE HTML PUBLIC "-//AdvaSoft//DTD HTML 2 extended 960415//EN">
+<HTML>
+<HEAD>
+ <TITLE>RCN Input</TITLE>
+</HEAD>
+
+<BODY  BGCOLOR="#FFFFFF" TEXT="#A52A2A">
+<TABLE>
+<TR><TD><A HREF="#disclaimer"><SMALL>Disclaimer</SMALL></A>
+<TD WIDTH="120">
+<!--<TD><A HREF="http://plasma-gate.weizmann.ac.il/~fnralch/ATOM/">CBE Code ATOM</A>-->
+<TD><A HREF="http://plasma-gate.weizmann.ac.il/369j.html">369j-symbol calculator</A>
+<TD><A HREF="http://plasma-gate.weizmann.ac.il/Grace/">Grace</A>
+<TD><A HREF="http://plasma-gate.weizmann.ac.il/"><IMG SRC="http://plasma-gate.weizmann.ac.il/images/plwis.gif" ALIGN=absmiddle BORDER="0"></A>
+</TABLE>
+
+<HR ALIGN=center>
+
+<P>
+
+<H2>Input for R.D.Cowan's RCN code</H2>
+
+
+<P>
+This is a <EM><FONT SIZE="3" COLOR="#4F2F4F">toy</FONT></EM>-version of the WWW 
+interface to the widely used atomic structure package written by  
+<A HREF="mailto:rdc@t4.lanl.gov">Robert D.Cowan</A> from 
+<A HREF="http://www.lanl.gov">LANL</A>. The original source files along with 
+writeups and examples can be found 
+<A HREF="ftp://aphysics.lanl.gov/pub/cowan/">here</A>. The PC version of Cowan's code is 
+<A HREF="ftp://plasma-gate.weizmann.ac.il/pub/software/dos/cowan">here</A>.
+<P>
+
+<HR WIDTH="450" SIZE=4>
+
+Here, the choice of elements is limited to first ten up to 
+<FONT SIZE="3" COLOR="#551A8B">Neon</FONT> and principal quantum numbers of 
+electrons up to <FONT SIZE="4" COLOR="#551A8B">n=3</FONT>. The output includes 
+<FONT SIZE="3" COLOR="#FF0000">ONLY</FONT> the one-electron Hartree-Fock 
+wavefunctions <FONT SIZE="3" COLOR="#2F4F4F">P<SUB>nl</SUB>(r)</FONT> which 
+are normalized to unity. In addition to the
+table of wavefunctions, 
+the plots of <FONT SIZE="3" COLOR="#2F4F4F">P<SUB>nl</SUB>(r)</FONT> and 
+<FONT SIZE="3" COLOR="#2F4F4F">P<SUB>nl</SUB>(r)<sup>2</sup></FONT> can 
+be retrieved as well. Units for the radius are atomic.
+<P>
+
+<TABLE BGCOLOR="#FFEBCD">
+
+<CAPTION ALIGN=left><STRONG>Explanation of the output</STRONG>
+</CAPTION>
+
+<TR><TH ALIGN=right VALIGN=top>R (a0)
+<TD><EM>radius</EM> in Bohr units at mesh point <STRONG>10*NC + 1</STRONG>
+
+<TR><TH ALIGN=right VALIGN=top>RSCORE(I)
+<TD>SUM(P<SUB>nl</SUB><SUP>2</SUP>) for all except the last orbital
+
+<TR><TH ALIGN=right VALIGN=top>RSVALE(I)
+<TD>P<SUB>nl</SUB><SUP>2</SUP> for the last orbital
+
+<TR><TH ALIGN=right VALIGN=top>RSATOM(I)
+<TD>SUM(P<SUB>nl</SUB><SUP>2</SUP>) for <U>all</U> orbitals
+
+<TR><TH ALIGN=right VALIGN=top>All double columns
+<TD>Left column gives the value at mesh point <STRONG>10*NC + 1</STRONG><BR>
+Right column gives the value at mesh point <STRONG>10*NC + 6</STRONG><BR>
+
+</TABLE>
+
+<P>
+
+<P>
+
+
+
+<TABLE><TR><TD>
+I would be <STRONG>REALLY</STRONG> glad to have your <A HREF="http://plasma-gate.weizmann.ac.il/comments.html">comments</A> on this 
+page.
+<P><TD><TD><TD ALIGN=right> 
+<P> 
+<P>
+
+<A HREF="http://plasma-gate.weizmann.ac.il/~fnralch/">Yuri Ralchenko</A></TABLE>
+
+
+<HR WIDTH="450" SIZE=3 ALIGN=center>
+
+
+<FORM ACTION="/yuri-bin/rcn-gun.pl" METHOD=POST>
+<TABLE>
+<TR><TD ALIGN=right>Element: <TD ALIGN=left><SELECT NAME="nucch">
+<OPTION VALUE=" 1">H
+<OPTION VALUE=" 2">He
+<OPTION VALUE=" 3">Li
+<OPTION VALUE=" 4">Be
+<OPTION VALUE=" 5">B
+<OPTION VALUE=" 6">C
+<OPTION VALUE=" 7">N
+<OPTION VALUE=" 8">O
+<OPTION VALUE=" 9">F
+<OPTION VALUE="10">Ne
+</SELECT>
+<TR>
+<TD ALIGN=right>Spectroscopic Charge: <TD ALIGN=left><SELECT NAME="spch">
+<OPTION VALUE=" 1">I
+<OPTION VALUE=" 2">II
+<OPTION VALUE=" 3">III
+<OPTION VALUE=" 4">IV
+<OPTION VALUE=" 5">V
+<OPTION VALUE=" 6">VI
+<OPTION VALUE=" 7">VII
+<OPTION VALUE=" 8">VIII
+<OPTION VALUE=" 9">IX
+<OPTION VALUE="10">X
+</SELECT></TABLE>
+Select configuration composition:
+<TABLE>
+<TR>
+<TD><STRONG><BIG>1s</BIG>:</STRONG></TD><TD><INPUT NAME="a1s" VALUE=" 1" SIZE="2"><BR>
+<TR>
+<TD><STRONG><BIG>2s</BIG>:</STRONG></TD><TD><INPUT NAME="a2s" VALUE=" 0" SIZE="2"><BR>
+<TD><STRONG><BIG>2p</BIG>:</STRONG></TD><TD><INPUT NAME="a2p" VALUE=" 0" SIZE="2"><BR>
+<TR>
+<TD><STRONG><BIG>3s</BIG>:</STRONG></TD><TD><INPUT NAME="a3s" VALUE=" 0" SIZE="2"><BR>
+<TD><STRONG><BIG>3p</BIG>:</STRONG></TD><TD><INPUT NAME="a3p" VALUE=" 0" SIZE="2"><BR>
+<TD><STRONG><BIG>3d</BIG>:</STRONG></TD><TD><INPUT NAME="a3d" VALUE=" 0" SIZE="2"><BR>
+</TABLE>
+<P>
+<INPUT TYPE=submit VALUE="Run RCN36">
+
+<INPUT TYPE=reset VALUE="Reset" SRC="/images/Buttons/caution.gif">
+</FORM><P>
+<HR NOSHADE>
+
+<A NAME="disclaimer"></A><FONT SIZE="+0" COLOR="#EE0000">Disclaimer</FONT>: 
+No one takes any responsibility for the data produced with this software. You have been warned!!!
+<HR><center>Copyright � 1996 <A HREF="http://plasma-gate.weizmann.ac.il">Plasma Laboratory</A> of Weizmann Institute of Science</center>
+ 
+</BODY>
+</HTML>

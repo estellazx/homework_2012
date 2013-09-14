@@ -1,0 +1,97 @@
+PARSER_BEGIN(Formatter)
+
+import java.io.*;
+import java.util.*;
+
+public class Formatter{
+    private static int eol = 0, events = 0;
+    private static String eid, rid, name;
+    private static String sql = "insert into iblockstat (eid, rid, name, events, count, individual, cumulative, nsec, locked, caller, stack) values(";
+    public static void main(String args[]) throws ParseException {
+       if (args == null || args.length != 2) {
+          System.err.println("Usage: FormatLockstatMinusS" + " EID RID");
+          System.exit(1);       
+       }
+       eid = args[0]; rid = args[1];
+       Formatter formatter = new Formatter(System.in);
+       formatter.output();
+    }
+}
+
+PARSER_END(Formatter)
+
+SKIP :
+{
+    " "
+  | "\t"
+}
+
+TOKEN:
+{
+    < AMS:      "Adaptive mutex spin:" >
+  | < AMB:      "Adaptive mutex block:" >
+  | < SLS:      "Spin lock spin:" >
+  | < TLS:      "Thread lock spin:" >
+  | < EVENTS:   " events in ">
+  | < SECONDS:  " seconds (">
+  | < EPERS:    " events/sec)">
+  | < DASHES:   ("-")+ >
+  | < PRCNT:    "%" >
+  | < PIPE:     "|" >
+  | < AT:       ("@")+ >
+  | < H1:       "Count" (" ")+ "indv" (" ")+ "cuml" (" ")+ "rcnt" (" ")+ "nsec" (" ")+ "Lock" (" ")+ "Caller">
+  | < H2:       "nsec" (" ")+ ("-")+ (" ")+ "Time" (" ")+ "Distribution" (" ")+ ("-")+ (" ")+ "count" (" ")+ "Stack">
+  | < INTEGER:  (["0"-"9"])+ >
+  | < FLOAT:    (["0"-"9"])+ "." (["0"-"9"])+ >
+  | <STACKELEM: ("0x")* ["a"-"z", "A"-"Z"] (["!"-"~"])+  > // A string of any printable ascii characters (except space) that begins with an alpha or 0x
+  | < EOL:      "\n" | "\r" | "\n\r" | "\r\n" >
+}
+
+TOKEN:
+{
+    <ERROR: ~[] >
+}
+
+void output() :
+{ }
+{   (eol())*
+    (type() data())+
+}
+
+void type() :
+{ Token n; }
+{
+      n = <AMS> { name = String.valueOf(n.image); } rest_of_type() eol() // { System.out.println("Saw AMS"); }
+    | n = <AMB> { name = String.valueOf(n.image); } rest_of_type() eol() // { System.out.println("Saw AMB"); }
+    | n = <SLS> { name = String.valueOf(n.image); } rest_of_type() eol() // { System.out.println("Saw SLS"); }
+    | n = <TLS> { name = String.valueOf(n.image); } rest_of_type() eol() // { System.out.println("Saw TLS"); }
+}
+
+void rest_of_type() :
+{ Token e; }
+{ e = <INTEGER> { events = Integer.valueOf(e.image); } <EVENTS> <FLOAT> <SECONDS> <INTEGER> <EPERS>  
+}
+
+void data() :
+{ Token count, indv, cuml, nsec, lock, caller, se; String s = "";}
+{   
+    <DASHES> eol() 
+    ( <H1>   eol() 
+       count = <INTEGER> indv = <INTEGER> <PRCNT> cuml = <INTEGER> <PRCNT> <FLOAT> nsec = <INTEGER> lock = <STACKELEM> caller = <STACKELEM> eol()
+      <H2>   eol() 
+        ([<INTEGER> [<PIPE>] [<AT>] <INTEGER>] [se = <STACKELEM> { s = s + se + ":"; }] eol() 
+        )* <DASHES> eol() { System.out.println(sql + eid + ", " + rid + ", " + name + ", " + events + ", " +
+                                               count + ", " + indv + ", " + cuml + ", " + nsec + ", '" +  
+                                               String.valueOf(lock.image).replace('\'', '^') + "', '" + 
+                                               String.valueOf(caller.image).replace('\'', '^') + "', '" +
+                                               s.replace('\'', '^') + "') ;"); 
+                             s = ""; 
+                          }
+    )*
+}
+
+void eol() :
+{ }
+{
+    (<EOL>)+ { eol++; }
+}

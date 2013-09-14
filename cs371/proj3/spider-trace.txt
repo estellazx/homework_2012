@@ -1,0 +1,35 @@
+Script started on Tue 20 Nov 2012 03:32:01 AM CST
+menie482@diligence:~/sz4554-hw/cs371$ java ir.webutils.PageRankSiteSpider -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html -d students-page -c 1100[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjava ir.webutils.PageRankSiteSpider -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html -d students-page -c 1100[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khttp://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html -d sample
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html
+Indexing(1): http://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/b.html
+Indexing(2): http://www.cs.utexas.edu/~mooney/ir-course/proj3/b.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html
+Indexing(3): http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/d.html
+Indexing(4): http://www.cs.utexas.edu/~mooney/ir-course/proj3/d.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/e.html
+Indexing(5): http://www.cs.utexas.edu/~mooney/ir-course/proj3/e.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html
+Already visited
+Graph Structure:
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/e.html-> [http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html]
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/d.html-> []
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html-> [http://www.cs.utexas.edu/~mooney/ir-course/proj3/b.html, http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html]
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html-> [http://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html, http://www.cs.utexas.edu/~mooney/ir-course/proj3/e.html]
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/b.html-> [http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html, http://www.cs.utexas.edu/~mooney/ir-course/proj3/d.html]
+Page Rank:
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/e.html: 0.20450266550937285
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/d.html: 0.09086522218020782
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/a.html: 0.20450266550937285
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/c.html: 0.37343013959172244
+http://www.cs.utexas.edu/~mooney/ir-course/proj3/b.html: 0.1266993072093239
+menie482@diligence:~/sz4554-hw/cs371$ exit
+
+Script done on Tue 20 Nov 2012 03:32:23 AM CST

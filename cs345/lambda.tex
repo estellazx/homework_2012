@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\title{Homework Assignment 1}
+\author{Shun Zhang (sz4554)}
+\begin{document}
+\maketitle
+\section{}
+Relation for addition. (I use \{\} here to distinguish this from multiplication relation.)\\
+\{x 0 x\}\\
+\{x y' \{x y b\}'\}\\
+\\
+Relation for multiplication.\\
+(x 0 0)\\
+(x y' \{(x y m) x b\})\\
+
+Proving \{x 0'' x''\} first.\\
+\{x 0 x\}\\
+\{x 0' \{x 0 b\}'\}\\
+\{x 0' x'\}\\
+\{x 0'' \{x 0' b\}'\}\\
+\{x 0'' x''\}\\
+q.e.d.\\
+
+(0'' 0 0)\\
+(0'' 0' \{(0'' 0 m) 0'' b\})\\
+$\Rightarrow$ (0'' 0' \{0 0'' b\}) $\Rightarrow$ (0'' 0' 0'')\\
+(0'' 0'' \{(0'' 0' m) 0'' b\})\\
+$\Rightarrow$ (0'' 0'' \{0'' 0' b\}) $\Rightarrow$ (0'' 0'' 0'''')\\
+(0'' 0''' \{(0'' 0'' m) 0'' b\})\\
+$\Rightarrow$ (0'' 0''' \{0'''' 0'' b\}) $\Rightarrow$ (0'' 0''' 0'''''')\\
+$\Rightarrow$ (2 3 6)\\
+
+\section{}
+((($\lambda$x.$\lambda$y.$\lambda$z.((x y) z) $\lambda$f.$\lambda$a.(f a)) $\lambda$i.i) $\lambda$j.j)\\
+(($\lambda$y.$\lambda$z.(($\lambda$f.$\lambda$a.(f a) y) z) $\lambda$i.i) $\lambda$j.j)\\
+($\lambda$z.(($\lambda$f.$\lambda$a.(f a) $\lambda$i.i) z) $\lambda$j.j)\\
+(($\lambda$f.$\lambda$a.(f a) $\lambda$i.i) $\lambda$j.j)\\
+($\lambda$a.($\lambda$i.i a) $\lambda$j.j)\\
+($\lambda$i.i $\lambda$j.j)\\
+$\lambda$j.j
+
+\section{}
+($\lambda$h.(($\lambda$a.$\lambda$f.(f a) h) h) $\lambda$f.(f f))\\
+($\lambda$h.(($\lambda$a.$\lambda$t.(t a) h) h) $\lambda$f.(f f))\\
+(($\lambda$a.$\lambda$t.(t a) $\lambda$f.(f f)) $\lambda$f.(f f))\\
+($\lambda$t.(t $\lambda$f.(f f)) $\lambda$f.(f f))\\
+($\lambda$f.(f f) $\lambda$f.(f f))\\
+
+\section{}
+$\lambda$x.$\lambda$y.($\lambda$x.y $\lambda$y.x)\\
+$\lambda$x.$\lambda$y.($\lambda$t.y $\lambda$y.x)\\
+$\lambda$x.$\lambda$y.y\\
+\\
+\section{}
+$\lambda$x.$\lambda$y.((x y) T)
+
+\end{document}

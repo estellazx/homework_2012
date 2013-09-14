@@ -1,0 +1,1284 @@
+<base href="http://www.cs.utexas.edu/~dsb/CS378/">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="Course/favicon.ico">
+    <title>CS378 Software Design</title>
+    <style type="text/css">
+.style2 {
+	font-family: Arial;
+}
+.style6 {
+				color: #FF0000;
+}
+.style8 {
+				border-collapse: collapse;
+				border-style: solid;
+				border-width: 3px;
+}
+.style10 {
+				font-weight: bold;
+				border-style: solid;
+				border-width: 1px;
+				font-family: "Arial Narrow";
+}
+.style11 {
+				border-style: solid;
+				border-width: 1px;
+				font-family: Arial;
+}
+.style14 {
+				font-family: Arial;
+				margin-left: 40px;
+}
+.style15 {
+				border: 1px solid #000000;
+				font-family: "Arial Narrow";
+				text-align: center;
+				background-color: #99FF33;
+}
+.style16 {
+				border: 1px solid #000000;
+}
+.style17 {
+				border: 1px solid #000000;
+				font-family: Arial;
+}
+.style18 {
+				border: 1px solid #000000;
+				text-align: center;
+				font-family: Arial;
+}
+.style20 {
+				text-align: center;
+				font-family: "Arial Narrow";
+}
+.style21 {
+				vertical-align: middle;
+}
+.style30 {
+				margin-left: 80px;
+}
+.style24 {
+				font-family: Arial, Helvetica, sans-serif;
+}
+.style31 {
+				border: 1px solid #000000;
+				margin-left: 120px;
+}
+.style32 {
+				border: 1px solid #000000;
+				margin-left: 200px;
+}
+.style37 {
+				border: 1px solid #000000;
+				font-family: "Arial Narrow";
+}
+.style38 {
+				font-family: "Arial Narrow";
+}
+.style39 {
+				border: 1px solid #000000;
+				text-align: center;
+				font-family: "Arial Narrow";
+}
+.style40 {
+				font-family: "Arial Narrow";
+				margin-left: 40px;
+}
+.style41 {
+				font-family: "Arial Narrow";
+				font-weight: bold;
+}
+.style42 {
+				border-style: solid;
+				border-width: 1px;
+				font-family: "Arial Narrow";
+}
+.style43 {
+	text-align: center;
+	font-family: "Arial Narrow";
+	font-size: x-large;
+}
+</style>
+  </head>
+  <body>
+    <h1 style="font-family: Arial;" align="center"><font class="style38"
+        color="#0000FF">CS378 Software Design --
+        Fall 2012</font></h1>
+	<p style="font-family: Arial;" align="center">&nbsp;</p>
+    <div style="font-family: Arial;" align="center">
+      <center>
+        <table style="width: 778px; height: 249px;" id="AutoNumber1"
+          class="style8" bgcolor="#00FFFF" bordercolor="#111111"
+          cellpadding="2">
+          <tbody>
+            <tr>
+              <td rowspan="10" class="style38" align="center"
+                width="124"> <img alt=""
+                  src="Course/softwaredesign.jpg" height="341"
+                  width="332"></td>
+              <td class="style10" style="width: 271px;" rowspan="2"
+                align="center"> Professor</td>
+              <td class="style11" style="width: 656px;"> <a title="Don
+                  Batory" href="http://www.cs.utexas.edu/users/dsb"> <span
+                    class="style38">Don Batory</span></a><span
+                  class="style38">&nbsp;&nbsp; </span></td>
+              <td style="width: 513px" class="style42"> <a title="Don
+                  Batory"
+                  href="mailto:batory@cs.utexas.edu?subject=CS378%20question">batory@cs.utexas.edu</a></td>
+            </tr>
+            <tr>
+              <td class="style42" style="width: 656px; height: 56px;">
+                office hours</td>
+              <td class="style11" style="width: 513px; height: 56px;"> <font
+                  class="style38">ACES 5.252 <br>
+                Wednesday</font><span class="style38"> 4:00-5:00pm</span></td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="style10" style="width: 271px;"
+                align="center">TA</td>
+              <td class="style42" style="width: 656px;">
+				<a href="http://www.cs.utexas.edu/~bendy/">Ben Delaware</a></td>
+              <td style="width: 513px" class="style42"> 
+				<a href="mailto:bendy@cs.utexas.edu?subject=CS 378 Question">
+				bendy@cs.utexas.edu</a></td>
+            </tr>
+            <tr>
+              <td class="style42" style="width: 656px;"> office hours</td>
+              <td class="style42" style="width: 513px"> <font
+                  class="style38">ACES 5.285 (South Lounge)<br>
+                Friday</font><span class="style38"> 11-12noon</span></td>
+            </tr>
+            <tr>
+              <td class="style10" style="width: 271px;" align="center">Room</td>
+              <td colspan="2" class="style42"> 
+				<a href="http://www.utexas.edu/maps/main/buildings/etc.html">ETC 
+				2.132</a></td>
+            </tr>
+            <tr>
+              <td class="style10" style="width: 271px;" align="center">Days
+
+                &amp; Time</td>
+              <td colspan="2" class="style42">T-TH 12:30-2pm</td>
+            </tr>
+            <tr>
+              <td class="style10" style="width: 271px;" align="center">Unique#</td>
+              <td colspan="2" class="style42"> 53125</td>
+            </tr>
+            <tr>
+              <td class="style10" style="width: 271px;" align="center">Ground
+
+                Rules</td>
+              <td colspan="2" class="style42"> 
+				<a href="http://www.cs.utexas.edu/undergraduate-program/code-conduct/">
+				Code of Conduct and Academic Honesty</a></td>
+            </tr>
+            <tr>
+              <td style="width: 271px;" class="style10"
+                align="center">Your Grades</td>
+              <td colspan="2" class="style42"> <a
+href="https://courses.utexas.edu/webapps/portal/frameset.jsp">UT
+                  Blackboard (I wish we had something else!)</a></td>
+            </tr>
+            <tr>
+              <td class="style10" style="width: 271px;" align="center">Final<br>
+              </td>
+              <td colspan="2" class="style42">Monday, December 17, 2:00-5:00 pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+    </div>
+    <span style="font-family: Arial;"> </span>
+    <div style="font-family: Arial;">
+      <h2 class="style20">Announcements</h2>
+		<p class="style43"> 
+		<a href="https://groups.google.com/forum/?fromgroups#!overview">Google Discussion Group</a></p>
+      <span class="style2" style="border-collapse: separate; color:
+        rgb(0, 0, 0); font-size: medium; font-style: normal;
+        font-variant: normal; font-weight: normal; letter-spacing:
+        normal; line-height: normal; orphans: 2; text-align: auto;
+        text-indent: 0px; text-transform: none; white-space: normal;
+        widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing:
+        0px; -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <table style="border-collapse: collapse; " bgcolor="#99FF33"
+          border="1" bordercolor="#111111" cellpadding="0"
+          cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100%">
+                <h2> <span class="style38" style="border-collapse:
+                    separate; color: rgb(0, 0, 0); font-style: normal;
+                    font-variant: normal; letter-spacing: normal;
+                    line-height: normal; orphans: 2; text-align: auto;
+                    text-indent: 0px; text-transform: none; white-space:
+                    normal; widows: 2; word-spacing: 0px;
+                    -webkit-border-horizontal-spacing: 0px;
+                    -webkit-border-vertical-spacing: 0px;
+                    -webkit-text-decorations-in-effect: none;
+                    -webkit-text-size-adjust: auto;
+                    -webkit-text-stroke-width: 0px;">
+                    &nbsp;Prerequisites, </span> <span class="style38"
+                    style="border-collapse: separate; color: rgb(0, 0,
+                    0); font-style: normal; font-variant: normal;
+                    letter-spacing: normal; line-height: normal;
+                    orphans: 2; text-align: auto; text-indent: 0px;
+                    text-transform: none; white-space: normal; widows:
+                    2; word-spacing: 0px;
+                    -webkit-border-horizontal-spacing: 0px;
+                    -webkit-border-vertical-spacing: 0px;
+                    -webkit-text-decorations-in-effect: none;
+                    -webkit-text-size-adjust: auto;
+                    -webkit-text-stroke-width: 0px;"> </span> <span
+                    class="style2" style="border-collapse: separate;
+                    color: rgb(0, 0, 0); font-style: normal;
+                    font-variant: normal; letter-spacing: normal;
+                    line-height: normal; orphans: 2; text-align: auto;
+                    text-indent: 0px; text-transform: none; white-space:
+                    normal; widows: 2; word-spacing: 0px;
+                    -webkit-border-horizontal-spacing: 0px;
+                    -webkit-border-vertical-spacing: 0px;
+                    -webkit-text-decorations-in-effect: none;
+                    -webkit-text-size-adjust: auto;
+                    -webkit-text-stroke-width: 0px;"> <span
+                      class="style38" style="border-collapse: separate;
+                      color: rgb(0, 0, 0); font-style: normal;
+                      font-variant: normal; letter-spacing: normal;
+                      line-height: normal; orphans: 2; text-align: auto;
+                      text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-border-horizontal-spacing: 0px;
+                      -webkit-border-vertical-spacing: 0px;
+                      -webkit-text-decorations-in-effect: none;
+                      -webkit-text-size-adjust: auto;
+                      -webkit-text-stroke-width: 0px;"> <a
+                        name="Overview">Overview</a>, and Goals</span></span></h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span>
+      <p class="style38"><strong>Prerequisites</strong>: Minimum C grade
+        in CS 310 or 310H, 336 or 336H, and M 408D or 408M.&nbsp; <span
+          class="style6"><strong>You must know how to program in Java;</strong></span>
+        <span class="style6"><strong>if Java is new to you, do not take
+            this course!&nbsp; The more experience you have in
+            programming, the more you will learn and appreciate this course.</strong></span></p>
+    </div>
+    <span style="font-family: Arial;"> </span>
+    <div style="font-family: Arial;">
+      <p class="style38"><strong>Overview</strong>. Software design and
+        construction is not hacking; it is governed by fundamental
+        concepts.&nbsp; We see these concepts at work in <strong>Model
+          Driven Engineering (MDE),</strong> which gives us a general
+        way to think about software design and construction -- not as a
+        mass of spaghetti code, but&nbsp; as a principled collection of
+        ideas architected in a thoughtful&nbsp;way. MDE deals with the
+        creation of models and transformations of these models to other
+        models, eventually yielding executables (yet other models). </p>
+      <p class="style38">This is rather abstract, but if you think about
+        it, we express a program in the Java language (that's our
+        concrete model of this program).&nbsp; The <strong>javac</strong>
+        compiler transforms source code to bytecode (i.e. it maps a Java 
+		representation of a program to a corresponding representation of that 
+		program in bytecode). <strong>javadoc</strong>,
+        as another example, maps Java source to html (both are
+        models).&nbsp; Object oriented refactorings map source code to
+        refactored source code.&nbsp; There are even&nbsp;refactorings
+        that map bytecodes to bytecodes.</p>
+    </div>
+    <div style="font-family: Arial;">
+      <p class="style38">These are just a few examples of software
+        engineering representations of programs and the tools that
+        transform them from one representation to another. Virtually
+        <em>all</em> of software design deals with the creation of
+        models (program representations) and their transformation into
+        other representations. Most work in Engineering (with a capital
+        "E") deals with model development -- ex. Boeing creates and
+        analyzes <strong>models</strong> of aircraft long before they
+        actually build a physical plane. Similarly, the software next
+        generation Space Shuttle is being built solely from <strong>models</strong>;
+        <em>no one is writing code!</em> (These models are transformed
+        to ugly C++ by commercial tools and then commercial C++
+        compilers transform source into executables).</p>
+    </div>
+    <div style="font-family: Arial;">
+      <p class="style38"><strong>Goals</strong>. The&nbsp;goals&nbsp;of
+        this course are to give students the basics for what we as
+        programmers and system architects are doing, and <em><strong>how
+
+            to reason about program design and construction</strong></em>.&nbsp;
+
+        This course will:</p>
+      <ul>
+        <li>
+          <p class="style38">teach you basic skills in reasoning about
+            and expressing software design,</p>
+        </li>
+        <li>
+          <p class="style38">give you experience in writing programs to
+            exercise these skills,</p>
+        </li>
+        <li>
+          <p class="style38">expose you to the fundamental ideas of
+            software design,</p>
+        </li>
+        <li>
+          <p class="style38">provide an insight on where software design
+            technology is headed, and</p>
+        </li>
+        <li>
+          <p class="style38">give you a framework to understand what
+            Software Engineering will become in the future.</p>
+        </li>
+      </ul>
+    </div>
+    <div style="font-family: Arial;">
+      <p class="style38">The course includes lectures on the following
+        topics: UML models and metamodels, metamodel constraints, Categories, Refactorings,
+        Object Oriented Design Patterns, Architectural Patterns,
+        Parallel Architectures, and Service Oriented Architectures. And
+        of course, concepts from MDE which all of the above are
+        special cases.&nbsp; The course covers examples from
+        compilers and databases (so if you have any experience writing
+        compilers or databases, you're that much further ahead than
+        others.&nbsp; A course on compilers or databases is <strong>not</strong>
+        a prerequisite, but it is good to have in any case).</p>
+    </div>
+    <div style="font-family: Arial;">
+      <p class="style38">As this is gateway course to further
+        undergraduate courses in CS on Software Development, there will
+        be many small programming assignments and written homework
+        assignments.</p>
+      <span class="style38" style="border-collapse: separate; color:
+        rgb(0, 0, 0); font-size: medium; font-style: normal;
+        font-variant: normal; font-weight: normal; letter-spacing:
+        normal; line-height: normal; orphans: 2; text-align: auto;
+        text-indent: 0px; text-transform: none; white-space: normal;
+        widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing:
+        0px; -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <table style="border-collapse: collapse; " bgcolor="#99FF33"
+          border="1" bordercolor="#111111" cellpadding="0"
+          cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100%">
+                <h2><a name="Course_Material">Course Material</a></h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span>
+      <p class="style38">PPTX files of each lecture will be posted after
+        class.&nbsp; (I change the notes every time I teach the
+        course).&nbsp; Links to the
+        PPTX files are listed in the syllabus below.&nbsp; Should you
+        choose to create a hard copy of these files, <strong>do not use
+          CS printers</strong> -- take the files to Kinkos. I have created 
+		several instructional web pages with accompanying .AVI or .MOV videos.&nbsp; 
+		Note: The .AVI videos work only in a Windows-based environment.&nbsp; 
+		The .MOV were converted from .AVI files and (unfortunately) are not as 
+		sharp.</p>
+      <ul>
+        <li>
+          <p class="style38"> <strong>
+			<a href="Videos/NetBeansInstructions.html">NetBeans 
+			Instructional Page</a></strong></p>
+        </li>
+		<span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;">
+          <li>
+            <p class="style38">Information on PDF Generation</p>
+          </li>
+          <ul class="style30">
+            <li class="style38">Windows info: <a
+href="http://www.howtogeek.com/howto/windows-vista/how-to-print-to-a-pdf-file-on-windows-vista/">
+                <strong>
+http://www.howtogeek.com/howto/windows-vista/how-to-print-to-a-pdf-file-on-windows-vista/</strong></a></li>
+            <li class="style38">More Windows info: <a
+                href="http://www.dopdf.com/"><strong>http://www.dopdf.com/</strong></a></li>
+          </ul>
+        </span>
+      </ul>
+      <p class="style38">Lecture material is taken from the
+        following texts, which are <strong>NOT</strong> required for
+        this course.&nbsp; All of them are worth having in a library,
+        but often, much of their content is posted for free on the web.</p>
+      <ul>
+        <li>
+          <p class="style38"> <a
+href="http://www.amazon.com/Unified-Modeling-Language-Addison-Wesley-Technology/dp/0201571684">
+              <span style="font-weight: bold;">Booch, Rumbaugh,
+                Jacobson.&nbsp; "The Unified Modeling Language User
+                Guide", 2nd Edition.</span></a></p>
+        </li>
+        <li style="font-weight: bold;">
+          <p class="style38"> <a
+href="http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672">
+              Fowler, "Refactoring: Improving the Design of Existing
+              Code"</a></p>
+        </li>
+        <li style="font-weight: bold;">
+          <p class="style38"> <a
+href="http://www.amazon.com/Refactoring-Patterns-Joshua-Kerievsky/dp/0321213351">
+              Kerievsky, "Refactoring to Patterns"</a></p>
+        </li>
+        <li style="font-weight: bold;">
+          <p class="style38"> 
+			<a href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Gamma, Helm, Johnson, Vlissides. "Design Patterns:
+              Elements of Reusable Object-Oriented Software"</a></p>
+        </li>
+        <li style="font-weight: bold;">
+          <p class="style38"> <a
+href="http://www.amazon.com/Pattern-Oriented-Software-Architecture-System-Patterns/dp/0471958697">
+              Buschmann, et al. "Pattern-Oriented Software Architecture:
+              A System of Patterns"</a></p>
+        </li>
+        <li style="font-weight: bold;">
+          <p class="style38"> <a
+href="http://www.amazon.com/Category-Computer-Scientists-Foundations-Computing/dp/0262660717">
+              Pierce. "Basic Category Theory for Computer Scientists"</a></p>
+        </li>
+      </ul>
+      <p class="style38">A useful list of web pages are collected below:</p>
+      <ul>
+        <li>
+          <p class="style38"> <a href="http://sourcemaking.com/">
+              <strong>SourceMaking.com</strong></a> -- for design patterns,
+            anti-patterns, refactorings, and UML</p>
+        </li>
+        <li>
+          <p class="style38"> <a href="http://www.yuml.me/"><strong>YUML</strong></a> --
+            this is a neat, free, web-based tool for drawing UML
+            diagrams</p>
+        </li>
+      </ul>
+      <span class="style38" style="border-collapse: separate; color:
+        rgb(0, 0, 0); font-size: medium; font-style: normal;
+        font-variant: normal; font-weight: normal; letter-spacing:
+        normal; line-height: normal; orphans: 2; text-align: auto;
+        text-indent: 0px; text-transform: none; white-space: normal;
+        widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing:
+        0px; -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <table style="border-collapse: collapse; " bgcolor="#99FF33"
+          border="1" bordercolor="#111111" cellpadding="0"
+          cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100%">
+                <h2><a name="Software">Software</a></h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span>
+      <p class="style38">All programming assignments (except one) are in Java. We
+        will be using the following software, all of which is free to
+        UTCS students, and all of which has been installed in the <strong>
+          <a href="http://www.cs.utexas.edu/facilities/public-labs">UTCS
+            Microlab</a></strong>, which is in ENS 1 &amp; 2, and PAI
+        5.38.&nbsp; The following is for Windows Platforms.&nbsp; If you
+        use Apple machines, well, I will try to help as much as I can,
+        but no promises!</p>
+      <ul>
+        <li>
+          <p class="style14"> <strong> <span class="style38"> <a
+                  href="http://netbeans.org/">NetBeans EE IDE 7+</a> </span>
+            </strong><span class="style38">&nbsp;-- Optional, used for
+              SOA program development. (I prefer NetBeans to Eclipse for
+              program development as it is a simpler environment). <a
+                href="Course/NetBeans7.0.jpg">Click here to see the
+                option to download</a>.&nbsp; <a
+                href="Videos/NetBeans7.0Installation">Click here to see
+                installation instructions</a>.</span></p>
+        </li>
+		<li>
+          <p class="style40"> <strong> 
+			<a
+                href="http://www.cs.utexas.edu/facilities/software-downloads">Microsoft
+
+                Visio 2007</a></strong> -- for drawing UML
+            diagrams.&nbsp; If you are a CS student, you can gain access
+            to Visio via <a
+              href="http://www.cs.utexas.edu/facilities/software-downloads">Software
+
+              Downloads,</a> read the MSDN/AA agreement, click the
+            secure download site link, and follow the instructions. For
+            ECE students, do the same at the ECE-MSDN/AA <a
+              href="http://www.engr.utexas.edu/itg/products">web page</a>.
+          </p>
+        </li>
+        <li>
+          <p class="style40"> <a href="http://www.videolan.org/vlc/"><strong>
+                VLC Media Player </strong></a>-- to view .MOV videos shown
+            in class.&nbsp; (You can use Windows Media Player, but its
+            video resolution is awful).&nbsp; No need for this 
+			software if you are a Mac user.</p>
+        </li>
+		<li>
+          <p class="style40"> <a href="http://www.swi-prolog.org/"><strong>SWI 
+			Prolog</strong></a> -- for writing metamodel constraints</p>
+        </li>
+      </ul>
+    </div>
+    <span class="style38" style="border-collapse: separate; color:
+      rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+      <table style="border-collapse: collapse; " bgcolor="#99FF33"
+        border="1" bordercolor="#111111" cellpadding="0" cellspacing="0"
+        width="100%">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <h2><a name="CS_Accounts">CS Accounts</a></h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </span> <span class="style24" style="border-collapse: separate;
+      color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+      font-weight: normal; letter-spacing: normal; line-height: normal;
+      orphans: 2; text-indent: 0px; text-transform: none; white-space:
+      normal; widows: 2; word-spacing: 0px; font-family: Arial;">
+      <p><span class="style38">To submit your programs (and to download
+          Visio), you will need a CS account.&nbsp; 
+		<a href="https://apps.cs.utexas.edu/udb/newaccount/">Follow this
+            link to create a CS account</a> and to find the names of
+          public machines to which you can log in.</span><span
+          class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-size: medium; font-style: normal;
+          font-variant: normal; font-weight: normal; letter-spacing:
+          normal; line-height: normal; orphans: 2; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px;"></span></p>
+      <table style="border-collapse: collapse; " bgcolor="#99FF33"
+        border="1" bordercolor="#111111" cellpadding="0" cellspacing="0"
+        width="100%">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <h2 class="style38"><a name="Quizzes">Quizzes</a></h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </span> <span class="Apple-style-span" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+      <p class="style38">There may be unannounced in-class quizzes on
+        course lecture material, readings from the course texts, and/or
+        homework. Missed quizzes will be given a grade of zero unless
+        there are <a href="#Extenuating_Circumstances">extenuating
+          circumstances</a>.</p>
+    </span> <span class="style38" style="border-collapse: separate;
+      color: rgb(0, 0, 0); font-size: medium; font-style: normal;
+      font-variant: normal; font-weight: normal; letter-spacing: normal;
+      line-height: normal; orphans: 2; text-indent: 0px; text-transform:
+      none; white-space: normal; widows: 2; word-spacing: 0px;
+      font-family: Arial;">
+      <table style="border-collapse: collapse; " bgcolor="#99FF33"
+        border="1" bordercolor="#111111" cellpadding="0" cellspacing="0"
+        width="100%">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <h2><a name="Homework">Homework</a>, Programming
+                Assignments, and Submissions</h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </span> <span class="Apple-style-span" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+      <p class="style38"><strong>Submissions.</strong> Please read:</p>
+      <ul>
+        <li>
+          <p class="style38"> 
+			<a href="http://www.cs.utexas.edu/~bendy/teaching/HWGuidelines.php">
+			Guidelines on Submissions</a></p>
+        </li>
+		<li>
+          <p class="style38"> 
+			<a href="http://www.cs.utexas.edu/~bendy/teaching/turnin.php">How to 
+			Submit</a></p>
+        </li>
+      </ul>
+      <p class="style38"><strong>Issues with Netbeans and Eclipse</strong>.
+        Programming assignments will require the writing of clear
+        documentation and Unit tests.&nbsp; There are some
+        problems/issues in writing javadoc documentation and running
+        regression tests with JUnit, which are described below:</p>
+      <ul>
+        <li>
+          <p class="style38"><a href="Course/javadoc.html">Images in
+              JavaDoc-Generated Files in NetBeans</a></p>
+        </li>
+        <li>
+          <p class="style38"><a href="Course/regressionTest.html">JUnit
+              Regression Tests with System.out</a></p>
+        </li>
+      </ul>
+      <p class="style38">You should read these postings carefully.&nbsp;
+      </p>
+      <span class="Apple-style-span" style="border-collapse: separate;
+        color: rgb(0, 0, 0); font-size: medium; font-style: normal;
+        font-variant: normal; font-weight: normal; letter-spacing:
+        normal; line-height: normal; orphans: 2; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: 2;
+        word-spacing: 0px;">
+        <table style="border-collapse: collapse; " bgcolor="#99FF33"
+          border="1" bordercolor="#111111" cellpadding="0"
+          cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100%">
+                <h2 class="style41"> <a name="Examinations">Examinations</a></h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span> <span class="style38" style="border-collapse: separate;
+        color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+        font-weight: normal; letter-spacing: normal; line-height:
+        normal; orphans: 2; text-align: auto; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: 2;
+        word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <p>There are two midterms and a final. These exams must be taken
+          on the specified date and at the specified time. If you miss
+          an exam due to <a href="#Extenuating_Circumstances">extenuating
+
+            circumstances</a>, a grade will be negotiated for the exam
+          based on a percentage of your homework, quizzes, and other
+          exam scores. Otherwise missed exams will be given a grade of zero.<span
+            class="Apple-style-span" style="border-collapse: separate;
+            color: rgb(0, 0, 0); font-size: medium; font-style: normal;
+            font-variant: normal; font-weight: normal; letter-spacing:
+            normal; line-height: normal; orphans: 2; text-indent: 0px;
+            text-transform: none; white-space: normal; widows: 2;
+            word-spacing: 0px;"></span></p>
+        <table style="border-collapse: collapse; " bgcolor="#99FF33"
+          border="1" bordercolor="#111111" cellpadding="0"
+          cellspacing="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100%">
+                <h2 class="style41"><a name="Grades">Class Grades</a></h2>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </span> <span class="Apple-style-span" style="border-collapse:
+        separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+        normal; font-weight: normal; letter-spacing: normal;
+        line-height: normal; orphans: 2; text-indent: 0px;
+        text-transform: none; white-space: normal; widows: 2;
+        word-spacing: 0px;">
+        <p class="style38">Final grades will be determined approximately
+          by the following scheme:</p>
+      </span> <span style="border-collapse: separate; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans: 2;
+        text-align: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <ul>
+          <li>
+            <p class="style38">50% Midterms + Final, with the final
+              weighted a bit more than a single midterm.</p>
+          </li>
+          <li>
+            <p class="style38">40% Programming Assignments</p>
+          </li>
+          <li>
+            <p class="style2"><span class="style38">10% Classroom
+                participation,&nbsp;</span><span class="Apple-style-span"
+                style="border-collapse: separate; font-style: normal;
+                font-variant: normal; font-weight: normal;
+                letter-spacing: normal; line-height: normal; orphans: 2;
+                text-align: auto; text-indent: 0px; text-transform:
+                none; white-space: normal; widows: 2; word-spacing: 0px;
+                -webkit-border-horizontal-spacing: 0px;
+                -webkit-border-vertical-spacing: 0px;
+                -webkit-text-decorations-in-effect: none;
+                -webkit-text-size-adjust: auto;
+                -webkit-text-stroke-width: 0px;"><span
+                  style="border-collapse: separate; font-variant: normal; line-height: normal; orphans:
+                  2; text-align: auto; text-indent: 0px; white-space: normal; widows: 2; word-spacing:
+                  0px; -webkit-border-horizontal-spacing: 0px;
+                  -webkit-border-vertical-spacing: 0px;
+                  -webkit-text-decorations-in-effect: none;
+                  -webkit-text-size-adjust: auto;
+                  -webkit-text-stroke-width: 0px;" class="style38">quiz grades, 
+			and homework</span></span></p>
+          </li>
+        </ul>
+        <span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;"> <span class="Apple-style-span" style="border-collapse:
+            separate; color: rgb(0, 0, 0); font-style: normal;
+            font-variant: normal; font-weight: normal; letter-spacing:
+            normal; line-height: normal; orphans: 2; text-indent: 0px;
+            text-transform: none; white-space: normal; widows: 2;
+            word-spacing: 0px;">
+            <p class="style38">Homework grades and class participation
+              will be used to decide final grades in grade-borderline
+              cases.</p>
+          </span> <span class="Apple-style-span"
+            style="border-collapse: separate; color: rgb(0, 0, 0);
+            font-size: medium; font-style: normal; font-variant: normal;
+            font-weight: normal; letter-spacing: normal; line-height:
+            normal; orphans: 2; text-indent: 0px; text-transform: none;
+            white-space: normal; widows: 2; word-spacing: 0px;">
+            <table style="border-collapse: collapse; " bgcolor="#99FF33"
+              border="1" bordercolor="#111111" cellpadding="0"
+              cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td width="100%">
+                    <h2><font color="#0000FF"> <a
+                          name="extenuatingCircumstances"> <span
+                            class="style38"></span></a></font> <a
+                        name="Extenuating_Circumstances"> <span
+                          class="style38">Extenuating Circumstances</span></a></h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </span> <span class="style38" style="border-collapse:
+            separate; color: rgb(0, 0, 0); font-style: normal;
+            font-variant: normal; font-weight: normal; letter-spacing:
+            normal; line-height: normal; orphans: 2; text-align: auto;
+            text-indent: 0px; text-transform: none; white-space: normal;
+            widows: 2; word-spacing: 0px;
+            -webkit-border-horizontal-spacing: 0px;
+            -webkit-border-vertical-spacing: 0px;
+            -webkit-text-decorations-in-effect: none;
+            -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+            0px;">
+            <p>If you have difficulty meeting the requirements of this
+              course, fail to hand in an assignment, or miss an exam
+              because of an unforeseen situation, please advise the
+              instructor<strong> in writing </strong>at the earliest
+              possible date so that your situation can be discussed. If
+              you encounter an unexpected medical or family emergency or
+              a random act of Nature that causes you to miss the due
+              date for homework or miss a quiz or exam, you must present
+              suitable documentation in writing to the instructor before
+              special consideration will be given. A file of all written
+              correspondence will be kept by the instructor and
+              decisions regarding them will be made at the end of the
+              semester.</p>
+          </span>
+          <div> <span class="style38" style="border-collapse: separate;
+              color: rgb(0, 0, 0); font-size: medium; font-style:
+              normal; font-variant: normal; font-weight: normal;
+              letter-spacing: normal; line-height: normal; orphans: 2;
+              text-align: auto; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-border-horizontal-spacing: 0px;
+              -webkit-border-vertical-spacing: 0px;
+              -webkit-text-decorations-in-effect: none;
+              -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+              0px;">
+              <table style="border-collapse: collapse; "
+                bgcolor="#99FF33" border="1" bordercolor="#111111"
+                cellpadding="0" cellspacing="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td width="100%">
+                      <h2><a name="Schedule">Schedule</a></h2>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+            <p class="style2"><font class="style38">Numbers in
+                [brackets] indicates the estimated number of lectures on
+                a topic. The number indicated is a lower-bound, as there
+                will be class room discussions to work on problems and
+                review of homework assignments.&nbsp;PPTX or .zip copies
+                of the lectures are hyperlinked below.&nbsp; Given this, the exact dates of a lecture are 
+			unknown.&nbsp; The order in which topics are presented is
+                below.</font></p>
+            <table class="style16" align="center">
+              <tbody>
+                <tr>
+                  <td style="height: 11px; width: 628px" class="style15">
+                    <strong>Topic [# of lectures + days of discussion]</strong></td>
+                  <td class="style15" style="height: 11px"> <strong>Assignment</strong></td>
+                </tr>
+                <tr>
+                  <td class="style16" style="width: 628px">
+                    <p class="style38"><strong> <a href="Lectures/1-Intro.pptx">Introduction [1]</a></strong></p>
+                    <ul>
+                      <li>
+                        <p class="style38"> design, model driven
+                          engineering, models, transformations,
+                          automated software development</p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39"> 
+					<a href="Videos/NetBeansInstructions.html">Install
+                      NetBeans</a><br>
+                    <br>
+                    <a href="http://www.surveymonkey.com/s/BVMMNLW">Complete 
+					Course
+
+                      Survey</a><br>
+                    <br>
+                    <a href="P/P1/index.html">P1: Java Reflection<br>
+                      Due Friday Sept 7, 10pm</a></td>
+                </tr>
+                <tr>
+                  <td class="style31" style="width: 628px">
+                    <p class="style38"><strong> Unified Modeling
+                        Language [4] </strong></p>
+                    <p class="style40"> <img alt=""
+                        src="Course/CheckMark.jpg" class="style21"
+                        height="25" width="22"><a
+                        href="Course/UML-scard.pdf">score card for class
+                        and object models</a></p>
+                    <ul>
+                      <li>
+                        <p class="style38"> <strong>
+						<a href="Lectures/2-1UML.pptx">class
+                              diagrams, cardinalities, associations</a> </strong></p>
+                      </li>
+                      <li>
+                        <p class="style38"> <strong>
+						<a href="Lectures/2-2UML.zip">object
+                              diagrams, constraints, meta-models and meta-modeling, 
+						writing constraints in Prolog</a></strong><br>
+						</p>
+                      </li>
+						<li>
+                        <p class="style38"> 
+						<strong><a href="Lectures/2-3UML.pptx">in class examples</a></strong></p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39"> <a href="H/H1/index.html">H1: Simple Class Diagrams<br>
+					Due Wed. Sept 12th, 10pm</a><br>
+					<br>
+					<a href="H/H2/index.html">H2: UML Class Diagrams</a><br>
+					<br>
+					<a href="P/P2/index.html">P2: UML Class 
+					Diagram Visualization</a><br>
+					<a href="HW/P2/index.html">Due Saturday, Sept 15, 10pm</a><br>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="style32" style="width: 628px">
+                    <p class="style38"><strong> 
+					Categories
+                          and Fundamental Modeling Abstractions [2]</strong></p>
+                    <p class="style40"> <img alt=""
+                        src="Course/CheckMark.jpg" class="style21"
+                        height="25" width="22"><a
+                        href="Course/Category-scard.pdf">score card for
+                        categories</a></p>
+                    <ul>
+                      <li>
+                        <p class="style38"><a href="Lectures/3-Categories.pptx">
+						<strong>domains, instances, arrows
+                          and model transformations, arrow composition,
+                          recursion, cones of instances, Meta Object
+                          Facility (MOF) architecture</strong></a></p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39"> 
+					<span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;"> 
+					<span style="border-collapse: separate; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans: 2;
+        text-align: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        			<span class="style38" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; ">
+					<a href="H/H3/index.html">H3: UML Design<br>
+					Due Tuesday, Sept 25, 10pm</a><br>
+					<br>
+					<a href="H/H4/index.html">H4: BNF <br>
+					Due Tuesday, Sept 25, 10pm</a></span></span></span><br>
+					<br>
+					<a href="P/P3/index.html">P3: Prolog Modeling Constraints<br>
+					Due Sunday, Sept 23, 5pm</a></td>
+                </tr>
+                <tr>
+                  <td class="style16" style="width: 628px; height:
+                    125px;">
+                    <p class="style38"><strong> Object
+                          Oriented Refactorings [2]</strong></p>
+                    <ul>
+                      <li>
+                        <p class="style38"> 
+						<strong><a href="Lectures/4-Refactorings.pptx">rename, extract method,
+                          substitute, move member, factory method,
+                          pull-up, push-down, singleton, extract class
+                          (normalization, partition), extract
+                          superclass, extract interface</a></strong></p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39" style="height: 125px"> <span class="Apple-style-span" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+					<span style="border-collapse: separate; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans: 2;
+        text-align: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;"> <span class="style38" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; ">
+					<a href="P/P4/index.html">P4: Model to Text Transformations</a><br>
+					<br>
+					<a href="H/H5/index.html">H5: Refactorings<br>
+					Due Monday, Oct 1, 10pm</a></span></span></span></span></td>
+                </tr>
+                <tr>
+                  <td class="style37" style="width: 628px">
+                    <p><strong>Midterm</strong> <strong>#1 [1]&nbsp;
+                        (Thursday, October 4th)</strong></p>
+                  </td>
+                  <td class="style39"> &nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="style16" style="width: 628px">
+                    <p class="style38"><strong>Design Patterns [7] </strong></p>
+                    <p class="style40"> <img alt=""
+                        src="Course/CheckMark.jpg" class="style21"
+                        height="25" width="22"><a
+                        href="http://viralpatel.net/blogs/download/design-pattern-scard.pdf">score
+
+                        card for design patterns</a></p>
+                    <ul>
+                      <li>
+                        <p class="style38"> <strong>
+						<a href="Lectures/5-1Patterns.pptx">basic
+
+                              patterns: facade, adapter, flyweight</a></strong></p>
+                      </li>
+                      <li>
+                        <p class="style38"> <strong>
+						<a href="Lectures/5-2Concerns.pptx">separation
+
+                              of concerns, observer,
+                              model-view-controller, mediator </a> </strong>
+						</p>
+                      </li>
+                      <li>
+                        <p class="style38"> <a
+                            href="Lectures/5-3Frameworks.pptx"> <strong>frameworks,
+
+                              template, factory, abstract
+                              factory</strong></a></p>
+                        <ul>
+                          <li>
+                            <p class="style38"><a href="Videos/Listme.pdf">calculator
+
+                                program (for in-class refactoring)</a></p>
+                          </li>
+                          <li>
+                            <p class="style38">video: 
+							<a href="Videos/FrameworkW.avi">calculator
+                                refactoring</a> (you may need this 
+							<a href="Videos/tscc.exe">codex</a>)</p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p class="style38"> <a
+                            href="Lectures/5-4Grammars.pptx"> <strong>grammar
+
+                              patterns, composite, interpreter,
+                              decorator [2]</strong></a></p>
+                        <ul>
+                          <li>
+                            <p class="style38">videos: &nbsp;<a
+                                href="Videos/grammarVideos/HPCalcIntepreter.avi">HPCalculator</a>,
+                              <a
+                                href="Videos/grammarVideos/Decorator.avi">Decorator</a>,
+                              <a
+                                href="Videos/grammarVideos/FileReader2.avi">FileReader</a></p>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p class="style38"> <a
+                            href="Lectures/5-5Delegate.pptx"> <strong>delegate
+
+                              patterns: visitors, command, memento</strong></a></p>
+                      </li>
+						<li>
+                        <p class="style38"> <strong>
+						<a href="Lectures/5-6InClass.pptx">in class problems</a> 
+						(<a href="Lectures/5-6InClass.pdf">PDF</a>)</strong></p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39"> <a href="H/H6/index.html">H6: 
+					Subject-Observer<br>
+					Due Wednesday, Oct 17th, 10pm</a><br>
+					<br>
+					<a href="P/P5/index.html">P5: Feature Diagrams<br>
+					Due Friday, Oct 19th, 10pm</a><br>
+					<br>
+					<br>
+					<a href="P/P6/index.html">P6: Frameworks<br>
+					Due Saturday, Nov 3, 10pm</a><br>
+					<br>
+					<a href="P/P7">P7: HP Calculator<br>
+					Due Monday, Nov 12th, 10pm</a><br>
+					<br>
+					<a href="H/H7/H7.pdf">H7: Visitors<br>
+					Due Tuesday, Nov 13th<br>
+					12:30 (class time)</a></td>
+                </tr>
+                <tr>
+								<span class="Apple-style-span" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+								<span style="border-collapse: separate; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans: 2;
+        text-align: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;"> 
+                  <td class="style37" style="width: 628px">
+                    <p><strong>Midterm #2</strong> <strong>[1] (Thursday, 
+					November 1st)</strong></p>
+                  </td>
+                  <td class="style18">
+                    <p class="style20">&nbsp;</p>
+                  </td>
+        </span></span></span>
+  				</tr>
+                <tr>
+                  <td class="style17" style="width: 628px">
+                    <p class="style38"><strong>Architectural Patterns
+                        [2]</strong></p>
+                    <ul>
+                      <li>
+                        <p class="style2"> l<span class="style38"><strong><a href="Lectures/6-1Layers.pptx">ayers,
+
+                                multi-tiered and 3-tiered architectures,
+                                object-oriented virtual machines,
+                                symmetric vs. asymmetric layers</a></strong></span></p>
+                      </li>
+                      <li>
+                        <p class="style38"> <strong>
+						<a href="Lectures/6-2Pipes.pptx">pipe
+                              and filter architectures, components and
+                              connectors, Java pipes</a></strong></p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39"> <a href="P/P8/index.html">H8: Gamma Joins<br>
+					Due Thursday, Dec 6rd, 10pm</a></td>
+                </tr>
+                <tr>
+                  <td class="style17" style="width: 628px">
+                    <p class="style38"><strong>Parallel Architectures
+                        [2]</strong></p>
+                    <ul>
+                      <li>
+                        <p class="style38"> <a
+                            href="Lectures/7-1Gamma.pptx"> <strong>map
+                              reduce, substitution principles,
+                              architectural optimization, architecture
+                              refinement and correctness, parallel
+                              architectures, parallel hash join
+                              architectures</strong></a></p>
+                      </li>
+                      <li>
+                        <p class="style38"> <a
+                            href="Lectures/7-2ACFT.pptx"> <strong>design
+
+                              of byzantine fault tolerant servers</strong></a></p>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="style39"> 
+					<a href="http://www.youtube.com/watch?v=y3CtaMFMxjc">
+					Algebraic Specification Video</a><br>
+					<span class="Apple-style-span" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+					<span style="border-collapse: separate; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans: 2;
+        text-align: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;"> 
+					<span class="Apple-style-span" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; font-family:
+      Arial;">
+					<span style="border-collapse: separate; color: rgb(0, 0,
+        0); font-style: normal; font-variant: normal; font-weight:
+        normal; letter-spacing: normal; line-height: normal; orphans: 2;
+        text-align: auto; text-indent: 0px; text-transform: none;
+        white-space: normal; widows: 2; word-spacing: 0px;
+        -webkit-border-horizontal-spacing: 0px;
+        -webkit-border-vertical-spacing: 0px;
+        -webkit-text-decorations-in-effect: none;
+        -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+        <span class="Apple-style-span" style="border-collapse: separate;
+          color: rgb(0, 0, 0); font-style: normal; font-variant: normal;
+          font-weight: normal; letter-spacing: normal; line-height:
+          normal; orphans: 2; text-align: auto; text-indent: 0px;
+          text-transform: none; white-space: normal; widows: 2;
+          word-spacing: 0px; -webkit-border-horizontal-spacing: 0px;
+          -webkit-border-vertical-spacing: 0px;
+          -webkit-text-decorations-in-effect: none;
+          -webkit-text-size-adjust: auto; -webkit-text-stroke-width:
+          0px;"> <span class="style38" style="border-collapse:
+      separate; color: rgb(0, 0, 0); font-style: normal; font-variant:
+      normal; font-weight: normal; letter-spacing: normal; line-height:
+      normal; orphans: 2; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: 2; word-spacing: 0px; ">
+					<a href="http://www.cs.columbia.edu/~aho/Talks/12-09-07_DMR.pdf">
+					Reading: Aho on Richie</a></span></span></span></span></span></span></span></td>
+                </tr>
+                <tr>
+                  <td class="style37" style="width: 628px">
+                    <p><a name="SOA"><strong>Service Oriented
+                          Architectures</strong> <strong>(if there is
+                          time) [2]</strong></a></p>
+                    <ul>
+                      <li> <a href="Lectures/8-1SOA.pptx"> <strong>historical
+
+                            development (CORBA, COM) and evolution to
+                            present-day concepts</strong></a></li>
+                      <li> <a href="Lectures/8-2NetBeans.pptx"> <strong>JAX
+
+                            web servers</strong></a></li>
+                    </ul>
+                  </td>
+                  <td class="style39"> &nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="style17" style="width: 628px">
+                    <p class="style38"><strong>Course Recap 
+                        [1]</strong></p>
+                  </td>
+                  <td class="style37">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </span></span></span>
+  </body>
+</html>

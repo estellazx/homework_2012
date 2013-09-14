@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+\usepackage{latexsym}
+\title{Project 2}
+\author{Shun Zhang (sz4554)}
+
+\begin{document}
+
+\maketitle
+
+\section{Algorithms and Implementation}
+
+I didn't make any change to the original codes. Here are the classes I've added.
+
+\texttt{ir.eval.ExperimentRelFeedback}. This inherits from \texttt{Experiment}. I mainly overrode the method \texttt{processQuery}, in which after the original retrieval, I immediately clear the first M documents, which are used for feedback. Then, I send the retrieval result and good document references (which we already know) to a \texttt{FeedbackSimulation} object. In this object, I set its \texttt{goodDocRefs} and \texttt{badDocRefs}, and run its \texttt{newQuery} method to get the revised retrieval result. This result is returned to the \texttt{ExperimentRelFeedback} object. Then, it is used to plot the PR curve.
+
+\texttt{ir.vsr.FeedbackSimulation}. This class inherits from \texttt{Feedback}. I mainly edited its constructor, in which I set its \texttt{goodDocRefs} and \texttt{badDocRefs} attributes. So, the \texttt{newQuery} method can be called later.
+
+\texttt{ir.vsr.InvertedIndexFactory}. I didn't find a good place to put the method of eliminating a \texttt{InvertedIndex} object's documents references which are used in training set - certainly it cannot be a method of \texttt{ExperimentRelFeedback}. So I make this class to hold the handler of a \texttt{InvertedIndex} object and do operation on it.
+
+\section{Questions}
+
+\begin{enumerate}
+
+\item Does using feedback improve retrieval accuracy? Why or why not?
+
+Yes. Compared to the curve of N = 0 (N is the number of documents providing feedback), the precision-recall curves of other N values are outside this curve. So, when a precision value is fixed, when N increases, higher recall is achieved. Similarly, when a recall value is fixed, when N increases, higher precision is achieved.
+
+\item How does the amount of feedback affect retrieval accuracy? Why?
+
+The more amount of feedback is used, the more accurate the retrieval is. As shown in the graph, when the value of N increases, the curve moves in a direction opposite to the axises.
+
+\item Does using feedback affect the ability to achieve 100\% recall (with > 0 precision)? Why or why not?
+
+No. By returning all the documents in the corpus, 100\% recall can always be achieved. Precision now is exactly $\frac{Number\ of\ positive\ results}{Number\ of\ all\ results}$.
+
+\item Does using feedback noticeably affect retrieval time? Why or why not?
+
+It certainly affects the running time, but not in a noticeable way. Any way, using feedback means that we need to run at least two times of retrieval. We run the first time to get the initial result, then according to the feedback by human or a table to look up, we run the second time.
+
+\end{enumerate}
+\end{document}

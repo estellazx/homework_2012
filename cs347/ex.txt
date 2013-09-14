@@ -1,0 +1,19 @@
+CREATE VIEW NewFoo AS
+	(SELECT a, b, value AS c
+	 FROM Foo, ExtraValue, ExtraColumn
+	 WHERE Foo.fk_Extensible = ExtraValue.fk_Extensible AND ExtraValue.fk_ExtraColumn = ExtraColumn.id AND c.name = 'c');
+
+15.3.2
+
+M - 1 = 999
+B(R) = B(S) = 10,000
+
+10 times:
+10 * (999 + 10000) = 109990
+
+addtional 10 blocks:
+10 + (9990 + 10) = 10010
+
+sum = 109990 + 10010 = 120000
+
+

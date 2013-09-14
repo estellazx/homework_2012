@@ -1,0 +1,30 @@
+﻿PS 3
+Name: Shun Zhang
+UT EID: sz4554
+
+1.
+
+a) For a specie record, it can only associate to one genus. For a genus record, it can only associate to one family. This is like a child node can only has one parent. This forms a unique tree structure.
+
+b) Initially, the association between genus and family is
+
+      1..*     1
+Genus ---------- Family
+
+It can be changed to
+
+      0..*  0..1
+Genus ---------- Family
+
+which means that a genus can belong to one family or no family (when not decided). Similarly, if all the genuses of a family become undecided, the family can have no genus.
+
+2.
+
+Scenario 1: apply aggregation. The requirements are not part of the customers. 
+
+Scenario 2: apply composition. Some customers *are* drug abusers. The entity in drug abusers cannot exist when its parent (customer) no longer exists.
+
+3.
+
+Currently, for Intersect, it has two fields, Segment_fk and Intersection_fk. It means a segment intersects at an intersection.
+This can be changed to Segment_fk, type, Intersection1_fk, Intersection2_fk. The value of type can be "twoWay" or "oneWay". For two ways segment, it simply means a segment would intersect at two intersections. For one way segment, it means the segment starts from Intersection1 and ends at Intersection2.

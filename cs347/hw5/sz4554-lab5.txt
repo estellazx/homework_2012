@@ -1,0 +1,186 @@
+Lab 5
+Name: Shun Zhang
+EID: sz4554
+
+(I resized the page to show the query results in one line...)
+
+1)
+a)
+To build up the table
+
+CREATE TABLE Title
+(
+	position varchar (255),
+	domain varchar (255),
+	id_Title integer,
+	PRIMARY KEY(id_Title)
+);
+
+CREATE TABLE Employee
+(
+	name varchar (255),
+	id_Employee integer,
+  	fk_Titleid_Title integer,
+	PRIMARY KEY(id_Employee),
+  	FOREIGN KEY(fk_Titleid_Title) REFERENCES Title (id_Title)
+);
+
+CREATE TABLE SupervisionRelation
+(
+	id_SupervisionRelation integer,
+	fk_Employeeid_Employee_Sub integer,
+  	fk_Employeeid_Employee_Obj integer,
+	PRIMARY KEY(id_SupervisionRelation),
+  	FOREIGN KEY(fk_Employeeid_Employee_Sub) REFERENCES Employee (id_Employee) ON DELETE SET NULL,
+  	FOREIGN KEY(fk_Employeeid_Employee_Obj) REFERENCES Employee (id_Employee) ON DELETE SET NULL
+);
+
+Result.
+
+1 rows deleted.
+NAME                                                                      
+-----------------------------------------------------------------------------
+Powell                                                                      
+Hicke                                                                       
+Fenves                                                                      
+Beckner                                                                     
+Miranker                                                                    
+Mok                                                                         
+
+ 6 rows selected 
+
+                ID_SUPERVISIONRELATION             FK_EMPLOYEEID_EMPLOYEE_SUB             FK_EMPLOYEEID_EMPLOYEE_OBJ
+-------------------------------------- -------------------------------------- --------------------------------------
+                                     1                                      1                                      2 
+                                     2                                      1                                      3 
+                                     3                                      2                                        
+                                     4                                      2                                      5 
+                                     5                                                                             6 
+                                     6                                                                             7 
+
+ 6 rows selected 
+
+b)
+To build up the table
+
+CREATE TABLE Title
+(
+	position varchar (255),
+	domain varchar (255),
+	id_Title integer,
+	PRIMARY KEY(id_Title)
+);
+
+CREATE TABLE Employee
+(
+	name varchar (255),
+	id_Employee integer,
+	fk_Titleid_Title integer,
+  	fk_Manager integer,
+	PRIMARY KEY(id_Employee),
+	FOREIGN KEY(fk_Titleid_Title) REFERENCES Title (id_Title),
+  	FOREIGN KEY(fk_Manager) REFERENCES Employee (id_Employee) ON DELETE CASCADE
+);
+
+Result.
+
+1 rows deleted.
+NAME                                                                      
+-----------------------------------------------------------------------------
+Powell                                                                      
+Hicke                                                                       
+Fenves                                                                      
+Beckner                                                                     
+
+a)
+To build up the table
+
+CREATE TABLE Title
+(
+	position varchar (255),
+	domain varchar (255),
+	id_Title integer,
+	PRIMARY KEY(id_Title)
+);
+
+CREATE TABLE Supervision
+(
+	id_Supervision integer,
+	fk_Supervising integer,
+	PRIMARY KEY(id_Supervision),
+	FOREIGN KEY(fk_Supervising) REFERENCES Employee (id_Employee) ON DELETE CASCADE
+);
+
+CREATE TABLE Employee
+(
+	name varchar (255),
+	id_Employee integer,
+	fk_Titleid_Title integer,
+	fk_Supervised integer,
+	PRIMARY KEY(id_Employee),
+	FOREIGN KEY(fk_Titleid_Title) REFERENCES Title (id_Title),
+	FOREIGN KEY(fk_Supervised) REFERENCES Supervision (id_Supervision) ON DELETE CASCADE
+);
+
+Result (with script).
+
+update supervision
+set fk_supervising = 
+  (select id_employee
+   from employee
+   where name = 'Miranker')
+where fk_supervising =
+  (select id_employee
+   from employee
+   where name = 'Porter');
+
+update employee
+set fk_supervised =
+  (select fk_supervised
+   from employee
+   where name = 'Porter')
+where name = 'Miranker';
+
+update employee
+set fk_supervised =
+  (select id_supervision
+   from supervision
+   where fk_supervising =
+    (select id_employee
+     from employee
+     where name = 'Miranker'))
+where name = 'Porter';
+
+select * from employee;
+select * from supervision;
+NAME         ID_EMPLOYEE                       FK_TITLEID_TITLE                          FK_SUPERVISED
+----------------------------------------------------------------------------- -------------------------------------- -------------------------------------- --------------------------------------
+Powell                 1                                      1                                        
+Hicke                  2                                      2                                      1 
+Fenves                 3                                      3                                      1 
+Porter                 4                                      4                                      3 
+Beckner                5                                      5                                      2 
+Miranker               6                                      6                                      2 
+Mok                    7                                      6                                      3 
+
+ 7 rows selected 
+
+                        ID_SUPERVISION                         FK_SUPERVISING
+-------------------------------------- --------------------------------------
+                                     1                                      1 
+                                     2                                      2 
+                                     3                                      6 
+
+In addition to the final table, explain the problem(s) you faced and how you solved them.
+
+It's easy to apply cascade delete if I need to delete the employees when their boss is fired. The problem is that when their boss is changed to another one, there is a time slot when their boss is null. I don't want these employees to be deleted before the new boss is assigned.
+What I did is create a new relation, SUPERVISION. It's a recursive association class on the relation of EMPLOYEE.
+When an employee is deleted, according to cascade delete, the SUPERVISION is deleted and its subordinates are also deleted.
+When a boss position is currently empty, the SUPERVISION record still exists - it's just supervised by no one and its subordinates are not fired. Then I can assign this SUPERVISED record to be supervised by the new boss.
+
+2)
+A)
+B) (next page)
+
+C) (next page)
+

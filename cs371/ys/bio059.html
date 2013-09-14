@@ -1,0 +1,286 @@
+<base href="http://www.tbi.univie.ac.at/~ivo/RNA/">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org">
+<!-- Local Variables: -->
+<!-- time-stamp-line-limit:0 -->
+<!-- time-stamp-end: "\n" -->
+<!-- End: -->
+<style type="text/css">
+<!--  .winzig { font-size:small} -->
+</style>
+
+<title>Vienna RNA Secondary Structure Package</title>
+<meta name="description" content=
+"Free software for RNA secondary structure prediction, structure comparison, and sequence design.">
+<meta name="keywords" content=
+"RNA folding, RNA secondary structure, base pair, structure prediction, inverse folding, structure comparison, energy minimization, sequence design, free software">
+<!--$url-minder-options$ owner=ivo@tbi.univie.ac.at -->
+<link rel="icon" href="/icons/tbimini.png" type="image/png">
+<link rel="SHORTCUT ICON" href="/icons/tbimini.ico">
+</head>
+<body bgcolor="#F8F8FF">
+<h1 align="center">Vienna RNA Package</h1>
+<h2 align="center">RNA Secondary Structure Prediction and
+Comparison</h2>
+<h3>News in short</h3>
+<!-- <img alt="New" src="new.png" width="31" height="12"> -->
+<b>Vienna RNA version 2.0</b> has been released! The content below is still for the 1.8.x versions but will be updated shortly. <br>
+In the mean time get the latest version from <a href="/~ronny/RNA/vrna2.html">Ronny's ViennaRNA page</a>.
+<p>
+Older News:<br>
+<ul>
+<li>For those still workin with version 1.8.x of the Vienna RNA Package, download the <a href="ViennaRNA-1.8.5.tar.gz">1.8.5 source distribution here</a>.</li>
+</ul>
+
+<ul>
+Some recently added features:
+<li>RNAfold can produce centroid and MEA structures in addition to MFE.
+<li>The <b>RNAup</b> program for computing RNA-RNA interactions is now
+included.
+<li>Folding of circular RNAs is now supported in many of the programs
+<li>support for computing hybrid structures using RNAcofold, RNAup,
+RNAduplex, and RNAaliduplex.</li>
+<li>stochastic backtracking to produce Boltzmann weighted ensembles
+of suboptimal structures (try <kbd>RNAsubopt -p 10</kbd>).</li>
+<li>Local versions of the folding algorithms for scanning large
+sequences (genomes): RNALfold and RNAplfold<br>
+RNAplfold can now be used to compute local accessibilities</li>
+<li>Several new utilities e.g. for color annotated structure
+plots, consensus structures and alignments.</li>
+<li>The Vienna RNA package now distributes two related but separate
+pieces of software:
+<ul>
+<li>The <a href=
+"http://bibiserv.techfak.uni-bielefeld.de/rnaforester/">RNAforester</a>,
+written by Matthias Hoechsmann
+&lt;mhoechsm@techfak.uni-bielefeld.de&gt;, computes tree-alignments
+of RNA structures</li>
+<li>The kinfold program explores the folding kinetics of RNA
+molecules through simulation of stochastic folding
+trajectories.</li>
+</ul>
+</li>
+<li>Windows users see our page about running the <a href=
+"windoze/">Vienna RNA package under Windows</a>, including a
+several precompiled binaries.</li>
+</ul>
+
+<hr>
+<!--     <p><a href="sarcin.png"><img align="left" src="sarcin_small.gif" alt= -->
+<!--     "sarcin_loop" width="352" height="184"></a> <small>Minimum free energy -->
+<!--     structure and base pair probabilities for the Sarcin loop of 23S -->
+<!--     ribosomal RNA, as predicted by the <kbd>RNAfold</kbd> program.<br> -->
+<!--      Click on image for larger view.</small><br clear="left"> -->
+<!--     </p> -->
+<h3>General information</h3>
+<p>The Vienna RNA Package consists of a C code library and several
+stand-alone programs for the prediction and comparison of RNA
+secondary structures.</p>
+<p>RNA secondary structure prediction through energy minimization
+is the most used function in the package. We provide three kinds of
+dynamic programming algorithms for structure prediction: the
+minimum free energy algorithm of (Zuker &amp; Stiegler 1981) which
+yields a single optimal structure, the partition function algorithm
+of (McCaskill 1990) which calculates base pair probabilities in the
+thermodynamic ensemble, and the suboptimal folding algorithm of
+(Wuchty et.al 1999) which generates all suboptimal structures
+within a given energy range of the optimal energy. For secondary
+structure comparison, the package contains several measures of
+distance (dissimilarities) using either string alignment or
+tree-editing (Shapiro &amp; Zhang 1990). Finally, we provide an
+algorithm to design sequences with a predefined structure (inverse
+folding).</p>
+<h3>Documentation</h3>
+For a detailed information, take a look at the HTML versions of the man
+pages for the programs and the manual of the library below.
+<ul>
+<li><a href="man/RNAfold.html">RNAfold</a> -- predict minimum energy
+secondary structures and pair probabilities</li>
+<li><a href="man/RNAeval.html">RNAeval</a> -- evaluate energy of RNA
+secondary structures</li>
+<li><a href="man/RNAheat.html">RNAheat</a> -- calculate the specific
+heat (melting curve) of an RNA sequence</li>
+<li><a href="man/RNAinverse.html">RNAinverse</a> -- inverse fold
+(design) sequences with predefined structure</li>
+<li><a href="man/RNAdistance.html">RNAdistance</a> -- compare secondary
+structures</li>
+<li><a href="man/RNApdist.html">RNApdist</a> -- compare base pair
+probabilities</li>
+<li><a href="man/RNAsubopt.html">RNAsubopt</a> -- complete suboptimal
+folding</li>
+<li><a href="man/RNAplot.html">RNAplot</a> -- RNA structure drawings in
+PostScript, SVG, or GML</li>
+<li><a href="man/RNAcofold.html">RNAcofold</a> -- predict hybrid
+structure of two sequences</li>
+<li><a href="man/RNAduplex.html">RNAduplex</a> -- predict possible
+hybridization sites between two sequences</li>
+<li><a href="man/RNAup.html">RNAup</a> -- predict RNA-RNA interaction sites using accessibilities</li>
+<li><a href="man/RNAalifold.html">RNAalifold</a> -- predict the
+consensus structure of several aligned sequences</li>
+<li><a href="man/RNAaliduplex.html">RNAaliduplex</a> -- comparative (multiple alignment) version of RNAduplex</li>
+<li><a href="man/RNALfold.html">RNALfold</a> -- predict locally stable
+structure of long sequences</li>
+<li><a href="man/RNAplfold.html">RNAplfold</a> -- compute average pair
+probabilities for local base pairs in long sequences</li>
+<li><a href="man/RNApaln.html">RNApaln</a> -- fast structural alignment
+of RNA sequences using string alignments</li>
+<li>Several small but helpful Perl <a href=
+"utils.html">Utilities</a></li>
+</ul>
+If you want to include our code into your own programs, you should
+read the documentation for the <a href="RNAlib/">RNAlib</a>
+library.<br>
+When installing from source, see the <a href="INSTALL.html">installation instructions</a>.
+<p>The package is free software and can be downloaded as C source
+code that should be easy to compile on almost any flavor of Unix
+and Linux. See the <a href="README.html">README</a> file for
+details.</p>
+
+<h3>Web interfaces for online RNA folding and sequence design</h3>
+
+For those who don't want to install programs or need a ghraphical
+interface, most of the above programs are now accessible from our brand new 
+<a href="http://rna.tbi.univie.ac.at/">Vienna RNA WebServers</a>.
+<img alt="new" src="new.png" width="31" height="12">
+<br>
+Services include single sequence folding, alignment folding, inverse
+folding RNA-RNA interactions, structural alignment, ncRNA detection, and
+more. Note that all servers will give hints how to accomplish the same
+thing using the command line tools.
+
+<!-- <ul> -->
+<!-- <li>Structure prediction for moderate size RNAs can be done -->
+<!-- interactively on our server. Try our <a href= -->
+<!-- "http://rna.tbi.univie.ac.at/cgi-bin/RNAfold.cgi">RNAfold Web -->
+<!-- Interface</a>.</li> -->
+<!-- <li>Inverse folding of small RNAs is now also available as a web -->
+<!-- service. Design your own sequences on our <a href= -->
+<!-- "http://rna.tbi.univie.ac.at/cgi-bin/RNAinverse.cgi">Sequence -->
+<!-- Design server</a>.</li> -->
+<!-- <li><\!--  -\-> -->
+<!-- For accurate prediction of consensus secondary structures from an -->
+<!-- alignment of related RNA sequences try our brand new <a href= -->
+<!-- "http://rna.tbi.univie.ac.at/cgi-bin/alifold.cgi">alifold</a> -->
+<!-- server.</li> -->
+<!-- </ul> -->
+
+<p>To see what we do with our software, take a look at our <a href=
+"http://www.tbi.univie.ac.at/papers/">preprint server</a>. There
+you'll also find a preprint version of our <a href=
+"http://www.tbi.univie.ac.at/papers/Abstracts/93-07-044abs.html">(Hofacker
+et.al. 1994)</a> paper describing the first version of the
+package.<br>
+The fold server is described in <a href=
+"http://nar.oupjournals.org/cgi/content/abstract/31/13/3429">Nucleic
+Acids Res. 31: 3429-3431 (2003)</a></p>
+<p>Version 2.0 of the <a href="ALIDOT/">ALIDOT</a> utilities. An
+add-on for detecting conserved secondary structure motifs.</p>
+
+Old versions of the Vienna RNA package can be downloaded from our <a
+href="old_versions.html">history</a> page.
+
+<h3>RNA folding software from elsewhere</h3>
+Ole Matzura's has written a program for 32-bit Windows based on the
+RNA folding routines in the Vienna package with a nice graphical
+user interface, see the <a href="http://rnadraw.base8.se/">Rnadraw
+Homepage</a>.<br>
+A lot of information on RNA folding can be found on <a href=
+"http://www.bioinfo.rpi.edu/~zukerm/rna/">Michael Zuker's RNA
+page</a>, where you can also download his <code>mfold</code>
+program.<br>
+The <code>RNAstructure</code> program is re-implementation of
+<code>mfold</code> for windows including a GUI, it is available
+from the web site of the <a href=
+"http://rna.chem.rochester.edu">Turner group</a><br>
+The <a href="http://www.inra.fr/T/essa/Doc/essa_home.html">ESSA</a>
+program provides several methods for drawing and analyzing RNA
+secondary structures.<br>
+A good starting point for information on RNA structures is the
+<a href="http://www.imb-jena.de/RNA.html">RNA world</a> in Jena.
+<hr>
+<address><a href="http://www.tbi.univie.ac.at/~ivo/">Ivo
+Hofacker</a>, <a href=
+"mailto:ivo@tbi.univie.ac.at">&lt;ivo@tbi.univie.ac.at&gt;</a><br>
+Institut f&uuml;r theoretische Chemie, W&auml;hringerstr. 17,<br>
+A-1090 Wien, Austria</address>
+<hr>
+<div align="center">Member of the <a href=
+"http://homepages.ed.ac.uk/jeanb/RNAwebring.html"><b>RNA
+webring</b></a><br>
+[ <a href=
+"http://j.webring.com/go?ring=rna&amp;id=21&amp;prev">&lt;&lt;
+Prev</a> | <a href="http://j.webring.com/hub?ring=rna;hub">Ring
+Hub</a> | <a href=
+"http://j.webring.com/go?ring=rna;id=21;random">Random</a> |
+<a href="http://j.webring.com/go?ring=rna;id=21;next">Next
+&gt;&gt;</a> ]</div>
+<div class="winzig"><a href="http://www.movavi.com/opensource/vienna-rna-be">Belorussian translation</a> provided by <a href="http://www.movavi.com/">Movavi</a></div>
+<hr>
+<p class="TIMESTAMP">Last modified: 2012-01-15 15:08:12 ivo
+<!--ONESTAT SCRIPTCODE START-->
+<script language="JavaScript" type="text/javascript">
+<!--
+// Modification of this code is not allowed and will permanently disable your account!
+// Account ID: 157918
+// Site URL  : http://www.tbi.univie.ac.at/~ivo/RNA/
+// Copyright (C) 2002 OneStat.com All Rights Reserved
+function OneStat_Tag()
+{
+    var CONTENTSECTION= "";
+    var CUSTOMDATA= "";
+    var osp_URL= document.URL;
+    var osp_Title= document.title;
+
+    function A(B, C)
+    {
+	W+="&"+B+"="+escape(C);
+    }
+
+    var t = new Date();
+
+    var W="http"+(document.URL.indexOf('https:')==0?'s':'')+"://stat.onestat.com/asp/stat.asp?tagver=1&sid=157918";
+
+    A( "tz", t.getTimezoneOffset());
+    A( "ch", t.getHours());
+    A( "ti", typeof(osp_Title)== "string" ? osp_Title : document.title);
+    A( "url", typeof(osp_URL)== "string" ? osp_URL : document.URL);
+    A( "rf", parent==self ? window.document.referrer : top.document.referrer);
+    A( "js", "Yes");
+    A( "ul", navigator.appName=="Netscape" ? navigator.language : navigator.userLanguage);
+    if(typeof(screen)=="object")
+    {
+    A( "sr", screen.width+"x"+screen.height);
+    A( "cd", screen.colorDepth);
+    A( "jo", navigator.javaEnabled()?"Yes":"No");
+    }
+    A( "section", typeof(CONTENTSECTION)== "string" ? CONTENTSECTION : "");
+    A( "custom", typeof(CUSTOMDATA)== "string" ? CUSTOMDATA : "");
+    if( W.length>2048 && navigator.userAgent.indexOf('MSIE')>=0)
+	W= W.substring( 0, 2043)+"&tu=1";
+
+	document.write('<A HREF="http://www.onestat.com/asp/login.asp?sid=157918" target=_blank><IMG ID="ONESTAT_TAG" BORDER="0" SRC="'+W+'" ALT="This Site Tracked by OneStat.com"><\/A>');
+
+}
+
+OneStat_Tag();
+//-->
+</script><noscript><a href=
+"http://www.onestat.com/asp/login.asp?sid=157918" target=
+"_blank"><img border="0" src=
+"http://stat.onestat.com/asp/stat.asp?tagver=1&amp;sid=157918&amp;js=No"
+alt="This Site Tracked by OneStat.com"></a></noscript>
+<!--ONESTAT SCRIPTCODE END-->
+<!--  LocalWords:  HTML ALIDOT PFRALI Sarcin Zhang RNAfold RNAeval -->
+<!--  LocalWords:  RNAheat RNAinverse RNAdistance RNApdist RNAlib  -->
+<!--  LocalWords:  README gzipped Matzura's Rnadraw Homepage html  -->
+<!--  LocalWords:  ESSA Jena Mangalam's Oct CEST Ole al CET        -->
+<!--  LocalWords:  ribosomal minimization Zuker Stiegler           -->
+<!--  LocalWords:  McCaskill suboptimal Wuchty et RNAsubopt RNAs   -->
+<!--  LocalWords:  preprint Zuker's Institut theoretische          -->
+<!--  LocalWords:  Chemie hringerstr webring rna Prev Tue          -->
+<!--  LocalWords:  Redhat RNAalifold alifold online                --></p>
+</body>
+</html>

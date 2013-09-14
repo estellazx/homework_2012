@@ -1,0 +1,398 @@
+<base href="http://www.cs.utexas.edu/~shmat/courses/cs378_spring09/">
+<html><head>
+<title>CS378 - Network Security and Privacy</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="header">
+<h1>Spring 2012: Network Security and Privacy (53135)</h1>
+ <div id="links">
+ Schedule
+ &nbsp; | &nbsp;
+ <a href="news.html">In the news</a>
+ &nbsp; | &nbsp;
+ <a href="reading.html">Reading</a>
+ &nbsp; | &nbsp;
+ <a href="syllabus.html">Syllabus</a>
+ </div>
+</div>
+
+<div id="sidebar">
+
+<h3>Lectures</h3>
+Tue and Thu: 2-3:15pm<br>
+BUR 130
+
+<h3>Instructor</h3>
+<a href="http://www.cs.utexas.edu/~shmat">Vitaly Shmatikov</a><br>
+Email: <i>shmat AT cs</i><br>
+Office: CSA 1.114<br>
+Phone: 471-9530<br>
+Office hours: Tue 3:30-4:30pm
+
+<h3>TA</h3>
+Jimmy Yang<br>
+Email: <i>jyang AT cs</i><br>
+Office: PAI 5.38, desk #5<br>
+Office hours: Wed 2-4pm
+
+</div>
+
+<div id="content">
+
+<h3>Schedule</h3>
+
+<table border=2 cellpadding=2 align=center>
+<tr>
+<td><b>Date</b></td>
+<td><b>Topic</b></td>
+<td><b>Reading and assignments</b></td>
+<td><b>Notes</b></td>
+</tr>
+
+<tr>
+<td>Jan 17</td>
+<td>Course logistics and introduction</td>
+<td>
+Read Kaufman 1.5<br>
+Start reading <a href="stack.txt">Smashing the stack for fun and profit</a>
+</td>
+<td>
+<a href="intro.ppt">[ppt]</a><br>
+<a href="intro.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Jan 19</td>
+<td>Learning secrets from procfs -<br>
+<small>guest lecture by Suman Jana</small></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Jan 24</td>
+<td>Passwords, security questions, challenge-response</td>
+<td>
+Read Kaufman 9.1-2, 10, 11.1-2, and 12.2
+</td>
+<td>
+<a href="authentication.ppt">[ppt]</a><br>
+<a href="authentication.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Jan 26</td>
+<td>Bypassing antivirus scanners -<br> 
+<small>guest lecture by Suman Jana</small></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Jan 31</td>
+<td>Cryptographic hash functions</td>
+<td>
+Read Kaufman 5.1-2 and 5.6-7
+</td>
+<td>
+<a href="hash.ppt">[ppt]</a><br>
+<a href="hash.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 2</td>
+<td>Biometrics</td>
+<td>&nbsp;</td>
+<td>
+<a href="biometrics.ppt">[ppt]</a><br>
+<a href="biometrics.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 7</td>
+<td>Phishing</td>
+<td>&nbsp;</td>
+<td>
+<a href="phishing.ppt">[ppt]</a><br>
+<a href="phishing.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 9</td>
+<td>Cookies and Web session management</td>
+<td>
+Read Kaufman 25 and
+<a href="http://pdos.csail.mit.edu/papers/webauth:sec10.pdf">Dos and don'ts of client authentication</a>
+</td>
+<td>
+<a href="webauth.ppt">[ppt]</a><br>
+<a href="webauth.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 14</td>
+<td>JavaScript and same origin policy</td>
+<td>&nbsp;</td>
+<td>
+<a href="sop.ppt">[ppt]</a><br>
+<a href="sop.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 16</td>
+<td>Clickjacking and cross-site request forgery</td>
+<td>
+<strong><a href="hw1.pdf">Homework 1</a> due</strong><br>
+Read <a href="http://www.contextis.co.uk/resources/white-papers/clickjacking/Context-Clickjacking_white_paper.pdf">Next generation clickjacking</a> and
+<a href="zeller.pdf">Cross-site request forgeries: exploitation
+and prevention</a>
+</td>
+<td>
+<a href="webapps.ppt">[ppt]</a><br>
+<a href="webapps.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 21</td>
+<td>SQL injection and cross-site scripting</td>
+<td>
+Read
+<a href="http://www.cgisecurity.com/lib/advanced_sql_injection.pdf">
+Advanced SQL injection</a> and
+<a href="css.pdf">Cross site scripting explained</a>
+</td>
+<td><small>see above</small></td>
+</tr>
+
+<tr>
+<td>Feb 23</td>
+<td>Symmetric encryption</td>
+<td>
+Read Kaufman 2.1-4 and 4.2
+</td>
+<td>
+<a href="symcrypt.ppt">[ppt]</a><br>
+<a href="symcrypt.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Feb 28</td>
+<td>Kerberos</td>
+<td>
+Read Kaufman 13 and 14, and
+<a href="http://web.mit.edu/kerberos/www/dialogue.html">Designing an authentication system</a>
+</td>
+<td>
+<a href="kerberos.ppt">[ppt]</a><br>
+<a href="kerberos.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Mar 1</td>
+<td>
+Stream ciphers <br>
+Attacks on 802.11b/WEP, CSS, MIFARE
+</td>
+<td>&nbsp;</td>
+<td>
+<a href="stream.ppt">[ppt]</a><br>
+<a href="stream.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Mar 6</td>
+<td>
+Attacks on TCP/IP, DNS, BGP</br>
+Denial of service
+</td>
+<td>
+<strong><a href="proj1.pdf">Project 1</a> due</strong><br>
+Read
+<a href="http://cr.yp.to/syncookies.html">SYN cookies</a>,
+<a href="http://www.phrack.org/archives/48/p48_0x0e_IP-Spoofing%20Demystified_by_daemon9.txt">
+IP spoofing demystified</a>,
+<a href="https://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf">It's the end of the cache
+as we know it</a></td>
+</td>
+<td>
+<a href="netattacks.ppt">[ppt]</a><br>
+<a href="netattacks.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Mar 8</td>
+<td><strong><a href="midterm.pdf">Midterm</a></strong></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Mar 20</td>
+<td>Memory corruption attacks</td>
+<td>
+Read 
+<a href="stack.txt">Smashing the stack</a>,
+<a href="http://www.phrack.org/issues.html?issue=57&id=9&mode=txt">Once upon a free()</a>, and
+<a href="formatstrings.pdf">Exploiting format string vulnerabilities</a>
+</td>
+<td>
+<a href="memattacks.ppt">[ppt]</a><br>
+<a href="memattacks.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Mar 22</td>
+<td>Defenses against memory attacks</td>
+<td>&nbsp;</td>
+<td><small>see above</small></td>
+</tr>
+
+<tr>
+<td>Mar 27</td>
+<td>Viruses and rootkits</td>
+<td><strong><a href="proj2.pdf">Project 2</a> (part 1) due</strong></td>
+<td>
+<a href="malware.ppt">[ppt]</a><br>
+<a href="malware.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Mar 29</td>
+<td>Worms and botnets</td>
+<td>&nbsp;</td>
+<td>
+<a href="wormbots.ppt">[ppt]</a><br>
+<a href="wormbots.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Apr 3</td>
+<td>Stuxnet</td>
+<td>&nbsp;</td>
+<td>
+<a href="stuxnet.ppt">[ppt]</a><br>
+<a href="stuxnet.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Apr 5</td>
+<td>Spam</td>
+<td><strong><a href="proj2.pdf">Project 2</a> (part 2) due</strong></td>
+<td>
+<a href="spam.ppt">[ppt]</a><br>
+<a href="spam.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Apr 10</td>
+<td>Firewalls and intrusion detection</td>
+<td>Read Kaufman 23</td>
+<td>
+<a href="ids.ppt">[ppt]</a><br>
+<a href="ids.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Apr 12</td>
+<td>Public-key cryptography</td>
+<td>
+Read Kaufman 6.1-6
+</td>
+<td>
+<a href="pubcrypt.ppt">[ppt]</a><br>
+<a href="pubcrypt.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Apr 17</td>
+<td>How things goes wrong in SSL certificate verification -<br>
+<small>guest lecture by Martin Georgiev and Suman Jana</small></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Apr 19</td>
+<td>No class</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>Apr 24</td>
+<td>SSL</a>
+<td>
+<b><a href="hw2.pdf">Homework 2</a> due</b><br>
+Read Kaufman 19
+</td>
+<td>
+<a href="ssl.ppt">[ppt]</a><br>
+<a href="ssl.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>Apr 26</td>
+<td>PKI and certificates</td>
+<td>
+Read Kaufman 15.1-7
+</td>
+<td>
+<a href="pki.ppt">[ppt]</a><br>
+<a href="pki.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>May 1</td>
+<td>IPsec and IKE</td>
+<td>Read Kaufman 17 and 18</td>
+<td>
+<a href="ipsec.ppt">[ppt]</a><br>
+<a href="ipsec.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>May 3</td>
+<td>Side-channel attacks: acoustics and reflections</td>
+<td><b><a href="hw3.pdf">Homework 3</a> due</b></td>
+<td>
+<a href="sidechannels.ppt">[ppt]</a><br>
+<a href="sidechannels.pdf">[pdf]</a>
+</td>
+</tr>
+
+<tr>
+<td>May 12 (Sat)</td>
+<td><strong><a href="final.pdf">Final</a></strong></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+</table>
+
+</div>
+</body>
+</html>

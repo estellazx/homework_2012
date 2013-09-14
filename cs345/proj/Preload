@@ -1,0 +1,23 @@
+s := (lambda (f g x) (f x (g x)))
+k := (lambda (x y) x)
+b := (lambda (f g x) (f (g x)))
+c := (lambda (f g x) (f x g))
+y := (lambda (f x) (f (y f) x))
+condzero := (lambda (f g x) (zero? x (f x) (g x)))
+condnull := (lambda (f g x) (null? x (f x) (g x)))
+
+plus := (lambda (x y) (+ x y))
+mul := (lambda (x y) (zero? x 0 (+ y (mul (+ x -1) y))))
+pred := (lambda (x) (+ x -1))
+
+pradd1 := (lambda (x z) (y (b (condzero (k z)) (b (s (b plus (k 1))) (c b pred))) x))
+prmul1 := (lambda (x z) (y (b (condzero (k 0)) (b (s (b pradd1 (k z))) (c b pred))) x))
+prexp1 := (lambda (x z) (y (b (condzero (k 1)) (b (s (b prmul1 (k x)) ) (c b pred))) z))
+prfac1 := (lambda (x) (y (b (condzero (k 1)) (b (s prmul1) (c b pred))) x))
+
+prlen := (lambda (x) (y (b (condnull (k 0)) (b (s (b plus (k 1))) (c b cdr))) x))
+prsum := (lambda (x) (y (b (condnull (k 0)) (b (s (b plus car)) (c b cdr))) x))
+prprod := (lambda (x) (y (b (condnull (k 1)) (b (s (b mul car)) (c b cdr))) x))
+prmap := (lambda (f x) (y (b (condnull (k '())) (b (s (b cons f)) (c b cdr))) x))
+prfoo := (lambda (x) (y (b (condnull (k '())) (b (s (b cons cdr)) (c b cdr))) x))
+prfoldr := (lambda (fn z x) (y (b (condnull (k z)) (b (s (b fn car)) (c b cdr))) x))

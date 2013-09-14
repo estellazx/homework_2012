@@ -1,0 +1,47 @@
+Project: Full Lisp Interpreter
+
+Group members:
+Shun Zhang
+Wang Rao
+Zeyuan Zhu
+
+==============================
+
+Using the follow command to make. (It's already make-ed)
+
+make
+
+
+There are some arguments you can pass to the Parser
+
+-d enable dynamic scoping (It's static scoping by default)
+
+-p preload car, cdr, cons and combinators
+
+-ne no environment output (recommend to enable when testing number / list combinators, otherwise too many things come out)
+
+
+We have a file named Preload, in which you can define more functions to preload.
+By default, it includes all combinators. Enable them by -p.
+
+We have several test cases. Use them by
+
+cat Input_sample | java Parser
+
+cat Input_multi_lambda | java Parser
+
+cat Input_multi_let | java Parser
+
+cat Input_scope | java Parser
+
+cat Input_scope | java Parser -d    # dynamic scoping
+
+cat Input_list | java Parser -p    # enable preload
+
+cat Input_comb_test | java Parser -p -ne    # enable preload, disable environment output
+
+etc. All test cases match Input_*
+
+or you can simply
+
+echo "(+ 1 2)" | java Parser

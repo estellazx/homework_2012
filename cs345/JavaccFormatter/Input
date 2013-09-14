@@ -1,0 +1,592 @@
+
+Adaptive mutex spin: 70 events in 10.045 seconds (7 events/sec)
+
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   21  30%  30% 0.00      707 disp_req_lock          timer_softintr+0x24     
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@           14        av_dispatch_softvect+0x5f
+      1024 |@@@@@                          4         dispatch_softint+0x34   
+      2048 |@@                             2         switch_sp_and_call+0x13 
+      4096 |@                              1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   19  27%  57% 0.00    17532 disp_req_lock          timeout_taskq_thread+0x6f
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@                            2         thread_start+0x8        
+      4096 |@@@@@@@@@@@@@@@@@@@@           13        
+      8192 |@                              1         
+     16384 |                               0         
+     32768 |@                              1         
+     65536 |                               0         
+    131072 |@                              1         
+    262144 |@                              1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   14  20%  77% 0.00    20042 0xffffff02d585c680     taskq_thread+0x1db      
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@                           2         thread_start+0x8        
+      1024 |@@@@@@                         3         
+      2048 |@@@@                           2         
+      4096 |                               0         
+      8192 |@@@@@@@@@@                     5         
+     16384 |                               0         
+     32768 |                               0         
+     65536 |                               0         
+    131072 |@@                             1         
+    262144 |@@                             1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    6   9%  86% 0.00    22010 0xffffff02d585c680     cv_wait+0x69            
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@                          1         taskq_thread_wait+0x99  
+      1024 |@@@@@                          1         taskq_thread+0x246      
+      2048 |@@@@@                          1         thread_start+0x8        
+      4096 |                               0         
+      8192 |@@@@@                          1         
+     16384 |@@@@@                          1         
+     32768 |                               0         
+     65536 |                               0         
+    131072 |@@@@@                          1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    2   3%  89% 0.00     2572 disp_req_lock          timer_softintr+0xac     
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@                1         av_dispatch_softvect+0x5f
+      2048 |                               0         dispatch_softint+0x34   
+      4096 |                               0         switch_sp_and_call+0x13 
+      8192 |@@@@@@@@@@@@@@@                1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  90% 0.00      369 disp_req_lock          timeout_dispatch+0x8b   
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         cyclic_timer+0x108      
+                                                     cyclic_softint+0xdc     
+                                                     cbe_softclock+0x1a      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  91% 0.00      430 disp_req_lock          cv_wait+0x69            
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         timeout_taskq_thread+0xa7
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  93% 0.00     6958 0xffffff02d6703938     gcpu_ntv_mca_poll_wrapper+0x5d
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      8192 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         gcpu_ntv_mca_poll_cyclic+0x17
+                                                     cyclic_softint+0xdc     
+                                                     cbe_low_level+0x17      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  94% 0.00      398 0xffffff02d67af778     cv_wait+0x69            
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         taskq_thread_wait+0x99  
+                                                     taskq_thread+0x246      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  96% 0.00     1528 0xffffff02d67af778     taskq_thread+0x1db      
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  97% 0.00      999 0xffffff02d4429080     timeout_generic+0x83    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         timeout+0x5b            
+                                                     ql_timer+0x4e3          
+                                                     callout_list_expire+0x77
+                                                     callout_expire+0x31     
+                                                     callout_execute+0x1e    
+                                                     taskq_thread+0x1b7      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  99% 0.00      422 0xffffff02d4428f00     timeout_generic+0x83    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         timeout+0x5b            
+                                                     ohci_root_hub_allocate_intr_pipe_resource+0x97
+                                                     ohci_handle_root_hub_status_change+0x1cc
+                                                     callout_list_expire+0x77
+                                                     callout_expire+0x31     
+                                                     callout_execute+0x1e    
+                                                     taskq_thread+0x1b7      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1% 100% 0.00     3390 0xffffff02d5842678     gcpu_ntv_mca_poll_wrapper+0x5d
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      4096 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         gcpu_ntv_mca_poll_cyclic+0x17
+                                                     cyclic_softint+0xdc     
+                                                     cbe_low_level+0x17      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+
+Adaptive mutex block: 1 events in 10.045 seconds (0 events/sec)
+
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1 100% 100% 0.00   256575 0xffffff02d585c680     cv_wait+0x69            
+
+      nsec ------ Time Distribution ------ count     Stack                   
+    262144 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         taskq_thread_wait+0x99  
+                                                     taskq_thread+0x246      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+
+Spin lock spin: 139 events in 10.045 seconds (14 events/sec)
+
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   19  14%  14% 0.00    17791 0xffffff02d67acd10     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@                            2         disp+0xad               
+      1024 |@@@@@@@@@                      6         swtch+0xa4              
+      2048 |                               0         idle+0xc4               
+      4096 |                               0         thread_start+0x8        
+      8192 |@@@@@@@@@                      6         
+     16384 |@@@@                           3         
+     32768 |                               0         
+     65536 |                               0         
+    131072 |@                              1         
+    262144 |@                              1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   13   9%  23% 0.00     9958 cpu0_disp              disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       256 |@@@@                           2         setbackdq+0x2bc         
+       512 |@@@@@@@@@                      4         sleepq_wakeone_chan+0x89
+      1024 |@@                             1         cv_signal+0x8e          
+      2048 |@@@@@@@@@                      4         timeout_dispatch+0xb2   
+      4096 |@@                             1         cyclic_timer+0x108      
+      8192 |                               0         cyclic_softint+0xdc     
+     16384 |                               0         cbe_softclock+0x1a      
+     32768 |                               0         av_dispatch_softvect+0x5f
+     65536 |                               0         dispatch_softint+0x34   
+    131072 |@@                             1         switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   12   9%  32% 0.00    12903 cpu0_disp              disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@                        3         disp+0xad               
+      1024 |@@@@@                          2         swtch+0xa4              
+      2048 |                               0         idle+0xc4               
+      4096 |@@                             1         thread_start+0x8        
+      8192 |@@@@@@@@@@                     4         
+     16384 |@@                             1         
+     32768 |                               0         
+     65536 |                               0         
+    131072 |@@                             1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   10   7%  39% 0.00     3489 0xffffff02d67ac920     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@                         2         disp+0xad               
+      1024 |@@@@@@                         2         swtch+0xa4              
+      2048 |                               0         idle+0xc4               
+      4096 |@@@@@@                         2         thread_start+0x8        
+      8192 |@@@@@@@@@                      3         
+     16384 |@@@                            1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+   10   7%  46% 0.00    32604 0xffffff02d67ac4f8     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@                         2         disp+0xad               
+      1024 |@@@                            1         swtch+0xa4              
+      2048 |                               0         idle+0xc4               
+      4096 |@@@                            1         thread_start+0x8        
+      8192 |@@@@@@@@@@@@                   4         
+     16384 |                               0         
+     32768 |                               0         
+     65536 |                               0         
+    131072 |                               0         
+    262144 |@@@@@@                         2         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    9   6%  53% 0.00     1121 0xffffff02d67acd10     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@                            1         setbackdq+0x2bc         
+      1024 |@@@@@@@@@@@@@                  4         sleepq_wakeone_chan+0x89
+      2048 |@@@@@@@@@@                     3         cv_signal+0x8e          
+      4096 |@@@                            1         taskq_dispatch+0x33e    
+                                                     callout_normal+0x138    
+                                                     cyclic_softint+0xdc     
+                                                     cbe_softclock+0x1a      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    6   4%  57% 0.00      703 0xffffff02d67ac4f8     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@                          1         setbackdq+0x2bc         
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@      5         sleepq_wakeone_chan+0x89
+                                                     cv_signal+0x8e          
+                                                     taskq_dispatch+0x33e    
+                                                     callout_normal+0x138    
+                                                     cyclic_softint+0xdc     
+                                                     cbe_softclock+0x1a      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    5   4%  60% 0.00    26688 cp_default             disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@                   2         disp_getbest+0x21       
+      1024 |@@@@@@                         1         disp+0x5a               
+      2048 |                               0         swtch+0xa4              
+      4096 |                               0         idle+0xc4               
+      8192 |                               0         thread_start+0x8        
+     16384 |@@@@@@                         1         
+     32768 |                               0         
+     65536 |                               0         
+    131072 |@@@@@@                         1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    5   4%  64% 0.00     6654 cpu0_disp              disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@                         1         disp_getbest+0x21       
+      1024 |@@@@@@                         1         disp_getwork+0x25b      
+      2048 |                               0         disp+0x1c2              
+      4096 |                               0         swtch+0xa4              
+      8192 |@@@@@@                         1         cv_wait+0x61            
+     16384 |@@@@@@@@@@@@                   2         timeout_taskq_thread+0xa7
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    5   4%  68% 0.00      692 0xffffff02d67acd10     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@                         1         setbackdq+0x2bc         
+      1024 |@@@@@@@@@@@@@@@@@@             3         sleepq_wakeone_chan+0x89
+      2048 |@@@@@@                         1         cv_signal+0x8e          
+                                                     timeout_dispatch+0xb2   
+                                                     cyclic_timer+0x108      
+                                                     cyclic_softint+0xdc     
+                                                     cbe_softclock+0x1a      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    4   3%  71% 0.00     2562 cpu0_disp              disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@                        1         disp_getbest+0x21       
+      2048 |@@@@@@@                        1         disp_getwork+0x25b      
+      4096 |@@@@@@@                        1         disp+0x1c2              
+      8192 |@@@@@@@                        1         swtch+0xa4              
+                                                     cv_wait+0x61            
+                                                     taskq_thread_wait+0x99  
+                                                     taskq_thread+0x246      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    4   3%  73% 0.00      527 cpu0_disp              disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@                2         setbackdq+0x2bc         
+      1024 |@@@@@@@@@@@@@@@                2         sleepq_wakeone_chan+0x89
+                                                     cv_signal+0x8e          
+                                                     taskq_dispatch+0x33e    
+                                                     callout_normal+0x138    
+                                                     cyclic_softint+0xdc     
+                                                     cbe_softclock+0x1a      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    4   3%  76% 0.00      568 0xffffff02d67ac920     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@         3         setbackdq+0x2bc         
+      1024 |                               0         sleepq_wakeone_chan+0x89
+      2048 |@@@@@@@                        1         cv_signal+0x8e          
+                                                     taskq_dispatch+0x33e    
+                                                     timeout_taskq_thread+0x10b
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    4   3%  79% 0.00     1880 0xffffff02d67ac4f8     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       256 |@@@@@@@                        1         setbackdq+0x2bc         
+       512 |                               0         sleepq_wakeone_chan+0x89
+      1024 |@@@@@@@                        1         cv_signal+0x8e          
+      2048 |@@@@@@@                        1         taskq_dispatch+0x33e    
+      4096 |                               0         timeout_taskq_thread+0x10b
+      8192 |@@@@@@@                        1         thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    3   2%  81% 0.00    37296 cpu0_disp              disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@@@@@@@@                     1         disp+0xad               
+      4096 |                               0         swtch+0xa4              
+      8192 |@@@@@@@@@@                     1         cv_wait+0x61            
+     16384 |                               0         taskq_thread_wait+0x99  
+     32768 |                               0         taskq_thread+0x246      
+     65536 |                               0         thread_start+0x8        
+    131072 |@@@@@@@@@@                     1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    3   2%  83% 0.00     1087 cpu0_disp              disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@           2         setbackdq+0x2bc         
+      2048 |@@@@@@@@@@                     1         ts_setrun+0x116         
+                                                     lwp_unsleep+0x56        
+                                                     setrun_locked+0x96      
+                                                     lwp_timer_timeout+0xed  
+                                                     callout_list_expire+0x77
+                                                     callout_expire+0x31     
+                                                     callout_realtime+0x26   
+                                                     cyclic_softint+0xdc     
+                                                     cbe_low_level+0x17      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    3   2%  86% 0.00     1915 cpu0_disp              disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@@@@@@@@@@@@@@@@@@           2         disp_getbest+0x192      
+      4096 |@@@@@@@@@@                     1         disp_getwork+0x25b      
+                                                     idle+0x9d               
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    3   2%  88% 0.00      679 0xffffff02d67acd10     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@                     1         setbackdq+0x2bc         
+      1024 |@@@@@@@@@@@@@@@@@@@@           2         sleepq_wakeone_chan+0x89
+                                                     cv_signal+0x8e          
+                                                     taskq_dispatch+0x33e    
+                                                     timeout_taskq_thread+0x10b
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    2   1%  89% 0.00    59289 cp_default             disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      4096 |@@@@@@@@@@@@@@@                1         disp_getbest+0x21       
+      8192 |                               0         disp_getwork+0x32       
+     16384 |                               0         idle+0x9d               
+     32768 |                               0         thread_start+0x8        
+     65536 |                               0         
+    131072 |@@@@@@@@@@@@@@@                1         
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    2   1%  91% 0.00     1837 0xffffff02d67ac920     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@@@@@@@@@@@@@                1         disp+0xad               
+      4096 |@@@@@@@@@@@@@@@                1         swtch+0xa4              
+                                                     cv_timedwait_hires+0xe0 
+                                                     cv_timedwait+0x47       
+                                                     stmf_svc+0x44c          
+                                                     taskq_thread+0x1b7      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  91% 0.00      446 cp_default             disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp_getbest+0x21       
+                                                     disp_getwork+0x32       
+                                                     disp+0x1c2              
+                                                     swtch+0xa4              
+                                                     cv_wait+0x61            
+                                                     timeout_taskq_thread+0xa7
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  92% 0.00      508 cp_default             disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+       512 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp_getbest+0x21       
+                                                     disp+0x5a               
+                                                     swtch+0xa4              
+                                                     cv_wait+0x61            
+                                                     timeout_taskq_thread+0xa7
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  93% 0.00     1456 cp_default             disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp_getbest+0x21       
+                                                     disp+0x5a               
+                                                     swtch+0xa4              
+                                                     cv_wait+0x61            
+                                                     taskq_thread_wait+0x99  
+                                                     taskq_thread+0x246      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  94% 0.00     2285 cpu0_disp              disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      4096 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp+0xad               
+                                                     swtch+0xa4              
+                                                     cv_timedwait_hires+0xe0 
+                                                     cv_timedwait+0x47       
+                                                     stmf_svc+0x44c          
+                                                     taskq_thread+0x1b7      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  94% 0.00   110488 cpu0_disp              disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+    131072 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp+0xad               
+                                                     swtch+0xa4              
+                                                     cv_timedwait_hires+0xe0 
+                                                     cv_timedwait+0x47       
+                                                     seg_pasync_thread+0xcd  
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  95% 0.00      670 0xffffff02d67acd10     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         setbackdq+0x2bc         
+                                                     cv_unsleep+0x8c         
+                                                     setrun_locked+0x96      
+                                                     setrun+0x1e             
+                                                     cv_wakeup+0x36          
+                                                     callout_list_expire+0x77
+                                                     callout_expire+0x31     
+                                                     callout_realtime+0x26   
+                                                     cyclic_softint+0xdc     
+                                                     cbe_low_level+0x17      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  96% 0.00      565 0xffffff02d67acd10     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp+0xad               
+                                                     swtch+0xa4              
+                                                     cv_wait+0x61            
+                                                     taskq_thread_wait+0x99  
+                                                     taskq_thread+0x246      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  96% 0.00      947 cpu0_disp              disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         setbackdq+0x2bc         
+                                                     sleepq_wakeone_chan+0x89
+                                                     cv_signal+0x8e          
+                                                     taskq_dispatch+0x33e    
+                                                     timeout_taskq_thread+0x10b
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  97% 0.00      547 0xffffff02d67ac4f8     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         setbackdq+0x2bc         
+                                                     cv_unsleep+0x8c         
+                                                     setrun_locked+0x96      
+                                                     setrun+0x1e             
+                                                     cv_wakeup+0x36          
+                                                     callout_list_expire+0x77
+                                                     callout_expire+0x31     
+                                                     callout_realtime+0x26   
+                                                     cyclic_softint+0xdc     
+                                                     cbe_low_level+0x17      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  98% 0.00   163096 0xffffff02d67ac4f8     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+    262144 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp+0xad               
+                                                     swtch+0xa4              
+                                                     cv_wait+0x61            
+                                                     taskq_thread_wait+0x99  
+                                                     taskq_thread+0x246      
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  99% 0.00      749 0xffffff02d67ac920     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      1024 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         setbackdq+0x2bc         
+                                                     sleepq_wakeone_chan+0x89
+                                                     cv_signal+0x8e          
+                                                     taskq_dispatch+0x33e    
+                                                     callout_normal+0x138    
+                                                     cyclic_softint+0xdc     
+                                                     cbe_softclock+0x1a      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1%  99% 0.00     1386 0xffffff02d67ac920     disp_lock_enter_high+0x15
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      2048 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         setbackdq+0x2bc         
+                                                     cv_unsleep+0x8c         
+                                                     setrun_locked+0x96      
+                                                     setrun+0x1e             
+                                                     cv_wakeup+0x36          
+                                                     callout_list_expire+0x77
+                                                     callout_expire+0x31     
+                                                     callout_realtime+0x26   
+                                                     cyclic_softint+0xdc     
+                                                     cbe_low_level+0x17      
+                                                     av_dispatch_softvect+0x5f
+                                                     dispatch_softint+0x34   
+                                                     switch_sp_and_call+0x13 
+-------------------------------------------------------------------------------
+Count indv cuml rcnt     nsec Lock                   Caller                  
+    1   1% 100% 0.00     6004 0xffffff02d67ac920     disp_lock_enter+0x2e    
+
+      nsec ------ Time Distribution ------ count     Stack                   
+      8192 |@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 1         disp_getbest+0x21       
+                                                     disp_getwork+0x25b      
+                                                     idle+0x9d               
+                                                     thread_start+0x8        
+-------------------------------------------------------------------------------

@@ -1,0 +1,271 @@
+<base href="http://hepth.hanyang.ac.kr/">
+<HTML>
+<HEAD><TITLE>Astro & Particle Physics Group, Hanyang University</TITLE>
+<Meta http-equiv="Content-Type" content="http://hepth.hanyang.ac.kr/index.html ; charset=euc-kr">
+<style type='text/css'>
+  body { font-family: "����";color:black ; font-size:8px;}
+  A:link { text-decoration:none; color: 00448B;}
+  A:visited { text-decoration:none; color: green;}
+  A:active { text-decoration:underline; color:red ;}
+  A:hover {color: black; text-decoration:underline;}
+  p,br,body,td,form,div {font-size:10pt; font-family:����; color:#555555;}
+	
+</style>
+
+
+<SCRIPT LANGUAGE='JavaScript'>
+function openwin()
+ {
+ window.open('http://hepth.hanyang.ac.kr/popup.html','_blank','toolbar=0, menubar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, width=350, height=150, top=100, left=100');
+ }
+</SCRIPT>
+
+<SCRIPT language="javascript">
+ 
+ if (document.images) {
+  image1on = new Image()
+  image1on.src = "image/menu_top_main1.jpg"
+  image2on = new Image()
+  image2on.src = "image/menu_top_members1.jpg"
+  image3on = new Image()
+  image3on.src = "image/menu_top_lecture1.jpg"
+  image4on = new Image()
+  image4on.src = "image/menu_top_seminar1.jpg"
+  image5on = new Image()
+  image5on.src = "image/menu_top_workshop1.jpg"
+  image6on = new Image()
+  image6on.src = "image/menu_top_site1.jpg"
+  
+  image1off = new Image()
+  image1off.src = "image/menu_top_main.jpg"
+  image2off = new Image()
+  image2off.src = "image/menu_top_members.jpg"
+  image3off = new Image()
+  image3off.src = "image/menu_top_lecture.jpg"
+  image4off = new Image()
+  image4off.src = "image/menu_top_seminar.jpg"
+  image5off = new Image()
+  image5off.src = "image/menu_top_workshop.jpg"
+  image6off = new Image()
+  image6off.src = "image/menu_top_site.jpg" 
+ }
+
+ function turnOn(imageName) {
+  if (document.images) {
+   document[imageName].src = eval(imageName + "on.src")
+  }
+ } 
+
+ function turnOff(imageName) {
+  if (document.images) {
+   document[imageName].src = eval(imageName + "off.src")
+  }
+ }
+
+function Hanyang(Form1) {
+	var HanyangService
+	HanyangService=Form1.hanyang.selectedIndex
+
+	if( HanyangService != 0 )
+		window.open(Form1.hanyang.options[Form1.hanyang.selectedIndex].value);
+	return
+}
+function Preprint(Form1) {
+	var PrepArchive
+	PrepArchive=Form1.archive.selectedIndex
+
+	if( PrepArchive == 1 )
+		newWindow=window.open('http://arXiv.org/archive/hep-th');
+	else if( PrepArchive == 2 )
+		newWindow=window.open('http://arXiv.org/archive/hep-ph');
+	else if( PrepArchive == 3 )
+		newWindow=window.open('http://arXiv.org/archive/gr-qc');
+	else if( PrepArchive == 4 )
+		newWindow=window.open('http://arXiv.org/archive/hep-lat');
+	else if( PrepArchive == 5 )
+		newWindow=window.open('http://arXiv.org/archive/astro-ph');
+	else if( PrepArchive == 6 )
+		newWindow=window.open('http://arXiv.org/archive/cond-mat');
+	else if( PrepArchive == 7 )
+		newWindow=window.open('http://arXiv.org/archive/nucl-th');
+	else if( PrepArchive == 8 )
+		newWindow=window.open('http://arXiv.org/archive/acc-phys');
+	else if( PrepArchive == 9 )
+		newWindow=window.open('http://arXiv.org/archive/hep-ex');
+	else if( PrepArchive == 10 )
+		newWindow=window.open('http://arXiv.org/archive/nucl-ex');
+	else if( PrepArchive == 11 )
+		newWindow=window.open('http://arXiv.org/archive/quant-ph');
+	else if( PrepArchive == 12 )
+		newWindow=window.open('http://arXiv.org/archive/mtrl-th');
+	else if( PrepArchive == 13 )
+		newWindow=window.open('http://arXiv.org/archive/supr-con');
+	else if( PrepArchive == 14 )
+		newWindow=window.open('http://arXiv.org/archive/chem-ph');
+	else if( PrepArchive == 15 )
+		newWindow=window.open('http://arXiv.org/archive/cmp-lg');
+	else if( PrepArchive == 16 )
+		newWindow=window.open('http://www.msri.org/preprints/alg-geom.html');
+	else if( PrepArchive == 17 )
+		newWindow=window.open('http://www.msri.org/preprints/funct-an.html');
+	else if( PrepArchive == 18 )
+		newWindow=window.open('http://www.msri.org/preprints/dg-ga.html');
+	else if( PrepArchive == 19 )
+		newWindow=window.open('http://www.msri.org/preprints/cd-hg.html');
+	else if( PrepArchive == 20 )
+		newWindow=window.open('http://www.msri.org/preprints/auto-fms.html');
+	else if( PrepArchive == 21 )
+		newWindow=window.open('http://www.msri.org/preprints/q-alg.html');
+	else if( PrepArchive == 22 )
+		newWindow=window.open('http://www.msri.org/form/dg-ga?');
+	else if( PrepArchive == 23 )
+		newWindow=window.open('http://arXiv.org/form/hep-th?');
+	else if( PrepArchive == 24 )
+		newWindow=window.open('http://arXiv.org/');
+	return
+}
+
+
+function Class(Form1) {
+	var IndexService
+	IndexService=Form1.classification.selectedIndex
+
+	if( IndexService != 0 )
+		window.open(Form1.classification.options[Form1.classification.selectedIndex].value);
+	return
+}
+
+function Slac(Form1) {
+	var SlacService
+	SlacService=Form1.spires.selectedIndex
+
+	if( SlacService == 1 )
+		newWindow=window.open('http://heplibw3.slac.stanford.edu/spires/form/hepspif.html');
+	else if( SlacService == 2 )
+		newWindow=window.open('http://heplibw3.slac.stanford.edu/spires/form/confspif.html');
+	else if( SlacService == 3 )
+		newWindow=window.open('http://heplibw3.slac.stanford.edu/spires/form/bookspif.html');
+	else if( SlacService == 4 )
+		newWindow=window.open('http://heplibw3.slac.stanford.edu/spires/form/instspif.html');
+	else if( SlacService == 5 )
+		newWindow=window.open('http://heplibw3.slac.stanford.edu/FIND/hepnames');
+	else if( SlacService == 6 )
+		newWindow=window.open('http://www-spires.slac.stanford.edu/find/hep');
+	return
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+  <CENTER>
+
+  <TABLE BORDER=0 WIDTH=1002 CELLSPACING=0 CELLPADDING=0 align="center" valign="middle">
+    <TR HEIGHT=20>
+     <TD WIDTH=1>&nbsp;</TD>
+     <TD WIDTH=160>&nbsp;</TD>
+     <TD WIDTH=690>&nbsp;</TD>
+     <TD WIDTH=150>&nbsp;</TD>
+     <TD WIDTH=1>&nbsp;</TD>
+    </TR>
+    <TR HEIGHT=100>
+     <TD>&nbsp;</TD>
+     <TD COLSPAN=3><img src="image/title.jpg"><br><hr width="1002"></hr></TD>
+     <TD>&nbsp;</TD>
+    </tr>
+    <TR HEIGHT=30>
+     <TD>&nbsp;</TD>
+     <TD COLSPAN=3>
+       <TABLE BORDER=0 WIDTH=1002 CELLSPACING=0 CELLPADDING=0 align="center" valign="middle"> 
+    <TR>
+     <TD HEIGHT=30 width=171><img src="image/menu_top_blank.jpg"></TD>
+     <TD HEIGHT=30 width=110><a href="./" onMouseOver="turnOn('image1')" onMouseOut="turnOff('image1')"><img name="image1" src="image/menu_top_main.jpg" BORDER=0></a></TD>
+     <TD height=30 width=110><a href="?menu=member" onMouseOver="turnOn('image2')" onMouseOut="turnOff('image2')"><img name="image2" src="image/menu_top_members.jpg" BORDER=0></a></TD>
+     <TD height=30 width=110><a href="?menu=lecture" onMouseOver="turnOn('image3')" onMouseOut="turnOff('image3')"><img name="image3" src="image/menu_top_lecture.jpg" BORDER=0></a></TD>
+     <TD height=30 width=110><a href="?menu=seminar" onMouseOver="turnOn('image4')" onMouseOut="turnOff('image4')"><img name="image4" src="image/menu_top_seminar.jpg" BORDER=0></a></TD>
+     <TD height=30 width=110><a href="?menu=haengdang" onMouseOver="turnOn('image5')" onMouseOut="turnOff('image5')"><img name="image5" src="image/menu_top_workshop.jpg" BORDER=0></a></TD>
+     <TD height=30 width=110><a href="?menu=site" onMouseOver="turnOn('image6')" onMouseOut="turnOff('image6')"><img name="image6" src="image/menu_top_site.jpg" BORDER=0></a></TD>
+     <TD HEIGHT=30 width=171><img src="image/menu_top_blank.jpg"></TD>
+    </tr>
+  </table>      <hr width="1002"></hr></TD>
+     <TD>&nbsp;</TD>
+    </tr>
+
+    <TR HEIGHT=20>
+     <TD COLSPAN=5>
+
+
+  <TABLE BORDER=0 WIDTH=1002 height=500 CELLSPACING=0 CELLPADDING=0 align="center" valign="top">
+   <tr>
+    <td height=500 valign=top>
+    <table border=0 align=center cellpadding=0 cellspacing=2>
+
+     <Tr><Td height=250 width=160 align=left valign=top><img src="image/side/1.jpg"></Td></tr>
+
+
+     <tr><Td height=30 align=left>&nbsp;&nbsp;<font color=#333333>��</font> <A HREF="?menu=notice" target="_self"><font color=#333333><b>Notice</b></font></a></td></Tr>
+     <tr><Td height=30 align=left>&nbsp;&nbsp;<font color=#333333>��</font> <A HREF="?menu=freeboard" target="_self"><font color=#333333><b>Freeboard</b></font></a></td></Tr>
+
+
+
+     <tr><td height=190></td></tr>
+    
+    </table>
+    </td>
+   
+    <Td height=100% valign=top align=center>
+     <IFRAME SRC="http://hepth.hanyang.ac.kr/board/zboard.php?id=notice" width="635" height="450" frameborder="0" scrolling="auto" name="iframe"></IFRAME>
+    </Td>
+
+
+    <TD height=650>
+    <table border=0 align=center vlign=top cellpadding=0 cellspacing=2>
+        <tr width=150> 
+         <TD>     <IFRAME SRC="include/quick_link.html" width="165" height="450" frameborder="0" scrolling="no" name="iframe"></IFRAME>
+     </TD>
+	</tr>
+      
+    </table>
+    </td>
+    
+
+
+    </tr> 
+  </TABLE>
+     </TD>
+    </TR>
+
+    <TR HEIGHT=20>
+     <TD COLSPAN=5>
+  <TABLE BORDER=0 WIDTH=600 CELLSPACING=0 CELLPADDING=0 align="center" valign="middle">
+    <TR HEIGHT=50>
+      <TD >&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD COLSPAN=2 align=center>
+
+<A HREF="http://www.hanyang.ac.kr" target=new><IMG SRC="image/hanyang.gif" border=0 ></a>
+<A HREF="http://library.hanyang.ac.kr" target=new><IMG SRC="image/library.gif" border=0 ></a>
+<A HREF="http://physics.hanyang.ac.kr" target=new><IMG SRC="image/physics.gif" border=0 ></a>
+<A HREF="http://www.kps.or.kr/home/kor/" target=new><IMG SRC="image/kps.gif" border=0 ></a><br>
+<A HREF="http://hadron.hanyang.ac.kr/" target=new><IMG SRC="image/hadron.gif" border=0 ></a>
+<A HREF="http://apctp.org/" target=new><IMG SRC="image/apctp.gif" border=0 ></a>
+<A HREF="http://www.nrf.go.kr" target=new><IMG SRC="image/nrf.gif" border=0 ></a>
+
+<A HREF="http://www.kias.re.kr/en/index.jsp" TARGET=NEW><IMG SRC="image/kias.gif" BORDER=0></A>
+
+
+      </td>
+    </tr>
+
+
+
+
+    <TR HEIGHT=10><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD colspan=2 ALIGN="CENTER"><div class="leftnavhr"> <img src="image/line.jpg" alt=" " width="650" height="1"></div></TD><TD>&nbsp;</TD><TD>&nbsp;</TD></TR>
+    <TR HEIGHT=10><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD colspan=2 ALIGN="CENTER">Astrp & Particle Physics Group, Departmert of physics, Hanyang University, Seoul 133-791, Korea</TD><TD>&nbsp;</TD><TD>&nbsp;</TD></TR>
+<TR HEIGHT=10><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD colspan=2 ALIGN="CENTER">Copyright 2007. All right reserved. Comments: Webmaster (hepthweb@hanyang.ac.kr)</TD><TD>&nbsp;</TD><TD>&nbsp;</TD></TR>
+    <TR HEIGHT=10><TD>&nbsp;</TD><TD>&nbsp;</TD><TD>&nbsp;</TD><TD colspan=2 ALIGN="CENTER">Last Update : Dec. 3, 2007 </TD><TD>&nbsp;</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+     </TD>
+    </TR>
+  </CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/cs343-tracking/!svn/ver/8/trunk
+END
+commands.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cs343-tracking/!svn/ver/2/trunk/commands.txt
+END
+projects.css
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cs343-tracking/!svn/ver/2/trunk/projects.css
+END
+bustersAgents.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cs343-tracking/!svn/ver/5/trunk/bustersAgents.py
+END
+bustersGhostAgents.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cs343-tracking/!svn/ver/2/trunk/bustersGhostAgents.py
+END
+inference.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cs343-tracking/!svn/ver/8/trunk/inference.py
+END
+dbn.png
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/cs343-tracking/!svn/ver/2/trunk/dbn.png
+END
+keyboardAgents.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/cs343-tracking/!svn/ver/2/trunk/keyboardAgents.py
+END
+busters.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cs343-tracking/!svn/ver/2/trunk/busters.html
+END
+distanceCalculator.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cs343-tracking/!svn/ver/2/trunk/distanceCalculator.py
+END
+game.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/cs343-tracking/!svn/ver/2/trunk/game.py
+END
+disperse.png
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/cs343-tracking/!svn/ver/2/trunk/disperse.png
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/cs343-tracking/!svn/ver/2/trunk/util.py
+END
+layout.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/cs343-tracking/!svn/ver/2/trunk/layout.py
+END
+graphicsUtils.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/cs343-tracking/!svn/ver/2/trunk/graphicsUtils.py
+END
+busters.png
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/cs343-tracking/!svn/ver/2/trunk/busters.png
+END
+graphicsDisplay.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/cs343-tracking/!svn/ver/2/trunk/graphicsDisplay.py
+END
+ghostAgents.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/cs343-tracking/!svn/ver/2/trunk/ghostAgents.py
+END
+busters.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/cs343-tracking/!svn/ver/2/trunk/busters.py
+END

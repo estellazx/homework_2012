@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\title{Lab 7}
+\author{Shun Zhang (sz4554)}
+
+\begin{document}
+
+\maketitle
+
+Code and running script are attached separately.
+
+1)
+
+a)
+
+Average of 10 times query. All are in units of ms (1/1000 sec.).
+
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	&
+	\multicolumn{2}{|c|}{Load Time} &
+	\multicolumn{2}{|c|}{Query 1} &
+	\multicolumn{2}{|c|}{Query 2} &
+	\multicolumn{2}{|c|}{Query 3} \\ 
+	\hline
+	Data Generator & I & II & I & II & I & II & I & II \\ 
+	\hline
+	Physical Organization & \multicolumn{8}{|c|}{} \\
+	\hline
+	1& 118.8 & 115.1 & 152.8 & 242.3 & 101.4 & 143 & 876.3 & 1158.4 \\ 
+	\hline
+	2& 9.5 & 2.4 & 81.3 & 47 & 114.4 & 135 & 267.3 & 205.7 \\ 
+	\hline
+	3& 19.3 & 12.6 & 111.9 & 139.9 & 121 & 56.4 & 119.4 & 496.8 \\
+	\hline
+	4& 18.1 & 11.9 & 50 & 52.7 & 47.3 & 91.3 & 80 & 58.7 \\ 
+	\hline
+\end{tabular}
+\\
+
+b)
+
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+	\hline
+	&
+	\multicolumn{2}{|c|}{Load Time} &
+	\multicolumn{2}{|c|}{Query 1} &
+	\multicolumn{2}{|c|}{Query 2} &
+	\multicolumn{2}{|c|}{Query 3} \\ 
+	\hline
+	Data Generator & I & II & I & II & I & II & I & II \\ 
+	\hline
+	Physical Organization & 1 &  & 1 &  & 1 &  & 1 &  \\
+	\hline
+	1& & & & & & & & \\ 
+	\hline
+	2& 109.3 & & 71.5 & & -13 & & 609 & \\ 
+	\hline
+	3& 99.5 & & 40.9 & & -19.6 & & 756.9 & \\
+	\hline
+	4& 100.7 & & 102.8 & & 54 & & 769.3 & \\
+	\hline
+\end{tabular}
+\\
+
+2)
+
+When an index is built for a column, its corresponding query time would decrease.
+
+It takes a longer time just to create the index - longer than query. But the query time would decrease a lot. So for a database usually queried not modified, it's a good idea to create indexes.
+
+\end{document}

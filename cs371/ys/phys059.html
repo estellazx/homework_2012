@@ -1,0 +1,1424 @@
+<base href="http://cosmicvariance.com/">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Language" content="en" />
+<title>Cosmic Variance | Discover Magazine</title>
+<meta name="readability-verification" 
+      content="s8amQQA5qYzyMfYw73RVdC79a3YzDuRmtkTh5NLJ" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<link rel="top" title="Main" href="/" />
+<meta name="keywords" content=" " />
+<meta name="description" content="" />
+<link  rel="stylesheet" type="text/css" media="screen" href="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/css/discover.css" />
+<link  rel="stylesheet" type="text/css" media="screen" href="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/css/Quills.css" />
+<script type="text/javascript" src="http://www.fark.com/js/farkit.js"></script>
+<script type="text/javascript" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/js/functions.js"></script>
+<script type="text/javascript" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/js/labels.js"></script>
+<script type="text/javascript" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/js/embeddedcontent.js"></script>
+
+<script type="text/javascript">
+    var axel = Math.random() + "";
+    var ord = axel * 1000000000000000000;
+</script>
+
+<link rel="alternate" 
+      type="application/rss+xml" 
+      title="Discover Blogs RSS Feed" 
+      href="http://feeds.feedburner.com/DiscoverBlogs" />
+<link rel="alternate" 
+      type="application/rss+xml" 
+      title="Discover Magazine | RSS" 
+      href="http://feeds.feedburner.com/DiscoverMag" />
+<link rel="alternate"
+      type="application/rss+xml"
+      title="Discover Top Stories Feed"
+      href="http://feeds.feedburner.com/DiscoverTopStories" />
+<link rel="alternate" type="application/rss+xml" title="Cosmic Variance RSS Feed" href="http://blogs.discovermagazine.com/cosmicvariance/feed/" />
+<link rel="pingback" href="http://blogs.discovermagazine.com/cosmicvariance/xmlrpc.php" />
+
+<script type='text/javascript' src='http://blogs.discovermagazine.com/cosmicvariance/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://blogs.discovermagazine.com/cosmicvariance/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.discovermagazine.com/cosmicvariance/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogs.discovermagazine.com/cosmicvariance/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Cosmic Variance' href='http://blogs.discovermagazine.com/cosmicvariance/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link type="text/css" rel="stylesheet" href="http://blogs.discovermagazine.com/cosmicvariance/wp-content/plugins/wp-ajax-edit-comments/css/editComments.css" />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">
+/* <![CDATA[ */
+img.latex { vertical-align: middle; border: none; }
+/* ]]> */
+</style>
+
+   <script type="text/javascript" 
+           src="http://mblogs.discovermagazine.com/mobify/redirect.js">
+   </script>
+   <script type="text/javascript">
+    try{_mobify("http://mblogs.discovermagazine.com/");} catch(err) {};
+   </script>
+
+   <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-763513-3']);
+     _gaq.push(['_setDomainName', 'discovermagazine.com']);
+     _gaq.push(['_trackPageview']);
+   
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
+
+<!-- Galleria libraries -->
+<style type="text/css"
+          media="screen"><!-- @import url(http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/galleria/themes/galleria.classic.css); --></style>
+<script type="text/javascript" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/galleria/galleria.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Galleria.loadTheme("http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/galleria/themes/galleria.classic.js");
+
+        //giving unique ids to the galleries so that we can create them
+        //individually
+        var galleries = jQuery(".galleriaImages");
+        for (i=0; i< galleries.length; i++){
+            var gallery = galleries[i];
+            var gallery_id = "gallery-" + i;
+            jQuery(".galleriaImages:eq("+i+")").attr("id", gallery_id);
+            jQuery("#"+ gallery_id).galleria(); 
+        }
+
+        //hooking up the previous/next and thumbnail buttons
+        jQuery('.galleria-image-nav-right').live('click', function(){
+            var parent_id = jQuery(this).parents(".galleriaImages").attr("id");
+            whatImage(1, parent_id);
+        });
+        jQuery('.galleria-image-nav-left').live('click', function(){
+            var parent_id = jQuery(this).parents(".galleriaImages").attr("id");
+            whatImage(-1, parent_id);
+        });
+        jQuery('.galleria-image img').live('click', function(){
+            var parent_id = jQuery(this).parents(".galleriaImages").attr("id");
+            var post_url = jQuery("#" + parent_id).parents(".weblog-entry").children("h2").children("a").attr("href");
+            var url = jQuery(this).attr('src');
+            onNextImage(post_url + url.split('/').pop());
+        });
+
+        //we look at what is the next/previous image url
+        function whatImage(change, parent_id){
+            var post_url = jQuery("#" + parent_id).parents(".weblog-entry").children("h2").children("a").attr("href");
+            var current = parseInt(jQuery('#' + parent_id +' .galleria-counter .current').text());
+            var total = parseInt(jQuery('#' + parent_id + ' .galleria-counter .total').text());
+            if(current==0 && change==-1)
+                current = total;
+            if(current==total && change==1)
+                current = 0;
+            var next = current + change;
+            var next_url = jQuery('#' + parent_id + ' .galleria-thumbnails .galleria-image:eq('+(next-1)+') img').attr('src');
+            onNextImage(post_url + next_url.split('/').pop());
+        };
+
+        //Update the ads/GA 
+        function onNextImage(next_url){
+            jQuery(".adframe").each(function(){
+              this.contentWindow.location.reload(true);
+            });
+            _gaq.push(['_trackPageview', next_url]);
+        }
+
+    });
+</script>
+<!-- end Galleria libraries -->
+</head>
+<body>
+    <div id="container">
+        <div id="mainBanner">
+            <div class="banner">
+              <iframe class="adframe" width="728" height="90" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/mu-plugins/discover-ads/iframe.php?type=LDB&blog=cosmicvariance" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>            </div>
+        </div>
+
+        <div id="header">
+            <div id="headerTop">
+                <div id="logo"><a href="http://discovermagazine.com"><img src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/img/logo.gif" alt="DISCOVER Magazine. Science, Technology and The Future" width="489" height="109" /></a></div>
+                <div id="searchModule">
+                    <div id="current-issue">
+                                        <a href="http://discovermagazine.com/2012/sep">  
+                <img width="63" height="83" alt="Current Issue" src="http://blogs.discovermagazine.com/wp-content/images/issueImage.jpeg"> </a>
+                    </div>
+                    <div id="subscribe-link">
+                        <a href="http://discovermagazine.com/blogsublink" class="rollover" target="subscribe">Subscribe Today &raquo;</a>
+                    </div>
+                    <ul id="member-links">
+                        <li class="firstInList"><a href="http://discovermagazine.com/renew" class="rollover" target="_blank">Renew</a></li>
+                        <li><a href="http://discovermagazine.com/bloggiftlink" class="rollover" target="subscribe">Give a Gift</a></li>
+                        <li><a href="http://discovermagazine.com/archives" class="rollover">Archives</a></li>
+                        <li><a href="http://discovermagazine.com/readerservices" class="rollover">Customer Service</a></li>
+                    </ul>
+                    <ul id="header-social-links">
+                          <li class="fb"><a href="http://www.facebook.com/DiscoverMag" target="_blank">Facebook</a></li>
+                          <li class="tw"><a href="#twitter/DiscoverMag" target="_blank">Twitter</a></li>
+                          <li class="email"><a href="http://discovermagazine.com/newsletter/sign_up/">Newsletter</a></li>
+                    </ul>
+                    <script type="text/javascript">
+                          jQuery("#header-social-links .tw").click(function() {
+                              window.open("http://www.twitter.com/DiscoverMag");
+                              return false;
+                          });
+                    </script>
+                  <form action="http://discovermagazine.com/search">
+                      <div id="searchBox">
+                         <label class="inside" for="searchGadget">SEARCH</label>
+                         <input type="text" class="inputText emptyOnClick" accesskey="4" title="Search Site" size="15" name="SearchableText" id="searchGadget"/>
+                         <input type="image" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/img/bt_searchBoxSubmit.gif" class="inputButton" name="Submit"/>
+                         <div style="" id="LSResult" class="LSResult"><div id="LSShadow" class="LSShadow"/></div>    
+                    </div>    
+                  </form>
+                </div>
+                <div class="clearBoth"></div>
+            </div>
+            <div class="clearBoth"></div>
+            <div id="mainMenu">
+                <ul>
+                    <li><a style="width:113px;" href="http://discovermagazine.com/topics/health-medicine" class="rollover">Health &amp; Medicine</a></li>
+                    <li><a style="width:83px;"  href="http://discovermagazine.com/topics/mind-brain" class="rollover">Mind &amp; Brain</a></li>
+                    <li><a style="width:75px;" href="http://discovermagazine.com/topics/technology" class="rollover">Technology</a></li>
+                    <li><a style="width:47px;"  href="http://discovermagazine.com/topics//space" class="rollover">Space</a></li>
+                    <li><a style="width:95px;" href="http://discovermagazine.com/topics/human-origins" class="rollover">Human Origins</a></li>
+                    <li><a style="width:83px;" href="http://discovermagazine.com/topics/living-world" class="rollover">Living World</a></li>
+                    <li><a style="width:79px;" href="http://discovermagazine.com/topics/environment" class="rollover">Environment</a></li>
+                    <li><a style="width:99px;" href="http://discovermagazine.com/topics/physics-math" class="rollover">Physics &amp; Math</a></li>
+                    <li class="media"><a style="width:35px;" href="http://discovermagazine.com/video" class="rollover">Video</a></li>
+                    <li class="media"><a style="width:43px;" href="http://discovermagazine.com/photos" class="rollover">Photos</a></li>
+                    <li class="media"><a style="width:51px;" href="http://discovermagazine.com/topics/podcasts" class="rollover">Podcast</a></li>
+                    <li class="rss"><a style="width:26px;" href="http://discovermagazine.com/rsspage" class="rollover">RSS</a></li>
+                </ul>
+            </div>
+            <div class="clearBoth"></div>
+        </div> <!-- header -->
+
+
+
+        <div id="allContentNoBorder">
+
+            <div id="mainContentNoBorder">
+
+                <div id="topAreaNoBorder">
+
+                    <div class="clearBoth"></div>            
+                </div><!--end topArea-->
+                <div id="mainContentInnerNoBorder">            
+
+<div class="content">
+  <div id="blog-image">
+    <a href="http://blogs.discovermagazine.com/cosmicvariance">
+        
+        
+        
+        
+        
+                    <img src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/img/cvbn.png" alt="Cosmic Variance" />
+        
+        
+        
+        
+        
+            </a>
+</div>
+  <div id="content-weblog">
+    <br />
+    
+       
+    <div class="weblog-entry" id="post-8773">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/" rel="bookmark" title="Permanent Link to Neil Armstrong">Neil Armstrong</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p><a href="http://blogs.discovermagazine.com/badastronomy/2012/08/25/neil-armstrong-1930-2012/">Has died</a> at age 82. Perhaps to honor his memory we can resolve as a society to continue to do inspiring things.</p>
+<p><a href="http://www.dailymail.co.uk/sciencetech/article-1200725/Never-seen-photo-shows-Neil-Armstrongs-face-walks-moon.html"><img src="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/na.jpeg" alt="" title="Neil Armstrong" width="599" height="461" class="aligncenter size-full wp-image-8774" /></a></p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Neil Armstrong');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/') + '&title=' + encodeURIComponent('Neil Armstrong'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 25th, 2012 1:38 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/humanity/" title="View all posts in Humanity" rel="category tag">Humanity</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/#comments" title="Comment on Neil Armstrong">11 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8768">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/" rel="bookmark" title="Permanent Link to Morality and Basketball">Morality and Basketball</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p>Zach Weinersmith (<a href="http://www.smbc-comics.com/">of</a>) put up <a href="http://www.theweinerworks.com/?p=1535">a blog post about the subjective nature of morality</a>, which I <a href="https://twitter.com/seanmcarroll/status/239071584629964800">tweeted</a> approvingly. But afterward I realized that, while our substantive views are pretty much in agreement, I sometimes use a very similar-sounding analogy as the one he invoked, but in the precisely opposite sense!</p>
+<p>Zach&#8217;s analogy is the following: &#8220;objective&#8221; morality is to subjective morality as the rules of basketball are to the rules of Pankration, an ancient Greek free-for-all fighting competition. That is, in basketball, we have rules that are handed down from on high (the NBA or some other governing body), just as we do with objective morality (God or the nature of the universe or some such thing). In Pankration, while there are no formal rules, there are patterns that evolve due to the nature of the game; i.e., go for the fingers and other easily-damaged parts of the body. These kinds of rules are different, of course, but they do come into being over time.</p>
+<p><a href="http://faridchok.blogspot.com/2011/08/basketball-fouls.html"><img src="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/foul.jpeg" alt="" title="foul" width="200" height="219" class="alignright size-full wp-image-8769" /></a>That&#8217;s fine as far as it goes, but I like to use the basketball analogy to make a different point. I don&#8217;t believe in objective morality; the universe just is, and there&#8217;s nothing &#8220;out there&#8221; that judges human behaviors to be good or bad.  These categories of good and bad are things we human beings invent.  And in that sense, in my version of the analogy, the rules of morality are exactly like the rules of basketball! The difference is that I&#8217;m not analogizing the NBA to God or the universe, I&#8217;m analogizing the NBA to a collection of human beings that make up rules (which is a pretty exact analogy, really).</p>
+<p>The point is this: the rules of basketball were not handed down by God, nor are they inherent in the structure of the universe. They were invented by James Naismith and others, and fine-tuned over time. We could invent different rules, and we wouldn&#8217;t be making a &#8220;mistake&#8221; in the sense we&#8217;re making a mistake if we think the universe was created 6,000 years ago. We&#8217;d just be choosing to play a different game.</p>
+<p>The crucial part, however, is that <em>the rules of basketball are not arbitrary, either</em>. They are subjective in the sense that we can make them be whatever we want, but they are non-arbitrary in the sense that some rules &#8220;work better&#8221; than others. That&#8217;s pretty obvious when you hear basketball fans arguing about the proper distance for the three-point line, or the niceties of hand-checking or goaltending, or when a crossover dribble is ruled to be traveling. People don&#8217;t merely shrug their shoulders and say &#8220;eh, it doesn&#8217;t matter, the rules are whatever, as long as they are fairly enforced.&#8221; The rules do matter, even though the choice of what they are is ultimately in our hands.</p>
+<p>That&#8217;s because we have a goal when we invent the rules of basketball: to create the most fair and entertaining game. The distance to the three-point line is very finely calibrated so that it&#8217;s far enough away to be a challenge for NBA-level talent, but close enough that it&#8217;s a valuable shot to take under the right circumstances. &#8220;Subjective&#8221; (or &#8220;invented&#8221;) doesn&#8217;t mean &#8220;arbitrary.&#8221;</p>
+<p>Likewise for morality. The rules of morality are ultimately human constructs. But they&#8217;re not arbitrary constructs: we invent them to serve certain purposes. People are not blank slates; they have desires, preferences, aspirations. We mostly want to be nice to each other, be happy, live fairly, and other aspects of <a href="http://blog.talkingphilosophy.com/?p=5644">folk morality</a>. The rules of morality we invent are attempts to systematize and extend these simple goals into a rigorous framework that can cover as many circumstances as possible in an unambiguous way.</p>
+<p>And what if someone doesn&#8217;t agree with our folk morality or the systematization thereof? What if someone wants to bring some Calvinball to our pickup game? We do the same thing we&#8217;d do in basketball: we penalize them. We call a foul, or traveling, or just refuse to play with them. And we don&#8217;t need to invoke God or the laws of nature to do it. It&#8217;s true that we made up the rules, but they are no less enforceable for it.</p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Morality and Basketball');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/') + '&title=' + encodeURIComponent('Morality and Basketball'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 24th, 2012 3:11 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/philosophy/" title="View all posts in Philosophy" rel="category tag">Philosophy</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/#comments" title="Comment on Morality and Basketball">16 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8759">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/" rel="bookmark" title="Permanent Link to Bill Thurston">Bill Thurston</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/mtrodden/" title="Posts by Mark Trodden" rel="author">Mark Trodden</a>        </p>
+    
+    <div class="entry">
+      <p>Just a quick note here to say how sad I was to hear (via <a href="http://terrytao.wordpress.com">Terry Tao&#8217;s blog</a>) of the death yesterday of <a href="http://en.wikipedia.org/wiki/William_Thurston">Bill Thurston</a>, whose work, particularly on 3-manifolds, endeared him to mathematicians and physicists and resulted in the 1982 Fields medal. I&#8217;m certainly no expert on his work, but I encountered it first thirteen years or so ago when I was working on the idea that compact hyperbolic manifolds might provide interesting examples of the extra dimensional spaces used in <a href="http://orangequark.blogspot.com/2005/05/large-extra-dimensions-and-hint-of.html">large extra dimension models</a>. </p>
+<p>I found the whole area to be fascinating, and it was particularly interesting for a non-expert because the GeomView program, produced by <a href="http://en.wikipedia.org/wiki/The_Geometry_Center">the Geometry Center</a> (which Thurston had been involved with, and which had just closed) allowed great visualizations of complicated manifolds. They also produced wonderful videos, like this one (that Tao also links to) of Thurston&#8217;s method for everting the sphere.</p>
+<div style="text-align:center">
+<iframe align="center" width="420" height="315" src="http://www.youtube.com/embed/wO61D9x6lNY" frameborder="0" allowfullscreen></iframe>
+</div>
+<p>I never met Thurston, but greatly enjoyed the small part of his work that I&#8217;ve used, and am very sorry he won&#8217;t be around to contribute more.</p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Bill Thurston');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/') + '&title=' + encodeURIComponent('Bill Thurston'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 22nd, 2012 10:41 AM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/mathematics/" title="View all posts in Mathematics" rel="category tag">Mathematics</a>, <a href="http://blogs.discovermagazine.com/cosmicvariance/category/science/" title="View all posts in Science" rel="category tag">Science</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/#comments" title="Comment on Bill Thurston">5 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8754">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/" rel="bookmark" title="Permanent Link to A Few Powers of Ten">A Few Powers of Ten</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p>Via the endlessly enjoyable <a href="http://www.itsokaytobesmart.com/post/29945524543/bacterium-diatom-amphipod-gif">It&#8217;s Okay to Be Smart</a>, here&#8217;s a gif image that zooms in by about three orders of magnitude.  (Not sure of the original source.) We start by looking at an <a href="http://en.wikipedia.org/wiki/Amphipoda">amphipod</a>, a tiny shrimplike critter about a millimeter across. For some reason (vanity?) it&#8217;s decorated by an even tinier <a href="http://en.wikipedia.org/wiki/Diatom">diatom</a>, a bit of algae that is common in phytoplankton. From there we zoom in on a yet-tinier <a href="http://en.wikipedia.org/wiki/Bacteria">bacterium</a>, just chilling out near the middle of the diatom. </p>
+<p><a href="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/tumblr_m951n679Pw1qbh26io1_400.gif"><img src="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/tumblr_m951n679Pw1qbh26io1_400.gif" alt="" title="zooming" width="400" height="300" class="aligncenter size-full wp-image-8755" /></a></p>
+<p>Human beings have about ten times as many bacterial cells inside them as &#8220;human&#8221; cells. The bacteria are the passengers, we&#8217;re just the bus.</p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('A Few Powers of Ten');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/') + '&title=' + encodeURIComponent('A Few Powers of Ten'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 22nd, 2012 9:10 AM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/science/" title="View all posts in Science" rel="category tag">Science</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/#comments" title="Comment on A Few Powers of Ten">11 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8751">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/" rel="bookmark" title="Permanent Link to Gravitational Waves in Five Years">Gravitational Waves in Five Years</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p><a href="http://www.ligo.caltech.edu/">LIGO</a>, the gravitational-wave observatory, is currently on ice. After running successfully (although without actually detecting any gravitational waves) through 2007, it got a mini-upgrade and ran as Enhanced LIGO in 2009 and 2010. But in October 2010 it shut off, and the original detectors were disassembled. Not because anything was wrong, but because of a long-anticipated upgrade to <a href="http://media.caltech.edu/press_releases/13123">Advanced LIGO</a>, a substantially more sensitive observatory.</p>
+<p>Those upgrades are still going on, with the new detectors scheduled to come online in 2014. Advanced LIGO should provide more than a tenfold improvement in sensitivity, which allows the search for gravitational waves to pass an important threshold: with LIGO, it would have been possible but quite fortunate to actually detect gravitational waves from predicted astrophysical sources. With Advanced LIGO, it will be a surprise if we <em>don&#8217;t</em> detect them.</p>
+<p>Clara Moskowitz has nice <a href="http://www.msnbc.msn.com/id/48689955/ns/technology_and_science-space/">update</a> on MSNBC.com. She quotes Kip Thorne as predicting that our first definite direct detection of gravitational waves will come in between 2014 and 2017 &#8212; within five years. Start your betting markets! Traditionally, looking at the skies in a new way (radio waves, cosmic rays, X-rays, gamma rays, neutrinos&#8230;) has always taught us something new and exciting. I&#8217;d be surprised if gravitational waves aren&#8217;t equally surprising.</p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Gravitational Waves in Five Years');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/') + '&title=' + encodeURIComponent('Gravitational Waves in Five Years'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 20th, 2012 1:15 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/science/" title="View all posts in Science" rel="category tag">Science</a>, <a href="http://blogs.discovermagazine.com/cosmicvariance/category/top-posts/" title="View all posts in Top Posts" rel="category tag">Top Posts</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/#comments" title="Comment on Gravitational Waves in Five Years">27 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8745">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/" rel="bookmark" title="Permanent Link to The Invader">The Invader</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p>Opening panels of <a href="http://elcomics.tumblr.com/">a wordless and moving story</a> about a young Space Invader. Worth a click. Via <a href="https://twitter.com/MuseZack/status/237298858495967233">Zack Stentz</a>.</p>
+<p><a href="http://elcomics.tumblr.com/"><img src="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/invader.jpg" alt="" title="invader" width="350" height="280" class="aligncenter size-full wp-image-8746" /></a></p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('The Invader');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/') + '&title=' + encodeURIComponent('The Invader'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 19th, 2012 2:53 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/miscellany/" title="View all posts in Miscellany" rel="category tag">Miscellany</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/#comments" title="Comment on The Invader">6 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8741">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/" rel="bookmark" title="Permanent Link to Chatting Atheism">Chatting Atheism</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p>I took part in a conversation about contemporary atheism, which appeared on <a href="http://www.youtube.com/user/townsquare">The Point</a>, which is a web series spin-off of <a href="http://en.wikipedia.org/wiki/The_Young_Turks_(talk_show)">The Young Turks</a>, which itself is both a web series and a show broadcast on Current TV. (Got all that?) My co-panelists were <a href="http://www.michaelshermer.com/">Michael Shermer</a> of the Skeptics Society and <a href="http://www.beinggayisdisgusting.com/">Edward Falzon</a>, author of the (satirical!) book <em>Being Gay is Disgusting</em>, and it was hosted by <a href="http://www.huffingtonpost.com/cara-santa-maria/">Cara Santa Maria</a>, science correspondent for the Huffington Post. </p>
+<p><iframe width="500" height="281" src="http://www.youtube.com/embed/s3lwG4MytSI?fs=1&#038;feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p>The format of the show is that we hear three very brief pre-recorded &#8220;points,&#8221; to which the panelists then respond. In this case, all the points and all the panelists were already confirmed atheists, so we could put aside for the moment the endless arguments about whether God exists and focus on the very interesting questions of what to do about the fact that he doesn&#8217;t. The points we heard were from <a href="http://www.randi.org/site/">James Randi</a>, <a href="http://freethoughtblogs.com/pharyngula/">PZ Myers</a>, and <a href="https://twitter.com/HappiestAtheist">AJ Johnson</a> of American Atheists. I wasn&#8217;t familiar with AJ before this event, but her video was very strong; I think (hope) we&#8217;ll be hearing a lot more from her in the future.</p>
+<p>It was a great talk, although it did reinforce my conviction that while we atheists are mostly right on the <a href="http://en.wikipedia.org/wiki/Metaphysics">metaphysics</a>, we need to really raise our game when it comes to <a href="http://en.wikipedia.org/wiki/Epistemology">epistemology</a> and <a href="http://en.wikipedia.org/wiki/Metaethics">metaethics</a>.</p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Chatting Atheism');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/') + '&title=' + encodeURIComponent('Chatting Atheism'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 19th, 2012 9:27 AM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/religion/" title="View all posts in Religion" rel="category tag">Religion</a>, <a href="http://blogs.discovermagazine.com/cosmicvariance/category/top-posts/" title="View all posts in Top Posts" rel="category tag">Top Posts</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/#comments" title="Comment on Chatting Atheism">61 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8737">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/" rel="bookmark" title="Permanent Link to Math(s)">Math(s)</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p>I feel the need to comment on a war &#8212; a war, I tell you! &#8212; that has broken out on the Twitters.</p>
+<p>It all started when <a href="https://twitter.com/JenLucPiquant">@JenLucPiquant</a> put up a very thoughtful and important <a href="http://blogs.scientificamerican.com/cocktail-party-physics/2012/08/14/make-us-do-the-math/">blog post at Cocktail Party Physics</a>, about the importance of math education even for people who are not math-o-philes. Being the supportive spouse that I am, I took to Twitter to spread the word:</p>
+<blockquote><p><a href="https://twitter.com/seanmcarroll/status/235405478933450752">Sean Carroll ‏@seanmcarroll</a><br />
+Math is part of what makes us human. Don&#8217;t withhold it from kids just because it&#8217;s hard. <a href="http://blogs.scientificamerican.com/cocktail-party-physics/2012/08/14/make-us-do-the-math/">http://blogs.scientificamerican.com/cocktail-party-physics/2012/08/14/make-us-do-the-math/</a></p></blockquote>
+<p>The irrepressible <a href="http://blogs.discovermagazine.com/notrocketscience/">Ed Yong</a>, being helpful, forwarded the message to his own followers:</p>
+<blockquote><p><a href="https://twitter.com/edyong209/status/235413373901221889">Ed Yong ‏@edyong209</a><br />
+MT @seanmcarroll: Maths is part of what makes us human. Don&#8217;t withhold it from kids just because it&#8217;s hard. <a href="http://blogs.scientificamerican.com/cocktail-party-physics/2012/08/14/make-us-do-the-math/">http://blogs.scientificamerican.com/cocktail-party-physics/2012/08/14/make-us-do-the-math/</a></p></blockquote>
+<p>Notice the sneaky move here.  <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/#more-8737" class="more-link">Read the rest of this entry &raquo;</a></p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Math(s)');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/') + '&title=' + encodeURIComponent('Math(s)'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 14th, 2012 3:06 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/words/" title="View all posts in Words" rel="category tag">Words</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/#comments" title="Comment on Math(s)">64 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8731">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/" rel="bookmark" title="Permanent Link to Von Freeman">Von Freeman</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p>Von Freeman, legendary jazz saxophonist, <a href="http://www.chicagotribune.com/entertainment/music/chi-von-freeman-dies-chicago-jazz-music-20120813,0,4655061,full.column">passed away Sunday</a>. He was 88 years old.</p>
+<p>Here he is at the 2002 Berlin jazzfest, when Von was a spry 78: Mike Allemana on guitar, Michael Raynor on drums, and Jack Zara on bass. Playing one of Von&#8217;s tunes, &#8220;Blues for Sunnyland.&#8221;</p>
+<p><iframe width="500" height="375" src="http://www.youtube.com/embed/mf0Ct5TDPLU?fs=1&#038;feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p>From 2002 to 2007, listening to Von play live was an integral part of my life in Chicago. He had two regular gigs: once a month at Andy&#8217;s downtown, where tourists would squeeze in shoulder-to-shoulder to experience something only Chicago had to offer, and every Tuesday night at the New Apartment Lounge on 75th Street, in one of the sketchier neighborhoods on the South Side. Andy&#8217;s was great, but the Apartment was special. A tiny little bar, no cover charge, where you could sit within three feet of the band as they explored the outer regions of improvisational possibility. Starting at 10:30, going into the early morning hours &#8212; I went often, but never managed to stay for the whole thing. An eclectic crowd of locals, jazz freaks, and University of Chicago students mixed with the musicians who would make the weekly pilgrimage, because after finishing his set Von would turn the stage over to a jam session that nurtured generations of jazz players.</p>
+<p>This video was taken in 2010 by someone who was apparently sitting in my old seat at the Apartment. Matt Ferguson is now on bass.</p>
+<p><iframe width="500" height="375" src="http://www.youtube.com/embed/_d-BeKSAcsE?fs=1&#038;feature=oembed" frameborder="0" allowfullscreen></iframe></p>
+<p>Von was absolutely unique, as a saxophonist and as a person. As a musician he managed to intermingle an astonishing variety of styles, from classic ballads to bebob all the way to free jazz, with more than a few things you would never hear anywhere else. Some thought that his playing was an acquired taste, full of skronks and trills and lighting-fast tempo changes. But once you &#8220;got it,&#8221; you could hear something in Von that you just couldn&#8217;t hear anywhere else. This isn&#8217;t just formerly-local pride talking; when John Coltrane left Miles Davis&#8217;s band in the 1950&#8242;s, Miles tried to get Von to replace him. But Von never left Chicago for more than a few days at a time.</p>
+<p>As a person, Von was charming, roguish, stubborn, warm, irascible, and utterly compelling. Sometimes on stage he would get in the mood for talking instead of playing, and honestly it was hard to tell which you preferred. The wisecracks, the wisdom, the Billie Holiday stories, all mixed with the smoke and the cheap beer to create an unforgettable atmosphere.</p>
+<p>There wasn&#8217;t anybody else like him, and there never will be. We&#8217;ll miss you, Von.</p>
+<p><a href="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/Vs2.jpeg"><img src="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/Vs2.jpeg" alt="" title="with Von Freeman at the New Apartment Lounge" width="358" height="251" class="aligncenter size-full wp-image-8732" /></a></p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Von Freeman');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/') + '&title=' + encodeURIComponent('Von Freeman'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 13th, 2012 6:45 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/music/" title="View all posts in Music" rel="category tag">Music</a>, <a href="http://blogs.discovermagazine.com/cosmicvariance/category/personal/" title="View all posts in Personal" rel="category tag">Personal</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/#comments" title="Comment on Von Freeman">8 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+  
+    <div class="weblog-entry" id="post-8723">
+    <h2><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/" rel="bookmark" title="Permanent Link to Avoid the Christmas Rush!">Avoid the Christmas Rush!</a></h2>
+    
+            <p class="footerBlogResume cosmicHeader">
+              by <a href="http://blogs.discovermagazine.com/cosmicvariance/author/scarroll/" title="Posts by Sean Carroll" rel="author">Sean Carroll</a>        </p>
+    
+    <div class="entry">
+      <p><a href="http://www.amazon.com/The-Particle-End-Universe-Higgs/dp/0525953590/lecturenotesonge/"><img src="http://blogs.discovermagazine.com/cosmicvariance/files/2012/08/1826748611.jpeg" alt="" title="The Particle at the End of the Universe" width="200" height="300" class="alignright size-full wp-image-8727" /></a></p>
+<p>Hard to believe I wrote another book.  How did that happen?  But it must be true, as <a href="http://preposterousuniverse.com/particle/"><em>The Particle at the End of the Universe</em></a> is now available for <a href="http://www.amazon.com/The-Particle-End-Universe-Higgs/dp/0525953590/lecturenotesonge/">pre-order on Amazon</a> and elsewhere.  Back to real work for me, for the foreseeable future.  (Unless someone wants to give me a million dollars, which to date they have been reluctant to do.)</p>
+<p>I&#8217;m actually putting finishing touches on the copyediting as we speak. <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/07/03/live-blogging-the-higgs-seminar/">Events</a> have prodded the publisher to move up the release date quite a bit (as I expected), so now it&#8217;s coming out in November rather than in February. So we&#8217;ve been in a mad dash against the clock, although I&#8217;ve tried my best to be careful in the actual writing. And many people have been extremely generous with their time, reading over chapters and talking with me about the issues. Compared to <em>From Eternity to Here</em>, this book is obviously less about presenting a novel take on some deep issues in physics and more about helping people understand why the Higgs boson is important, and how the experiments actually look for the thing. But there are a couple of chapters in there where I get to try to explain gauge invariance, connections, and symmetry breaking. I can&#8217;t help myself; it&#8217;s in my nature.</p>
+<p>Speaking of generosity, even with the short timescale I scored pretty big with the back-cover blurbs.  Check these out:</p>
+<blockquote><p>&#8220;In this superb book, Sean Carroll provides a fascinating and lucid look at the most mysterious and important particle in nature, and the experiment that revealed it. Anyone with an interest in physics should read this, and join him in examining the new worlds of physics to which this discovery may lead.&#8221;</p>
+<p>&#8211;Leonard Mlodinow, author of <em>The Drunkard&#8217;s Walk</em></p>
+<p>&#8220;Carroll tells the story of the particle that everyone has heard of but few of us actually understand. After you read his book &#8212; an enticing cocktail of personal anecdote, clever analogy, and a small dose of mind-bending theory &#8212; you will truly grasp why the Higgs boson has been sought after for so long by so many. Carroll is a believer in big science asking big questions and his beliefs are infectious and inspiring.&#8221;</p>
+<p>&#8211;Morgan Freeman, Actor and Executive Producer of <em>Through the Wormhole</em></p>
+<p>&#8220;The science is authoritative, yet bold and lively. The narrative is richly documented, yet full of human drama. Carroll&#8217;s saga pulls you aboard a modern voyage of discovery.&#8221;</p>
+<p>&#8211;Frank Wilczek, winner of the Nobel Prize in Physics</p></blockquote>
+<p>If only the actual writing in the book could be that good!  &#8220;Obtain blurbs from Oscar winner and Nobel laureate for same book&#8221; is now checked off my bucket list.</p>
+    </div>
+    
+    <div class="clearBoth"><!-- --></div>
+<div class="socialContainer">
+
+<script type="text/javascript">
+  var post_title = encodeURIComponent('Avoid the Christmas Rush!');
+  var post_url = encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/');
+</script>
+
+<span class="st_facebook_hcount"></span>
+<span class="st_twitter_hcount"></span>
+
+<span class="redditButton">
+    <span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton">
+        <a href="http://www.reddit.com/submit" target="_blank">
+            <span class="stButton_gradient">
+                <span class="chicklets reddit">Share</span>
+            </span>
+        </a>
+    </span>
+</span>
+<span class="st_reddit_hcount"></span>
+
+<span class="plusone_button"><g:plusone size="medium" href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/"></g:plusone></span>
+<span class='st_sharethis_button' displayText=''></span>
+
+<script type="text/javascript">
+  jQuery(".st_facebook_hcount:last").attr("st_url", post_url);
+  jQuery(".st_facebook_hcount:last").attr("st_title", post_title);
+  jQuery(".st_twitter_hcount:last").attr("st_url", post_url);
+  jQuery(".st_twitter_hcount:last").attr("st_title", post_title);
+  jQuery(".st_reddit_hcount:last").attr("st_url", post_url);
+  jQuery(".st_reddit_hcount:last").attr("st_title", post_title);
+  jQuery(".redditButton:last a").attr("href", 'http://www.reddit.com/submit?url=' + encodeURIComponent('http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/') + '&title=' + encodeURIComponent('Avoid the Christmas Rush!'));
+  jQuery(".st_sharethis_button:last").attr("st_url", post_url);
+  jQuery(".st_sharethis_button:last").attr("st_title", post_title);
+</script>
+
+
+<!-- Stumble Upon -->
+<span class="atool-link stumbleIcon" style="top: 4px">
+    <su:badge layout="1" location="http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/"></su:badge>
+    <script type="text/javascript"> 
+    (function() { 
+        var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+         li.src = 'https://platform.stumbleupon.com/1/widgets.js'; 
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+    })(); 
+    </script>
+</span>
+  
+  
+<div class="clearBoth"><!-- --></div>
+</div>
+    
+            <p class="footerBlogResume cosmicFooter">
+                            August 9th, 2012 3:34 PM <br />
+              in <a href="http://blogs.discovermagazine.com/cosmicvariance/category/higgs/" title="View all posts in Higgs" rel="category tag">Higgs</a>, <a href="http://blogs.discovermagazine.com/cosmicvariance/category/personal/" title="View all posts in Personal" rel="category tag">Personal</a>, <a href="http://blogs.discovermagazine.com/cosmicvariance/category/words/" title="View all posts in Words" rel="category tag">Words</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/#comments" title="Comment on Avoid the Christmas Rush!">22 Comments</a> | <a href='http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/feed/'>RSS feed</a> | <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/trackback/" rel="trackback">Trackback > </a>
+        </p>
+    
+      </div>
+
+   
+    
+  <script type="text/javascript" 
+          src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">
+          stLight.options({
+                  publisher:'775456208'
+          });
+  </script>
+  
+  
+  <script type="text/javascript">
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script>
+
+  <div class="navigation">
+    <div class="alignleft"><a href="http://blogs.discovermagazine.com/cosmicvariance/page/2/" >&laquo; Older Entries</a></div>
+    <div class="alignright"></div>
+  </div>
+
+    
+  <script type="text/javascript">
+
+// applies a left align to images on all old blog entries
+// based on the entry's id
+
+jQuery(document).ready(function(){
+
+    currentBlog = 0;
+
+                                currentBlog = 2374;
+        
+    entries = jQuery(".weblog-entry").length;
+    for(i = 0; i < entries; i++) {
+        entryId = jQuery(".weblog-entry").eq(i).attr("id");
+        entryId = parseInt(entryId.replace("post-",""));
+        if (entryId < currentBlog) {
+            jQuery(".weblog-entry:eq("+i+") div.entry img").css("float","left");
+        }
+    }
+    
+});
+
+</script>
+</div>
+</div>
+
+<div id="contentNews">
+  <li>  <div id="blogLinks">
+      
+      <iframe class="adframe" width="300" height="250" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/mu-plugins/discover-ads/iframe.php?type=MedRect&blog=cosmicvariance" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      <br /><br /><br /><br />
+
+
+      
+   <ul>
+      <li id="text-12" class="widget widget_text">			<div class="textwidget"><table id="Table_01" width="301"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2">
+			<a href="http://blogs.discovermagazine.com/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_01.png" width="300" height="33" alt=""></a></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="33" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://blogs.discovermagazine.com/80beats/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_02.png" width="144" height="47" alt=""></a></td>
+		<td>
+			<a href="http://blogs.discovermagazine.com/discoblog/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_03.png" width="156" height="47" alt=""></a></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="47" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://blogs.discovermagazine.com/badastronomy/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_04.png" width="144" height="38" alt=""></a></td>
+		<td>
+			<a href="http://blogs.discovermagazine.com/gnxp/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_05.png" width="156" height="38" alt=""></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="38" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<a href="http://blogs.discovermagazine.com/cosmicvariance/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_06.png" width="144" height="43" alt=""></a></td>
+		<td>
+			<a href="http://blogs.discovermagazine.com/loom/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_07.png" width="156" height="42" alt=""></a></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="42" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<a href="http://blogs.discovermagazine.com/notrocketscience/"><img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_08.png" width="156" height="38" alt=""></a></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+		<a href="http://blogs.discovermagazine.com/crux/">	<img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_09.png" width="144" height="37" alt=""></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="32" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/blogbox_10.png" width="300" height="47" alt=""></td>
+		<td>
+			<img border="0" src="http://c810330.r30.cf2.rackcdn.com/spacer.gif" width="1" height="47" alt=""></td>
+	</tr>
+</table></div>
+		</li><li id="text-1" class="widget widget_text"><h2 class="widgettitle"> </h2>			<div class="textwidget"><a href="http://blogs.discovermagazine.com/cosmicvariance/"><img src='http://blogs.discovermagazine.com/cosmicvariance/files/2008/11/cmb-ball-blue-31.jpg' alt='Cosmic Variance' /></a>
+
+Cosmic Variance is a group blog by people who, coincidentally or not, all happen to be physicists and astrophysicists:<ul>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/daniel/">Daniel Holz</a>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/joanne/">JoAnne Hewett</a>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/john/">John Conway</a>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/julianne/">Julianne Dalcanton</a>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/mark/">Mark Trodden</a>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/risa/">Risa Wechsler</a>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/sean/">Sean Carroll</a>
+</ul>
+Our day (and night) jobs notwithstanding, the blog is about whatever we find interesting — science, to be sure, but also arts, politics, culture, technology, academia, and miscellaneous trivia. We have similar outlooks on many things, widely disparate opinions about others, and will do our best to keep the discourse reasonably elevated. 
+<br></div>
+		</li><li id="search-2" class="widget widget_search"><form method="get" id="searchform" action="http://blogs.discovermagazine.com/cosmicvariance/">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</li><li id="text-13" class="widget widget_text">			<div class="textwidget"><script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'list',
+  rpp: 30,
+  interval: 6000,
+  title: 'Twitter',
+  subject: 'Cosmic Variance',
+  width: 298,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#3b23c4',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#948d3e'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    behavior: 'all'
+  }
+}).render().setList('cosmicvariance', 'cosmic-variance').start();
+</script></div>
+		</li>		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>		<ul>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/" title="Neil Armstrong">Neil Armstrong</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/" title="Morality and Basketball">Morality and Basketball</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/bill-thurston/" title="Bill Thurston">Bill Thurston</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/22/a-few-powers-of-ten/" title="A Few Powers of Ten">A Few Powers of Ten</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/" title="Gravitational Waves in Five Years">Gravitational Waves in Five Years</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/the-invader/" title="The Invader">The Invader</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/19/chatting-atheism/" title="Chatting Atheism">Chatting Atheism</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/14/maths/" title="Math(s)">Math(s)</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/13/von-freeman/" title="Von Freeman">Von Freeman</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/09/avoid-the-christmas-rush/" title="Avoid the Christmas Rush!">Avoid the Christmas Rush!</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/05/mars-science-laboratory-touches-down-tonight/" title="Mars Science Laboratory Touches Down Tonight">Mars Science Laboratory Touches Down Tonight</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/03/higgs-papers-out/" title="Higgs Papers Out">Higgs Papers Out</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/07/28/music-was-better-in-the-sixties-man/" title="Music Was Better in the Sixties, Man">Music Was Better in the Sixties, Man</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/07/26/cosmology-and-philosophy-at-la-pietra/" title="Cosmology and Philosophy at La Pietra">Cosmology and Philosophy at La Pietra</a></li>
+				<li><a href="http://blogs.discovermagazine.com/cosmicvariance/2012/07/20/dark-matter-still-hiding/" title="Dark Matter Still Hiding">Dark Matter Still Hiding</a></li>
+				</ul>
+		</li><li id="recent-comments-3" class="widget widget_recent_comments"><h2 class="widgettitle">Recent Comments</h2><ul id="recentcomments"><li class="recentcomments"><a href='http://rohanmedia.co.uk' rel='external nofollow' class='url'>Rohan</a> on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259463">Neil Armstrong</a></li><li class="recentcomments">Brett on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/comment-page-1/#comment-259462">Morality and Basketball</a></li><li class="recentcomments"><a href='http://www.brabbu.com/blog' rel='external nofollow' class='url'>Sara Lança</a> on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259459">Neil Armstrong</a></li><li class="recentcomments">bob on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259444">Neil Armstrong</a></li><li class="recentcomments">Brett on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259421">Neil Armstrong</a></li><li class="recentcomments">Faizan sarwar on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259420">Neil Armstrong</a></li><li class="recentcomments"><a href='http://yahooIndia' rel='external nofollow' class='url'>Amit Kumar pandey</a> on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259406">Neil Armstrong</a></li><li class="recentcomments"><a href='http://seriesdivergentes.wordpress.com/2012/08/26/neil-armstrong-1930-2012/' rel='external nofollow' class='url'>Neil Armstrong, 1930 &#8211; 2012 &laquo; Series divergentes</a> on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259404">Neil Armstrong</a></li><li class="recentcomments">Gary on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/comment-page-1/#comment-259400">Morality and Basketball</a></li><li class="recentcomments">realta fuar on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/20/gravitational-waves-in-five-years/comment-page-1/#comment-259388">Gravitational Waves in Five Years</a></li><li class="recentcomments">realta fuar on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/24/morality-and-basketball/comment-page-1/#comment-259382">Morality and Basketball</a></li><li class="recentcomments">Ignatius on <a href="http://blogs.discovermagazine.com/cosmicvariance/2012/08/25/neil-armstrong/comment-page-1/#comment-259377">Neil Armstrong</a></li></ul></li><li id="text-11" class="widget widget_text"><h2 class="widgettitle">Facebook</h2>			<div class="textwidget"><iframe src="http://www.facebook.com/plugins/likebox.php?id=180769895281336&amp;width=292&amp;connections=10&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:255px;" allowTransparency="true"></iframe></div>
+		</li><li id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives By Date</h2>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/08/'> August 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/07/'> July 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/06/'> June 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/05/'> May 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/04/'> April 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/03/'> March 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/02/'> February 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/01/'> January 2012 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/12/'> December 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/11/'> November 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/10/'> October 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/09/'> September 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/08/'> August 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/07/'> July 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/06/'> June 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/05/'> May 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/04/'> April 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/03/'> March 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/02/'> February 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2011/01/'> January 2011 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/12/'> December 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/11/'> November 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/10/'> October 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/09/'> September 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/08/'> August 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/07/'> July 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/06/'> June 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/05/'> May 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/04/'> April 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/03/'> March 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/02/'> February 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2010/01/'> January 2010 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/12/'> December 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/11/'> November 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/10/'> October 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/09/'> September 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/08/'> August 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/07/'> July 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/06/'> June 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/05/'> May 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/04/'> April 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/03/'> March 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/02/'> February 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2009/01/'> January 2009 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/12/'> December 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/11/'> November 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/10/'> October 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/09/'> September 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/08/'> August 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/07/'> July 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/06/'> June 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/05/'> May 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/04/'> April 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/03/'> March 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/02/'> February 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2008/01/'> January 2008 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/12/'> December 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/11/'> November 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/10/'> October 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/09/'> September 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/08/'> August 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/07/'> July 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/06/'> June 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/05/'> May 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/04/'> April 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/03/'> March 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/02/'> February 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2007/01/'> January 2007 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/12/'> December 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/11/'> November 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/10/'> October 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/09/'> September 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/08/'> August 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/07/'> July 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/06/'> June 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/05/'> May 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/04/'> April 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/03/'> March 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/02/'> February 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2006/01/'> January 2006 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2005/12/'> December 2005 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2005/11/'> November 2005 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2005/10/'> October 2005 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2005/09/'> September 2005 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2005/08/'> August 2005 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2005/07/'> July 2005 </option>
+	<option value='http://blogs.discovermagazine.com/cosmicvariance/2012/08/'>  0 </option>
+ </select>
+</li><li id="categories-1" class="widget widget_categories"><h2 class="widgettitle">Archives By Category</h2><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="1700">Academia</option>
+	<option class="level-0" value="1729">Advice</option>
+	<option class="level-0" value="1730">Arts</option>
+	<option class="level-0" value="1731">arxiv</option>
+	<option class="level-0" value="1732">Black People in Science</option>
+	<option class="level-0" value="1733">Blogosphere</option>
+	<option class="level-0" value="862">Business</option>
+	<option class="level-0" value="1734">Computing</option>
+	<option class="level-0" value="1735">Cosmic Variance</option>
+	<option class="level-0" value="1736">Entertainment</option>
+	<option class="level-0" value="4">Environment</option>
+	<option class="level-0" value="1737">Food and Drink</option>
+	<option class="level-0" value="125">Gadgets</option>
+	<option class="level-0" value="1739">Gardening</option>
+	<option class="level-0" value="1740">Guest Post</option>
+	<option class="level-0" value="1618">Health</option>
+	<option class="level-0" value="8040">Higgs</option>
+	<option class="level-0" value="1741">Human Rights</option>
+	<option class="level-0" value="1742">Humanity</option>
+	<option class="level-0" value="281">Humor</option>
+	<option class="level-0" value="1178">Mathematics</option>
+	<option class="level-0" value="909">Media</option>
+	<option class="level-0" value="1743">Miscellany</option>
+	<option class="level-0" value="170">Music</option>
+	<option class="level-0" value="1744">News</option>
+	<option class="level-0" value="1745">Personal</option>
+	<option class="level-0" value="1362">Philosophy</option>
+	<option class="level-0" value="187">Politics</option>
+	<option class="level-0" value="193">Religion</option>
+	<option class="level-0" value="288">Science</option>
+	<option class="level-0" value="1746">Science and Politics</option>
+	<option class="level-0" value="1747">Science and Society</option>
+	<option class="level-0" value="1748">Science and the Media</option>
+	<option class="level-0" value="12">Space</option>
+	<option class="level-0" value="209">Sports</option>
+	<option class="level-0" value="13">Technology</option>
+	<option class="level-0" value="2135">Time</option>
+	<option class="level-0" value="8410">Top Posts</option>
+	<option class="level-0" value="1749">Travel</option>
+	<option class="level-0" value="1750">Women in Science</option>
+	<option class="level-0" value="1751">Words</option>
+	<option class="level-0" value="1752">World</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+	var dropdown = document.getElementById("cat");
+	function onCatChange() {
+		if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+			location.href = "http://blogs.discovermagazine.com/cosmicvariance/?cat="+dropdown.options[dropdown.selectedIndex].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+/* ]]> */
+</script>
+
+</li><li id="text-3" class="widget widget_text"><h2 class="widgettitle">Useful Pages</h2>			<div class="textwidget"><ul>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/">Home</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/feed">RSS Feed</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/comments/feed">Comments Feed</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/about/">About</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/links/">Links (Blogroll)</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/guest-bloggers/">Guest Bloggers</a></li>
+<li><a href="http://blogs.discovermagazine.com/cosmicvariance/equations-in-latex/">Equations Using LaTeX</a></li>
+  <li><a href="http://www.facebook.com/pages/Cosmic-Variance/180769895281336?v=wall">Facebook page</a> and <a href="http://www.facebook.com/group.php?gid=4844934954">group</a></li>
+  <li><a href="http://twitter.com/cosmicvariance/">Twitter</a></li>
+<li><a href="http://141086.spreadshirt.com/us/US/Shop/">Goodies Store</a></li>
+   <li><a href="http://tinyurl.com/669p5w">Google Blog Search</a></li>
+   <li><a href="http://technorati.com/blogs/blogs.discovermagazine.com%2Fcosmicvariance">Technorati Profile</a></li>
+   <li><a href="http://www.bloglines.com/search?q=Bcite:http%3A%2F%2Fblogs.discovermagazine.com%2Fcosmicvariance&amp;ql=en&amp;s=f&amp;pop=l&amp;news=m">Bloglines citations</a></li>
+</ul></div>
+		</li><li id="text-4" class="widget widget_text"><h2 class="widgettitle">Site Meter</h2>			<div class="textwidget">   <div class="center">
+   <!-- Site Meter XHTML Strict 1.0 -->
+   <script type="text/javascript">var site="s16cosmic"</script>
+   <script type="text/javascript" src="http://s16.sitemeter.com/js/counter.js?site=s16cosmic">
+   </script>
+   <noscript><div>
+   <a href="http://www.sitemeter.com/viewstats.php?site=s16cosmic">
+   <img src="http://s16.sitemeter.com/meter.asp?site=s16cosmic" alt="Site Meter" /></a>
+   </div></noscript>
+   <!-- Copyright (c)2005 Site Meter -->
+   </div></div>
+		</li>    </ul>
+    <br />
+    <br />
+    <iframe class="adframe" width="160" height="600" src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/mu-plugins/discover-ads/iframe.php?type=SKY&blog=cosmicvariance" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>  </div></div>
+
+
+        </div><!--end mainContentInner-->
+      </div><!--end mainContent-->
+      <div class="clearBoth"></div>
+    </div>
+    <div id="footer">
+      <div class="kalmbach">
+          <a href="http://www.kalmbach.com/" target="_blank">
+          <img src="http://blogs.discovermagazine.com/cosmicvariance/wp-content/themes/discover/img/KPC-logo.gif" alt="Kalmbach Publishing Co." />
+          </a>
+           <p>Copyright &copy; 2012, Kalmbach Publishing Co.</p>
+      </div>
+      <p>
+        <a href="http://discovermagazine.com/company/privacy-policy">Privacy</a> - <a href="http://discovermagazine.com/company/terms-and-conditions">Terms</a> - <a href="http://discovermagazine.com/readerservices">Reader Services</a> - <a href="https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=DCR&cds_page_id=56507&cds_response_key=I11WM3DS">Subscribe Today</a> - <a href="http://discovermagazine.com/media-kit/">Advertise</a> - <a href="http://discovermagazine.com/company">About Us</a>
+      </p>
+    </div>
+
+  </div>
+
+    <!-- Start Quantcast tag -->
+    <script type="text/javascript"> _qoptions={ qacct:"p-8a0yubFOja3-2" }; </script>
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <noscript>
+      <a href="http://www.quantcast.com/p-8a0yubFOja3-2" target="_blank">
+        <img src="http://pixel.quantserve.com/pixel/p-8a0yubFOja3-2.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+      </a>
+    </noscript>
+    <!-- End Quantcast tag --> 
+    
+    <!-- Begin comScore Tag -->
+    <script>
+        document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+    </script>
+    
+    <script>
+      COMSCORE.beacon({
+        c1:2,
+        c2:7741264,
+        c3:"",
+        c4:"",
+        c5:"",
+        c6:"",
+        c15:""
+      });
+    </script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=7741264&c3=&c4=&c5=&c6=&c15=&cj=1" />
+    </noscript>
+    <!-- End comScore Tag -->
+
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Page Caching using disk
+
+Served from: blogs.discovermagazine.com @ 2012-08-26 19:46:02 -->

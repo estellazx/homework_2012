@@ -1,0 +1,119 @@
+Name : Shun Zhang
+EID : sz4554
+
+* I'm using UTLXPLP.SQL for pretty printing.
+
+Section 1
+
+5.
+
+--------------------------------------------------------------------------------
+| Operation                        |  Name              |  Rows | Bytes|  Cost | 
+-------------------------------------------------------------------------------- 
+| SELECT STATEMENT                 |                    |   807G|399175|    17M| 
+|  HASH JOIN                       |                    |   807G|399175|    17M| 
+|   TABLE ACCESS FULL              |C                   |   936K|  158M|  1651 | 
+|   HASH JOIN                      |                    |   861M|  284G| 22578 | 
+|    TABLE ACCESS FULL             |A                   |   890K|  150M|  1651 | 
+|    TABLE ACCESS FULL             |B                   |   968K|  163M|  1651 | 
+-------------------------------------------------------------------------------- 
+
+6.
+
+4 and 5 produces same plan.
+
+8.
+
+--------------------------------------------------------------------------------
+| Operation                        |  Name              |  Rows | Bytes|  Cost | 
+-------------------------------------------------------------------------------- 
+| SELECT STATEMENT                 |                    |   906M|  448G| 49494 | 
+|  HASH JOIN                       |                    |   906M|  448G| 49494 | 
+|   TABLE ACCESS FULL              |C                   |   936K|  158M|  1651 | 
+|   HASH JOIN                      |                    |   968K|  326M| 19917 | 
+|    TABLE ACCESS FULL             |A                   |   890K|  150M|  1651 | 
+|    TABLE ACCESS FULL             |B                   |   968K|  163M|  1651 | 
+--------------------------------------------------------------------------------
+
+9.
+
+7 and 8 produces same plan.
+
+11.
+
+--------------------------------------------------------------------------------
+| Operation                        |  Name              |  Rows | Bytes|  Cost | 
+-------------------------------------------------------------------------------- 
+| SELECT STATEMENT                 |                    |   715G|353653|    14M| 
+|  HASH JOIN                       |                    |   715G|353653|    14M| 
+|   TABLE ACCESS FULL              |APRIME              |   984K|  166M|  1651 | 
+|   HASH JOIN                      |                    |   726M|  239G| 21018 | 
+|    TABLE ACCESS FULL             |CPRIME              |   714K|  120M|  1649 | 
+|    TABLE ACCESS FULL             |BPRIME              |     1M|  171M|  1652 | 
+--------------------------------------------------------------------------------
+
+12.
+
+same plan.
+
+14.
+
+--------------------------------------------------------------------------------
+| Operation                        |  Name              |  Rows | Bytes|  Cost | 
+-------------------------------------------------------------------------------- 
+| SELECT STATEMENT                 |                    |   726M|  359G| 48224 | 
+|  HASH JOIN                       |                    |   726M|  359G| 48224 | 
+|   TABLE ACCESS FULL              |CPRIME              |   714K|  120M|  1649 | 
+|   HASH JOIN                      |                    |     1M|  343M| 20352 | 
+|    TABLE ACCESS FULL             |A                   |   890K|  150M|  1651 | 
+|    TABLE ACCESS FULL             |BPRIME              |     1M|  171M|  1652 | 
+--------------------------------------------------------------------------------
+
+15.
+
+same plan.
+
+
+16.
+
+17
+
+18.
+
+19.
+
+
+
+The order of the tables in from clause doesn't impact the final plan.
+
+20.
+
+--------------------------------------------------------------------------------
+| Operation                        |  Name              |  Rows | Bytes|  Cost | 
+-------------------------------------------------------------------------------- 
+| SELECT STATEMENT                 |                    |     1M|  706M| 50512 | 
+|  HASH JOIN                       |                    |     1M|  706M| 50512 | 
+|   TABLE ACCESS FULL              |CDPRIME             |     1M|  206M|  1653 | 
+|   HASH JOIN                      |                    |     1M|  342M| 20343 | 
+|    TABLE ACCESS FULL             |A                   |   890K|  150M|  1651 | 
+|    TABLE ACCESS FULL             |BDPRIME             |     1M|  171M|  1652 | 
+-------------------------------------------------------------------------------- 
+
+21.
+
+--------------------------------------------------------------------------------
+| Operation                        |  Name              |  Rows | Bytes|  Cost | 
+-------------------------------------------------------------------------------- 
+| SELECT STATEMENT                 |                    |     1M|  706M| 50512 | 
+|  HASH JOIN                       |                    |     1M|  706M| 50512 | 
+|   TABLE ACCESS FULL              |CDPRIME             |     1M|  206M|  1653 | 
+|   HASH JOIN                      |                    |     1M|  342M| 20343 | 
+|    TABLE ACCESS FULL             |A                   |   890K|  150M|  1651 | 
+|    TABLE ACCESS FULL             |BDPRIME             |     1M|  171M|  1652 | 
+--------------------------------------------------------------------------------
+
+22.
+
+20 and 21 have same plan.
+
+The optimizer is impacted by the foreign keys constraint. As BDPrime and CDPrime both have foreign keys referencing A (pk), the query joins A with another table first. This hash join only takes 1M rows, which exactly query the rows in B (and find its referencing row in A in constant time). Otherwise, this join would take |A|*|BDPrime| rows.

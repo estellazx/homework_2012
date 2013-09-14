@@ -1,0 +1,14 @@
+Name : Shun Zhang
+EID  : sz4554
+
+In the doCrawl process of PageRankSpider, it builds up the graph at the same time of indexing. There are several trivial problems involved. Does self-loop harm the PageRank alogrithm? Do we add a certain node when its corresponding webpage is added to the visited, or indexed (or expended, in searching)? These problems are not essential in small range of data. So there is no problem in dealing with the sample case. For students case, I only pick up the one which seems to be similiar to TA's result..
+
+For retrieval process, I only added the scaled PageRank value to the score to gain the final score.
+
+1. Does PageRank seem to have an effect on the quality of your results, as compared to the original retrieval code? Why or why not?
+
+Yes, at least they are different. Because PageRank would bias the pages with higher popularity, thus more useful for people.
+
+2. How does varying weight change your results?
+
+It's not using PageRank when weight is zero. The effect of PageRank increases when the weight increases, which gives bias on popular pages. This does not mean that the larger weight is, the better the results are. There's a tradeoff between pure relevance and PageRank. This can be found by some machine learning algorithms, different weights are tested on holdout set.

@@ -1,0 +1,52 @@
+<base href="http://www.ltbp.org/">
+<HTML>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+if (document.images) {
+                nav_on = new Image();
+                nav_on.src = "./GIFS/ENGLISH1.JPG";
+                nav_off = new Image();
+                nav_off.src = "./GIFS/ENGLISH.JPG";
+	    		nav1_on = new Image();
+                nav1_on.src = "./GIFS/FRENCH1.JPG";
+                nav1_off = new Image();
+                nav1_off.src = "./GIFS/FRENCH.JPG";
+}
+function flip() {
+        if (document.images) {
+                var num_arg = arguments.length;
+                if (num_arg == 0 || (num_arg % 2) != 0) return;
+                for (var i=0; i<num_arg; i) {
+                        var j = i+1;
+                        var imgname = arguments[i];
+                        var imgsrc = arguments[j];
+                        document.images[imgname].src = eval(imgsrc+'.src');
+                        i+=2;
+                }
+        }
+ }
+
+// --> 
+
+</SCRIPT>
+
+
+<TITLE>Lake Tanganyika Biodiversity Project</TITLE>
+<body bgcolor="#3366CC" text=Black link="#FFFFFF" vlink=#336666 alink=#cc0033>
+<center><table bgcolor="#3366cc" border=0 cellpadding=0 cellspacing=0 width=500>
+<tr><td align=center valign=middle><img src="./GIFS/NAMES.JPG" border=0></td></tr><tr><td align=center valign=middle><img src="./GIFS/LTBP.JPG" border=0></td></tr>
+<tr><td align=center valign=middle width=500>&nbsp;</td></tr>
+<tr><td align=center valign=middle width=500><uL><a onmouseover="flip('english_off','nav_on')" href="EINDEX.HTM" onmouseout="flip('english_off','nav_off')" class="nav"><img src="./GIFS/ENGLISH.JPG" border=0 name=english_off ></a><br><br>
+<a onmouseover="flip('french_off','nav1_on')" href="FEINDEX.HTM" onmouseout="flip('french_off','nav1_off')" class="nav"><img src="./GIFS/FRENCH.JPG" border=0 name=french_off ></a></ul></td></tr>
+
+</table>
+<P>
+<center>
+<!-- BEGIN COPYRIGHT -->
+<b><font color="#cccccc" size=1 face="verdana, arial, geneva, times new roman">
+&#169; 1998 - 2006 Lake Tanganyika Biodiversity Project - UNDP/GEF/RAF/92/G32<br>
+&#169; 1998 - 2006 Projet sur la Biodiversit&#233; du Lac Tanganyika - PNUD/GEF/RAF/92/G32</font>
+
+</center>
+</body></html>
+

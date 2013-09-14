@@ -1,0 +1,136 @@
+Script started on Thu 29 Nov 2012 10:38:24 PM CST
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ echo "(pradd1 3 4)" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    app
+      pradd1
+      3
+    4
+
+* Interpreter Visitising..
+
+
+Result: 7
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ echo "(prmul1 3 4)" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    app
+      prmul1
+      3
+    4
+
+* Interpreter Visitising..
+
+
+Result: 12
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ echo "(prexp1 3 4)" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    app
+      prexp1
+      3
+    4
+
+* Interpreter Visitising..
+
+
+Result: 81
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ echo "(prfac1 3)" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    prfac1
+    3
+
+* Interpreter Visitising..
+
+
+Result: 6
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ echo "(prlen '(1 2 4))" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    prlen
+    [Expression@5acac877, Expression@372f2b32, Expression@79bcfbeb]
+
+* Interpreter Visitising..
+
+
+Result: 3
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ [Kecho "(prsum '(1 2 4))" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    prsum
+    [Expression@5acac877, Expression@372f2b32, Expression@79bcfbeb]
+
+* Interpreter Visitising..
+
+
+Result: 7
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ [Kecho "(prprod '(1 2 4))" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    prprod
+    [Expression@5acac877, Expression@372f2b32, Expression@79bcfbeb]
+
+* Interpreter Visitising..
+
+
+Result: 8
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ [Kecho "(prmap (lambda (x) (+ (car x) 2)) '(1 2 4))" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    app
+      prmap
+      lambda
+        x
+        +
+          app
+            car
+            x
+          2
+    [Expression@5acac877, Expression@372f2b32, Expression@79bcfbeb]
+
+* Interpreter Visitising..
+
+
+Result: [3, 4, 6]
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ [Kecho "(prfoldr (lambda (x y) (+ x y)) 1 '(1 2 4))" | java Parser -p -ne
+* AST Printer Visitising..
+
+  app
+    app
+      app
+        prfoldr
+        lambda
+          x
+          lambda
+            y
+            +
+              x
+              y
+      1
+    [Expression@5acac877, Expression@372f2b32, Expression@79bcfbeb]
+
+* Interpreter Visitising..
+
+
+Result: 8
+
+]0;menie@ubuntu: ~/sz4554-hw/cs345/projmenie@ubuntu:~/sz4554-hw/cs345/proj$ [KD exit
+
+Script done on Thu 29 Nov 2012 10:44:00 PM CST

@@ -1,0 +1,59 @@
+PARSER_BEGIN(Parser)
+
+import java.io.*;
+import java.util.*;
+
+public class Parser {
+    public static void main(String args[]) throws ParseException {
+      Parser parser = new Parser (System.in);
+      parser.ae();
+    }
+}
+
+PARSER_END(Parser )
+
+SKIP :
+{
+    " "
+  | "\t"
+  | "\n"
+  | "\r"
+  | <"//" (~["\n","\r"])* ("\n"|"\r")> 
+}
+
+TOKEN:
+{
+    < LCURLY:   "{" >
+  | < RCURLY:   "}" >
+  | < MINUS:    "-" >
+  | < PLUS:     "+" >
+	| < MULTIPLY: "*" >
+	| < DIVIDE:   "/" >
+  
+}
+
+TOKEN:  /* Literals */
+{
+    < INTEGER:    (["0"-"9"])+ >
+}
+
+TOKEN:
+{
+    <ERROR: ~[] >
+}
+
+void ae() :
+{ Token n; }
+{
+     n = <INTEGER> { System.out.print("(num " + n +")"); }
+   | list()
+}
+
+void list() :
+{}
+{
+     LOOKAHEAD(2) <LCURLY> <PLUS>  { System.out.print(" (add ");} ( ae() )* <RCURLY> { System.out.print(") "); }
+   | LOOKAHEAD(2) <LCURLY> <MINUS> { System.out.print(" (sub ");} ( ae() )* <RCURLY> { System.out.print(") "); }
+   | LOOKAHEAD(2) <LCURLY> <MULTIPLY> { System.out.print(" (mul ");} ( ae() )* <RCURLY> { System.out.print(") "); }
+   |              <LCURLY> <DIVIDE> { System.out.print(" (div ");} ( ae() )* <RCURLY> { System.out.print(") "); }
+}

@@ -1,0 +1,136 @@
+/*
+ * Name: Shun Zhang
+ * EID : sz4554
+ */
+PARSER_BEGIN(Parser)
+
+import java.io.*;
+import java.util.*;
+
+/*
+ * (let ((A B)) C) -> ((lambda (A) C) B)
+ */
+public class Parser {
+    public static void main(String args[]) throws ParseException {
+      Parser parser = new Parser (System.in);
+      ASTNode root = parser.parse();
+			visit(root);
+    }
+
+		/*
+		 * Given the ast subtree, print out in lambda expression
+		 */
+		public static void visit(ASTNode node) {
+			System.out.print("((lambda (" + node.a + ") ");
+
+			if (node instanceof ASTInnerNode) {
+				visit(((ASTInnerNode) node).c);
+			}
+			else if (node instanceof ASTLeaf) {
+				System.out.print(((ASTLeaf) node).c);
+			}
+			else {
+				System.err.println("Unknown class");
+			}
+
+			System.out.print(") " + node.b + ")");
+		}
+}
+
+/*
+ * Node on the AST
+ */
+abstract class ASTNode {
+	public String a, b;
+
+	public void print() {
+		System.out.println(this.getClass().getName() + " " + a + " " + b);
+	}
+}
+
+/*
+ * Inner node
+ */
+class ASTInnerNode extends ASTNode{
+	public ASTNode c;
+
+	public ASTInnerNode(String a, String b, ASTNode c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+}
+
+/*
+ * Leaf of the AST
+ */
+class ASTLeaf extends ASTNode {
+	public String c;
+
+	public ASTLeaf(String a, String b, String c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+}
+PARSER_END(Parser )
+
+SKIP :
+{
+    "\t"
+  | "\n"
+  | "\r"
+  | <"//" (~["\n","\r"])* ("\n"|"\r")> 
+}
+
+TOKEN:
+{
+	  < BLANK:		" ">
+  | < LCURLY:   "(" >
+  | < RCURLY:   ")" >
+	| < LET:			"let">
+	| < ID:				(~["(",")"," "])*>
+}
+
+TOKEN:
+{
+    <ERROR: ~[] >
+}
+
+ASTNode parse() :
+{ASTNode root;}
+{
+		root = let()
+		{return root;}
+}
+
+// (let ((id expr)) expr)
+ASTNode let() :
+{Token a;
+String b, c_leaf = "";
+ASTNode c_node, thisNode;
+}
+{
+		<LCURLY> <LET> <BLANK> <LCURLY> <LCURLY> a = <ID> <BLANK> b = expr() <RCURLY> <RCURLY> <BLANK>
+		( LOOKAHEAD(2) c_node = let()
+		{
+			return new ASTInnerNode(String.valueOf(a), b, c_node);
+		}
+		| c_leaf = expr()
+		{
+			return new ASTLeaf(String.valueOf(a), b, c_leaf);
+		})
+		<RCURLY>
+}
+
+String expr() :
+{Token s;
+String retVal, exp;}
+{
+  	s = <ID> {return String.valueOf(s.image);}
+	| <LCURLY> retVal = expr() ( (<BLANK> {retVal += " ";})? exp = expr() {retVal += String.valueOf(exp);})* <RCURLY>
+		{
+			retVal = "(" + retVal + ")";
+			return retVal;
+		}
+}

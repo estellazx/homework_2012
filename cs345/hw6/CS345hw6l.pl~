@@ -1,0 +1,23 @@
+% 1. prolog query 1.
+student(STUDENT_ID,_,'Fred',LAST_NAME,_,_,_,_,_), enrollment(STUDENT_ID,SECTION_ID,_,_).
+% 2. prolog query 2.
+student(STUDENT_ID,_,'Fred',LAST_NAME,_,_,_,_,_), enrollment(STUDENT_ID,SECTION_ID,_,_), section(SECTION_ID,COURSE_NO,_,_,_,INSTRUCTOR_ID,_).
+% 3. prolog query 3.
+student(STUDENT_ID,_,'Fred',LAST_NAME,_,_,_,_,_), enrollment(STUDENT_ID,SECTION_ID,_), section(SECTION_ID,COURSE_NO,_,_,_,INSTRUCTOR_ID,_),course(COURSE_NO,DESCRIPTION_,_).
+% 4. prolog query 4.
+student(STUDENT_ID,_,'Fred',LAST_NAME,_,_,_,_,_), enrollment(STUDENT_ID,SECTION_ID,_), section(SECTION_ID,COURSE_NO,_,_,_,INSTRUCTOR_ID,_),course(COURSE_NO,DESCRIPTION_,_), instructor(INSTRUCTOR_ID,_,FIRST_NAMEi,LAST_NAMEi,_,_,_).
+% 5. prolog query 5.
+instructor(INSTRUCTOR_ID,_,'Nina','Schorin',_,_,_), section(SECTION_ID,COURSE_NO,_,_,_,INSTRUCTOR_ID,_),course(COURSE_NO,DESCRIPTION,_,_).
+% 6. prolog query 6.
+course(COURSE_NO,'Hands-On Windows',_,_), instructor(INSTRUCTOR_ID,_,FIRST_NAME,LAST_NAME,_,_,_), section(SECTION_ID,COURSE_NO,_,_,_,INSTRUCTOR_ID,_). 
+% 7. prolog query 7.
+course(COURSE_NO,'Hands-On Windows',_,_), student(STUDENT_ID,_,FIRST_NAME,LAST_NAME,,_,_,_,_,_), instructor(INSTRUCTOR_ID,_,'Anita','Morris',_,_,_),  section(SECTION_ID,COURSE_NO,_,_,_,INSTRUCTOR_ID,_), enrollment(_STUDENT_ID,_SECTION_ID,_,_).
+% 8. prolog query 8.
+course(_COURSE_NO,DESCRIPTION,_,PREREQUISITE),course(PREREQUISITE,_,_,_,_).
+% 9. prolog query 9.
+course(_,DESCRIPTION,COST,_), COST < 1100.
+% 10.
+prolog rules for prereq
+pre(X, Y):- course(Y,_,_,X)
+pre(X, Y):- course(Z,_,_,X), pre(Z, Y)
+% prereq(X,430).

@@ -1,0 +1,1331 @@
+Script started on Thu 08 Nov 2012 08:05:55 PM CST
+All passwords are oracle or noted if otherwise.
+
+The SQL Developer and Data Modeler scripts are in the directory: 
+/home/oracle/Desktop/SQLDev_Tutorials/sqldev
+
+To Reset the labs: 
+SQL Developer:	          /home/oracle/reset_sqldev
+Application Express:      /home/oracle/reset_apex
+In-Memory Database Cache: /home/oracle/reset_imdbcache
+XML Database:             /home/oracle/reset_xmldb
+
+Oracle Enterprise Manager 
+Start: emctl start dbconsole
+Stop : emctl stop dbconsole
+URL  : https://127.0.0.1:1158/em
+
+*** Please note that this appliance is for testing purposes only, 
+as such it is unsupported and should not be used as a production environment.
+
+
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet addr:127.0.0.1  Mask:255.0.0.0
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ make
+javac Lab7.java
+java Lab7
+Connecting to database...
+Working on table benchmark
+Physical Organization 1
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 1188
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 1528
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 1014
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 8763
+Physical Organization 2
+CREATE INDEX aindex on benchmark (columeA)
+Duration 29879
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 95
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 813
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 1144
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 2673
+DROP INDEX aindex
+Physical Organization 3
+CREATE INDEX bindex on benchmark (columeB)
+Duration 26528
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 193
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 1119
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 1210
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 1194
+DROP INDEX bindex
+Physical Organization 4
+CREATE INDEX aindex on benchmark (columeA)
+Duration 26223
+CREATE INDEX bindex on benchmark (columeB)
+Duration 26486
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 181
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 500
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 473
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 800
+DROP INDEX aindex
+DROP INDEX bindex
+Working on table benchmark1
+Physical Organization 1
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 1151
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 2423
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 1430
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 11584
+Physical Organization 2
+CREATE INDEX aindex on benchmark1 (columeA)
+Duration 33702
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 24
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 470
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 1350
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 2057
+DROP INDEX aindex
+Physical Organization 3
+CREATE INDEX bindex on benchmark1 (columeB)
+Duration 24030
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 126
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 1399
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 564
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 4968
+DROP INDEX bindex
+Physical Organization 4
+CREATE INDEX aindex on benchmark1 (columeA)
+Duration 28406
+CREATE INDEX bindex on benchmark1 (columeB)
+Duration 24418
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 119
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 527
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 913
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 587
+DROP INDEX aindex
+DROP INDEX bindex
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ 
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ exit
+exit
+
+Script done on Thu 08 Nov 2012 08:12:33 PM CST
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               4;25Hsql = [31m"CREATE INDEX bindex on "[m + name + [31m" (columeB)"[m;[5;25HSystem.out.println(sql);[6;17H}[6;33H[K[7;33H[K[8;17Hstart = [33mnew[m Date();[9;17Hstmt.executeUpdate(sql);[10;17Hend = [33mnew[m Date();[10;34H[K[11;25H[K[12;17HSystem.out.println([31m"Duration "[m + (end.getTime() - start.getTime()));[13;9H}[13;17H[K[14;17H[K[15;9H[32mprivate[m [32mstatic[m [32mvoid[m query(String name) [32mthrows[m SQLException {[16;17HStatement stmt = conn.createStatement();[17;17HString sql;[18;9H [7C[32mint[m i;[19;17HDate start, end;[20;9H[K[21;18Hystem.out.println([31m"Load"[m);[21;44H[K[22;17H[K[23;17Hstart = [33mnew[m Date();[24;17H[33mfor[m (i = [31m0[m; i < [31m10[m; i++) {[25;32H[31mSELECT * FROM "[m + name;[27;17H [7Cstmt.executeUpdate(sql);[28;17H}[28;18H[K[29;17Hend = [33mnew[m Date();[29;34H[K[30;17HSystem.out.println([31m"Duration "[m + (end.getTime() - start.getTime()));[31;17H[K[32;17HSystem.out.println([31m"Query 1"[m);[33;9H[K[34;17Hstart = [33mnew[m Date();[35;9H        [33mfor[m (i = [31m0[m; i < [31m10[m; i++) {[35;43H[K[36;17H        sql = [31m"SELECT * FROM "[m + name + [31m" WHERE columeA="[m + queries[i];[37;17H        System.out.println(sql);[38;17H        stmt.executeUpdate(sql);[39;17H}[40;17Hend = [33mnew[m Date();[40;34H[K[41;17HSystem.out.println([31m"Duration "[m + (end.getTime() - start.getTime()));[42;25H[K[43;17HSystem.out.println([31m"Query 2"[m);[44;180H89,4-25       80%[1;25H[?12l[?25h[?25l[27m[m[H[2J[2;33HSystem.out.println([31m"Physical Organization 4"[m);[3;33HcreateIndex(name, [31m1[m);[4;33HcreateIndex(name, [31m2[m);[5;33Hquery(name);[6;33HclearIndex(name, [31m1[m);[7;33HclearIndex(name, [31m2[m);[8;25H}[9;17H}[10;17H[33mcatch[m(SQLException se){[11;25H[34m//Handle errors for JDBC[m[12;25Hse.printStackTrace();[13;17H}[14;17H[33mcatch[m(Exception e){[15;25H[34m//Handle errors for Class.forName[m[16;25He.printStackTrace();[17;17H}[18;9H}[20;9H[32mprivate[m [32mstatic[m [32mvoid[m clearIndex(String name, [32mint[m colume) [32mthrows[m SQLException {[21;17HStatement stmt = conn.createStatement();[22;17HString sql;[24;17H[33mif[m (colume == [31m1[m) {[25;25Hsql = [31m"DROP INDEX aindex"[m;[26;25HSystem.out.println(sql);[27;17H}[28;17H[33melse[m {[29;25Hsql = [31m"DROP INDEX bindex"[m;[30;25HSystem.out.println(sql);[31;17H}[32;17Hstmt.executeUpdate(sql);[33;9H}[35;9H[32mprivate[m [32mstatic[m [32mvoid[m createIndex(String name, [32mint[m colume) [32mthrows[m SQLException {[36;17HStatement stmt = conn.createStatement();[37;17HString sql;[38;17HDate start, end;[40;17H[33mif[m (colume == [31m1[m) [46m{[m[41;25Hsql = [31m"CREATE INDEX aindex on "[m + name + [31m" (columeA)"[m;[42;25HSystem.out.println(sql);[43;17H[46m}[m[44;180H90,3-17       42%[43;17H[?12l[?25h[?25l[44;180H[K[44;1H:[?12l[?25hq[?25l:q[?12l[?25h[?25l[44;1H[K[44;1H[?1l>[?12l[?25h[?1049l]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ script
+Script started, file is typescript
+All passwords are oracle or noted if otherwise.
+
+The SQL Developer and Data Modeler scripts are in the directory: 
+/home/oracle/Desktop/SQLDev_Tutorials/sqldev
+
+To Reset the labs: 
+SQL Developer:	          /home/oracle/reset_sqldev
+Application Express:      /home/oracle/reset_apex
+In-Memory Database Cache: /home/oracle/reset_imdbcache
+XML Database:             /home/oracle/reset_xmldb
+
+Oracle Enterprise Manager 
+Start: emctl start dbconsole
+Stop : emctl stop dbconsole
+URL  : https://127.0.0.1:1158/em
+
+*** Please note that this appliance is for testing purposes only, 
+as such it is unsupported and should not be used as a production environment.
+
+
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet addr:127.0.0.1  Mask:255.0.0.0
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ make
+javac Lab7.java
+java Lab7
+Connecting to database...
+Working on table benchmark
+Physical Organization 1
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 1188
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 1528
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 1014
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 8763
+Physical Organization 2
+CREATE INDEX aindex on benchmark (columeA)
+Duration 29879
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 95
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 813
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 1144
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 2673
+DROP INDEX aindex
+Physical Organization 3
+CREATE INDEX bindex on benchmark (columeB)
+Duration 26528
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 193
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 1119
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 1210
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 1194
+DROP INDEX bindex
+Physical Organization 4
+CREATE INDEX aindex on benchmark (columeA)
+Duration 26223
+CREATE INDEX bindex on benchmark (columeB)
+Duration 26486
+Load
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+SELECT * FROM benchmark
+Duration 181
+Query 1
+SELECT * FROM benchmark WHERE columeA=2395
+SELECT * FROM benchmark WHERE columeA=8294
+SELECT * FROM benchmark WHERE columeA=12032
+SELECT * FROM benchmark WHERE columeA=16930
+SELECT * FROM benchmark WHERE columeA=21847
+SELECT * FROM benchmark WHERE columeA=28493
+SELECT * FROM benchmark WHERE columeA=32583
+SELECT * FROM benchmark WHERE columeA=37294
+SELECT * FROM benchmark WHERE columeA=40483
+SELECT * FROM benchmark WHERE columeA=48453
+Duration 500
+Query 2
+SELECT * FROM benchmark WHERE columeB=2395
+SELECT * FROM benchmark WHERE columeB=8294
+SELECT * FROM benchmark WHERE columeB=12032
+SELECT * FROM benchmark WHERE columeB=16930
+SELECT * FROM benchmark WHERE columeB=21847
+SELECT * FROM benchmark WHERE columeB=28493
+SELECT * FROM benchmark WHERE columeB=32583
+SELECT * FROM benchmark WHERE columeB=37294
+SELECT * FROM benchmark WHERE columeB=40483
+SELECT * FROM benchmark WHERE columeB=48453
+Duration 473
+Query 3
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453
+Duration 800
+DROP INDEX aindex
+DROP INDEX bindex
+Working on table benchmark1
+Physical Organization 1
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 1151
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 2423
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 1430
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 11584
+Physical Organization 2
+CREATE INDEX aindex on benchmark1 (columeA)
+Duration 33702
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 24
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 470
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 1350
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 2057
+DROP INDEX aindex
+Physical Organization 3
+CREATE INDEX bindex on benchmark1 (columeB)
+Duration 24030
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 126
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 1399
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 564
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 4968
+DROP INDEX bindex
+Physical Organization 4
+CREATE INDEX aindex on benchmark1 (columeA)
+Duration 28406
+CREATE INDEX bindex on benchmark1 (columeB)
+Duration 24418
+Load
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+SELECT * FROM benchmark1
+Duration 119
+Query 1
+SELECT * FROM benchmark1 WHERE columeA=2395
+SELECT * FROM benchmark1 WHERE columeA=8294
+SELECT * FROM benchmark1 WHERE columeA=12032
+SELECT * FROM benchmark1 WHERE columeA=16930
+SELECT * FROM benchmark1 WHERE columeA=21847
+SELECT * FROM benchmark1 WHERE columeA=28493
+SELECT * FROM benchmark1 WHERE columeA=32583
+SELECT * FROM benchmark1 WHERE columeA=37294
+SELECT * FROM benchmark1 WHERE columeA=40483
+SELECT * FROM benchmark1 WHERE columeA=48453
+Duration 527
+Query 2
+SELECT * FROM benchmark1 WHERE columeB=2395
+SELECT * FROM benchmark1 WHERE columeB=8294
+SELECT * FROM benchmark1 WHERE columeB=12032
+SELECT * FROM benchmark1 WHERE columeB=16930
+SELECT * FROM benchmark1 WHERE columeB=21847
+SELECT * FROM benchmark1 WHERE columeB=28493
+SELECT * FROM benchmark1 WHERE columeB=32583
+SELECT * FROM benchmark1 WHERE columeB=37294
+SELECT * FROM benchmark1 WHERE columeB=40483
+SELECT * FROM benchmark1 WHERE columeB=48453
+Duration 913
+Query 3
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453
+Duration 587
+DROP INDEX aindex
+DROP INDEX bindex
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ 
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ exit
+exit
+Script done, file is typescript
+]0;oracle@localhost:~/hw6[oracle@localhost hw6]$ vim typescript 
+[?1049h[?1h=[1;44r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[44;1H"typescript" "typescript" [noeol] 807L, 90112C[>c[1;1HSELECT * FROM benchmark1 WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=40483[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=48453[34m^M[m
+Duration 1430[34m^M[m
+Query 3[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 11584[34m^M[m
+Physical Organization 2[34m^M[m
+CREATE INDEX aindex on benchmark1 (columeA)[34m^M[m
+Duration 33702[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+Duration 24[34m^M[m
+Query 1[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=8294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=12032[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=16930[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=21847[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=37294[34m^M[m[44;180H289,1         34%[22;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[27m[m[H[2J[1;1HSELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 800[34m^M[m
+DROP INDEX aindex[34m^M[m
+DROP INDEX bindex[34m^M[m
+Working on table benchmark1[34m^M[m
+Physical Organization 1[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+SELECT * FROM benchmark1[34m^M[m
+Duration 1151[34m^M[m
+Query 1[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=8294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=12032[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=16930[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=21847[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark1 WHERE columeA=48453[34m^M[m
+Duration 2423[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark1 WHERE columeB=28493[34m^M[m[44;180H269,1         29%[43;1H[?12l[?25h[?25l[1;2Hcript started on Thu 08 Nov 2012 08:05:55 PM CST[1;50H[K[2;1HAll passwords are oracle or noted if otherwise.[34m^M[m[2;50H[K[3;1H[34m^M[m[3;3H[K[4;1HThe SQL Developer and Data Modeler scripts are in the directory: [34m^M[m
+/home/oracle/Desktop/SQLDev_Tutorials/sqldev[34m^M[m[5;47H[K[6;1H[34m^M[m[6;3H[K[7;1HTo Reset the labs: [34m^M[m[7;22H[K[8;1HSQL Developer:[12C/home/oracle/reset_sqldev[34m^M[m
+Application Express:      /home/oracle/reset_apex[34m^M[m
+In-Memory Database Cache: /home/oracle/reset_imdbcache[34m^M[m
+XML Database:             /home/oracle/reset_xmldb[34m^M
+^M[m[12;3H[K[13;1HOracle Enterprise Manager [34m^M[m
+Start: emctl start dbconsole[34m^M[m
+Stop : emctl stop dbconsole[34m^M[m
+URL  : https://127.0.0.1:1158/em[34m^M
+^M[m[17;3H[K[18;1H*** Please note that this appliance is for testing purposes only, [34m^M[m
+as such it is unsupported and should not be used as a production environment.[34m^M
+^M[m[20;3H[K[21;1H[34m^M[m[21;3H[K[22;1H          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0[34m^M[m
+          inet addr:127.0.0.1  Mask:255.0.0.0[34m^M
+^[[m]0;oracle@localhost:~/hw6[34m^G[m[oracle@localhost hw6]$ make[34m^M[m
+javac Lab7.java[34m^M[m
+java Lab7[34m^M[m[26;12H[K[27;1HConnecting to database...[34m^M[m[27;28H[K[28;1HWorking on table benchmark[34m^M[m[28;29H[K[29;1HPhysical Organization 1[34m^M[m[29;26H[K[30;1HLoad[34m^M[m[30;8H[K[31;24H[34m^M[m[31;26H[K[32;24H[34m^M[m[32;26H[K[33;24H[34m^M[m[33;26H[K[34;24H[34m^M[m[34;26H[K[35;24H[34m^M[m[35;26H[K[36;1HSELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[38;24H^M[m[38;26H[K[39;24H[34m^M[m[39;26H[K[40;24H[34m^M[m[40;26H[K[41;1HDuration 1188[34m^M[m[41;16H[K[42;1HQuery 1[34m^M[m[42;10H[K[43;24H WHERE columeA=2395[34m^M[m[43;45H[K[44;180H1,1           Top[1;1H[?12l[?25h[?25l[44;180H2,1           Top[2;1H[?12l[?25h[?25l[44;180H3,1           Top[3;1H[?12l[?25h[?25l[44;180H4,1           Top[4;1H[?12l[?25h[?25l[44;180H5,1           Top[5;1H[?12l[?25h[?25l[44;180H6,1           Top[6;1H[?12l[?25h[?25l[44;180H7,1           Top[7;1H[?12l[?25h[?25l[44;180H8,1           Top[8;1H[?12l[?25h[?25l[44;180H9,1           Top[9;1H[?12l[?25h[?25l[44;180H10,1          Top[10;1H[?12l[?25h[?25l[44;180H11,1          Top[11;1H[?12l[?25h[?25l[44;180H12,1          Top[12;1H[?12l[?25h[?25l[44;180H13,1          Top[13;1H[?12l[?25h[?25l[44;180H14,1          Top[14;1H[?12l[?25h[?25l[44;180H15,1          Top[15;1H[?12l[?25h[?25l[44;180H16,1          Top[16;1H[?12l[?25h[?25l[44;180H17,1          Top[17;1H[?12l[?25h[?25l[44;180H18,1          Top[18;1H[?12l[?25h[?25l[44;180H19,1          Top[19;1H[?12l[?25h[?25l[44;180H20,1          Top[20;1H[?12l[?25h[?25l[44;180H21,1          Top[21;1H[?12l[?25h[?25l[44;180H22,1          Top[22;1H[?12l[?25h[?25l[44;180H23,1          Top[23;1H[?12l[?25h[?25l[44;180H24,1          Top[24;1H[?12l[?25h[?25l[44;180H25,1          Top[25;1H[?12l[?25h[?25l[44;180H26,1          Top[26;1H[?12l[?25h[?25l[44;180H27,1          Top[27;1H[?12l[?25h[?25l[44;180H28,1          Top[28;1H[?12l[?25h[?25l[44;180H29,1          Top[29;1H[?12l[?25h[?25l[44;180H30,1          Top[30;1H[?12l[?25h[?25l[44;180H31,1          Top[31;1H[?12l[?25h[?25l[44;180H32,1          Top[32;1H[?12l[?25h[?25l[44;180H33,1          Top[33;1H[?12l[?25h[?25l[44;180H34,1          Top[34;1H[?12l[?25h[?25l[44;180H35,1          Top[35;1H[?12l[?25h[?25l[44;180H36,1          Top[36;1H[?12l[?25h[?25l[44;180H37,1          Top[37;1H[?12l[?25h[?25l[44;180H38,1          Top[38;1H[?12l[?25h[?25l[44;180H39,1          Top[39;1H[?12l[?25h[?25l[44;180H40,1          Top[40;1H[?12l[?25h[?25l[44;180H41,1          Top[41;1H[?12l[?25h[?25l[44;180H42,1          Top[42;1H[?12l[?25h[?25l[44;180H43,1          Top[43;1H[?12l[?25h[?25l[1;43r[43;1H
+[1;44r[43;1HSELECT * FROM benchmark WHERE columeA=8294[34m^M[m[44;180H[K[44;180H44,1           0%[43;1H[?12l[?25h[?25l[1;43r[43;1H
+[1;44r[43;1HSELECT * FROM benchmark WHERE columeA=12032[34m^M[m[44;180H[K[44;180H45,1           0%[43;1H[?12l[?25h[?25l[1;43r[43;1H
+[1;44r[43;1HSELECT * FROM benchmark WHERE columeA=16930[34m^M[m[44;180H[K[44;180H46,1           0%[43;1H[?12l[?25h[?25l[1;43r[43;1H
+[1;44r[43;1HSELECT * FROM benchmark WHERE columeA=21847[34m^M[m[44;180H[K[44;180H47,1           0%[43;1H[?12l[?25h[?25l[1;43r[43;1H
+[1;44r[43;1HSELECT * FROM benchmark WHERE columeA=28493[34m^M[m[44;180H[K[44;180H48,1           0%[43;1H[?12l[?25h[?25l[1;43r[43;1H
+[1;44r[43;1HSELECT * FROM benchmark WHERE columeA=32583[34m^M[m[44;180H[K[44;180H49,1           0%[43;1H[?12l[?25h[?25l[27m[m[H[2J[27m[m[H[2J[1;1HSELECT * FROM benchmark WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 1528[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeB=48453[34m^M[m
+Duration 1014[34m^M[m
+Query 3[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 8763[34m^M[m
+Physical Organization 2[34m^M[m
+CREATE INDEX aindex on benchmark (columeA)[34m^M[m
+Duration 29879[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m[44;180H48,1           6%[1;1H[?12l[?25h[?25l[23C[34m^M[m[1;26H[K[2;24H[34m^M[m[2;26H[K[3;24H[34m^M[m[3;26H[K[4;1HDuration 95[34m^M[m[4;15H[K[5;1HQuery 1[34m^M[m[5;10H[K[6;1HSELECT * FROM benchmark WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294[34m^M[m[8;37HA=12032[34m^M[m[9;37HA=16930[34m^M[m[10;37HA=21847[11;37HA=28493[12;37HA=32583[13;37HA=37294[14;37HA=404[15;37HA=48453
+Duration 813[34m^M[m[16;15H[K[17;1HQuery 2[34m^M[m[17;10H[K[18;1HSELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m[20;37HB=12032[34m^M[m[20;46H[K[21;37HB=16930[34m^M[m[21;46H[K[22;37HB=21847[34m^M[m[22;46H[K[23;37HB=28493[34m^M[m[23;46H[K[24;37HB=32583[34m^M[m[24;46H[K[25;37HB=37294[34m^M[m[25;46H[K[26;37HB=40483[34m^M[m[26;46H[K[27;37HB=48453[34m^M[m[27;46H[K[28;1HDuration 1144[34m^M[m[28;16H[K[29;1HQuery 3[34m^M[m[29;10H[K[30;1HSELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m[35;24H WHERE columeA=28493 AND columeB=28493[34m^M[m[36;24H WHERE columeA=32583 AND columeB=32583[34m^M[m[37;24H WHERE columeA=37294 AND columeB=37294[34m^M[m[38;24H WHERE columeA=40483 AND columeB=40483[34m^M[m[39;24H WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 2673[34m^M[m[40;16H[K[41;1HDROP INDEX aindex[34m^M[m[41;20H[K[42;1HPhysical Organization 3
+CREATE INDEX bindex on benchmark (columeB)[34m^M[m[44;180H89,1          11%[1;1H[?12l[?25h[?25l[27m[m[H[2J[1;1HSELECT * FROM benchmark WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 1528[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeB=48453[34m^M[m
+Duration 1014[34m^M[m
+Query 3[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 8763[34m^M[m
+Physical Organization 2[34m^M[m
+CREATE INDEX aindex on benchmark (columeA)[34m^M[m
+Duration 29879[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m[44;180H90,1           6%[43;1H[?12l[?25h[?25l[1;24H[34m^M[m[1;26H[K[2;24H[34m^M[m[2;26H[K[3;24H[34m^M[m[3;26H[K[4;1HDuration 95[34m^M[m[4;15H[K[5;1HQuery 1[34m^M[m[5;10H[K[6;1HSELECT * FROM benchmark WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294[34m^M[m[8;37HA=12032[34m^M[m[9;37HA=16930[34m^M[m[10;37HA=21847[11;37HA=28493[12;37HA=32583[13;37HA=37294[14;37HA=404[15;37HA=48453
+Duration 813[34m^M[m[16;15H[K[17;1HQuery 2[34m^M[m[17;10H[K[18;1HSELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m[20;37HB=12032[34m^M[m[20;46H[K[21;37HB=16930[34m^M[m[21;46H[K[22;37HB=21847[34m^M[m[22;46H[K[23;37HB=28493[34m^M[m[23;46H[K[24;37HB=32583[34m^M[m[24;46H[K[25;37HB=37294[34m^M[m[25;46H[K[26;37HB=40483[34m^M[m[26;46H[K[27;37HB=48453[34m^M[m[27;46H[K[28;1HDuration 1144[34m^M[m[28;16H[K[29;1HQuery 3[34m^M[m[29;10H[K[30;1HSELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m[35;24H WHERE columeA=28493 AND columeB=28493[34m^M[m[36;24H WHERE columeA=32583 AND columeB=32583[34m^M[m[37;24H WHERE columeA=37294 AND columeB=37294[34m^M[m[38;24H WHERE columeA=40483 AND columeB=40483[34m^M[m[39;24H WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 2673[34m^M[m[40;16H[K[41;1HDROP INDEX aindex[34m^M[m[41;20H[K[42;1HPhysical Organization 3
+CREATE INDEX bindex on benchmark (columeB)[34m^M[m[44;180H89,1          11%[1;1H[?12l[?25h[?25l[27m[m[H[2J[1;1HSELECT * FROM benchmark WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 1528[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeB=48453[34m^M[m
+Duration 1014[34m^M[m
+Query 3[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 8763[34m^M[m
+Physical Organization 2[34m^M[m
+CREATE INDEX aindex on benchmark (columeA)[34m^M[m
+Duration 29879[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m[44;180H90,1           6%[43;1H[?12l[?25h[?25l[1;1HTo Reset the labs: [34m^M[m[1;22H[K[2;2HQL Developer:            /home/oracle/reset_sqldev[34m^M[m
+Application Express:      /home/oracle/reset_apex[34m^M[m
+In-Memory Database Cache: /home/oracle/reset_imdbcache[34m^M[m
+XML Database:             /home/oracle/reset_xmldb[34m^M
+^M[m[6;3H[K[7;1HOracle Enterprise Manager [34m^M[m
+Start: emctl start dbconsole[34m^M[m[8;31H[K[9;2Htop : emctl stop dbconsole[34m^M[m[9;31H[K[10;1HURL  : https://127.0.0.1:1158/em[34m^M[m[10;35H[K[11;1H[34m^M[m[11;3H[K[12;1H*** Please note that this appliance is for testing purposes only, [34m^M[m
+as such it is unsupported and should not be used as a production environment.[34m^M
+^M[m[14;3H[K[15;1H[34m^M[m[15;3H[K[16;1H          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0[34m^M[m
+          inet addr:127.0.0.1  Mask:255.0.0.0[34m^M
+^[[m]0;oracle@localhost:~/hw6[34m^G[m[oracle@localhost hw6]$ make[34m^M[m
+javac Lab7.java[34m^M[m
+java Lab7[34m^M[m[20;12H[K[21;1HConnecting to database...[34m^M[m[21;28H[K[22;1HWorking on table benchmark[34m^M[m[22;29H[K[23;1HPhysical Organization 1[34m^M[m[23;26H[K[24;1HLoad[34m^M[m[24;8H[K[25;24H[34m^M[m[25;26H[K[26;24H[34m^M[m[26;26H[K[27;24H[34m^M[m[27;26H[K[28;24H[34m^M[m[28;26H[K[29;24H[34m^M[m[29;26H[K[30;1HSELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark
+SELECT * FROM benchmark[34m^M[m[32;26H[K[33;1HSELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+Duration 1188[34m^M[m[35;16H[K[36;1HQuery 1[34m^M[m[36;10H[K[37;24H WHERE columeA=2395[34m^M[m[38;24H WHERE columeA=8294[34m^M[m[39;24H WHERE columeA=12032[34m^M[m[40;24H WHERE columeA=16930[34m^M[m[41;24H WHERE columeA=21847[34m^M[m[42;24H WHERE columeA=28493[34m^M[m[43;24H WHERE columeA=32583[34m^M[m[44;180H49,1           0%[43;1H[?12l[?25h[?25l[1;43r[1;1H[6L[1;44r[1;1HScript started on Thu 08 Nov 2012 08:05:55 PM CST
+All passwords are oracle or noted if otherwise.[34m^M
+^M[m
+The SQL Developer and Data Modeler scripts are in the directory: [34m^M[m
+/home/oracle/Desktop/SQLDev_Tutorials/sqldev[34m^M
+^M[m[44;180H[K[44;180H8,1           Top[8;1H[?12l[?25h[?25l[27m[m[H[2J[27m[m[H[2J[1;1HQuery 1[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 1528[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeB=48453[34m^M[m
+Duration 1014[34m^M[m
+Query 3[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 8763[34m^M[m
+Physical Organization 2[34m^M[m
+CREATE INDEX aindex on benchmark (columeA)[34m^M[m
+Duration 29879[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m[44;180H42,1           5%[1;1H[?12l[?25h[?25lSELECT * FROM benchmark[34m^M[2;24H^M[m[2;26H[K[3;24H[34m^M[m[3;26H[K[4;24H[34m^M[m[4;26H[K[5;24H[34m^M[m[5;26H[K[6;24H[34m^M[m[6;26H[K[7;24H[34m^M[m[7;26H[K[8;24H[34m^M[m[8;26H[K[9;24H[34m^M[m[9;26H[K[10;1HDuration 95[34m^M[m[10;15H[K[11;1HQuery 1[34m^M[m[11;10H[K[12;1HSELECT * FROM benchmark WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294[34m^M[m[14;37HA=12032[34m^M[m[15;37HA=16930[34m^M[m[16;37HA=21847[17;37HA=28493[18;37HA=32583[19;37HA=37294[20;37HA=404[21;37HA=48453
+Duration 813[34m^M[m[22;15H[K[23;1HQuery 2[34m^M[m[23;10H[K[24;1HSELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m[26;37HB=12032[34m^M[m[26;46H[K[27;37HB=16930[34m^M[m[27;46H[K[28;37HB=21847[34m^M[m[28;46H[K[29;37HB=28493[34m^M[m[29;46H[K[30;37HB=32583[34m^M[m[30;46H[K[31;37HB=37294[34m^M[m[31;46H[K[32;37HB=40483[34m^M[m[32;46H[K[33;37HB=48453[34m^M[m[33;46H[K[34;1HDuration 1144[34m^M[m[34;16H[K[35;1HQuery 3[34m^M[m[35;10H[K[36;1HSELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m[41;24H WHERE columeA=28493 AND columeB=28493[34m^M[m[42;24H WHERE columeA=32583 AND columeB=32583[34m^M[m[43;24H WHERE columeA=37294 AND columeB=37294[34m^M[m[44;180H83,1          10%[1;1H[?12l[?25h[?25l[27m[m[H[2J[27m[m[H[2J[1;1HSELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 2673[34m^M[m
+DROP INDEX aindex[34m^M[m
+Physical Organization 3[34m^M[m
+CREATE INDEX bindex on benchmark (columeB)[34m^M[m
+Duration 26528[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+Duration 193[34m^M[m
+Query 1[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 1119[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=40483[34m^M[m[44;180H124,1         16%[1;1H[?12l[?25h[?25l[23C[34m^M[m[1;26H[K[2;24H[34m^M[m[2;26H[K[3;24H[34m^M[m[3;26H[K[4;24H[34m^M[m[4;26H[K[5;1HSELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark
+SELECT * FROM benchmark[34m^M[m[8;26H[K[9;1HSELECT * FROM benchmark[34m^M[m
+Duration 95[34m^M[m
+Query 1[34m^M[m[11;10H[K[12;24H WHERE columeA=2395[34m^M[m[13;24H WHERE columeA=8294[34m^M[m[14;24H WHERE columeA=12032[34m^M[m[15;24H WHERE columeA=16930[34m^M[m[16;24H WHERE columeA=21847[34m^M[m[17;24H WHERE columeA=28493[34m^M[m[18;24H WHERE columeA=32583[34m^M[m[19;24H WHERE columeA=37294[34m^M[m[20;24H WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 813[34m^M[m
+Query 2[34m^M[m[23;10H[K[24;37HB=2395[25;37HB=8294[34m^M[m[25;45H[K[26;37HB=12032[27;37HB=16930[28;37HB=21847[29;37HB=2849[30;37HB=32583[31;37HB=37294[32;37HB=4048
+SELECT * FROM benchmark WHERE columeB=48453[34m^M[m
+Duration 1144[34m^M[m
+Query 3[34m^M[m[35;10H[K[36;37HA=2395 AND columeB=2395[34m^M[m[37;37HA=8294 AND columeB=8294[34m^M[m[38;37HA=12032 AND columeB=12032[34m^M[m[39;37HA=16930 AND columeB=16930[34m^M[m[40;37HA=21847 AND columeB=21847[34m^M[m[41;37HA=28493 AND columeB=28493[34m^M[m[42;37HA=32583 AND columeB=32583[34m^M[m[43;37HA=37294 AND columeB=37294[34m^M[m[44;180H125,1         10%[43;1H[?12l[?25h[?25l[27m[m[H[2J[1;1HQuery 1[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453[34m^M[m
+Duration 1528[34m^M[m
+Query 2[34m^M[m
+SELECT * FROM benchmark WHERE columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeB=48453[34m^M[m
+Duration 1014[34m^M[m
+Query 3[34m^M[m
+SELECT * FROM benchmark WHERE columeA=2395 AND columeB=2395[34m^M[m
+SELECT * FROM benchmark WHERE columeA=8294 AND columeB=8294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=12032 AND columeB=12032[34m^M[m
+SELECT * FROM benchmark WHERE columeA=16930 AND columeB=16930[34m^M[m
+SELECT * FROM benchmark WHERE columeA=21847 AND columeB=21847[34m^M[m
+SELECT * FROM benchmark WHERE columeA=28493 AND columeB=28493[34m^M[m
+SELECT * FROM benchmark WHERE columeA=32583 AND columeB=32583[34m^M[m
+SELECT * FROM benchmark WHERE columeA=37294 AND columeB=37294[34m^M[m
+SELECT * FROM benchmark WHERE columeA=40483 AND columeB=40483[34m^M[m
+SELECT * FROM benchmark WHERE columeA=48453 AND columeB=48453[34m^M[m
+Duration 8763[34m^M[m
+Physical Organization 2[34m^M[m
+CREATE INDEX aindex on benchmark (columeA)[34m^M[m
+Duration 29879[34m^M[m
+Load[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m
+SELECT * FROM benchmark[34m^M[m[44;180H84,1           5%[43;1H[?12l[?25h[?25l[1;1HScript started on Thu 08 Nov 2012 08:05:55 PM CST
+All passwords are oracle or noted if otherwise.[34m^M
+^M[m[3;3H[K[4;1HThe SQL Developer and Data Modeler scripts are in the directory: [34m^M[m
+/home/oracle/Desktop/SQLDev_Tutorials/sqldev[34m^M
+^M[m[6;3H[K[7;1HTo Reset the labs: [34m^M[m[7;22H[K[8;2HQL Developer:            /home/oracle/reset_sqldev[34m^M[m
+Application Express:      /home/oracle/reset_apex[34m^M[m
+In-Memory Database Cache: /home/oracle/reset_imdbcache[34m^M[m
+XML Database:             /home/oracle/reset_xmldb[34m^M
+^M[m[12;3H[K[13;1HOracle Enterprise Manager [34m^M[m
+Start: emctl start dbconsole[34m^M[m[14;31H[K[15;2Htop : emctl stop dbconsole[34m^M[m[15;31H[K[16;1HURL  : https://127.0.0.1:1158/em[34m^M[m[16;35H[K[17;1H[34m^M[m[17;3H[K[18;1H*** Please note that this appliance is for testing purposes only, [34m^M[m
+as such it is unsupported and should not be used as a production environment.[34m^M
+^M[m[20;3H[K[21;1H[34m^M[m[21;3H[K[22;1H          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0[34m^M[m
+          inet addr:127.0.0.1  Mask:255.0.0.0[34m^M
+^[[m]0;oracle@localhost:~/hw6[34m^G[m[oracle@localhost hw6]$ make[34m^M[m
+javac Lab7.java[34m^M[m
+java Lab7[34m^M[m[26;12H[K[27;1HConnecting to database...[34m^M[m[27;2

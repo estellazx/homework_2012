@@ -1,0 +1,1282 @@
+Script started on Mon 19 Nov 2012 10:59:36 PM CST
+menie482@diligence:~/sz4554-hw/cs371$ java ir.webutils.PageRankSiteSpider -u http://www.cs.utexas.edu/users/mooney/ir-course/students.html -d student -c 100
+Trying: http://www.cs.utexas.edu/~mooney/ir-course/students.html
+Indexing(1): http://www.cs.utexas.edu/~mooney/ir-course/students.html
+Trying: http://www.cs.utexas.edu/~sa22896/ir-course.html
+Indexing(2): http://www.cs.utexas.edu/~sa22896/ir-course.html
+Trying: http://www.cs.utexas.edu/~joseph07/ir-course.html
+Indexing(3): http://www.cs.utexas.edu/~joseph07/ir-course.html
+Trying: http://www.cs.utexas.edu/~rbarbosa/ir-course.html
+Indexing(4): http://www.cs.utexas.edu/~rbarbosa/ir-course.html
+Trying: http://www.cs.utexas.edu/~rtb543/ir-course.html
+Indexing(5): http://www.cs.utexas.edu/~rtb543/ir-course.html
+Trying: http://www.cs.utexas.edu/~abouzek/ir-course.html
+Indexing(6): http://www.cs.utexas.edu/~abouzek/ir-course.html
+Trying: http://www.cs.utexas.edu/~kburgyan/ir-course.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~kburgyan/ir-course.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~marshall/ir-course.html
+Indexing(7): http://www.cs.utexas.edu/~marshall/ir-course.html
+Trying: http://www.cs.utexas.edu/~bricon/ir-course.html
+Indexing(8): http://www.cs.utexas.edu/~bricon/ir-course.html
+Trying: http://www.cs.utexas.edu/~acreme/ir-course.html
+Indexing(9): http://www.cs.utexas.edu/~acreme/ir-course.html
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Indexing(10): http://www.cs.utexas.edu/~batticus/ir-course.html
+Trying: http://www.cs.utexas.edu/~pday/ir-course.html
+Indexing(11): http://www.cs.utexas.edu/~pday/ir-course.html
+LinkExtractor: java.net.MalformedURLException: unknown protocol: hhttp
+Trying: http://www.cs.utexas.edu/~sdevani/ir-course.html
+Indexing(12): http://www.cs.utexas.edu/~sdevani/ir-course.html
+Trying: http://www.cs.utexas.edu/~meweber/ir-course.html
+Indexing(13): http://www.cs.utexas.edu/~meweber/ir-course.html
+Trying: http://www.cs.utexas.edu/~dff59/ir-course.html
+Indexing(14): http://www.cs.utexas.edu/~dff59/ir-course.html
+Trying: http://www.cs.utexas.edu/~trevorsg/ir-course.html
+Indexing(15): http://www.cs.utexas.edu/~trevorsg/ir-course.html
+Trying: http://www.cs.utexas.edu/~tglenn/ir-course.html
+Indexing(16): http://www.cs.utexas.edu/~tglenn/ir-course.html
+Trying: http://www.cs.utexas.edu/~jiawei/ir-course.html
+Indexing(17): http://www.cs.utexas.edu/~jiawei/ir-course.html
+Trying: http://www.cs.utexas.edu/~austinh/ir-course.html
+Indexing(18): http://www.cs.utexas.edu/~austinh/ir-course.html
+Trying: http://www.cs.utexas.edu/~eh7984/ir-course.html
+Indexing(19): http://www.cs.utexas.edu/~eh7984/ir-course.html
+Trying: http://www.cs.utexas.edu/~chooper9/ir-course.html
+Indexing(20): http://www.cs.utexas.edu/~chooper9/ir-course.html
+Trying: http://www.cs.utexas.edu/~mikehsu/ir-course.html
+Indexing(21): http://www.cs.utexas.edu/~mikehsu/ir-course.html
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Indexing(22): http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Trying: http://www.cs.utexas.edu/~mjjanusa/ir-course.html
+Indexing(23): http://www.cs.utexas.edu/~mjjanusa/ir-course.html
+Trying: http://www.cs.utexas.edu/~rj2339/ir-course.html
+Indexing(24): http://www.cs.utexas.edu/~rj2339/ir-course.html
+Trying: http://www.cs.utexas.edu/~acl587/ir-course.html
+Indexing(25): http://www.cs.utexas.edu/~acl587/ir-course.html
+Trying: http://www.cs.utexas.edu/~lass/ir-course.html
+Indexing(26): http://www.cs.utexas.edu/~lass/ir-course.html
+Trying: http://www.cs.utexas.edu/~sora/ir-course.html
+Indexing(27): http://www.cs.utexas.edu/~sora/ir-course.html
+Trying: http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Indexing(28): http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Trying: http://www.cs.utexas.edu/~alek313/ir-course.html
+Indexing(29): http://www.cs.utexas.edu/~alek313/ir-course.html
+Trying: http://www.cs.utexas.edu/~ulan90/ir-course.html
+Indexing(30): http://www.cs.utexas.edu/~ulan90/ir-course.html
+Trying: http://www.cs.utexas.edu/~nishay/ir-course.html
+Indexing(31): http://www.cs.utexas.edu/~nishay/ir-course.html
+Trying: http://www.cs.utexas.edu/~darbs/ir-course.html
+Indexing(32): http://www.cs.utexas.edu/~darbs/ir-course.html
+Trying: http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Indexing(33): http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Indexing(34): http://www.cs.utexas.edu/~killakam/ir-course.html
+Trying: http://www.cs.utexas.edu/~pablor/ir-course.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~pablor/ir-course.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~jamesr/ir-course.html
+Indexing(35): http://www.cs.utexas.edu/~jamesr/ir-course.html
+Trying: http://www.cs.utexas.edu/~pjruiz15/ir-course.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~pjruiz15/ir-course.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~ocryan/ir-course.html
+Indexing(36): http://www.cs.utexas.edu/~ocryan/ir-course.html
+Trying: http://www.cs.utexas.edu/~jayshah/ir-course.html
+Indexing(37): http://www.cs.utexas.edu/~jayshah/ir-course.html
+Trying: http://www.cs.utexas.edu/~shippc/ir-course.html
+Indexing(38): http://www.cs.utexas.edu/~shippc/ir-course.html
+Trying: http://www.cs.utexas.edu/~suvamsh/ir-course.html
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~suvamsh/ir-course.html
+No Page Found
+Trying: http://www.cs.utexas.edu/~smurdon/ir-course.html
+Indexing(39): http://www.cs.utexas.edu/~smurdon/ir-course.html
+Trying: http://www.cs.utexas.edu/~aws579/ir-course.html
+Indexing(40): http://www.cs.utexas.edu/~aws579/ir-course.html
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Indexing(41): http://www.cs.utexas.edu/~sas5294/ir-course.html
+Trying: http://www.cs.utexas.edu/~mvazquez/ir-course.html
+Indexing(42): http://www.cs.utexas.edu/~mvazquez/ir-course.html
+Trying: http://www.cs.utexas.edu/~aaronv92/ir-course.html
+Indexing(43): http://www.cs.utexas.edu/~aaronv92/ir-course.html
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Indexing(44): http://www.cs.utexas.edu/~ajw015/ir-course.html
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Indexing(45): http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Trying: http://www.cs.utexas.edu/~menie482/ir-course.html
+Indexing(46): http://www.cs.utexas.edu/~menie482/ir-course.html
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Indexing(47): http://www.cs.utexas.edu/~scottm/cs307
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Indexing(48): http://www.cs.utexas.edu/~novak/cs315.html
+Trying: http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+Indexing(49): http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Indexing(50): http://www.cs.utexas.edu/~downing/cs371p/drupal
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Indexing(51): http://www.cs.utexas.edu/~dsb/CS378
+Trying: http://www.cs.utexas.edu/~marshall/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~austinh/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shippc/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h
+Indexing(52): http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h
+Trying: http://www.cs.utexas.edu/~klivans/336h10.html
+Indexing(53): http://www.cs.utexas.edu/~klivans/336h10.html
+Trying: http://www.cs.utexas.edu/~vlr/courses/s12.357h
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~downing/cs373
+Indexing(54): http://www.cs.utexas.edu/~downing/cs373
+Trying: http://www.cs.utexas.edu/~fussell/courses/cs310
+Indexing(55): http://www.cs.utexas.edu/~fussell/courses/cs310
+Trying: http://www.cs.utexas.edu/~pday/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~chooper9/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jamesr/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Indexing(56): http://www.cs.utexas.edu/~mooney/ir-course
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p
+Indexing(57): http://www.cs.utexas.edu/~downing/cs371p
+Trying: http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354
+Indexing(58): http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354
+Trying: http://www.cs.utexas.edu/~chooper9/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~darbs/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~alek313/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~fussell/courses/cs310
+Already visited
+Trying: http://www.cs.utexas.edu/~klivans/336h10.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12
+Indexing(59): http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12
+Trying: http://www.cs.utexas.edu/~ckm/teaching/cs354_f11
+Indexing(60): http://www.cs.utexas.edu/~ckm/teaching/cs354_f11
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Indexing(61): http://www.cs.utexas.edu/~ear/cs341
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~sdevani/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~austinh/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~shmat/courses/cs378_spring09
+Indexing(62): http://www.cs.utexas.edu/~shmat/courses/cs378_spring09
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Indexing(63): http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Trying: http://www.cs.utexas.edu/~downing/cs373/drupal
+Indexing(64): http://www.cs.utexas.edu/~downing/cs373/drupal
+Trying: http://www.cs.utexas.edu/~acreme/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~austinh/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Indexing(65): http://www.cs.utexas.edu/~cannata/cs345
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Indexing(66): http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Trying: http://www.cs.utexas.edu/~mooney/cs343
+Indexing(67): http://www.cs.utexas.edu/~mooney/cs343
+Trying: http://www.cs.utexas.edu/~jiawei/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~meweber/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm
+Indexing(68): http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm
+Trying: http://www.cs.utexas.edu/~inderjit/courses/dm2009
+Indexing(69): http://www.cs.utexas.edu/~inderjit/courses/dm2009
+Trying: http://www.cs.utexas.edu/~klivans/336h10.html
+Already visited
+Trying: http://www.cs.utexas.edu/~meweber/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jayshah/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~lass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shmat/courses/cs378_spring09
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs305j
+Indexing(70): http://www.cs.utexas.edu/~scottm/cs305j
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~lam/cs356
+Indexing(71): http://www.cs.utexas.edu/~lam/cs356
+Trying: http://www.cs.utexas.edu/~smurdon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jiawei/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343spring12
+Indexing(72): http://www.cs.utexas.edu/~pstone/Courses/343spring12
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs349
+Indexing(73): http://www.cs.utexas.edu/~ear/cs349
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~trevorsg/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rj2339/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~klivans/336h10.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h
+Already visited
+Trying: http://www.cs.utexas.edu/~moore/classes/cs313k
+Indexing(74): http://www.cs.utexas.edu/~moore/classes/cs313k
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~joseph07/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bricon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354
+Already visited
+Trying: http://www.cs.utexas.edu/~dahlin/Classes/UGOS
+Indexing(75): http://www.cs.utexas.edu/~dahlin/Classes/UGOS
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343spring12
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p
+Already visited
+Trying: http://www.cs.utexas.edu/~rtb543/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jayshah/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~alek313/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~jayshah/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bricon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~erozner/cs108
+Indexing(76): http://www.cs.utexas.edu/~erozner/cs108
+Trying: http://www.cs.utexas.edu/~scottm/cs305j
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~cline/336.html
+Indexing(77): http://www.cs.utexas.edu/~cline/336.html
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sa22896/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~austinh/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~nishay/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~mckinley/352
+Indexing(78): http://www.cs.utexas.edu/~mckinley/352
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs349
+Already visited
+Trying: http://www.cs.utexas.edu/~cline/336.html
+Already visited
+Trying: http://www.cs.utexas.edu/~nishay/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rj2339/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ckm/teaching/cs354_f11
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs375.html
+Indexing(79): http://www.cs.utexas.edu/~novak/cs375.html
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~chooper9/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sdevani/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rbarbosa/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html
+Indexing(80): http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~cdunham/cs105
+Indexing(81): http://www.cs.utexas.edu/~cdunham/cs105
+Trying: http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~menie482/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jamesr/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~erozner/cs108
+Already visited
+Trying: http://www.cs.utexas.edu/~schrum2/cs105-PHP
+Indexing(82): http://www.cs.utexas.edu/~schrum2/cs105-PHP
+Trying: http://www.cs.utexas.edu/~mitra/csSpring2010/cs320/cs320.html
+Indexing(83): http://www.cs.utexas.edu/~mitra/csSpring2010/cs320/cs320.html
+Trying: http://www.cs.utexas.edu/~jayshah/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~chooper9/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~klivans/336h10.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~trevorsg/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~lass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/cs343
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p
+Already visited
+Trying: http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354
+Already visited
+Trying: http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html
+Indexing(84): http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html
+Trying: http://www.cs.utexas.edu/~dff59/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mikehsu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~ckm/teaching/cs354_f11
+Already visited
+Trying: http://www.cs.utexas.edu/~edwardsj/teaching/2011spring/cs105
+Indexing(85): http://www.cs.utexas.edu/~edwardsj/teaching/2011spring/cs105
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs349
+Already visited
+Trying: http://www.cs.utexas.edu/~dahlin/Classes/UGOS
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~moore/classes/cs313k
+Already visited
+Trying: http://www.cs.utexas.edu/~marshall/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~pday/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~trevorsg/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ulan90/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~dahlin/Classes/UGOS
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~plaxton/c/357
+Indexing(86): http://www.cs.utexas.edu/~plaxton/c/357
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jamesr/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~tglenn/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs307.html
+Indexing(87): http://www.cs.utexas.edu/~novak/cs307.html
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~nishay/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mikehsu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs315
+WebPage.getWebPage(): java.io.FileNotFoundException: http://www.cs.utexas.edu/~downing/cs315
+No Page Found
+Trying: http://www.cs.utexas.edu/~eberlein/cs341/cs341.html
+Indexing(88): http://www.cs.utexas.edu/~eberlein/cs341/cs341.html
+Trying: http://www.cs.utexas.edu/~dburger/teaching/cs352-s05
+WebPage.getWebPage(): java.io.IOException: Server returned HTTP response code: 403 for URL: http://www.cs.utexas.edu/~dburger/teaching/cs352-s05
+No Page Found
+Trying: http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F
+Indexing(89): http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F
+Trying: http://www.cs.utexas.edu/~bricon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~lass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~klivans/336h10.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/cs343
+Already visited
+Trying: http://www.cs.utexas.edu/~inderjit/courses/dm2009
+Already visited
+Trying: http://www.cs.utexas.edu/~vlr/courses/s12.357h
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bricon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~julian/index.php?page=CS105 Programming In Python
+Not HTML Page
+Trying: http://www.cs.utexas.edu/~cline/336.html
+Already visited
+Trying: http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F
+Already visited
+Trying: http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~menie482/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/cs343
+Already visited
+Trying: http://www.cs.utexas.edu/~cline/336.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12
+Already visited
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~aaronv92/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sa22896/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~lass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373
+Already visited
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~pday/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sdevani/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs349
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rj2339/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jiawei/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mjjanusa/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shippc/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~lass/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~aws579/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~lam/cs356
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~smurdon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~shmat/courses/cs378_spring09
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~acreme/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~abouzek/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs315
+Already visited
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373
+Already visited
+Trying: http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F
+Already visited
+Trying: http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~batticus/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343spring12
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs341/cs341.html
+Already visited
+Trying: http://www.cs.utexas.edu/~dburger/teaching/cs352-s05
+Already visited
+Trying: http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F
+Already visited
+Trying: http://www.cs.utexas.edu/~meweber/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~bricon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~cdunham/cs105
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~abouzek/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jiawei/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~moore/classes/cs313k
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~inderjit/courses/dm2009
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~acreme/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rahmanf/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~austinh/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs315
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~mitra/csSummer2009/cs303/cs303.html
+Indexing(90): http://www.cs.utexas.edu/~mitra/csSummer2009/cs303/cs303.html
+Trying: http://www.cs.utexas.edu/~jayshah/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~meweber/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jasonwu/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~dsb/CS378
+Already visited
+Trying: http://www.cs.utexas.edu/~marshall/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ulan90/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~rj2339/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jbsartor/cs105.htm
+Indexing(91): http://www.cs.utexas.edu/~jbsartor/cs105.htm
+Trying: http://www.cs.utexas.edu/~erozner/cs108
+Already visited
+Trying: http://www.cs.utexas.edu/~risto/cs378i
+Indexing(92): http://www.cs.utexas.edu/~risto/cs378i
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm
+Already visited
+Trying: http://www.cs.utexas.edu/~trevorsg/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs373
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~plaxton/c/357
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs349
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307
+Already visited
+Trying: http://www.cs.utexas.edu/~aaronv92/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~eh7984/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~killakam/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+Already visited
+Trying: http://www.cs.utexas.edu/~novak/cs315.html
+Already visited
+Trying: http://www.cs.utexas.edu/~schrum2/cs105-PHP
+Already visited
+Trying: http://www.cs.utexas.edu/~downing/cs371p/drupal
+Already visited
+Trying: http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html
+Already visited
+Trying: http://www.cs.utexas.edu/~aaronv92/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~ajw015/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~sas5294/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~meweber/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jeffrey/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~mooney/ir-course
+Already visited
+Trying: http://www.cs.utexas.edu/~pstone/Courses/343spring12
+Already visited
+Trying: http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+Already visited
+Trying: http://www.cs.utexas.edu/~cannata/cs345
+Already visited
+Trying: http://www.cs.utexas.edu/~ear/cs341
+Already visited
+Trying: http://www.cs.utexas.edu/~smurdon/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~jennyiba/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~joseph07/ir-course.html
+Already visited
+Trying: http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm
+Indexing(93): http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs307/schedule.htm
+Indexing(94): http://www.cs.utexas.edu/~scottm/cs307/schedule.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs307/handouts/topicsList.htm
+Indexing(95): http://www.cs.utexas.edu/~scottm/cs307/handouts/topicsList.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs307/labHoursSummer.htm
+Indexing(96): http://www.cs.utexas.edu/~scottm/cs307/labHoursSummer.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs307/Assignments
+Indexing(97): http://www.cs.utexas.edu/~scottm/cs307/Assignments
+Trying: http://www.cs.utexas.edu/~scottm/cs307/links.htm
+Indexing(98): http://www.cs.utexas.edu/~scottm/cs307/links.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm
+Indexing(99): http://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm
+Trying: http://www.cs.utexas.edu/~scottm/cs307/software.htm
+Indexing(100): http://www.cs.utexas.edu/~scottm/cs307/software.htm
+Graph Structure:
+http://www.cs.utexas.edu/~novak/cs375.html
+<- [http://www.cs.utexas.edu/~tglenn/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~jbsartor/cs105.htm
+<- [http://www.cs.utexas.edu/~aaronv92/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~cannata/cs345
+<- [http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~rahmanf/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html]
+-> [http://www.cs.utexas.edu/~aws579/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html]
+http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h
+<- [http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h]
+-> [http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h]
+http://www.cs.utexas.edu/~sa22896/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html]
+-> [http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~dsb/CS378]
+http://www.cs.utexas.edu/~batticus/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html]
+-> [http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~pstone/Courses/343spring12, http://www.cs.utexas.edu/~ear/cs349]
+http://www.cs.utexas.edu/~scottm/cs307/links.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307]
+-> []
+http://www.cs.utexas.edu/~scottm/cs307/schedule.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~scottm/cs307]
+-> []
+http://www.cs.utexas.edu/~acl587/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html]
+-> [http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~eberlein/cs341/cs341.html, http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F, http://www.cs.utexas.edu/~downing/cs315, http://www.cs.utexas.edu/~dburger/teaching/cs352-s05]
+http://www.cs.utexas.edu/~cline/336.html
+<- [http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~scottm/cs305j
+<- [http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~dff59/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~trevorsg/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html]
+-> [http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~ear/cs349, http://www.cs.utexas.edu/~cline/336.html, http://www.cs.utexas.edu/~mckinley/352]
+http://www.cs.utexas.edu/~dburger/teaching/cs352-s05
+<- [http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~downing/cs315
+<- [http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~eh7984/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~ajw015/ir-course.html]
+-> [http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html, http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~klivans/336h10.html, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html]
+http://www.cs.utexas.edu/~abouzek/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html]
+-> [http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~shmat/courses/cs378_spring09, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~downing/cs373/drupal]
+http://www.cs.utexas.edu/~killakam/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html]
+-> [http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~lam/cs356, http://www.cs.utexas.edu/~batticus/ir-course.html]
+http://www.cs.utexas.edu/~schrum2/cs105-PHP
+<- [http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~schrum2/cs105-PHP]
+-> [http://www.cs.utexas.edu/~schrum2/cs105-PHP]
+http://www.cs.utexas.edu/~scottm/cs307
+<- [http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~novak/cs307.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm, http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm, http://www.cs.utexas.edu/~scottm/cs307/schedule.htm, http://www.cs.utexas.edu/~scottm/cs307/schedule.htm, http://www.cs.utexas.edu/~scottm/cs307/handouts/topicsList.htm, http://www.cs.utexas.edu/~scottm/cs307/labHoursSummer.htm, http://www.cs.utexas.edu/~scottm/cs307/Assignments, http://www.cs.utexas.edu/~scottm/cs307/links.htm, http://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm, http://www.cs.utexas.edu/~scottm/cs307/software.htm]
+http://www.cs.utexas.edu/~scottm/cs307/Assignments
+<- [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm, http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm, http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm]
+-> [http://www.cs.utexas.edu/~scottm/cs307/software.htm]
+http://www.cs.utexas.edu/~jamesr/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~shmat/courses/cs378_spring09, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html]
+http://www.cs.utexas.edu/~marshall/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html]
+-> [http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~mooney/cs343]
+http://www.cs.utexas.edu/~lam/cs356
+<- [http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~joseph07/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> [http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h, http://www.cs.utexas.edu/~klivans/336h10.html, http://www.cs.utexas.edu/~downing/cs373, http://www.cs.utexas.edu/~fussell/courses/cs310, http://www.cs.utexas.edu/~vlr/courses/s12.357h]
+http://www.cs.utexas.edu/~dff59/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~chooper9/ir-course.html]
+-> [http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~scottm/cs305j, http://www.cs.utexas.edu/~erozner/cs108, http://www.cs.utexas.edu/~cline/336.html, http://www.cs.utexas.edu/~sa22896/ir-course.html]
+http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm
+<- [http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~pday/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html]
+-> [http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h, http://www.cs.utexas.edu/~klivans/336h10.html, http://www.cs.utexas.edu/~moore/classes/cs313k, http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~bricon/ir-course.html]
+http://www.cs.utexas.edu/~acreme/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html]
+-> [http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~shmat/courses/cs378_spring09, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~scottm/cs305j, http://www.cs.utexas.edu/~lam/cs356]
+http://www.cs.utexas.edu/~mooney/ir-course/students.html
+<- []
+-> [http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~aws579/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+http://www.cs.utexas.edu/~shippc/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~cdunham/cs105, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html]
+http://www.cs.utexas.edu/~vlr/courses/s12.357h
+<- [http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~klivans/336h10.html
+<- [http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354
+<- [http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354]
+-> [http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354]
+http://www.cs.utexas.edu/~jiawei/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html]
+-> [http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html, http://www.cs.utexas.edu/~cdunham/cs105]
+http://www.cs.utexas.edu/~mckinley/352
+<- [http://www.cs.utexas.edu/~trevorsg/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~nishay/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~ear/cs349, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html]
+http://www.cs.utexas.edu/~pstone/Courses/343spring12
+<- [http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> [http://www.cs.utexas.edu/~mooney/cs343]
+http://www.cs.utexas.edu/~jennyiba/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> [http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~ear/cs349, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~moore/classes/cs313k, http://www.cs.utexas.edu/~dahlin/Classes/UGOS]
+http://www.cs.utexas.edu/~mitra/csSpring2010/cs320/cs320.html
+<- [http://www.cs.utexas.edu/~austinh/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~austinh/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html]
+-> [http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~erozner/cs108, http://www.cs.utexas.edu/~schrum2/cs105-PHP, http://www.cs.utexas.edu/~mitra/csSpring2010/cs320/cs320.html, http://www.cs.utexas.edu/~batticus/ir-course.html]
+http://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307]
+-> []
+http://www.cs.utexas.edu/~aaronv92/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> [http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~erozner/cs108, http://www.cs.utexas.edu/~jbsartor/cs105.htm, http://www.cs.utexas.edu/~risto/cs378i]
+http://www.cs.utexas.edu/~jeffrey/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> [http://www.cs.utexas.edu/~aaronv92/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html, http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12, http://www.cs.utexas.edu/~mooney/cs343, http://www.cs.utexas.edu/~cline/336.html, http://www.cs.utexas.edu/~sa22896/ir-course.html]
+http://www.cs.utexas.edu/~edwardsj/teaching/2011spring/cs105
+<- [http://www.cs.utexas.edu/~mikehsu/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~mjjanusa/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~darbs/ir-course.html]
+-> [http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~dahlin/Classes/UGOS, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~plaxton/c/357, http://www.cs.utexas.edu/~tglenn/ir-course.html]
+http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html
+<- [http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~dsb/CS378
+<- [http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~downing/cs371p/drupal
+<- [http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~downing/cs371p/drupal]
+-> [http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~downing/cs371p/drupal]
+http://www.cs.utexas.edu/~downing/cs373/drupal
+<- [http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~downing/cs373/drupal]
+-> [http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~downing/cs373/drupal]
+http://www.cs.utexas.edu/~mooney/ir-course
+<- [http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~risto/cs378i
+<- [http://www.cs.utexas.edu/~aaronv92/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~ckm/teaching/cs354_f11
+<- [http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~scottm/cs307]
+-> [http://www.cs.utexas.edu/~scottm/cs307/Assignments, http://www.cs.utexas.edu/~scottm/cs307/Assignments, http://www.cs.utexas.edu/~scottm/cs307/Assignments, http://www.cs.utexas.edu/~scottm/cs307/software.htm]
+http://www.cs.utexas.edu/~downing/cs371p
+<- [http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~menie482/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html]
+-> [http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~smurdon/ir-course.html, http://www.cs.utexas.edu/~pstone/Courses/343spring12, http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html]
+http://www.cs.utexas.edu/~mvazquez/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html]
+http://www.cs.utexas.edu/~erozner/cs108
+<- [http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~scottm/cs307/labHoursSummer.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307]
+-> []
+http://www.cs.utexas.edu/~fussell/courses/cs310
+<- [http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~rtb543/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~novak/cs307.html
+<- [http://www.cs.utexas.edu/~rj2339/ir-course.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307]
+http://www.cs.utexas.edu/~eberlein/cs341/cs341.html
+<- [http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12
+<- [http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html
+<- [http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~dff59/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~ajw015/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html, http://www.cs.utexas.edu/~downing/cs373, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~ear/cs349, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~plaxton/c/357, http://www.cs.utexas.edu/~aaronv92/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html]
+http://www.cs.utexas.edu/~sora/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html]
+-> [http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm, http://www.cs.utexas.edu/~cline/336.html, http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F]
+http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html
+<- [http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F
+<- [http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~jasonwu/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~sora/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html]
+-> [http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~schrum2/cs105-PHP, http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html, http://www.cs.utexas.edu/~aaronv92/ir-course.html]
+http://www.cs.utexas.edu/~inderjit/courses/dm2009
+<- [http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~ocryan/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html]
+-> [http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~downing/cs373, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F, http://www.cs.utexas.edu/~downing/cs315]
+http://www.cs.utexas.edu/~dahlin/Classes/UGOS
+<- [http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~dahlin/Classes/UGOS]
+-> [http://www.cs.utexas.edu/~dahlin/Classes/UGOS]
+http://www.cs.utexas.edu/~mitra/csSummer2009/cs303/cs303.html
+<- [http://www.cs.utexas.edu/~sas5294/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~meweber/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> [http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~downing/cs371p, http://www.cs.utexas.edu/~bricon/ir-course.html]
+http://www.cs.utexas.edu/~sdevani/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html]
+-> [http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~downing/cs371p, http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354, http://www.cs.utexas.edu/~pstone/Courses/343spring12, http://www.cs.utexas.edu/~dahlin/Classes/UGOS, http://www.cs.utexas.edu/~rtb543/ir-course.html]
+http://www.cs.utexas.edu/~aws579/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~moore/classes/cs313k
+<- [http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~smurdon/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html
+<- [http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~plaxton/c/357
+<- [http://www.cs.utexas.edu/~mjjanusa/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~rj2339/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html]
+-> [http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~novak/cs307.html]
+http://www.cs.utexas.edu/~sas5294/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> [http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~downing/cs371p, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~downing/cs315, http://www.cs.utexas.edu/~mitra/csSummer2009/cs303/cs303.html]
+http://www.cs.utexas.edu/~smurdon/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~inderjit/courses/dm2009, http://www.cs.utexas.edu/~moore/classes/cs313k]
+http://www.cs.utexas.edu/~chooper9/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~tglenn/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html]
+-> [http://www.cs.utexas.edu/~mikehsu/ir-course.html, http://www.cs.utexas.edu/~downing/cs371p, http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~mooney/cs343, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html, http://www.cs.utexas.edu/~dff59/ir-course.html]
+http://www.cs.utexas.edu/~rtb543/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~sdevani/ir-course.html]
+-> [http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~klivans/336h10.html, http://www.cs.utexas.edu/~fussell/courses/cs310, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12, http://www.cs.utexas.edu/~ckm/teaching/cs354_f11, http://www.cs.utexas.edu/~ear/cs341]
+http://www.cs.utexas.edu/~shmat/courses/cs378_spring09
+<- [http://www.cs.utexas.edu/~abouzek/ir-course.html, http://www.cs.utexas.edu/~acreme/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~ulan90/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~mvazquez/ir-course.html]
+-> [http://www.cs.utexas.edu/~dsb/CS378, http://www.cs.utexas.edu/~downing/cs373, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~batticus/ir-course.html]
+http://www.cs.utexas.edu/~rbarbosa/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~tglenn/ir-course.html]
+-> [http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~downing/cs373, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~downing/cs371p, http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354]
+http://www.cs.utexas.edu/~lass/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html]
+-> [http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~klivans/336h10.html, http://www.cs.utexas.edu/~ear/cs341, http://www.cs.utexas.edu/~mooney/cs343, http://www.cs.utexas.edu/~inderjit/courses/dm2009, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~vlr/courses/s12.357h]
+http://www.cs.utexas.edu/~mikehsu/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html]
+-> [http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~ckm/teaching/cs354_f11, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~edwardsj/teaching/2011spring/cs105]
+http://www.cs.utexas.edu/~mooney/cs343
+<- [http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~pstone/Courses/343spring12]
+-> []
+http://www.cs.utexas.edu/~bricon/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~acl587/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html]
+-> [http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~jayshah/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~klivans/336h10.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm, http://www.cs.utexas.edu/~inderjit/courses/dm2009]
+http://www.cs.utexas.edu/~scottm/cs307/software.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm, http://www.cs.utexas.edu/~scottm/cs307/Assignments]
+-> []
+http://www.cs.utexas.edu/~tglenn/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html]
+-> [http://www.cs.utexas.edu/~chooper9/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~ckm/teaching/cs354_f11, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~cannata/cs345, http://www.cs.utexas.edu/~novak/cs375.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html]
+http://www.cs.utexas.edu/~ear/cs341
+<- [http://www.cs.utexas.edu/~rtb543/ir-course.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~menie482/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~novak/cs315.html
+<- [http://www.cs.utexas.edu/~sa22896/ir-course.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~marshall/ir-course.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~pday/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~eh7984/ir-course.html, http://www.cs.utexas.edu/~rj2339/ir-course.html, http://www.cs.utexas.edu/~jeffrey/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html, http://www.cs.utexas.edu/~darbs/ir-course.html, http://www.cs.utexas.edu/~rahmanf/ir-course.html, http://www.cs.utexas.edu/~killakam/ir-course.html, http://www.cs.utexas.edu/~jamesr/ir-course.html, http://www.cs.utexas.edu/~jasonwu/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~ear/cs349
+<- [http://www.cs.utexas.edu/~batticus/ir-course.html, http://www.cs.utexas.edu/~trevorsg/ir-course.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~nishay/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~downing/cs373
+<- [http://www.cs.utexas.edu/~joseph07/ir-course.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~ulan90/ir-course.html, http://www.cs.utexas.edu/~ocryan/ir-course.html, http://www.cs.utexas.edu/~ajw015/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~jayshah/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~austinh/ir-course.html, http://www.cs.utexas.edu/~sas5294/ir-course.html]
+-> [http://www.cs.utexas.edu/~sas5294/ir-course.html, http://www.cs.utexas.edu/~scottm/cs307, http://www.cs.utexas.edu/~meweber/ir-course.html, http://www.cs.utexas.edu/~pstone/Courses/343spring12, http://www.cs.utexas.edu/~bricon/ir-course.html, http://www.cs.utexas.edu/~eberlein/cs341/cs341.html, http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F, http://www.cs.utexas.edu/~dburger/teaching/cs352-s05]
+http://www.cs.utexas.edu/~alek313/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html, http://www.cs.utexas.edu/~sdevani/ir-course.html]
+-> [http://www.cs.utexas.edu/~ajw015/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~downing/cs371p/drupal, http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~lass/ir-course.html, http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html, http://www.cs.utexas.edu/~batticus/ir-course.html]
+http://www.cs.utexas.edu/~darbs/ir-course.html
+<- [http://www.cs.utexas.edu/~mooney/ir-course/students.html, http://www.cs.utexas.edu/~rbarbosa/ir-course.html]
+-> [http://www.cs.utexas.edu/~shippc/ir-course.html, http://www.cs.utexas.edu/~novak/cs315.html, http://www.cs.utexas.edu/~mooney/ir-course, http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html, http://www.cs.utexas.edu/~downing/cs373/drupal, http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html, http://www.cs.utexas.edu/~jennyiba/ir-course.html, http://www.cs.utexas.edu/~mjjanusa/ir-course.html]
+http://www.cs.utexas.edu/~scottm/cs307/handouts/topicsList.htm
+<- [http://www.cs.utexas.edu/~scottm/cs307]
+-> []
+http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html
+<- [http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~alek313/ir-course.html]
+-> []
+http://www.cs.utexas.edu/~cdunham/cs105
+<- [http://www.cs.utexas.edu/~jiawei/ir-course.html, http://www.cs.utexas.edu/~shippc/ir-course.html]
+-> []
+Page Rank:
+http://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm=0.0026701598781657216
+http://www.cs.utexas.edu/~erozner/cs108=0.002635072337682627
+http://www.cs.utexas.edu/~cannata/cs345=0.004583878763667488
+http://www.cs.utexas.edu/~mitra/csSummer2009/cs303/cs303.html=0.0021038689829860034
+http://www.cs.utexas.edu/~mitra/csSpring2010/cs320/cs320.html=0.0020391841258269065
+http://www.cs.utexas.edu/~novak/cs307.html=0.0020698144943702298
+http://www.cs.utexas.edu/~mooney/ir-course/students.html=0.001671935157308883
+http://www.cs.utexas.edu/~scottm/cs307/links.htm=0.0026701598781657216
+http://www.cs.utexas.edu/~joseph07/ir-course.html=0.0023591662767230375
+http://www.cs.utexas.edu/~meweber/ir-course.html=0.003635669772193149
+http://www.cs.utexas.edu/~bwaters/classes/cs346-spring12=0.002273660681935608
+http://www.cs.utexas.edu/~dff59/ir-course.html=0.002046446830238524
+http://www.cs.utexas.edu/~novak/cs315.html=0.007052943691150951
+http://www.cs.utexas.edu/~rj2339/ir-course.html=0.0032617979173735785
+http://www.cs.utexas.edu/~darbs/ir-course.html=0.0018807752988177237
+http://www.cs.utexas.edu/~downing/cs373/drupal=0.12574659901830013
+http://www.cs.utexas.edu/~alek313/ir-course.html=0.0021787818892591644
+http://www.cs.utexas.edu/~scottm/cs305j=0.002200597783928233
+http://www.cs.utexas.edu/~mitra/csSpring2010/cs313/cs313.html=0.00231175421946268
+http://www.cs.utexas.edu/~sa22896/ir-course.html=0.002342018198326277
+http://www.cs.utexas.edu/~eh7984/ir-course.html=0.002152857871892588
+http://www.cs.utexas.edu/~mikehsu/ir-course.html=0.0024443261672998707
+http://www.cs.utexas.edu/~acreme/ir-course.html=0.002573445311909747
+http://www.cs.utexas.edu/~schrum2/cs105-PHP=0.09693672206412961
+http://www.cs.utexas.edu/~killakam/ir-course.html=0.004670564134840109
+http://www.cs.utexas.edu/~byoung/cs361/syllabus361.html=0.004597657402946634
+http://www.cs.utexas.edu/~smurdon/ir-course.html=0.002774354479190764
+http://www.cs.utexas.edu/~sdevani/ir-course.html=0.002443045379674739
+http://www.cs.utexas.edu/~klivans/336h10.html=0.003559023110923176
+http://www.cs.utexas.edu/~rbarbosa/ir-course.html=0.0019453908362740762
+http://www.cs.utexas.edu/~lorenzo/corsi/cs378/04F=0.002752435360598054
+http://www.cs.utexas.edu/~ear/cs349=0.003841741706307383
+http://www.cs.utexas.edu/~tglenn/ir-course.html=0.0019445451325979877
+http://www.cs.utexas.edu/~scottm/cs307/syllabus.htm=0.0036683845990225596
+http://www.cs.utexas.edu/~cline/336.html=0.002943648772982082
+http://www.cs.utexas.edu/~plaxton/c/357=0.0023529539521428035
+http://www.cs.utexas.edu/~shmat/courses/cs378_spring09=0.0025154041668904613
+http://www.cs.utexas.edu/~scottm/cs307/Assignments=0.005355012470508615
+http://www.cs.utexas.edu/~jeffrey/ir-course.html=0.0031496325817613005
+http://www.cs.utexas.edu/~ulan90/ir-course.html=0.002296463094932904
+http://www.cs.utexas.edu/~lass/ir-course.html=0.0032082528901889815
+http://www.cs.utexas.edu/~ckm/teaching/cs354_f11=0.002424825006676947
+http://www.cs.utexas.edu/~chooper9/ir-course.html=0.0027729978818273153
+http://www.cs.utexas.edu/~mwalfish/classes/s11-cs372h=0.10749691168639584
+http://www.cs.utexas.edu/~novak/cs375.html=0.0019091338887546317
+http://www.cs.utexas.edu/~bricon/ir-course.html=0.003526956905695151
+http://www.cs.utexas.edu/~scottm/cs307/schedule.htm=0.0036683845990225596
+http://www.cs.utexas.edu/~mooney/ir-course=0.009932837996017444
+http://www.cs.utexas.edu/~dahlin/Classes/UGOS=0.10710144084844396
+http://www.cs.utexas.edu/~downing/cs371p/drupal=0.1606609222096264
+http://www.cs.utexas.edu/~marshall/ir-course.html=0.0025821462278957873
+http://www.cs.utexas.edu/~eberlein/cs313k/cs313k.html=0.0033214758932753156
+http://www.cs.utexas.edu/~aws579/ir-course.html=0.0020704594485370363
+http://www.cs.utexas.edu/~rahmanf/ir-course.html=0.0033410838458365847
+http://www.cs.utexas.edu/~ocryan/ir-course.html=0.0017081921048283275
+http://www.cs.utexas.edu/~byoung/cs378/syllabus378.html=0.0022926138738129714
+http://www.cs.utexas.edu/~scottm/cs307/labHoursSummer.htm=0.0026701598781657216
+http://www.cs.utexas.edu/~trevorsg/ir-course.html=0.0032771552835230305
+http://www.cs.utexas.edu/~moore/classes/cs313k=0.002722922011321245
+http://www.cs.utexas.edu/~austinh/ir-course.html=0.0030106914561716393
+http://www.cs.utexas.edu/~mvazquez/ir-course.html=0.0017081921048283275
+http://www.cs.utexas.edu/~eberlein/cs341/cs341.html=0.0023290844824107905
+http://www.cs.utexas.edu/~shippc/ir-course.html=0.00222329522271997
+http://www.cs.utexas.edu/~pday/ir-course.html=0.002655996216068919
+http://www.cs.utexas.edu/~jennyiba/ir-course.html=0.003503732066007357
+http://www.cs.utexas.edu/~menie482/ir-course.html=0.0023012343839200295
+http://www.cs.utexas.edu/~pstone/Courses/343spring12=0.0033088019018133216
+http://www.cs.utexas.edu/~downing/cs371p=0.0033561983178775805
+http://www.cs.utexas.edu/~aaronv92/ir-course.html=0.00283861943831024
+http://www.cs.utexas.edu/~jbsartor/cs105.htm=0.002018194505340706
+http://www.cs.utexas.edu/~abouzek/ir-course.html=0.0022949873664477563
+http://www.cs.utexas.edu/~risto/cs378i=0.002018194505340706
+http://www.cs.utexas.edu/~mjjanusa/ir-course.html=0.0019376120897570868
+http://www.cs.utexas.edu/~edwardsj/teaching/2011spring/cs105=0.001970097980278525
+http://www.cs.utexas.edu/~sora/ir-course.html=0.0017081921048283275
+http://www.cs.utexas.edu/~downing/cs373=0.0030423012590632763
+http://www.cs.utexas.edu/~fussell/courses/cs310=0.0021772383353073754
+http://www.cs.utexas.edu/~jasonwu/ir-course.html=0.003399290995151612
+http://www.cs.utexas.edu/~scottm/cs307/handouts/topicsList.htm=0.0026701598781657216
+http://www.cs.utexas.edu/~ajw015/ir-course.html=0.005012357741456393
+http://www.cs.utexas.edu/~vlr/courses/s12.357h=0.0023075747770987887
+http://www.cs.utexas.edu/~batticus/ir-course.html=0.00499559416173055
+http://www.cs.utexas.edu/~jamesr/ir-course.html=0.002587227425755173
+http://www.cs.utexas.edu/~jayshah/ir-course.html=0.0036790901698952475
+http://www.cs.utexas.edu/~dsb/CS378=0.004315493571312465
+http://www.cs.utexas.edu/~mooney/cs343=0.006286129851222444
+http://www.cs.utexas.edu/~mckinley/352=0.0020716878105037973
+http://www.cs.utexas.edu/~jiawei/ir-course.html=0.002909515884183926
+http://www.cs.utexas.edu/~ear/cs341=0.004518901187393183
+http://www.cs.utexas.edu/~acl587/ir-course.html=0.0017081921048283275
+http://www.cs.utexas.edu/~dburger/teaching/cs352-s05=0.0023290844824107905
+http://www.cs.utexas.edu/~downing/cs315=0.0024974530025507254
+http://www.cs.utexas.edu/~sas5294/ir-course.html=0.0035409751696172183
+http://www.cs.utexas.edu/~eberlein/cs337/cs337_syll.html=0.004319620441373063
+http://www.cs.utexas.edu/~lam/cs356=0.0024573892737468957
+http://www.cs.utexas.edu/~scottm/cs307=0.010229254865268328
+http://www.cs.utexas.edu/~edwardsj/teaching/2012fall/cs354=0.10273579282129
+http://www.cs.utexas.edu/~cdunham/cs105=0.0022980436815621163
+http://www.cs.utexas.edu/~inderjit/courses/dm2009=0.0027508417097280545
+http://www.cs.utexas.edu/~grauman/courses/fall2009/main.htm=0.00308443256676218
+http://www.cs.utexas.edu/~nishay/ir-course.html=0.002755452958908486
+http://www.cs.utexas.edu/~rtb543/ir-course.html=0.0020061986952697682
+http://www.cs.utexas.edu/~scottm/cs307/software.htm=0.008790814763768919
+menie482@diligence:~/sz4554-hw/cs371$ exit
+
+Script done on Mon 19 Nov 2012 10:59:47 PM CST

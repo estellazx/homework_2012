@@ -1,0 +1,92 @@
+PARSER_BEGIN(FormatDTraceProfile)
+
+import java.io.*;
+import java.util.*;
+
+public class FormatDTraceProfile {
+    private static int eol = 0;
+    private static String eid, rid, events, ticks;
+    private static String sql = "insert into ibprofile (eid, rid, line, events, ticks, cpu, count, function, stack) values("; 
+    public static void main(String args[]) throws ParseException {
+       if (args == null || args.length != 2) {
+          System.err.println("Usage: FormatDTraceProfile" + " EID RID");
+          System.exit(1);       
+       }
+       eid = args[0]; rid = args[1];
+       FormatDTraceProfile formatter = new FormatDTraceProfile (System.in);
+       formatter.output();
+    }
+}
+
+PARSER_END(FormatDTraceProfile)
+
+SKIP :
+{
+    " "
+  | "\t"
+}
+
+TOKEN:
+{
+    < COLON:    ":" >
+  | < CPU:      "CPU" >
+  | < ID:       "ID" >
+  | < FUNC:     "FUNCTION" >
+  | < NAME:     "NAME" >
+  | < BEGIN:    "BEGIN" >
+  | < END:      "END" >
+  | < TICK:     "tick-" (["0"-"9"])+ "s" >
+  | < DASHES:   ("-")+ >
+  | < KS:       "Kernel stacks" >
+  | < INTEGER:  (["0"-"9"])+ >
+  | <STACKELEM: (["!"-"_", "a"-"~"])+ "`" (["!"-"~"])+  > // A string of any printable ascii characters (except space) that has at least one '`' character in it.
+  | < EOL:      "\n" | "\r" | "\n\r" | "\r\n" >
+}
+
+TOKEN:
+{
+    <ERROR: ~[] >
+}
+
+void output() :
+{ }
+{
+		head()
+		separator()
+		(stack())*
+} 
+
+void head() :
+{ Token e, t; }
+{
+		<CPU> <ID> <FUNC> <COLON> <NAME> eol()
+		<INTEGER> <INTEGER> <COLON> <BEGIN> eol()
+		<INTEGER> e = <INTEGER> { events = String.valueOf(e.image); } <COLON> t = <TICK> { ticks = String.valueOf(t.image); } eol()
+		<INTEGER> <INTEGER> <COLON> <END> eol()
+}
+
+void separator() :
+{ }
+{
+		<DASHES> <KS> <DASHES> eol()
+}
+
+void stack() :
+{ Token cpu, count, function, stack;
+	String stacks = "";
+}
+{
+		cpu = <INTEGER> eol()
+		function = <STACKELEM> eol()
+		(stack = <STACKELEM> eol() { stacks += String.valueOf(stack.image) + ":"; } )*
+		count = <INTEGER> eol()
+		{ System.out.println(sql + eid + ", " + rid + ", " + eol + ", " + events + ", '" + ticks + "', "
+				+ String.valueOf(cpu.image) + ", " + String.valueOf(count.image) + ", '" + String.valueOf(function.image).replace('\'', '^') + "', '"
+				+ stacks + "') ;"); }
+}
+
+void eol() :
+{ }
+{
+    (LOOKAHEAD(2)<EOL>)+ { eol++; }
+}

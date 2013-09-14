@@ -1,0 +1,1 @@
+(let ((x 3)) (let ((f (lambda (y) x))) (let ((x 11)) (let ((ff (lambda (y) x))) (f 6)))))

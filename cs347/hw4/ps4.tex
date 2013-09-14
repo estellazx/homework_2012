@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}
+\usepackage{latexsym}
+\title{Problem Set 4}
+\author{Shun Zhang (sz4554)}
+
+\begin{document}
+
+\maketitle
+
+\textbf{5.1.3a}
+
+As a set,
+
+\begin{tabular}{l}
+	bore \\
+	\hline \hline
+	15 \\
+	16 \\
+	14 \\
+	18 \\
+\end{tabular}
+
+As a bag,
+
+\begin{tabular}{l}
+	bore \\
+	\hline \hline
+	15 \\
+	16 \\
+	14 \\
+	16 \\
+	15 \\
+	15 \\
+	14 \\
+	18 \\
+\end{tabular}
+
+\textbf{5.1.4}
+
+Why hold for bags:
+
+a) The union operation on bags is just putting the rows of two bags together, without any elimination. So $(R\cup S)\cup T$ and $R\cup (S\cup T)$ are all simply putting the rows of R, S, T together.
+
+c) $(R\Join S)\Join T$ is joining R and S first by finding $R.a=S.a$, $a$ here can be any column. Then, using this result to find $(R\Join S).b=T.b$. So the result is joining by $R.a=S.a=T.a$. Same for $R\Join (S\Join T)$.
+
+d) The result is combining the rows in each relation, so their order doesn't matter.
+
+Why hold for sets:
+
+As all of these hold for bags, the operation on set does no more than eliminating same rows at each step. So these operations also hold for sets, if we eliminate same rows of the results.
+
+\textbf{5.2.1}
+
+a)
+
+\begin{tabular}{l|l|l}
+	A + B & $A^2$ & $B^2$ \\
+	\hline \hline
+	1 & 0 & 1 \\
+	5 & 4 & 9 \\
+	1 & 0 & 1 \\
+	6 & 4 & 16 \\
+	7 & 9 & 16 \\
+\end{tabular}
+
+b)
+
+\begin{tabular}{l|l}
+	B + 1 & C - 1 \\
+	\hline \hline
+	1 & 0 \\
+	3 & 3 \\
+	3 & 4 \\
+	4 & 3 \\
+	1 & 1 \\
+	4 & 3 \\
+\end{tabular}
+
+d)
+
+\begin{tabular}{l|l}
+	B & C \\
+	\hline \hline
+	0 & 1 \\
+	0 & 2 \\
+	2 & 4 \\
+	2 & 5 \\
+	3 & 4 \\
+	3 & 4 \\
+\end{tabular}
+
+\textbf{6.3.2}
+
+a)
+
+\begin{verbatim}
+SELECT country
+FROM Classes
+WHERE numGuns =
+  (SELECT max(numGuns)
+   FROM Classes
+  );
+\end{verbatim}
+
+\begin{verbatim}
+SELECT country
+FROM Classes
+WHERE numGuns >= ALL
+  (SELECT numGuns
+   FROM Classes
+  );
+\end{verbatim}
+
+b)
+
+\begin{verbatim}
+SELECT class
+FROM Ships
+WHERE ship IN ANY
+  (SELECT ship
+   FROM Outcomes
+   WHERE result = 'sunk'
+  );
+\end{verbatim}
+
+\begin{verbatim}
+SELECT class
+FROM Ships
+WHERE EXISTS
+  (SELECT ship
+   FROM Outcomes
+   WHERE name = ship AND result = 'sunk'
+  );
+\end{verbatim}
+
+d)
+
+\begin{verbatim}
+SELECT name
+FROM Battles
+WHERE name IN
+  (SELECT battle
+   FROM Outcomes
+   WHERE ship IN
+     (SELECT name
+     FROM Ships
+     WHERE class = 'Kongo'
+     )
+  );
+\end{verbatim}
+
+\begin{verbatim}
+SELECT name
+FROM Battles
+WHERE EXISTS
+  (SELECT name
+   FROM Ships, Outcomes
+   WHERE name = ship AND class = 'Kongo'
+  );
+\end{verbatim}
+
+\textbf{6.3.5}
+
+a)
+
+\begin{verbatim}
+SELECT name, address
+FROM MovieStar
+WHERE gender = 'F' AND (name address) IN
+  (SELECT name, address
+   FROM MovieExec
+   WHERE netWorth > 10000000
+  );
+\end{verbatim}
+
+\end{document}

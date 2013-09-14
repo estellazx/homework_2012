@@ -1,0 +1,511 @@
+<base href="http://www.research.ibm.com/quantuminfo/teleportation/">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"/>
+<link rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico"/>
+<meta name="Description" content="REPLACE"/>
+<meta name="Keywords" content="REPLACE"/>
+<meta name="Robots" content="index,follow"/>
+<meta name="Owner" content="REPLACE_ME@US.IBM.COM"/>
+<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="REPLACE"/>
+<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="REPLACE"/>
+<meta name="DC.Language" scheme="rfc1766" content="en-US"/>
+<meta name="DC.Date" scheme="iso8601" content="REPLACE"/>
+<meta name="DC.Rights" content="� Copyright IBM Corp. 2011"/>
+<meta name="IBM.Country" content="US"/>
+<meta name="Source" content="REPLACE"/>
+
+<link href="//1.www.s81c.com/common/v17/css/www.css" rel="stylesheet" title="www" type="text/css" />
+<script src="//1.www.s81c.com/common/js/dojo/www.js" type="text/javascript">//</script>
+
+<script type="text/javascript" src="libjs/sysutils.js"></script>
+<script type="text/javascript" src="libjs/ajaxreq.js"></script>
+<script type="text/javascript" src="libjs/ajaxutils.js"></script>
+<script type="text/javascript" src="libjs/ajaxjsreq.js"></script>
+<script type="text/javascript" src="libjs/htmlutils.js"></script>
+<script type="text/javascript" src="libjs/logfile.js"></script>
+<script type="text/javascript" src="scripts/researcher.js"></script>
+<script type="text/javascript" src="scripts/researcher_db.js"></script>
+<script type="text/javascript" src="libjs/cssutils.js"></script>
+<script type="text/javascript" src="libjs/htmlutils.js"></script>
+<script type="text/javascript" src="scripts/researcher_model.js"></script>
+
+<link href="res_v17.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript">
+ibmweb.config.set({megamenu: { enabled: false }});
+ibmweb.config.set({footermenu: { enabled: false }});
+
+var edit_server = 'resweb.watson.ibm.com';
+
+</script>
+
+
+<script type="text/javascript">
+
+function doEdit() {
+	window.open('http://'+edit_server+'/researcher/edit_project.php?area=3&id=2862', 'Edit', 'toolbar=0,location=0,dependent=1,scrollbars=1,innerWidth=950,innerHeight=820');
+}
+
+function doJoin() {
+	window.open('http://'+edit_server+'/researcher/edit_profile.php?join=2862', '', '');
+}
+
+var w3Cookie = dojo.cookie("w3ibmProfile");					// set by w3.ibm.com if successful log on
+var resViewCookie = dojo.cookie("res-viewcheck");			// set by any view while connected inside
+var resEditCookie = dojo.cookie("res-cwacheck");			// set by cwacheck.php if successful log on
+var group_id = "2862";
+var group_name = "Quantum Teleportation";
+var group_type = "3";
+var group_publish = "1";
+var ignore_publish = "";
+
+function inProject(str) {
+	var table = 'researchers';
+	var where = uriEncode64('email="'+str.toLowerCase()+'"');
+	var url = "select_items.php?table="+table+"&where="+where;
+	var resRec = ajaxSimpleJSQuery(url);
+	var researcher_id = resRec[1][0];
+	table = 'researcher_group_entries';
+	where = uriEncode64('researcher_id='+researcher_id);
+	url = "select_items.php?table="+table+"&where="+where;
+	var researcher_groups = ajaxSimpleJSQuery(url);
+	if (researcher_groups.length > 1) {
+		for (i = 1; i < researcher_groups.length; i++) {
+			if (researcher_groups[i][2] == group_id)
+				return true;
+			}
+		}
+	return false;
+}
+
+function pageLoaded() {
+	if (group_type > 3)  // temporary hack for discipline and other non-project pages
+		return;
+	var isInternal = w3Cookie != null | resViewCookie == 1 | resEditCookie != null;
+	if (isInternal)
+		dojo.cookie("res-viewcheck", '1', { expires: 365 });
+	//alert('w3ibmProfile='+w3Cookie+' res-viewcheck='+resViewCookie+' res-cwacheck='+resEditCookie+' isInternal='+isInternal);
+	var showJoinButton = false;
+	if (group_name != '') {
+		if (group_publish == 0) {  // group not published
+			if (ignore_publish != 'y') {
+				if (isInternal)
+					location.replace('view_project.php?id='+group_id+'&i=y');
+				else {
+					var img = new Image();
+					img.src = "http://"+edit_server+"/researcher/images/a_black.png";
+					img.onload = function() {
+						dojo.cookie("res-viewcheck", '1', { expires: 365 });
+						location.replace('view_project.php?id='+group_id+'&i=y');
+						}
+					}
+				}
+			else { // ignore_publish = 'y'
+				if (isInternal) {
+					document.getElementById('last_updated').innerHTML = 'last updated ' + '12/01/2011';
+					if (resEditCookie) {
+						if (!inProject(resEditCookie))
+							showJoinButton = true;
+						else {
+							document.getElementById('join_group').innerHTML = '<input name="edit" type="button" value="Edit This Page" onClick="doEdit()">';
+							}
+						}
+					else
+						showJoinButton = true;
+					if (showJoinButton)
+						document.getElementById('join_group').innerHTML = '<input name="join" type="button" value="Join This Group" onClick="doJoin()">';
+					}
+				else
+					location.replace('404.html');
+				}
+			}
+		else { // group is published
+			if (isInternal) {
+				document.getElementById('last_updated').innerHTML = 'last updated ' + '12/01/2011';
+				if (resEditCookie) {
+					if (!inProject(resEditCookie))
+						showJoinButton = true;
+					else {
+						document.getElementById('join_group').innerHTML = '<input name="edit" type="button" value="Edit This Page" onClick="doEdit()">';
+						}
+					}
+				else
+					showJoinButton = true;
+				if (showJoinButton)
+					document.getElementById('join_group').innerHTML = '<input name="join" type="button" value="Join This Group" onClick="doJoin()">';
+				}
+			else {
+				var img = new Image();
+				img.src = "http://"+edit_server+"/researcher/images/a_black.png";
+				img.onload = function() {
+					dojo.cookie("res-viewcheck", '1', { expires: 365 });
+					document.getElementById('last_updated').innerHTML = 'last updated ' + '12/01/2011';
+					document.getElementById('join_group').innerHTML = '<input name="join" type="button" value="Join This Group" onClick="doJoin()">';
+					}
+				}
+			}
+		}
+}
+
+</script>
+
+<title>Quantum Teleportation</title>
+</head>
+<body id="ibm-com" onload="pageLoaded()">
+<div id="ibm-top">
+<!-- MASTHEAD_BEGIN -->
+<div id="ibm-masthead">
+<div id="ibm-mast-options"><ul>
+<li id="ibm-geo"><a href="http://www.ibm.com/planetwide/select/selector.html"><span class="ibm-access">Select a country/region: </span>United States</a></li>
+</ul></div>
+<div id="ibm-universal-nav">
+<ul id="ibm-unav-links">
+<li id="ibm-home"><a href="http://www.ibm.com/us/en/">IBM&reg;</a></li>
+</ul>
+<!--
+<ul id="ibm-menu-links">
+<li><a href="http://www.ibm.com/sitemap/us/en/">Site map</a></li>
+-->
+</ul>
+<div id="ibm-search-module">
+<form method="get" action="search.php" id="ibm-search-form">
+<p>
+<!-- NOTE: all that is added for scoped search is this code: -->
+<label for="sn"><span class="ibm-access">Search for:</span></label>
+<select id="sn" name="sn">
+<option value="1">Research people</option>
+<option value="2" selected="selected">Research projects/groups</option>
+</select>
+<!-- NOTE: everything below is the standard form! -->
+<label for="q">
+<span class="ibm-access">Search</span>
+</label>
+<input id="q" value="" maxlength="100" name="q" type="text"/>
+<input value="Submit" class="ibm-btn-search" id="ibm-search" type="submit"/>
+</p>
+</form>
+</div>
+</div>
+</div>
+<!-- MASTHEAD_END -->
+
+
+<div id="ibm-pcon">
+<!-- CONTENT_BEGIN -->
+<div id="ibm-content">
+<!-- LEADSPACE_BEGIN -->
+<div id="ibm-leadspace-head" class="ibm-alternate">
+<div id="ibm-leadspace-body">
+
+<h1>Quantum Teleportation</h1><div class='res-join-button' id='join_group'></div></div>
+</div>
+<!-- LEADSPACE_END -->
+<!-- CONTENT_BODY -->
+<div id="ibm-content-body">
+<div id="ibm-content-main">
+
+<div class="ibm-container"><div class="ibm-container-body"><div class="res-project-description"><p><!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="abstract" content="Quantum Teleportation">
+  <meta name="keywords" content="Quantum">
+  <meta name="owner" content="c1smolin@watson.ibm.com">
+  <meta name="security" content="public">
+  <meta name="GENERATOR"
+ content="Mozilla/4.75 [en] (Windows NT 5.0; U) [Netscape]">
+  <title>Teleportation</title>
+</head>
+<body bgcolor="" 5050f0="">
+<img src="files/us-bennetc/logo1.gif" alt="Research" height="92" width="480">
+<h2>Quantum Teleportation</h2>
+Teleportation is the name given by science fiction writers to the feat of making an object or person disintegrate in one place while a perfect replica appears somewhere else. How this is accomplished is usually not explained in detail, but the general idea seems to be that the original object is scanned in such a way as to extract all the information from it, then this information is transmitted to the receiving location and used to construct the replica, not necessarily from the actual material of the original, but perhaps from atoms of the same kinds, arranged in exactly the same pattern as the original. A teleportation machine would
+be like a fax machine, except that it would work on 3-dimensional objects as well as documents, it would produce an exact copy rather than an
+approximate facsimile, and it would destroy the original in the process of scanning it. A few science fiction writers consider teleporters that preserve the original, and the plot gets complicated when the original and teleported
+versions of the same person meet; but the more common kind of teleporter destroys the original, functioning as a super transportation device,
+not as a perfect replicator of souls and bodies.
+<br>
+<img src="files/us-bennetc/group.jpg" alt="Six scientists"> <br>
+In 1993 an international group of six
+scientists, including IBM Fellow Charles H. Bennett, confirmed the intuitions of the majority of science fiction writers by showing that perfect teleportation is indeed possible in principle, but only if the original is destroyed. In subsequent years, other scientists have demonstrated teleportation experimentally in a variety of systems, including single photons, coherent light fields, nuclear spins, and trapped ions.� Teleportation promises to be quite useful as an information processing primitive, facilitating long range quantum communication (perhaps unltimately leading to a "quantum
+internet"), and making it much easier to build a working quantum computer.�� But science fiction
+fans will be disappointed to learn that no one expects to be able to teleport people or other macroscopic objects in the foreseeable future, for a variety of engineering reasons, even though it would not violate any fundamental
+law to do so.� <br>
+</p>
+<p>In the past, the idea of teleportation was not taken very seriously by scientists, because it was thought to violate the uncertainty principle of quantum mechanics, which forbids any measuring or scanning process from extracting all the information in an atom or other object. According to the uncertainty principle, the more accurately an object is scanned, the more it is disturbed
+by the scanning process, until one reaches a point where the object's original state has been completely disrupted, still without having extracted enough information to make a perfect replica. This sounds like a solid argument
+against teleportation: if one cannot extract enough information from an object to make a perfect copy, it would seem that a perfect copy cannot be made. But the six scientists found a way to make an end run around this logic, using a celebrated and paradoxical feature of quantum mechanics known as the Einstein-Podolsky-Rosen effect. In brief, they found a way to scan out part of the information from an object <span
+ style="font-weight: bold;">A</span>, which one wishes to teleport, while causing the remaining, unscanned, part of the information to pass, via the Einstein-Podolsky-Rosen effect, into another object <span style="font-weight: bold;">C</span>
+which has never been in contact with <span style="font-weight: bold;">A</span>.<br>
+<img src="files/us-bennetc/figureB.gif" alt="figure" hspace="10" height="403"
+ width="480" align="left"><br>
+Later, by applying to <span style="font-weight: bold;">C</span> a treatment depending on the scanned-out information, it is possible to maneuver <span  style="font-weight: bold;">C</span> into exactly the same state as <span style="font-weight: bold;">A</span> was in
+before it was scanned. <span style="font-weight: bold;">A</span> itself is no longer in that state, having been thoroughly disrupted by the scanning, so what has been achieved is teleportation, not replication.
+</p>
+<p>As the figure suggests, the unscanned part of the information is conveyed from <span style="font-weight: bold;">A</span> to <span  style="font-weight: bold;">C</span> by an intermediary object <span style="font-weight: bold;">B</span>, which interacts first
+with <span style="font-weight: bold;">C</span> and then with <span  style="font-weight: bold;">A</span>. What? Can it really be correct to
+say "first with <span style="font-weight: bold;">C</span> and then with <span
+ style="font-weight: bold;">A</span>"? Surely, in order to convey something from <span style="font-weight: bold;">A</span> to <span  style="font-weight: bold;">C</span>, the delivery vehicle must visit <span style="font-weight:bold;">A</span> before <span style="font-weight: bold;">C</span>, not the other way 
+around. But there is a subtle, unscannable kind of information that, unlike any material
+cargo, and even unlike ordinary information, can indeed be delivered in such a backward fashion. This subtle kind of information, also called
+"Einstein-Podolsky-Rosen (EPR) correlation" or "entanglement", has been at least partly understood since the 1930s when it was discussed in a famous paper by Albert Einstein, Boris Podolsky, and Nathan Rosen. In the 1960s John Bell showed that a pair of entangled particles, which were once in contact but later move
+too far apart to interact directly, can exhibit individually random behavior that is too strongly correlated to be explained by classical
+statistics. Experiments on photons and other particles have repeatedly confirmed
+these correlations, thereby providing strong evidence for the validity of quantum
+mechanics, which neatly explains them. Another well-known fact about EPR correlations is that they cannot by themselves deliver a meaningful and
+controllable message. It was thought that their only usefulness was in proving the validity of quantum mechanics. But now it is known that,
+through the phenomenon of quantum teleportation, they can deliver exactly that part of the information in an object which is too delicate to be scanned out and delivered by conventional methods.
+</p><br>
+<p><img src="files/us-bennetc/figureA.gif" alt="figure" hspace="10" height="343"
+ width="480" align="left"></p>
+<br>
+<p>This figure compares conventional facsimile
+transmission with quantum teleportation
+(see above). In conventional facsimile transmission the original is scanned, extracting partial information about it, but remains more or less intact after the scanning process. The scanned information is sent to the receiving
+station, where it is imprinted on some raw material (eg paper) to produce an approximate copy of the original. By contrast, in quantum
+teleportation, two objects <span style="font-weight: bold;">B</span> and <span
+ style="font-weight: bold;">C</span> are first brought into contact and then separated. Object <span style="font-weight: bold;">B</span> is
+taken to the sending station, while object <span
+ style="font-weight: bold;">C</span> is taken to the receiving station. At the sending station object <span style="font-weight: bold;">B</span>
+is scanned together with the original
+object <span style="font-weight: bold;">A</span> which one wishes to teleport, yielding some information and totally disrupting the state of <span style="font-weight: bold;">A</span> and <span  style="font-weight: bold;">B</span>. The scanned information is sent to the
+receiving station, where it is used to select one of several treatments to be applied to object <span style="font-weight: bold;">C</span>,
+thereby putting <span style="font-weight: bold;">C</span> into an exact replica of
+the former state of <span style="font-weight: bold;">A</span>.</p>
+<br>
+<p>To learn more about quantum teleportation, see the following
+articles and links:
+</p>
+<ul>
+  <li>C.H. Bennett, G. Brassard, C. Crepeau, R. Jozsa, A. Peres, and W.
+Wootters, <a href="teleportation.html">"Teleporting an Unknown Quantum State via Dual Classical and EPR Channels"</a>, <i>Phys. Rev. Lett.</i> vol. <b>70</b>, pp 1895-1899 (1993)</li>
+(the original 6-author research article). <li>Tony Sudbury, "Instant
+Teleportation", <span style="font-style: italic;">Nature</span> .<span
+ style="font-weight: bold;">362</span>, 586-587 (1993)
+(a semipopular account).</li>
+  <li>Ivars Peterson, <span style="font-style: italic;">Science News</span>,
+April 10, 1993, p. 229. (another semipopular
+account).</li>
+  <li>Samuel Braunstein, <a href="braunstein.html">A fun talk on
+teleportation</a></li>
+  <li><a href="http://news.bbc.co.uk/2/hi/science/nature/3777589.stm">Q&A
+on Teleportation</a> by BBC News Online science editor David Whitehouse</li>
+  <li><a href="http://en.wikipedia.org/wiki/Quantum_teleportation">Wikipedia
+article</a><br>
+  </li>
+  <li>Experimental Articles<br>
+  </li>
+  <ul>
+    <li>D. Bouwmeester et al. <span style="font-style: italic;">Nature
+      </span><span style="font-weight: bold;">390</span>, 575-9 (1997)
+(photons)<br>
+    </li>
+    <li>D. Boschi et al. <span style="font-style: italic;">Phys. Rev.
+Lett.</span> <span style="font-weight: bold;">80</span>, 1121-1125
+(1998) (photons)<br>
+    </li>
+    <li>A. Furusawa et al. <span style="font-style: italic;">Science </span><span
+ style="font-weight: bold;">282</span>, 706-709 (1998) (coherent light
+field)<br>
+    </li>
+    <li>M.A. Nielsen et al. <span style="font-style: italic;">Nature</span>
+      <span style="font-weight: bold;">396</span>, 52-55 (1998)
+(nuclear magnetic resonance)</li>
+    <li>I. Marcikic et al. <span style="font-style: italic;">Nature </span><span
+ style="font-weight: bold;">421</span>, 509-513 (2003) (photons, long
+distance) <br>
+    </li>
+    <li>M. Riebe et al. <span style="font-style: italic;">Nature</span>
+      <span style="font-weight: bold;">429</span>, 734-737 (2004)
+(trapped calcium ions)<br>
+    </li>
+    <li>M.D. Barret et al. <span style="font-style: italic;">Nature</span>
+      <span style="font-weight: bold;">429</span>, 737-739 (2004)
+(trapped beryllium ions)<br>
+    </li>
+    <li>R. Ursin et al. <span style="font-style: italic;">Nature</span>
+      <span style="font-weight: bold;">430</span>, 849 (2004) (photons,
+long distance)<br>
+    </li>
+  </ul>
+  <li>Theoretical Articles</li>
+  <ul>
+    <li>G. Brassard <span style="font-style: italic;">Physica D </span><span
+ style="font-weight: bold;">120</span> 43-47 (1998)� <a
+ href="http://www.arxiv.org/abs/quant-ph/9605035">Teleportation as a
+quantum computation<br>
+      </a></li>
+    <li>�Gottesman and I Chuang <span style="font-style: italic;">Nature
+      </span>402 390-393 (1999),� <a
+ href="http://arxiv.org/abs/quant-ph/9908010">teleportation as a
+computational primitive</a></li>
+    <li> X. Zhou, D. Leung, I. Chuang <a
+ href="http://arxiv.org/abs/quant-ph/0002039">Quantum gate
+constructions from teleportation-like primiitve</a></li>
+    <li>L. Vaidman quant-ph/0111124� <a
+ href="http://www.arxiv.org/abs/quant-ph/0111124">Using teleportation
+to measure nonlocal variables</a><br>
+    </li>
+  </ul>
+  <li>For recent experimental and theoretical articles, do a title  search on
+"teleportation" in the <a  href="http://www.arxiv.org/form/quant-ph?MULTI=form+interface">ArXiv
+E-print Archive</a></li>
+</ul>
+</body>
+</html>
+
+
+<div id="last_updated" class="res-lastUpdated"></div></div></div></div>
+</div>
+<!-- FEATURES_BEGIN -->
+<div id="ibm-content-sidebar">
+<div id="ibm-contact-module">
+<!--IBM Contact Module-->
+</div>
+<!--
+<div id="ibm-merchandising-module">
+</div>
+-->
+
+</div>
+<!-- FEATURES_END -->
+<!-- CONTENT_BODY_END -->
+</div>
+</div>
+<!-- CONTENT_END -->
+<!-- NAVIGATION_BEGIN -->
+<div id="ibm-navigation">
+<div class="res-navigation">
+<h2 class="ibm-access">Content navigation</h2>
+<ul id="ibm-primary-links">
+<!--
+<li id="ibm-parent-link"><a href="http://research.ibm.com">IBM Research</a></li>
+-->
+
+<li id='ibm-overview'><a href='view_project.php?id=2862'>Quantum Teleportation</a></li></ul><div id="ibm-secondary-navigation">
+<!-- SECONDARY NAVIGATION SECTION -->
+<h2>Related links</h2>
+<ul id="ibm-related-links">
+<li><a href="http://www.research.ibm.com">IBM Research</a></li><li><a href="search.php?sn=1&q=">Browse people</a></li>
+<li><a href="search.php?sn=2&q=">Browse projects/groups</a></li>
+<li><a href="browse_pics.php">Browse interests</a></li>
+</ul>
+<br />
+
+</div>
+</div>
+
+</div>  <!-- end res-person-navigation -->
+<!-- NAVIGATION_END -->
+</div>
+
+<!-- FOOTER_BEGIN -->
+<div id="ibm-footer-module">
+<div class="ibm-columns">
+
+<div class="ibm-col-6-1">
+<h2>IBM Links</h2>
+<ul>
+<li><a href="http://www.ibm.com/solutions/us/en/?lnk=mhso00">IBM Solutions</a></li>
+<li><a href="http://www.ibm.com/technologyservices/us/en/?lnk=mhse00">IBM Services</a></li>
+<li><a href="http://www.ibm.com/products/us/en/?lnk=mhpr00">IBM Products</a></li>
+<li><a href="http://www.ibm.com/support/us/en/?lnk=mhsd00">IBM Support</a></li>
+<li><a href="http://www.ibm.com/account/us/en/?lnk=mhmy00">My IBM</a></li>
+<li><a href="http://www.youtube.com/watch?v=XrhDaAmn5Uw&feature=player_embedded">IBMers Changing the World</a></li>
+<li><a href="http://www.youtube.com/watch?v=39jtNUGgmd4&feature=player_embedded">IBM at 100</a></li>
+<li><a href="http://www.youtube.com/watch?v=ksQrJh7s7N0&feature=player_embedded">IBM Culture</a></li>
+
+</ul>
+
+</div>
+
+<div class="ibm-col-6-1">
+<h2>IBM and Academia</h2>
+<ul>
+
+<li><a href="http://www.ibm.com/developerworks/university/?re=1arf4">Academic collaboration</a></li>
+<li><a href="http://www.research.ibm.com/ponder">Puzzles</a></li>
+<li><a href="http://www.research.ibm.com/journal/">IBM Journal of R&D</a></li>
+<li><a href="http://www.ibm.com/smarterplanet/us/en/?ca=v_smarterplanet">Smarter Planet</a></li>
+
+</ul>
+</div>
+<div class="ibm-col-6-1">
+<h2>Research Locations</h2>
+<ul>
+<li><a href="http://www.almaden.ibm.com/">IBM Research - Almaden</li>
+<li><a href="http://www.research.ibm.com/arl">IBM Research - Austin</a></li>
+<li><a href="http://www.research.ibm.com/australia/">IBM R&D - Australia</a></li>
+<li><a href="http://www.research.ibm.com/brazil">IBM Research - Brazil</a></li>
+<li><a href="http://www.ibm.com/ibm/cn/crl/en/">IBM Research - China</a></li>
+<li><a href="http://www.research.ibm.com/haifa">IBM Research - Haifa</a></li>
+<li><a href="http://www.ibm.com/in/research/">IBM Research - India</a></li>
+<li><a href="http://www-05.ibm.com/ie/dublinresearchlab/">IBM R&D - Ireland</a></li>
+<li><a href="http://www.research.ibm.com/trl/extfnt_e.htm">IBM Research - Tokyo</a></li>
+<li><a href="http://www.watson.ibm.com/">IBM Research - Watson</a></li>
+<li><a href="http://www.zurich.ibm.com/">IBM Research - Zurich</a></li>
+</ul>
+</div>
+
+<div class="ibm-col-6-1">
+
+<h2>Disciplines</h2>
+<ul>
+<li><a href="http://researcher.ibm.com/view_project.php?id=1757">Mathematical Science</a></li>
+<li><a href="http://www.research.ibm.com/disciplines/chemistry.shtml">Chemistry</a></li>
+<li><a href="http://researcher.ibm.com/view_project.php?id=1718">Computer Science</a></li>
+<li><a href="http://researcher.ibm.com/view_project.php?id=1756">Electrical Engineering </a></li>
+<li><a href="http://www.research.ibm.com/disciplines/materials_science.shtml">Materials Science</a></li>
+<li><a href="http://www.research.ibm.com/disciplines/physics.shtml">Physics</a></li>
+<li><a href="http://researcher.ibm.com/view_project.php?id=1230">Service Science</a></li>
+<li><a href="http://www.research.ibm.com/cross_disciplines/p_systems.shtml">Systems</a></li>
+</ul>
+</div>
+
+
+<div class="ibm-col-6-1">
+<h2>Resources</h2>
+<ul>
+<li><a href="search.php?sn=1&q=">Research people</a></li>
+<li><a href="search.php?sn=2&q=">Research projects</a></li>
+<li><a href="browse_pics.php">Research interests</a></li>
+<li><a href="http://www.youtube.com/watch?v=Y0DxmthvkKU">Engineering Paradise</a></li>
+</ul>
+</div>
+
+<div class="ibm-col-6-1">
+<h2>Popular links</h2>
+<ul>
+<li><a href="http://www.research.ibm.com/about/">About IBM Research</a></li>
+<li><a href="http://www.research.ibm.com/about/career.shtml">Careers</a></li>
+<li><a href="http://www.ibm.com/press/PressServletForm.wss?&ApplicationSequence=">IBM Press Room</a></li>
+<li><a href="http://ibmresearchnews.blogspot.com/">IBM Research blog</a></li>
+<li><a href="https://www.facebook.com/IBMResearch">IBM Research on Facebook</a></li>
+<li><a href="http://twitter.com/ibmresearch">IBM Research on Twitter</a></li>
+<li><a href="http://www.youtube.com/user/IBMLabs">IBM Research on Youtube</a></li>
+<li><a href="http://www.ibmwatson.com/">Watson</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div id="ibm-footer">
+
+<h2 class="ibm-access">Footer links</h2>
+<ul>
+<li><a href="http://www.ibm.com/contact/us/en/">Contact</a></li>
+<li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
+<li><a href="http://www.ibm.com/legal/us/en/">Terms of use</a></li>
+<li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
+</ul>
+</div>
+<!-- FOOTER_END --> 
+</div>
+<div id="ibm-metrics">
+<script src="//www.ibm.com/common/stats/stats.js" type="text/javascript">//</script>
+</div>
+</body>
+</html>

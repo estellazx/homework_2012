@@ -1,0 +1,1 @@
+ cat Input | java -jar Formatter.jar 111 222

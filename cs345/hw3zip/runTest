@@ -1,0 +1,1 @@
+ cat test | java -jar FormatDTraceProfile.jar 111 222

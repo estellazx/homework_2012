@@ -1,0 +1,608 @@
+<base href="http://www.blwg.nl/">
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="description" content="Website van de BLWG, vereniging voor onderzoek aan mossen en korstmossen in Nederland." /><meta name="keywords" content="mos, korstmos, hunebedden, sporenplanten, lichenen, licheen, levermos, veenmos, sphagnum, planten, cryptogamen, monitoring, veldwerk, waarnemen, databank, excursies, excursie, weekend, werkgroep, veldgids, rode lijst, Lindbergia, KNNV, PGO, VOFF, vrijwilligers, studie, soorten, natuur, biologie, ecologie, flora, verzamelen, determineren, zoekkaart, inventarisatie, bescherming, haarmos, rendiermos, bekermos, spagnum, bolmos, sphagnum, groen, buiten, verspreidingsgegevens, milieu, mer, adviesbureau, zoekkaart, lespakket, cursus, bryophyta, bryophyten" /><meta name="robots" content="index, follow" /><meta name="verify-v1" content="kYuw22zKHJacQlLEHms8rid7EJogdVsTPQ5Mk6U+Qws=" /><title>
+	BLWG | Mossen en korstmossen
+</title><link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.blwg.nl/rss.xml" /><link rel="shortcut icon" href="http://www.blwg.nl/favicon.ico" type="image/x-icon" /><link rel="stylesheet" type="text/css" href="/blwg.css" media="all" />
+	
+	<style type="text/css">
+	.style1master {
+		border-collapse: collapse;
+		background-color: #FFFFFF;
+	}
+	.style3master {
+		background-image: url('/mossen/afbeeldingen/bg.jpg');
+	}
+	.style4master {
+		border: 0 solid #266294;
+		background-color: #266294;
+	}
+	.style5master {
+		text-align: right;
+	}
+	.style7master {
+	background-color: #E8E8E8;
+}
+.style8master {
+	text-align: right;
+	background-color: #E8E8E8;
+}
+.style9master {
+	color: #808080;
+}
+	.style10 {
+	text-decoration: none;
+}
+	</style>
+
+	<script>
+		var isV5 = false;
+		var isIE = false;
+		var achtergrondnormaal='#266294'
+		var currentitem = "mnu_start";
+		var nextItem = "mnustart";
+		if (parseInt(navigator.appVersion) >= 5) isV5 = true;
+		if (navigator.appVersion.indexOf("MSIE") != -1) isIE = true;
+		function ClearMenu(Item) {
+			var abc = Item;
+			abc = "mnu" + abc.substring(4);
+			// eval(abc + ".style.color = '#FFFFFF';");
+			// eval(Item + ".style.backgroundColor = '';");
+			// eval(Item + ".style.color = '';");
+			document.getElementById(Item).style.backgroundColor = "";
+			document.getElementById(Item).style.Color = "";
+			document.getElementById(abc).style.Color = "#FFFFFF";
+		}
+		function markeer(Item) {
+			var abc = Item;
+			abc = "mnu" + abc.substring(4);
+			if (currentitem != Item) { ClearMenu(currentitem) }
+			// eval(Item + ".style.backgroundColor = '#50AACC';");
+			// eval(Item + ".style.color = '" + achtergrondnormaal + "';");
+			// eval(abc + ".style.color = '#FFFFFF';");
+			document.getElementById(Item).style.backgroundColor = "#50AACC";
+			document.getElementById(Item).style.Color = achtergrondnormaal;
+			document.getElementById(abc).style.Color = "#FFFFFF";
+			currentitem = Item;
+		}
+		function MouseOverMenu(Item) {
+		    if (Item != currentitem) {
+		    document.getElementById(Item).style.backgroundColor = "#4080AA";
+		    document.getElementById(Item).style.borderColor = "#266294";
+		}}
+		function MouseOutMenu(Item) {
+			if (Item != currentitem) {
+			document.getElementById(Item).style.backgroundColor = achtergrondnormaal;
+			document.getElementById(Item).style.borderColor = achtergrondnormaal;
+			}
+		}
+	</script>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color: #DEEFDE">
+
+	<form name="aspnetForm" method="post" action="default.aspx" id="aspnetForm">
+<input type="hidden" name="ctl00_ScriptManagerMaster_HiddenField" id="ctl00_ScriptManagerMaster_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTYzMTY5Mjk1MA9kFgJmD2QWAgIDD2QWAgIBD2QWBGYPFgIeC18hSXRlbUNvdW50AgQWCGYPZBYCZg8VAhNab25kYWcgMTYgc2VwdGVtYmVyGFNvb3J0ZW4tWm9la2RhZyBMZWx5c3RhZGQCAQ9kFgJmDxUCFkRvbmRlcmRhZyAyMCBzZXB0ZW1iZXIjTGV6aW5nIG1vc3NlbiBlbiBrb3JzdG1vc3NlbiBWZW5yYXlkAgIPZBYCZg8VAhVaYXRlcmRhZyAyOSBzZXB0ZW1iZXIeS29yc3Rtb3NzZW4gaW4gZGUgc3RhZCAtIEJyZWRhZAIDD2QWAmYPFQITWmF0ZXJkYWcgMTMgb2t0b2JlciNLb3JzdG1vc3NlbmV4Y3Vyc2llIEh1bHNob3JzdGVyemFuZGQCAQ8WAh8AAgQWCGYPZBYCZg8VASdQdXJwZXIgc2Nob3JwaW9lbm1vcyB0ZXJ1ZyBpbiBOZWRlcmxhbmRkAgEPZBYCZg8VASdOaWV1d3NicmllZiAnS2lqayBvcCBleG90ZW4nIHZlcnNjaGVuZW5kAgIPZBYCZg8VATBNb2JpZWxlIHZlcnNwcmVpZGluZ3NhdGxhcyBtb3NzZW4gZW4ga29yc3Rtb3NzZW5kAgMPZBYCZg8VASBOaWV1d2UgaW52ZW50YXJpc2F0aWVoYW5kbGVpZGluZ2QYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFI2N0bDAwJExvZ2luVmlldzEkTG9naW5TdGF0dXMxJGN0bDAxBSNjdGwwMCRMb2dpblZpZXcxJExvZ2luU3RhdHVzMSRjdGwwM8tuzpVyt4LS9CNAlOOQnXnBOyz5" />
+
+
+<script src="/ScriptResource.axd?d=3tMha4f8VUQOk-3NIX_teRktfJCdVuNvM0V_DJNPav1HPEfP5vvBMHm50uhTgGEZV7kq4tePMWyuS6hMHkyUkkY9i7n6JFKXiG-bzpT6faMWq-9Q0&amp;t=ffffffffb03ed77b" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Services._ProfileService.DefaultWebServicePath = 'Profile_JSON_AppService.axd';
+Sys.Services._AuthenticationService.DefaultWebServicePath = 'Authentication_JSON_AppService.axd';
+//]]>
+</script>
+
+<script src="/default.aspx?_TSM_HiddenField_=ctl00_ScriptManagerMaster_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.60501.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3anl-NL%3a61715ba4-0922-4e75-a2be-d80670612837%3ade1feab2%3af9cec9bc%3aab09e3fe" type="text/javascript"></script>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKK/82IDALb5ai1AXut8ivx6FGHCZoR6ZWjHDSGuF3k" />
+
+	
+		
+	<table style="width: 1000px" border="0" cellspacing="0" cellpadding="0" class="style1master" align="center">
+		<tr bgcolor="#266294">
+			<td colspan="5">		
+				<div align="center" class="style5master">
+						<table border="0" cellpadding="0" cellspacing="2" width="718" align="left" style="border-collapse: collapse; height: 95px;" bordercolor="#111111">
+							<tr height=5px><td style="width: 15px"></td><td colspan=3></td></tr>
+							<tr>
+								<td style="width: 15px"></td>
+								<td align="left" valign="top" width="80px">
+									<a href="/"><img src="/mossen/afbeeldingen/loepblwgoranje.gif" alt="BLWG loep logo" align="left" width="65" height="78"></a>&nbsp;
+								</td>
+								<td align="left" width="111px">
+									<p align="center">
+									<img src="/mossen/afbeeldingen/blwgblauw.gif" alt="BLWG logo blauw" width="80" height="38"></td>
+								<td align="right" valign="middle" back ground="/mossen/afbeeldingen/mossenkorstmossen.gif" alt="mossen en korstmossen" width="519px">
+								<img src="/mossen/afbeeldingen/blwgtekstblauw.gif" width="517" height="16"></td>
+							</tr>
+						</table>
+			   </div>
+			</td>
+			<td class="schaduwrechts" rowspan="3" width="19px"></td>
+		</tr>
+		<tr>
+			<td width="124" valign="top" style="height: 100%" class="style4master">
+			
+				<table border="0" cellpadding="0" cellspacing="0" width="124" bordercolor="#266294" style="border-collapse: collapse">
+				<tr><td bgcolor="#266294"><img border="0" src="/mossen/afbeeldingen/transline.gif" width="100%" height="10" align="top" class="iimg"></td></tr>
+				<tr onclick="javascript:parent.location=mnustart.href">
+				<td id="mnu_start" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Welkom: welkom bij de BLWG" style="background-color: #266294">
+				<a href="/default.aspx" class="menu" id="mnustart">Welkom</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnuwerkgroep.href">
+				<td id="mnu_werkgroep" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Werkgroep: hoe werkt de BLWG?" style="background-color: #266294">
+				<a href="/mossen/werkgroep.aspx" class="menu" id="mnuwerkgroep">Over de BLWG</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnuexcursies.href">
+				<td id="mnu_excursies" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Excursies: activiteitenagenda" style="background-color: #266294">
+				<a class="menu" id="mnuexcursies" href="/mossen/excursie.aspx">
+							Agenda</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnuregionaal.href">
+				<td id="mnu_regionaal" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Regionale: studiegroepen in de regio" style="background-color: #266294">
+				<a href="/mossen/regionaal.aspx" class="menu" id="mnuregionaal">Regionaal</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnuprojecten.href">
+				<td id="mnu_projecten" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Mossenonderzoek per project" style="background-color: #266294">
+				<a href="/mossen/onderzoek/onderzoek.aspx" class="menu" id="mnuprojecten">Onderzoek</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnunieuws.href">
+				<td id="mnu_nieuws" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Nieuws: actuele berichten" style="background-color: #266294">
+				<a href="/mossen/nieuws.aspx" class="menu" id="mnunieuws">Nieuws</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnumossen.href">
+				<td id="mnu_mossen" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Mossen: meer informatie over mossen" style="background-color: #266294">
+				<a href="/mossen/mossen/mossen.aspx" class="menu" id="mnumossen">Mossen</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnukorstmossen.href">
+				<td id="mnu_korstmossen" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Korstmossen: meer informatie over korstmossen" style="background-color: #266294">
+				<a href="/mossen/korstmossen/korstmossen.aspx" class="menu" id="mnukorstmossen">Korstmossen</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnubuxbaumiella.href">
+				<td id="mnu_buxbaumiella" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Tijdschriften van de BLWG" style="background-color: #266294">
+				<a href="/mossen/buxbaumiella/buxbaumiella.aspx" class="menu" id="mnubuxbaumiella">Tijdschriften</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnuleden.href">
+				<td id="mnu_leden" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Tips en hulp om waarnemingen van mossen en korstmossen door te geven" style="background-color: #266294">
+				<a href="/mossen/waarnemers/waarnemers.aspx" class="menu" id="mnuleden">Waarnemingen</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnuwinkel.href">
+				<td id="mnu_winkel" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Winkel: boeken over (korst)mossen en meer" style="background-color: #266294">
+				<a href="/mossen/winkel/winkel.aspx" class="menu" id="mnuwinkel">Winkel</a></td>
+				</tr>
+				<tr onclick="javascript:parent.location=mnulinks.href">
+				<td id="mnu_links" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="Links: andere sites over mossen en natuur" style="background-color: #266294">
+				<a href="/mossen/links.aspx" class="menu" id="mnulinks">Links</a></td>
+				</tr>
+				<tr><td class="menu" style="background-color: #266294">&nbsp;</td></tr>
+				<tr>
+				<td id="mnu_summary" class="menu" onmouseout="javascript:MouseOutMenu(this.id)" 
+				onmouseover="javascript:MouseOverMenu(this.id)" title="BLWG in a nutshell" style="background-color: #266294">
+				<a href="/mossen/english.aspx" class="menu" id="mnusummary">
+				<img border="0" src="/mossen/afbeeldingen/icon_engels.gif" width="18" height="12"> English</a></td>
+				</tr>
+				</table>
+				
+				<table border="0" cellpadding="0" cellspacing="0" width="124" bgcolor="#006699">
+				<tr>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>
+            
+                &nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>
+				&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+				<tr>
+				<td>&nbsp;</td>
+				</tr>
+				<tr>
+				<td bgcolor="#FF8040">&nbsp;</td>
+				</tr>
+                <tr><td>
+                  </td></tr>
+				</table>
+			</td>
+
+			<td width="15"> &nbsp; </td>
+
+			<td width="690" valign="top">
+				<br/>
+					
+
+<script>
+   markeer("mnu_start");
+</script>
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#FFFFFF" width="100%">
+    <tr>
+      <td width="50%">
+      <h1>Welkom</h1>
+      </td>
+      <td width="50%" bgcolor="#FFFFFF">
+      <h1 align="right" class="grijzetekst"><b>
+      <font color="#C0C0C0" face="Tahoma">mossen en korstmossen</font></b></h1>
+      </td>
+    </tr>
+  </table>
+		<p>De BLWG is de vereniging voor mossen- en korstmossenonderzoek in 
+		Nederland. De werkgroep organiseert activiteiten voor leden en publiek 
+		waarbij het zoeken en op naam brengen van soorten centraal staat. 
+		Daarnaast verzamelt de BLWG verspreidingsgegevens, doet onderzoek, geeft 
+		adviezen en voert twee meetnetten uit.</p>
+		<p>
+		<table align="center" width="100%" height="100">
+			<tr align="center">
+				<td valign=top><img src="/mossen/afbeeldingen/random/caloprude_klein.jpg" alt="Kerkcitroenkorst (Caloplaca ruderum)" width="150" height="95"></td>
+				<td valign=top><img src="/mossen/afbeeldingen/random/hei_klein.jpg" alt="Excursie op de hei" width="150" height="95"></td>
+				<td valign=top><img height="95" width="150" src="/mossen/afbeeldingen/random/lecadisp_klein.jpg" alt="Verborgen schotelkorst (Lecanora dispersa)"></td>
+				<td valign=top><img height="95" width="150" src="/mossen/afbeeldingen/random/hypophys_klein.jpg" alt="Gewoon schorsmos (Hypogymnia physodes)"></td>
+			</tr>
+		</table>
+		
+		<br>
+
+		<table align="left" width="100%" cellpadding="6" border="0" style="border-collapse: collapse" bordercolor="#111111" bgcolor="#FFFFFF">
+
+			<tr>
+        			<td bgcolor="#FFFFFF" align="left" valign="top" width="50%">
+    					<a href="mossen/excursie.aspx" class="startasplink">
+	                      	<b><font color="#266294" size=2>Agenda</font></b><br/>
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br>
+	                      	<img src=/mossen/afbeeldingen/blackpixel.gif border=0 width=305 height=1><br>
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br>
+
+							
+									<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5"><font color=#336699><b>Zondag 16 september</b>
+									</font><font color=#336699><br/>&nbsp;Soorten-Zoekdag Lelystad</font><br/>
+			                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=280 height=4><br/>
+								
+									<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5"><font color=#336699><b>Donderdag 20 september</b>
+									</font><font color=#336699><br/>&nbsp;Lezing mossen en korstmossen Venray</font><br/>
+			                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=280 height=4><br/>
+								
+									<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5"><font color=#336699><b>Zaterdag 29 september</b>
+									</font><font color=#336699><br/>&nbsp;Korstmossen in de stad - Breda</font><br/>
+			                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=280 height=4><br/>
+								
+									<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5"><font color=#336699><b>Zaterdag 13 oktober</b>
+									</font><font color=#336699><br/>&nbsp;Korstmossenexcursie Hulshorsterzand</font><br/>
+			                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=280 height=4><br/>
+								
+							
+							</a><br/>
+                            <b><font color="#266294" size=2>Interactief</font></b><br/>
+							
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br>
+	                      	<img src=/mossen/afbeeldingen/blackpixel.gif border=0 width=305 height=1><br>
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br>
+							
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+						<b><a target="_top" href="/mosforum" class="startasplink"><span style="font-weight: 400"> 
+						Stel een specialist een vraag op MosForum</span></a></b>
+
+						<br/>
+
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+						<b><a target="_top" href="/mossen/waarnemers/mossenquiz.aspx" class="startasplink"><span style="font-weight: 400"> 
+						Hoe bryo ben jij? Doe de Mossenquiz!</span></a></b>
+                        <br/>
+
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+						<b><a target="_top" href="http://www.verspreidingsatlas.nl/determinatie" class="startasplink"><span style="font-weight: 400"> 
+						Online korstmossen determineren</span></a></b>
+					</td>
+					
+			        <td bgcolor="#FFFFFF" align="left" valign="top"  width="50%"  class="startasplink">
+							
+							<b><font color="#266294" size=2>Nieuws</font></b><br>
+
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br/>
+	                      	<img src=/mossen/afbeeldingen/blackpixel.gif border=0 width=305 height=1><br/>
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br/>
+
+							
+										<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+		                    			<a class="startasplink" href="mossen/nieuws.aspx">
+				                            Purper schorpioenmos terug in Nederland</a><br />
+								
+										<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+		                    			<a class="startasplink" href="mossen/nieuws.aspx">
+				                            Nieuwsbrief 'Kijk op exoten' verschenen</a><br />
+								
+										<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+		                    			<a class="startasplink" href="mossen/nieuws.aspx">
+				                            Mobiele verspreidingsatlas mossen en korstmossen</a><br />
+								
+										<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+		                    			<a class="startasplink" href="mossen/nieuws.aspx">
+				                            Nieuwe inventarisatiehandleiding</a><br />
+								
+
+							<br/>
+							
+							<b><font color="#266294" size=2>Lesmateriaal en zoekkaarten</font></b><br/>
+							
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br/>
+	                      	<img src=/mossen/afbeeldingen/blackpixel.gif border=0 width=305 height=1><br/>
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br/>
+							
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+		                    	<a href="mossen/winkel/onderzoekspakket.aspx" class="startasplink">
+		                    		Zelf onderzoek doen aan korstmossen en ammoniak
+		                    	</a>
+		                    <br />
+
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+		                    	<a href="mossen/winkel/onderzoekspakketmos.aspx" class="startasplink">
+		                    		Zelf onderzoek doen aan mossen op steen
+		                    	</a>
+                            <br />
+
+							<img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+                            <span style="font-weight: 400">
+                            Alles over <a class="startasplink" href="mossen/mossen/mossen.aspx">
+                            mossen</a> en <a class="startasplink" href="mossen/korstmossen/korstmossen.aspx">
+                            korstmossen</a></span><br/>
+
+                            <br/>
+                            <b><font color="#266294" size=2>Waarnemingen</font></b><br>
+							
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br>
+	                      	<img src=/mossen/afbeeldingen/blackpixel.gif border=0 width=305 height=1><br>
+	                      	<img src=/mossen/afbeeldingen/pixel.gif border=0 width=305 height=2><br>
+							
+							
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+                            <span style="font-weight: 400">
+                            <a class="startasplink" href="mossen/waarnemers">
+                            Waarnemershandleiding en projecten</a></span><br/>
+
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+                            <span style="font-weight: 400">
+                            <a class="startasplink" href="http://www.verspreidingsatlas.nl">
+							Online Verspreidingsatlas (Korst)mossen</a></span><br />
+
+		                    <img border="0" src="mossen/afbeeldingen/pijltje.gif" width="9" height="5">
+                            <span style="font-weight: 400">
+                            <a class="startasplink" href="http://www.verspreidingsatlas.nl/dnabarcoding">
+							DNA Barcoding van de Nederlandse mossen</a></span><br />
+
+                            </td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="left" valign="top">
+					<!-- <p align="center">&nbsp;</p> -->
+                    <table border="0" cellpadding="0" style="border-collapse: collapse" width="100%" id="table2" bgcolor="#FFFFFF">
+                      <tr>
+                        <td bgcolor="#E4E4E4">
+                        <p align="center">Doe mee en word  
+						<a href="mossen/lidworden.aspx">
+						lid of begunstiger</a> van de BLWG.
+						</td>
+                      </tr>
+                    </table>
+                    <br/>&nbsp;
+	    	    </td>
+	   		</tr>
+
+		</table>
+
+
+				<br/>
+			</td>
+
+			<td width="15"> &nbsp; </td>
+			
+			<td width="*" class="style3master" valign="top">
+
+				<table width="133"><tr>
+					<td valign="top">
+
+					
+						<table border="0" cellpadding="5" style="border-collapse: collapse" id="table1">
+							<tr>
+								<td>
+									<div id="ctl00_BLWGSite_Right_Panel3">
+	
+										<div style="padding: 5px;">
+											<b><font color="#266294" style="font-size: 9pt">
+											Waarnemingen doorgeven</font></b><br /><br />
+											<a target="_blank" href="http://www.telmee.nl">
+											<img align="left" border="0" alt="Telmee logo" src="/mossen/afbeeldingen/telmeelogo.jpg" width="130" height="130" align="left"></img></a><br>
+										</div>
+									
+</div>					
+									
+									
+								</td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+
+							
+								<tr>
+									<td>
+									<div id="ctl00_BLWGSite_Right_LoginView111_Panel1">
+	
+										<div style="padding: 5px;">
+										<b><font color="#266294" style="font-size: 9pt">Blijf op de hoogte</font></b><br/>
+										<a href="http://www.blwg.nl/mossen/waarnemers/mailinglist/nieuwsbrief.aspx">
+										Meldt u nu aan voor<br>de nieuwsbrief
+										<img src="/mossen/afbeeldingen/right_arrow.gif" width="10" height="10"></a></div>
+									
+</div>
+									
+									
+									
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+								</tr>
+								
+						
+						  <tr>
+						    <td bg-color="#FFFFFF">
+				
+							<div id="ctl00_BLWGSite_Right_Panel2">
+	
+								<div style="padding: 5px;">
+									<b><font color="#266294" style="font-size: 9pt">Mos zonder naam?</font></b><br />
+									<a target="_top" href="http://www.blwg.nl/mosforum">Zet uw vraag of foto<br />
+									op het MosForum
+									<img src="/mossen/afbeeldingen/right_arrow.gif" width="10" height="10"></img></a>
+								</div>
+							
+</div>
+								
+					        
+								
+							</td>
+						  </tr>
+
+
+						  <tr>
+						    <td bg-color="#FFFFFF">
+				
+							<div id="ctl00_BLWGSite_Right_Panel4">
+	
+								<div style="padding: 5px;">
+									<b><font color="#266294" style="font-size: 9pt">Recent verschenen</font></b><br />
+									<a target="_top" href="http://www.blwg.nl/veldgids">Onze nieuwe veldgids<br />
+									korstmossen <br /> voor &euro; 24,95
+									<img src="/mossen/afbeeldingen/right_arrow.gif" width="10" height="10"></img></a>
+								</div>
+							
+</div>
+								
+					        
+								
+							</td>
+						  </tr>
+							
+   						</table>
+					
+					
+					
+					
+				</td></tr></table>
+			</td>
+		</tr>
+		<tr>
+			<td  class="style4master" width="124" valign="top" style="height: 50px" >&nbsp;</td>
+
+			<td width="15" class="style7master" style="height: 50px"> &nbsp;</td>
+
+			<td colspan="3" class="style8master" style="height: 50px">
+			 
+				<a href="/mossen/contact.aspx" class="style10"><span class="style9master">Contact</span></a> 
+				<span class="style9master">| <a href="/mossen/vacatures.aspx" class="style10"><span class="style9master">Vacatures</span></a> 
+
+				<span class="style9master">| <span class="style9master">
+			        
+				</span>
+				
+		        
+		                <a id="ctl00_LoginView1_LoginStatus1" class="style10" href="javascript:__doPostBack('ctl00$LoginView1$LoginStatus1$ctl02','')"><font color="Gray">Login</font></a>
+		            
+				
+				<span class="style9master">| &copy; BLWG</span>&nbsp;&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="schaduwonder" colspan="6"></td>
+		</tr>
+	</table>
+	
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3678564-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_ScriptManagerMaster_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.RoundedCornersBehavior, {"BorderColor":"Black","Radius":6,"id":"RoundedCornersBehavior3"}, null, null, $get("ctl00_BLWGSite_Right_Panel3"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.RoundedCornersBehavior, {"BorderColor":"Black","Radius":6,"id":"RoundedCornersBehavior1"}, null, null, $get("ctl00_BLWGSite_Right_LoginView111_Panel1"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.RoundedCornersBehavior, {"BorderColor":"Black","Radius":6,"id":"RoundedCornersBehavior2"}, null, null, $get("ctl00_BLWGSite_Right_Panel2"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.RoundedCornersBehavior, {"BorderColor":"Black","Radius":6,"id":"RoundedCornersBehavior5"}, null, null, $get("ctl00_BLWGSite_Right_Panel4"));
+});
+//]]>
+</script>
+</form>
+
+</body>
+
+</html>

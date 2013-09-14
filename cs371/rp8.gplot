@@ -1,0 +1,13 @@
+set xlabel "Recall"
+set ylabel "Precision"
+
+set terminal postscript color
+set size 0.75,0.75
+
+set data style linespoints
+set key 0.75,0.9
+
+set xrange [0:1]
+set yrange [0:1]
+
+plot 'rp8' title "VSR"

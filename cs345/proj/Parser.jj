@@ -1,0 +1,244 @@
+/*
+ * Name: Shun Zhang
+ * EID : sz4554
+ */
+PARSER_BEGIN(Parser)
+
+import java.io.*;
+import java.util.*;
+
+public class Parser {
+		public static boolean staticScoping = true;
+		public static boolean preload = false;
+		public static boolean noEnvPrint = false;
+
+    public static void main(String args[]) throws ParseException {
+      Parser parser = new Parser (System.in);
+			Parser preloader = null;
+			ArrayList<ASub> preloadedSubs = null;
+
+			for (String arg : args) {
+				if (arg.equals("-d")) {
+					staticScoping = false;
+				}
+				else if (arg.equals("-p")) {
+					preload = true;
+
+					try {
+						System.out.println("Parsing Preload file...");
+						preloader = new Parser (new FileInputStream("Preload"));
+					}
+					catch (FileNotFoundException e) {
+						throw new RuntimeException("Cannot find Preload file. " + e);
+					}
+				}
+				else if (arg.equals("-ne")) {
+					noEnvPrint = true;
+				}
+				else if (arg.equals("-h")) {
+					System.out.println("-d Dynamic scoping.");
+					System.out.println("-p Preload functions to environment.");
+					System.out.println("-ne No Environment printed out.");
+					System.out.println("-h Help.");
+					return;
+				}
+				else {
+					throw new IllegalArgumentException("Unknown flag " + arg);
+				}
+			}
+
+			if (preload) {
+				// parse the function definitions and load them into environment
+				preloadedSubs = preloader.preloadParse();
+			}
+
+      Node root = parser.parse();
+			new AstVisitor(root);
+			new InterpVisitor(root, preloadedSubs);
+    }
+}
+
+PARSER_END(Parser )
+
+SKIP :
+{
+		" "
+  | "\t"
+  | "\n"
+  | "\r"
+  | <"//" (~["\n","\r"])* ("\n"|"\r")> 
+}
+
+TOKEN:
+{
+    < LPAR:  		"(" >
+  | < RPAR:  		")" >
+	| < LET:			"let">
+	| < LETREC:		"letrec">
+	| < LAMBDA: 	"lambda">
+	| < LAMBDAREC:"lambdarec">
+	| < INTEGER : (["0"-"9"])+ | "-" (["0"-"9"])+ >
+	| < ID:				["a"-"z", "A"-"Z", "_"] (["a"-"z", "A"-"Z", "1"-"9", "_"])*>
+	| < PLUS:			"+">
+	| < IF0:			"zero?">
+	| < IFNULL:		"null?">
+	| < PRIME:		"\'">
+	| < ASSIGN:   ":=">
+}
+
+TOKEN:
+{
+    <ERROR: ~[] >
+}
+
+Expression parse() :
+{Expression e;}
+{
+		e = expression() {return e;}
+}
+
+ArrayList<ASub> preloadParse() :
+{
+Token t; Lambda l;
+ArrayList<ASub> subs;
+}
+{
+		{ subs = new ArrayList<ASub>(); }
+		(
+			t = <ID> <ASSIGN> l = lambda()
+			{ subs.add(new ASub(t.image, l)); }
+		)*
+
+		{ return subs; }
+}
+
+/**
+ * (lambda (id) expr|l)
+ */
+Lambda lambda():
+{
+ArrayList<String> tlist = new ArrayList<String>();
+Token t;
+Lambda l;
+Node exp;
+boolean rec;
+}
+{
+		<LPAR> (<LAMBDA> { rec = false;} | <LAMBDAREC> { rec = false; } ) <LPAR> (t = <ID> { tlist.add(t.image); })* <RPAR>  
+		(LOOKAHEAD(2)  exp = expression() | exp = lambda() ) <RPAR>
+		{ 
+		  for ( int i = tlist.size() - 1; i >=0; i-- )
+		  {
+				exp = new Lambda(tlist.get(i), exp);
+			}
+
+			if (rec) {
+				((Lambda)exp).setRec();
+			}
+			return (Lambda)exp;
+	  }
+}
+
+/**
+ *  (lambda() expression()|lambda())
+ *| (let ((id expr|l)) expr1|l) --> ((lambda (id) expr1|l) expr|l)
+ *| (expression() expression()|lambda()) // first expression must return Lambda
+ * e.g.
+ * ((lambda (x) (+ x 1)) 3)
+ * (let ((f (lambda ..))) (f 3))
+ * ((let ((y 1))
+ 		(lambda (x) (+ x y)))
+  	3)
+ */
+Application app():
+{
+Token t;
+ArrayList<Node> valueList = new ArrayList<Node>();
+ArrayList<String> idList = new ArrayList<String>();
+Node l, b = null, c; // (Lambda B) ((lambda (A) C) B)  <=> (let (A B) C)
+}
+{
+		(
+
+		LOOKAHEAD(2) (<LPAR> (LOOKAHEAD(2) l = lambda() | l = expression() ) ((LOOKAHEAD(2)  b = expression() | b = lambda() ){valueList.add(b);})* <RPAR>)
+    
+	| LOOKAHEAD(2) (<LPAR> <LET> <LPAR> ( ( <LPAR> t = <ID> (LOOKAHEAD(2)  b = expression() | b = lambda() ) <RPAR> )
+	       {idList.add(t.image); valueList.add( b );} )* <RPAR>
+		(LOOKAHEAD(2)  c = expression()  | c = lambda()) <RPAR> 
+
+		{ 
+		  for ( int i = idList.size() - 1; i >=0; i-- )
+		  {
+				c = new Lambda(idList.get(i), c);
+			}
+			l = c;
+	  })
+
+		)
+		
+		{ Node tempApp = l; 
+		  for ( int i = 0; i < valueList.size(); i++ )
+		  {
+			  tempApp = new Application(tempApp, valueList.get(i));
+			}
+			return (Application)tempApp;
+		}
+}
+
+Application letrec():
+{
+		Token f, n;
+		Expression body, exp;
+}
+{
+		<LPAR> <LETREC> <LPAR> <LPAR> f = <ID>	<LPAR> <LAMBDA> <LPAR> n = <ID> <RPAR> body = expression() <RPAR> <RPAR>	<RPAR> exp = expression() <RPAR>
+		{
+		 Lambda leftLambda = new Lambda(f.image, exp);
+		 Lambda rightLambda = new Lambda(n.image, body);
+		 Application app = new Application(leftLambda, rightLambda);
+		 app.setRec();
+		 return app;
+		}
+}
+
+If if0():
+{
+		Expression cond, baseCase, recCase;
+		boolean isZero;
+}
+{
+		<LPAR> ( <IF0> {isZero = true;} | <IFNULL> {isZero = false;} ) cond = expression() baseCase = expression() recCase = expression() <RPAR> 
+		{ return new If(cond, baseCase, recCase, isZero);}
+}
+
+/**
+ * (+ (expression())*)
+ * expression must return int
+ */
+Addition addition():
+{
+List<Expression> l = new ArrayList<Expression>();
+Expression e;
+}
+{
+		<LPAR> <PLUS> ( e = expression(){ l.add( e );} )* <RPAR>
+		{ return new Addition( l ); }
+}
+
+/**
+ * app | addition | num | id
+ */
+Expression expression():
+{
+Token t; Application a; Addition ad; Expression exp; If i;
+ArrayList<Expression> list = new ArrayList<Expression>();
+}
+{
+		LOOKAHEAD(2) a = app(){ return new Expression( a ); }
+	|	LOOKAHEAD(2) a = letrec(){ return new Expression( a ); }
+	| LOOKAHEAD(2) i = if0(){ return new Expression( i ); }
+	| ad = addition() {return new Expression( ad );} 
+	|	t = <INTEGER> { return new Expression( Integer.parseInt( t.image ) ); }
+	| t = <ID> { return new Expression( String.valueOf( t.image ) ); }
+	| <PRIME> <LPAR> ( exp = expression() { list.add( exp ); } )* <RPAR> {return new Expression( list );}
+}

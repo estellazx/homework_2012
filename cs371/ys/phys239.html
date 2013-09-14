@@ -1,0 +1,373 @@
+<base href="http://www.ncdc.noaa.gov/ol/climate/severeweather/temperatures.html">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<TITLE>NCDC: Temperature Extremes</TITLE>
+<META NAME="AUTHOR" CONTENT="Neal Lott, Tom Ross, Mark Lackey">
+<META NAME="DESCRIPTION" content="National Climatic Data Center (NCDC) extereme temperature data and information resources.">
+<META NAME="KEYWORDS" content="extreme climate data climatological data weather data temperature NCDC National Climatic Data Center">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<STYLE TYPE="text/css">
+<!--
+.table-back
+{
+background-image:url('/img/climate/severeweather/cold3ghost.gif');
+background-color:white;
+}
+-->
+</STYLE>
+<STYLE type="text/css">
+
+</STYLE>
+<script type="text/javascript">
+<!--
+/*
+Textual Tooltip Script-
+� Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more DHTML scripts, and Terms Of
+Use, visit dnamicdrive.com
+*/
+
+var content=new Array()
+
+/* 2nd level page authors:
+Please plug in your own descriptive text for each content= line below.
+0=About
+1=Data and Products
+2=Research and Development
+3=Contact (and FAQ)
+
+If you'd like to make additional "appearing" sections, then use 4 through 8.
+Please discuss additional points with Ken Schmidt (Ken.Schmidt@noaa.gov) first.
+
+Change the array below to the text associated with your links
+Expand or contract the array, depending on how many links you have: */
+
+content[0]='<p>Temperature extremes by state.</p>'
+content[2]='<p>Extremes/Events for current year.</p>'
+content[3]='<p>Extremes/Events for previous years.</p>'
+content[4]='<p>Let us hear from you.</p>'
+content[8]='<p>Welcome to the NCDC Temperature Extremes and Drought page.</p> '
+
+function regenerate(){
+window.location.reload()
+}
+function regenerate2(){
+if (document.layers){
+appear()
+setTimeout("window.onresize=regenerate",450)
+}
+}
+
+function changetext(whichcontent){
+
+if (document.all||document.getElementById){
+cross_el=document.getElementById? document.getElementById("descriptions"):document.all.descriptions
+cross_el.innerHTML='<font color="black">'+whichcontent+'</font>'
+}
+else if (document.layers){
+document.d1.document.d2.document.write('<font color="black">'+whichcontent+'</font>')
+document.d1.document.d2.document.close()
+}
+
+}
+
+function appear(){
+document.d1.visibility='show'
+}
+
+window.onload=regenerate2
+//-->
+</script>
+<link rel="stylesheet" type="text/css" href="/common/ncdc.css"/>
+</head>
+
+<BODY bgcolor="#FFFFFF" vlink="#ff0000"> <A NAME="TOP"></A>
+
+<span id="topbar">
+<!-- begin header section -->
+
+<div id="header">
+  <map name="nesdisbanner" id="nesdisbanner">
+    <area shape="rect" coords="52,0,440,50" href="http://www.nesdis.noaa.gov/" title="NOAA Satellite and Information Services: National Environmental Satellite, Data, and Information Service" alt="National Environmental Satellite, Data, and Information Service Home Page." />
+    <area shape="rect" coords="0,0,50,50" href="http://www.noaa.gov/" title="NOAA Logo" alt="National Oceanic and Atmospheric Administration Home Page." />
+  </map>
+
+  <map name="ncdcdoc" id="ncdcdoc">
+    <area shape="rect" coords="20,0,135,50" href="http://www.ncdc.noaa.gov/oa/ncdc.html" title="National Climatic Data Center" alt="National Climatic Data Center Home Page." />
+    <area shape="rect" coords="0,0,185,50" href="http://www.commerce.gov/" title="DOC Logo" alt="Department of Commerce Home Page." />
+  </map>
+
+  <img src="http://www.ncdc.noaa.gov/img/nesdislook/nesdisbannerleft.gif" height="50" width="440" alt="NOAA, National Environmental Satellite, Data, and Information Service" usemap="#nesdisbanner" ismap="ismap" /><img src="http://www.ncdc.noaa.gov/img/nesdislook/ncdcright.gif" width="185" height="50" style="margin-left:25px;" alt="National Climatic Data Center, U.S. Department of Commerce" usemap="#ncdcdoc" ismap="ismap" />
+
+  <!-- Here's where, if there is one, a warning message would go: -->
+ 
+  <p id="sitewarning">
+</p>
+
+  <div id="bannerbar">
+    <div id="toplinks">
+      <a href="http://www.commerce.gov/">DOC</a> &gt;
+      <a href="http://www.noaa.gov/">NOAA</a> &gt;
+      <a href="http://www.nesdis.noaa.gov/">NESDIS</a> &gt;
+      <a href="http://www.ncdc.noaa.gov/oa/ncdc.html">NCDC</a>
+    </div>
+
+    <form method="get" action="http://search.usa.gov/search/">
+      <input type="hidden" name="affiliate" value="NCDC" />
+      <label for="query-field">Search Field:</label>
+      <input type="text" name="query" id="query-field" />
+      <input type="submit" value="Search NCDC" />
+    </form>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<!-- end header section -->
+
+</span>
+
+<table summary="layout" border=0 width=650 align="center" cellspacing="0" cellpadding="0">
+<tr>
+<!-- Begin of side-bar, or navigation panel  -->
+<td background="http://www.ncdc.noaa.gov/img/cyanpanel-2.jpg" width="130" valign="top">
+	<span id="sidebar">
+
+		<p>Current Events</p>
+		<li><a href="http://www.climate.gov/"><b>NOAA Climate Services</b></a></li>
+                <li><a href="https://nes.ncdc.noaa.gov/pls/prod/f?p=100">NCDC News</a></li>
+		<li><a href="/faqs/index.html">Climate FAQs</a></li>
+		<li><a href="/oa/about/about.html">About NCDC</a></li>
+		<!--<li><a href="/oa/about/newsletter.html">Newsletter/Reports</a></li>-->
+		<!--<li><a href="/oa/about/ncdcspotlight-banner.html">In the Spotlight</a></li>-->
+		
+		<li><img src="/img/bar.gif" alt="Dividing Line" width="100" align="middle" height="4"></img></li>
+
+		<p>Data &amp; Products</p>
+		<li><a href="http://www.ncdc.noaa.gov/cdo-web/">Climate Data Online</a><span style="color:red;">(NEW)</span></li>
+                <li><a href="http://www.ncdc.noaa.gov/oa/mpp/">Most Popular</a></li>
+		<li><a href="https://nes.ncdc.noaa.gov/subscriptions.html">Subscriptions</a></li>
+		<li><a href="https://nes.ncdc.noaa.gov/plolstore/plsql/ols_orderstatus.getordnum">Order Status</a></li>
+		<li><a href="http://ols.nndc.noaa.gov/plolstore/plsql/olstore.main?look=1">Online Store</a></li>
+
+		<li><a href="http://nomads.ncdc.noaa.gov/">Model Data</a></li>
+		<li><a href="http://ols.nndc.noaa.gov/plolstore/plsql/olstore.prodspecific?prodnum=C00224-PUB-A0001">Products and Services</a></li>
+		<li><a href="/oa/climate/stationlocator.html">Find a Station</a></li>
+
+		<li><a href="http://gis.ncdc.noaa.gov/map/cdo"><b>Search by Map</b></a></li>
+		<li><a href="/oa/dataaccesstools.html">Data Access tools</a></li>
+		<li><a href="http://ols.nndc.noaa.gov/plolstore/plsql/olstore.prodlist?category=C&subcatc=01&groupin=CDV">CD-ROM/DVD Products</a></li>
+		<li><a href="/oa/climate/climateinventories.html">Climate Inventories</a></li>
+		<li><a href="/oa/metadata/metadataresources.html">Metadata</a></li>
+		<li><a href="/oa/about/ncdchelp.html">Help/FAQ</a></li>
+		
+		<li><img src="/img/bar.gif" alt="Dividing Line" width="100" align="middle" height="4"></img></li>
+
+		<p>Climate Info</p>
+		<li><a href="/oa/climate/regionalclimatecenters.html">Regional Climate Centers</a></li>
+		<li><a href="/oa/climateresearch.html">Research</a></li>
+		<li><a href="/oa/climate/research/monitoring.html">Monitoring</a></li>
+		<li><a href="/oa/climate/severeweather/extremes.html">Extremes</a></li>
+		<li><a href="http://www.ncdc.noaa.gov/sotc/?report=hazards">Global Hazards</a></li>
+
+	</span>
+</td>
+
+<!--   End of side-bar, or navigation panel  -->
+<td>
+<table summary="layout" cellspacing="0" cellpadding="0" border=0 class="table-back">
+<tr>
+<td valign=top width="525">
+  <table summary="layout" width=525>
+    <tr>
+    <th><h1>Temperature Extremes and Drought</h1></th>
+    </tr>
+  </table>
+  <table summary="layout" width=525>
+  <tr align="left">
+  <td width=200 valign="top" height="320">
+  <div id="scriptmenu" style="line-height:20px">
+   <p><a href="http://www.ncdc.noaa.gov/extremes/scec/searchrecs.php" onmouseover="changetext(content[0])" onmouseleave="changetext(content[8])">Extremes Maps</a></p>
+  <p><a href="#2012" onmouseover="changetext(content[2])" onmouseleave="changetext(content[8])">2012 Extremes &amp; Events
+   </a></p>
+   <p><a href="#other" onmouseover="changetext(content[3])" onmouseleave="changetext(content[8])">Other Extremes &amp; Events</a></p>
+   <p><a href="http://www.ncdc.noaa.gov/oa/about/ncdccontacts.html" onmouseover="changetext(content[4])" onmouseleave="changetext(content[8])">Contact</a></p>
+   </div>
+  </td>
+  <td valign="bottom" style="text-align:justify">
+  <!--
+  This div represents the dynamic text appearing in the right half of the
+  main panel
+  -->
+  <div id="descriptions" align="left">
+  <!-- Edit the following to match a sample paragrah before they follow a link -->
+  <p>NCDC is the world's largest active archive of weather data. NCDC produces numerous climate publications and responds to data requests from all over the world. NCDC operates the <a href="http://www.ncdc.noaa.gov/oa/wmo/wdcamet.html">World Data Center for Meteorology</a> which is co-located at NCDC in Asheville, North Carolina, and the <a href="http://www.ncdc.noaa.gov/paleo/paleo.html">World Data Center for Paleoclimatology</a> which is located in Boulder, Colorado.</p>
+  <p>NCDC supports a three tier national climate services support program - the partners include: NCDC, <a href="http://www.ncdc.noaa.gov/oa/climate/regionalclimatecenters.html">Regional Climate Centers</a>, and <a href="http://www.ncdc.noaa.gov/oa/climate/aasc.html">State Climatologists</a>.</p>
+<!--Stop editting-->
+  </div>
+  </td>
+  </tr>
+  </table>
+  </td>
+  <!-- End of Main Panel -->
+
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<!-- End of Main Panel -->
+<!-- Begin the bottom, or complete body, portion of the page -->
+
+<CENTER>
+
+<table summary="layout" BORDER=0 WIDTH=650>
+
+<TR>
+<TD align="center">
+
+<img src="http://www.ncdc.noaa.gov/img/bar.gif" alt="separation bar" width="650" align="middle" height="7"><br></TD>
+
+</TR>
+<TR>
+<td align="left">
+<a name="2012"></a>
+<BR>
+<H2><a href="#TOP"><img border=0 src="/img/top.gif" alt="Top of page"></a> <U>2012 Extremes and Events</U></H2>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD align="left">
+<a HREF="/oa/reports/billionz.html">Billion Dollar US Weather Disasters (includes many droughts)</A><br>
+<a HREF="/oa/reports/weather-events.html#2012">2012 Monthly Hazards/Events (various extremes for each month)</A><br>
+<a HREF="/extremes/scec/searchrecs.php">State Climate Extremes</A><br>
+<a HREF="/oa/climate/research/dm/weekly-DM-animations.html">Animated Maps of Drought Monitoring</A><br>
+<a HREF="/oa/climate/research/drought/drought.html">Drought Termination (precipitation required to end a drought)</A>
+<br>
+<a HREF="/cmb-faq/anomalies.html">Global Surface Temperature Anomalies</A><br>
+<a HREF="/asos/index.php">Daily U.S. Temperature Maps</A><br>
+<a HREF="/sotc/index.php#monthly">State of the Climate Monthly Reports</A><br>
+<a HREF="/oa/climate/research/us-weekly.php">Weekly U.S. Temperature and Precipitation</A><br>
+<a HREF="/oa/climate/research/cag3/cag3.html">Monthly U.S. Temperature and Precipitation</A><br>
+<a HREF="http://www.ncdc.noaa.gov/temp-and-precip/maps.php">Monthly and Seasonal U.S. Temperature and Precipitation</A><br>
+<a HREF="http://www.ncdc.noaa.gov/temp-and-precip/global-maps.php">Monthly and Seasonal Global Temperature and Precipitation</A><br>
+<br>
+<img src="http://www.ncdc.noaa.gov/img/bar.gif" alt="separation bar" width="650" align="middle" height="7"><br>
+<br>
+</TD>
+</TR>
+<TR>
+<TD align="left">
+<a name="other"></a>
+<H2><a href="#TOP"><img border=0 src="/img/top.gif" alt="Top of page"></a> <U>Other Extremes and Events</U></H2>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD align="left">
+
+<a HREF="/oa/reports/weather-events.html#2011">2011 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/special-reports/2011-spring-extremes/index.php">Spring 2011 U.S. Climate Extremes (Extremes for March-May 2011, compiled from preliminary statistics)</A><BR>
+<A HREF="/oa/climate/research/2011/aug/drought-national-overview.html">Summer 2011 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2010">2010 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2010/aug/drought-national-overview.html">Summer 2010 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2009">2009 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2009/aug/drought-national-overview.html">Summer 2009 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2008">2008 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="http://www1.ncdc.noaa.gov/pub/data/techrpts/tr200801/tech-report-200801.pdf">NOAA/USDA Report on April 2007 Freeze Event</A><BR>
+<A HREF="/oa/climate/research/2008/aug/drought-national-overview.html">Summer 2008 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2007">2007 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2007/aug/drought-national-overview.html">Summer 2007 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2006">2006 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2006/aug/drought-national-overview.html">Summer 2006 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2005">2005 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2005/aug/drought-national-overview.html">Summer 2005 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2004">2004 Monthly Hazards/Events (various extremes for each month)</A><BR>
+<A HREF="/oa/climate/research/2004/aug/drought-national-overview.html">Summer 2004 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2003">2003 Monthly Hazards/Events (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2003/aug/drought-national-overview.html">Summer 2003 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2002">2002 Monthly Climate Watch (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2002/aug/drought-national-overview.html">Summer 2002 U.S. Drought</A><BR>
+<a HREF="/oa/climate/research/2001/ann/ann.html">2001 Climate Review</A><br>
+<a HREF="/oa/reports/weather-events.html#2001">2001 Monthly Climate Watch (various extremes for each month)</A><br>
+<a HREF="/special-reports/2001-sum-heat-event.html">2001 Summer Heat in the U.S.</A><br>
+<A HREF="/oa/climate/research/2001/aug/drought-national-overview.html">Summer 2001 U.S. Drought</A><BR>
+<a HREF="/oa/reports/weather-events.html#2000">2000 Monthly Climate Watch (various extremes for each month)</A><br>
+<A HREF="/oa/climate/research/2000/ann/usevents2000.PDF">Summary of Major US Events for 2000</A> (PDF format)<BR>
+<A HREF="/oa/climate/research/2000/ann/globalevents2000.PDF">Summary of Major Global Events for 2000</A> (PDF format)
+<BR>
+<a HREF="/oa/climate/extremes/2000/july/extremes0700.html">Southeast Europe Heat Wave, July 2000</A><br>
+<A HREF="/oa/climate/research/2000/aug/drought-national-overview.html">Summer 2000 U.S. Drought</A><BR>
+<br>
+<img src="/img/bar.gif" alt="separation bar" width="650" align="middle" height="7"><br>
+<br>
+<a HREF="http://www.ncdc.noaa.gov/cgi-bin/good-bye.pl?src=http://www.usatoday.com/weather/wext0.htm&amp;code=ncdc">USA Today Archive of U.S. Daily National Temperature Extremes</A><br>
+<A HREF="/oa/climate/research/1999/sum/us_drought.html">Summer 1999 Heat Wave/Drought</A><BR>
+<a HREF="/oa/climate/extremes/1999/july/extremes0799.html">Heat Wave--July 1999</A><br>
+<a HREF="/oa/climate/extremes/1999/february/extremes0299.html">Cold in Alaska--February 1999</A><br>
+<a HREF="/oa/pub/data/techrpts/tr9803/TR9803.PDF">Climatic Extremes of the Summer of 1998, Special Report (PDF File)</A><br>
+<a HREF="/oa/climate/research/papers/weather.pdf">Summer of 1993 (PDF File)</A> (2nd Report)<br>
+<a HREF="/oa/climate/extremes/1999/february/extremes0299.html">The Cold Wave of February 1899</A><br>
+</TD>
+</TR>
+<TR>
+<TD align="left">
+
+<br>
+<h2><a href="#TOP"><img border=0 src="/img/top.gif" alt="Top of page"></a> Back to the top</h2><br>
+
+
+</TD>
+</TR>
+</TABLE>
+
+<table summary="layout" width =650>
+<TR>
+<TD align="left">
+
+
+
+
+<!-- Begin NCDC Footer -->
+
+<div id="foot">
+  <img height="7" width="650" alt="Dividing Line" src="/img/bar.gif" />
+
+  <div id="footimgs">
+    <div><a href="/oa/about/privacystatement.html"><img src="/img/privacy.gif" alt="Privacy Policy information" /></a></div>
+    <div style="margin:0 70px;"><a href="/oa/about/open-access-climate-data-policy.pdf"><img src="/img/datapolicy.gif" alt="Open Access Climate Data Policy" /></a></div>
+
+    <div><a href="http://www.usa.gov/"><img src="/img/usagovlogo.jpg" alt="USA logo" /></a></div>
+    <div style="float:right;"><a href="/oa/about/privacystatement.html#disclaimer"><img src="/img/disclaimer.gif" alt="Disclaimer information" /></a></div>
+  </div>
+
+  <div class="clear"></div>
+
+  <img height="7" width="650" alt="Dividing Line" src="/img/bar.gif" />
+
+  <address>
+    http://www.ncdc.noaa.gov/oa/climate/severeweather/temperatures.html <br />
+    
+    Downloaded Sunday, 26-Aug-2012 16:20:31 EDT<br />
+    Last Updated Wednesday, 01-Feb-2012 15:09:13 EST  by <a href="mailto:Neal.Lott@noaa.gov">Neal.Lott@noaa.gov</a>, <a href="mailto:Tom.Ross@noaa.gov">Tom.Ross@noaa.gov</a>, <a href="mailto:Mark.Lackey@noaa.gov">Mark.Lackey@noaa.gov</a><br />
+    Please see the <a href="/oa/about/ncdccontacts.html">NCDC Contact Page</a> if you have questions or comments.<br />
+  </address>
+
+</div>
+
+<!-- End NCDC Footer -->
+
+
+</TD></TR></TABLE>
+
+<BR>
+</CENTER>
+
+</BODY>
+</HTML>

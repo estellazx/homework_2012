@@ -1,0 +1,676 @@
+<base href="http://www.usatoday.com/weather/wext.htm">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:pas="http://sitelifestage.usatoday.com/2009/pluckApplicationServer"
+xmlns:og="http://opengraphprotocol.org/schema/"
+xmlns:fb="http://www.facebook.com/2008/fbml"
+>
+<head>
+
+
+<title>August 2012 highs and lows – USATODAY.com</title>
+
+
+
+
+<meta name="description" content="USA TODAY tracks the national high and low temperatures across the USA each day."/>
+<meta name="keywords" content=""/>
+<meta name="pubdate" content="2011-07-15"/>
+<link rel="canonical" href="http://www.usatoday.com/weather/news/extremes/story/national-temperature-extremes/54875134/1" />
+<meta property="og:title" content="August 2012 highs and lows"/>
+<meta property="og:description" content="USA TODAY tracks the national high and low temperatures across the USA each day."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.usatoday.com/weather/news/extremes/story/national-temperature-extremes/54875134/1"/>
+<meta property="og:image" content="http://i.usatoday.net/weather/_photos/2012/01/04/august-2012-highs-and-lows-ud7o3pi-x.jpg"/>
+<meta property="og:site_name" content="USATODAY.COM"/>   
+<meta property="fb:app_id" content="215046668549694"/>
+
+
+<link rel="Shortcut Icon" type="image/x-icon" href="http://i.usatoday.net/_common/_images/favicon-weather.ico" />
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_common/_styles/_foundation/reset-fonts-grids-usat.css" />
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_inside2011/_c/story.css?v=20110917" />
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_inside2011/_c/social_tools.css" />
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_inside2011/_c/weather.css" />
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_common/_styles/_ad/ads.css" />
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_inside2011/_c/story_ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_inside2011/_c/story_ie7.css" />
+<style type="text/css">
+.container625 {position:absolute !important;}
+</style>
+<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="http://i.usatoday.net/_inside2011/_c/story_ie6.css" />
+<![endif]-->
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/usatv2.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/sniffer.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/_oas/google.js"></script>
+<script src="http://i.usatoday.net/_common/_scripts/jquery.autofill.js" type="text/javascript"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+
+<script type="text/javascript">
+usat.contentID='54875134.story';
+var tagID = 54875134;
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery('#googleSearch').autofill({
+value: 'Google USA TODAY stories, photos and more'
+});
+var popeyeOptions1 = {
+caption: 'permanent',
+navigation: 'permanent',
+direction: 'right',
+fixed: 'false',
+opacity: 1
+}
+jQuery('.ppy1, .ppy2').popeye(popeyeOptions1);
+
+jQuery('a#stories-expand').click(function () {
+jQuery('.addPopularStories').slideToggle();
+return false;
+});
+jQuery('a#videos-expand').click(function () {
+jQuery('.addPopularVideos').slideToggle();
+return false;
+});
+jQuery('a#photos-expand').click(function () {
+jQuery('.addPopularPhotos').slideToggle();
+return false;
+});
+jQuery.ajax({
+url: "/_common/_includes/_community/taboola-async.ssi", 
+success: function (html) {
+jQuery("#Adv4").append(html);
+}
+});
+// series bar dropdown
+function megaHoverOver(){
+jQuery(this).find(".sub, .sub-sponsorship").stop().fadeTo('fast', 1).show();
+}
+function megaHoverOut(){ 
+jQuery(this).find(".sub, .sub-sponsorship").stop().fadeTo('fast', 0, function() {
+jQuery(this).hide(); 
+});
+}
+var config = {    
+sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+interval: 100, // number = milliseconds for onMouseOver polling interval    
+over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+timeout: 500, // number = milliseconds delay before onMouseOut    
+out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+};
+jQuery("ul#topnav li .sub, ul#topnav li .sub-sponsorship").css({'opacity':'0'});
+jQuery("ul#topnav li").hoverIntent(config);
+// overlay
+var overlaySettings = {
+mask: '#000',
+top: 'center'
+};
+var fixedMinHeight = 720; // max height of embed + 120
+if (jQuery(window).height() < fixedMinHeight){
+jQuery.extend(overlaySettings, { fixed: false });
+}
+jQuery(".buttonModal[rel]").overlay(overlaySettings);
+}); // end doc ready
+var partnerID=1660;
+function getClickExpire() {
+if (self.clickExpire) return clickExpire; 
+return "";
+}
+function appendAndEscape(origUrl, appendix){
+if(appendix == "") return escape(origUrl);
+var returnUrl ="";
+var i = origUrl.indexOf(appendix);
+var j = origUrl.indexOf("?");
+if(i == -1){
+if(j == -1){
+returnUrl = origUrl+"?"+appendix;
+}else{
+returnUrl = origUrl+"&"+appendix;
+}
+}else{
+returnUrl = origUrl;
+}
+return escape(returnUrl);
+}
+function getClickURL() {
+if (self.clickURL) return clickURL;
+return document.location.href;
+}
+function getClickTitle() {
+if (self.clickTitle) return clickTitle;
+return document.title;
+}
+function PT () {
+FDCPUrl('http://www.printthis.clickability.com/pt/printThis?clickMap=printThis'+getLocation(),true); 
+}
+function getLocation () {
+var theUrl = escape(getClickURL());
+var theTitle = escape(getClickTitle());
+theUrl = appendAndEscape(getClickURL(),"")
+var theLoc = "&fb=Y&url="+theUrl+"&title="+theTitle+"&random="+Math.random()+"&partnerID="+partnerID+"&expire="+escape(getClickExpire());
+return theLoc;
+}
+function PTMouseOver () {
+window.status='PRINT THIS';
+return true;
+}
+function PTMouseOut () {
+window.status='';
+return true;
+}
+var originalPath= window.location.toString().toLowerCase(); 
+var adfileSsts= (originalPath+'////').split('/');
+function RightslinkPopUp() {
+if (typeof(rightsLink) !== "undefined") {
+/* the xsl, which is needed to define the rightsLink, does not allow html output. 
+* this workaround replaces &amp; with & to get the url to work */ 
+rightsLink = rightsLink.replace(/\&amp;/g,'&');
+PopUp = window.open( rightsLink,  "Rightslink", "toolbar=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=650,height=550");
+}
+}
+function niceDate(fullDate)
+{
+if(fullDate==""||!fullDate)
+{
+return " ";
+}
+try
+{
+var strNow=new Date();
+var dateParts=fullDate.split(/[\/ :]/);
+var month=parseInt(dateParts[0])-1;
+var hr=dateParts[3];
+if(dateParts[5]=='PM' || (dateParts[6] && dateParts[6]=='PM'))
+{
+if(hr!=12)
+{
+hr=parseInt(hr)+parseInt(12);
+}
+}
+else if(hr==12)
+{
+hr=parseInt(hr)-parseInt(12);
+}
+var strDate=new Date(dateParts[2],month,dateParts[1],hr,dateParts[4]);
+}
+catch(e)
+{
+return fullDate;
+}
+return dateDiff(strNow,strDate,fullDate);
+}
+function dateDiff(date1,date2,fullDate){
+var niceDateStr='';
+var diff=new Date();
+var COMMENT = "the next line must be adjusted for DST: 5 for standard, 4 for DST";
+var tzo=(date1.getTimezoneOffset()/60)-4;
+diff.setTime(Math.abs(date1.getTime()-(date2.getTime()-(tzo*60*60*1000))));
+var timediff=diff.getTime();
+var years=Math.floor(timediff/(1000*60*60*24*365));
+timediff-=years*(1000*60*60*24*365);
+var days=Math.floor(timediff/(1000*60*60*24));
+timediff-=days*(1000*60*60*24);
+var hours=Math.floor(timediff/(1000*60*60));
+timediff-=hours*(1000*60*60);
+var mins=Math.floor(timediff/(1000*60));
+timediff-=mins*(1000*60);
+var secs=Math.floor(timediff/1000);
+timediff-=secs*1000;
+// If older than 7 days, return the full date 
+if(diff.getTime()>(7*24*60*60*1000)) {
+return fullDate;
+}
+if(years>0){
+niceDateStr=years+"y";
+if(days==0){
+niceDateStr+=" ago";}else{
+niceDateStr+=" "+days+"d ago";}}else if(days>0){
+niceDateStr=days+"d";
+if(hours==0||days>=7){
+niceDateStr+=" ago";}else if(days<7){
+niceDateStr+=" "+hours+"h ago";}}else if(hours>0){
+niceDateStr=hours+"h";
+if(mins==0){
+niceDateStr+=" ago";}else{
+niceDateStr+=" "+mins+"m ago";}}else if(mins>0){
+niceDateStr=mins+"m ago";}else{
+niceDateStr="<1m ago";}
+return niceDateStr;}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+window.open(theURL,winName,features);
+}
+</script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/jquery.popeye-2.0.4.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/jquery.tools.expose.min.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_inside2011/_j/video-modal.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/jquery-hover.js"></script>
+<!--<script type="text/javascript" name="cleanprintloader" src="http://cache-01.cleanprint.net/cp/ccg?divId=2625"></script>-->
+
+<script type="text/javascript">
+var mjx_req = 'www.usatoday.com/weather/news';
+
+var storyURL = mjx_req;
+var usat_analytics_url = mjx_req;
+</script>
+</head>
+<body id="body">
+<div class="skip"> <a href="#mainstory" title="Skip navigation and go to main content area">Skip to Main Content</a> </div>
+<div id="custom-doc" class="yui-t6">
+
+<div id="hd" class="home" role="banner">
+<div class="usat_masthead">
+<h1><a href="http://www.usatoday.com/">USA TODAY</a></h1>
+<h2><a href="http://www.usatoday.com/weather/index">Weather</a></h2>
+<ul class="pre-nav">
+<!-- EdSysObj ID="SSI" FRAGMENTID="41223466" appadmin --><ul class="pre-nav">
+<li class="search">
+<form method="get" action="http://www.usatoday.com/search/results" id="searchForm" onclick="s_objectID='usat_insidePage|masthead|logo|search'">
+<input type="text" id="googleSearch" name="q" class="search-enter" />
+<input id="site-search-submit" name="submit" type="image" src="http://i.usatoday.net/_fronts2010/_i/v2/search-go.png" value="Search" />
+</form>
+</li>
+<li class="subscribe"><a href="http://www.usatodaysubscribe.com/usatsubscribe" onclick="s_objectID='usat_insidePage|masthead|logo|subscribe';">Subscribe</a></li>
+<li class="mobile"><a href="http://www.usatoday.com/mobile/index.htm?POE=HEADER" onclick="s_objectID='usat_insidePage|masthead|logo|mobile';">Mobile</a></li>
+</ul><!-- /EdSysObj -->
+</ul>
+<!-- EdSysObj ID="SSI" FRAGMENTID="41426978" appadmin --><div id="usat_uas">
+<div id="USATRegister"></div>
+</div><!-- /EdSysObj -->
+<ul class="global-nav" role="navigation">
+<li class="nav-home"><a href="http://www.usatoday.com/" onclick="s_objectID='usat_insidePage|masthead|global-nav|home';">Home</a></li>
+<li class="nav-news"><a href="http://www.usatoday.com/news/" onclick="s_objectID='usat_insidePage|masthead|global-nav|news';">News</a></li>
+<li class="nav-travel"><a href="http://travel.usatoday.com" onclick="s_objectID='usat_insidePage|masthead|global-nav|travel';">Travel</a></li>
+<li class="nav-money"><a href="http://www.usatoday.com/money/" onclick="s_objectID='usat_insidePage|masthead|global-nav|money';">Money</a></li>
+<li class="nav-sports"><a href="http://www.usatoday.com/sports/" onclick="s_objectID='usat_insidePage|masthead|global-nav|sports';">Sports</a></li>
+<li class="nav-life"><a href="http://www.usatoday.com/life/" onclick="s_objectID='usat_insidePage|masthead|global-nav|life';">Life</a></li>
+<li class="nav-yourlife"><a href="http://yourlife.usatoday.com//" onclick="s_objectID='usat_insidePage|masthead|global-nav|yourlife';">Your Life</a></li>
+<li class="nav-tech"><a href="http://www.usatoday.com/tech/" onclick="s_objectID='usat_insidePage|masthead|global-nav|tech';">Tech</a></li>
+<li class="nav-weather"><a href="http://www.usatoday.com/weather/" onclick="s_objectID='usat_insidePage|masthead|global-nav|weather';">Weather</a></li>
+</ul>
+</div>
+<div id="usat_essentials_nav"> 
+<ul id="section-nav">
+<li class="sectionlabel">Weather:</li>
+<li class="navItem"><a href="http://www.usatoday.com/weather/forecast/us-states/us-states-index.htm">Weather Now</a>
+<ul class="dropdown-nav">
+<li class="first"> <a href="http://www.usatoday.com/weather/forecast/us-states/us-states-index.htm">U.S. Forecasts</a> </li>
+<li> <a href="http://www.usatoday.com/weather/forecast/wglobe.htm"> Int'l Forecasts</a> </li>
+<li> <a href="http://www.usatoday.com/weather/wext.htm"> Daily Highs and Lows</a> </li>
+</ul>
+</li>
+<span class="divider">|</span>
+<li class="navItem"><a href="http://www.usatoday.com/weather/default.htm#">Maps</a>
+<ul class="dropdown-nav">
+<li class="first"> <a href="http://www.usatoday.com/weather/fronts/latest-fronts-systems.htm">Current Weather</a> </li>
+<li> <a href="http://www.usatoday.com/weather/radpic/wrindex0.htm"> Radar</a> </li>
+<li> <a href="http://www.usatoday.com/weather/satpic/wsatusa.htm"> Satellite</a> </li>
+<li> <a href="http://www.usatoday.com/weather/wrain.htm"> Precipitation</a> </li>
+<li> <a href="http://www.usatoday.com/weather/temppic/wtempusa.htm"> Temperatures</a> </li>
+<li> <a href="http://www.usatoday.com/weather/tstormpic/wtstormusa.htm"> Thunderstorms</a> </li>
+<li> <a href="http://www.usatoday.com/weather/alertpic/walertusa.htm"> Alerts</a></li>
+</ul>
+</li>
+<span class="divider">|</span>
+<li class="navItem"><a href="http://www.usatoday.com/weather/stormcenter/index">Storm Center</a></li>
+<span class="divider">|</span>
+<li class="navItem"><a href="http://www.usatoday.com/weather/climate/index">Weather/Climate Science</a>
+<ul class="dropdown-nav">
+<li class="first"> <a href="http://www.usatoday.com/weather/climate/index"> Weather and Climate Science Home</a> </li>
+<li> <a href="http://www.usatoday.com/weather/climate/wclisci0.htm"> Climate Change</a> </li>
+<li> <a href="http://www.usatoday.com/weather/hurricane/hurricane-resources.htm"> Hurricanes</a> </li>
+<li> <a href="http://www.usatoday.com/weather/resources/2006-04-03-tornado-basics_x.htm"> Tornadoes</a> </li>
+<li> <a href="http://www.usatoday.com/weather/resources/basics/thunderstorms.htm"> Thunderstorms</a> </li>
+<li> <a href="http://www.usatoday.com/weather/resources/basics/wlightning.htm"> Lightning</a> </li>
+<li> <a href="http://www.usatoday.com/weather/whydro00.htm"> Floods and Droughts</a> </li>
+<li> <a href="http://www.usatoday.com/weather/wwinter0.htm"> Winter Weather</a> </li>
+<li> <a href="http://www.usatoday.com/weather/climate/2006-04-19-global-climate-patterns_x.htm">Climatology</a> </li>
+</ul>
+</li>
+<span class="divider">|</span>
+<li class="navItem"><a href="http://www.usatoday.com/weather/default.htm#">Photo Galleries</a>
+<ul class="dropdown-nav">
+<li class="first"> <a href="http://www.usatoday.com/community/photos/publicgallery.htm?plckGalleryID=540ec78d-9741-4a09-860a-ec833ede5866"> Reader submitted photos</a> </li>
+<li> <a href="http://mediagallery.usatoday.com/This-Week-in-Weather/G350" target="_blank">This week in weather</a> </li>
+</ul>
+</li>
+<span class="divider">|</span>
+<li class="navItem"><a href="http://www.usatoday.com/weather/wgraph0.htm">Interactive Graphics</a>
+<ul class="dropdown-nav">
+<li class="first"> <a href="http://www.usatoday.com/weather/resources/graphics/2008-10-15-atmospheric-optics-sun-dogs-pillars-halos-rainbows_N.htm"> Atmospheric optics</a> </li>
+<li><a href="http://www.usatoday.com/weather/resources/graphics/2008-09-25-el-nino-la-nina-affect-us-weather_N.htm"> El Nino / La Nina</a> </li>
+<li> <a href="http://www.usatoday.com/weather/environment/2007-10-08-fall-colors_N.htm"> Fall foliage</a> </li>
+<li> <a href="http://www.usatoday.com/weather/graphics/2008-04-14-global-warming-graphic_N.htm"> Global warming</a> </li>
+<li> <a href="http://www.usatoday.com/weather/storms/hurricanes/2011-hurricane-graphic.htm"> Hurricanes</a> </li>
+<li> <a href="http://www.usatoday.com/weather/resources/graphics/2008-10-29-lake-effect-snow-formation_N.htm"> Lake-effect snow</a> </li>
+<li> <a href="http://www.usatoday.com/weather/resources/graphics/2008-11-25-lakes-freeze-from-top-down_N.htm"> Lake freezing</a></li>
+<li> <a href="http://www.usatoday.com/weather/resources/graphics/2008-05-18-lightning-flash-graphic_N.htm"> Lightning</a> </li>
+<li> <a href="http://www.usatoday.com/life/graphics/natural_disasters/flash.htm"> Natural disasters</a></li>
+<li> <a href="http://www.usatoday.com/weather/graphics/tornadoes/flash.htm" onclick="window.open('','popup86','width=1015,height=700,left=0,top=0,resizable,scrollbars=no')" target="popup86"> Tornadoes</a> </li>
+<li> <a href="http://www.usatoday.com/weather/graphics/2007-12-11-winter-precipitation_N.htm"> Winter storms</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="leaderboard-ad ad">
+<banner position="Top728x90" size="728x90"></banner>
+</div>
+<div id="breakingNewsCont">
+<!--bn container-->
+</div>
+</div>
+<div id="content" role="main">
+
+<style type="text/css">
+body {
+margin: 0px !important;
+padding: 0px !important;
+}
+.afs_header {
+width: 239px;
+}
+#seriesWrap {
+font-size: 16px;
+}
+#seriesWrap a {
+font-weight: normal;
+}
+#seriesWrap p {
+margin-top: 1em;
+margin-bottom: 1em;
+}
+#footer p {
+text-align:center;
+}
+#largeTopper {
+margin: 10px 0;
+}
+</style>
+
+<div class="story" id="mainstory">
+
+<h1>August 2012 highs and lows</h1>
+<div class="info">
+<div class="byline_timestamp">
+
+<h3><span id="byLineTag" /></h3>
+
+<div id="updated">
+Updated <script type="text/javascript">document.write(niceDate("8/24/2012 7:18 PM"));</script>
+</div>
+</div>
+
+
+<div class="info-extras rounded">
+<div class="addthis_toolbox addthis_default_style">
+<ul class="info-extras-left">
+<li><div class="usat_comment_wrap">
+<a class="usat_comment btn" href="#uslPageReturn" style="text-indent:-10000px;">Comments</a>
+
+</div></li>
+<li><a class="addthis_button_facebook_like" fb:like:action="recommend" fb:like:width="125"></a></li> 
+<li><a class="addthis_button_tweet" tw:via="USATODAY" tw:url="http://usat.ly/J0po3u" tw:counturl="http://www.usatoday.com/weather/news/extremes/story/national-temperature-extremes/54875134/1"></a></li>
+</ul>
+<ul class="info-extras-right">
+<li><a class="addthis_button_email"><img src="http://i.usatoday.net/_inside2011/_i/_share/email.png" alt="" /></a></li>
+<li><a class="addthis_button_print"><img src="http://i.usatoday.net/_inside2011/_i/_share/print.png" alt="" /></a></li>
+<li><a class="addthis_button_compact"><img src="http://i.usatoday.net/_inside2011/_i/_share/plus.png" alt="" /></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+
+<!--========= HEADER ======= --><div><p class="firstParagraph">This page lists the daily national temperature extremes across the <a href="http://content.usatoday.com/topics/topic/Places,+Geography/Countries/United+States" title="More news, photos about USA">USA</a> and is usually updated Monday-Friday.</p><div class="inset"><div id="columnistMug"><div class="inset-weather">
+<div class="linksNotch-weather">
+<h2>Find a Forecast</h2>
+<div class="vaContent"> <a href="#"><img class="weather-logo" src="http://i.usatoday.net/_inside2011/_i/weather-logo.png" alt="The Weather Channel logo"></a>
+<p>Find your local weather with The Weather Channel zip-code lookup:</p>
+<div class="clear"></div>
+<div id="findAForecast">
+<form method="get" action="http://content.usatoday.com/weather/content/WeatherRequestHandler.ashx" name="frmFindforecast2">
+<div class="fafRight">
+<input type="text" class="input-text" name="txtSearchCriteria" maxlength="100" style="width:160px;" value="Enter ZIP or city" onFocus="this.value=''"/>
+<input type="submit" class="input-submit" name="btnGo" value="Go" />
+</div>
+</form>
+</div>
+<!--end findaForecast div--> 
+</div>
+<!--End vaContent div--> 
+</div>
+</div></div><div class="photo-block"><div class="ppy ppy1"><ul class="ppy-imglist"><li><a href="http://i.usatoday.net/weather/_photos/2012/01/04/August-2012-highs-and-lows-UD7O3PI-x-large.jpg"><img src="http://i.usatoday.net/weather/_photos/2012/01/04/August-2012-highs-and-lows-UD7O3PI-x.jpg" width="245" height="184" border="0" alt="A thermometer reads above 100 degrees before a baseball game in Cincinnati in June 2011." /></a><span class="ppy-extcaption"><p class="credit">By Joe Robbins, Getty Images</p><p>A thermometer reads above 100 degrees before a baseball game in Cincinnati in June 2011.</p></span></li></ul><div class="ppy-outer"><div class="ppy-stage" style="height:184px;"><div class="ppy-nav"><a class="ppy-switch-enlarge" title="Enlarge">Enlarge</a><a class="ppy-switch-compact" title="Close">Close</a></div></div></div><div class="ppy-caption"><span class="ppy-text"><p class="credit">By Joe Robbins, Getty Images</p><p>A thermometer reads above 100 degrees before a baseball game in Cincinnati in June 2011.</p></span></div></div></div><div class="ads-inarticle"><h2>Sponsored Links</h2><script type="text/javascript">adsonar_placementId=1549646;adsonar_pid=2624767;adsonar_ps=0;adsonar_zw=245;adsonar_zh=250;adsonar_jv='ads.adsonar.com';</script><script language="JavaScript" src="http://js.adsonar.com/js/adsonar.js"><!----></script></div></div><more><p class="inside-copy">All temperature information is from the <a href="More news, photos about National Weather Service" onclick="window.open('','popup729','width=770,height=483,left=0,top=0,resizable,scrollbars=yes')" target="popup729">National Weather Service</a>. Locations of each day's highs and lows are shown on the large USA TODAY newspaper weather page map. Temperatures are in degrees Fahrenheit.</p><p class="inside-copy"><b>—</b></p><p class="inside-copy"><b>For more information:</b></p><p class="inside-copy"><a href="http://www.usatoday.com/weather/wext0.htm" onclick="window.open('','popup729','width=770,height=483,left=0,top=0,resizable,scrollbars=yes')" target="popup729">List of U.S. temperature extremes since April 1995</a></p><p class="inside-copy"><a href="http://www.usatoday.com/weather/news/wext1.htm" onclick="window.open('','popup729','width=770,height=483,left=0,top=0,resizable,scrollbars=yes')" target="popup729">Rules determining national temperature extremes</a></p><p class="inside-copy"><a href="http://www.usatoday.com/weather/wheat7.htm" onclick="window.open('','popup729','width=770,height=483,left=0,top=0,resizable,scrollbars=yes')" target="popup729">Each state's high temperature record</a></p><p class="inside-copy"><a href="http://www.usatoday.com/weather/wcstates.htm" onclick="window.open('','popup729','width=770,height=483,left=0,top=0,resizable,scrollbars=yes')" target="popup729">Each state's low temperature record</a></p><p class="inside-copy"><b>—</b></p><p class="inside-copy"><b>—</b></p><p class="inside-copy"><b>—</b></p><p class="inside-copy"><b>Friday August 24</b></p><p class="inside-copy"><b>•High:</b></p><p class="inside-copy"><b>•Low:</b> 33 at Meacham, Ore., as of 8 a.m. ET</p><p class="inside-copy">—</p><p class="inside-copy"><b>Thursday August 23</b></p><p class="inside-copy"><b>•High:</b> 103 at Tacna, Ariz.</p><p class="inside-copy"><b>•Lows:</b> 30 at Eagle, Alaska (contiguous 48 states: 31 at Stanley, Idaho)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Wednesday August 22</b></p><p class="inside-copy"><b>•High:</b> 104 at Yuma, Ariz.</p><p class="inside-copy"><b>•Lows:</b> 29 at Eagle and Gulkana, Alaska (contiguous 48 states: 33 at Seneca, Ore.)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Tuesday August 21</b></p><p class="inside-copy"><b>•High:</b> 111 at <a href="http://content.usatoday.com/topics/topic/Lake+Havasu+City" title="More news, photos about Lake Havasu City">Lake Havasu City</a>, Ariz.</p><p class="inside-copy"><b>•Lows:</b> 32 at Koliganek, Alaska (contiguous 48 states: 34 at <a href="http://content.usatoday.com/topics/topic/West+Yellowstone" title="More news, photos about West Yellowstone">West Yellowstone</a>, Mont.)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Monday August 20</b></p><p class="inside-copy"><b>•High:</b> 114 at Lake Havasu City, Ariz.</p><p class="inside-copy"><b>•Low:</b> 32 at Tomahawk, Wis.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Sunday August 19</b></p><p class="inside-copy"><b>•Highs:</b> 110 at <a href="http://content.usatoday.com/topics/topic/Bullhead+City" title="More news, photos about Bullhead City">Bullhead City</a>, Ariz., and Needles, Calif.</p><p class="inside-copy"><b>•Low:</b> 32 at West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Saturday August 18</b></p><p class="inside-copy"><b>•Highs:</b> 106 at Laughlin, Nev., and Baker and Needles, Calif.</p><p class="inside-copy"><b>•Lows:</b> 30 at Gulkana, Alaska, and West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Friday August 17</b></p><p class="inside-copy"><b>•Highs:</b> 106 at <a href="http://content.usatoday.com/topics/topic/Paso+Robles" title="More news, photos about Paso Robles">Paso Robles</a> and <a href="http://content.usatoday.com/topics/topic/China+Lake" title="More news, photos about China Lake">China Lake</a>, Calif.</p><p class="inside-copy"><b>•Low:</b> 32 at West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Thursday August 16</b></p><p class="inside-copy"><b>•High:</b> 110 at Baker, Calif.</p><p class="inside-copy"><b>•Low:</b> 28 at Daniel, Wyo.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Wednesday August 15</b></p><p class="inside-copy"><b>•Highs:</b> 111 Lake Havasu City, Ariz., and Baker, Calif.</p><p class="inside-copy"><b>•Low:</b> 32 at West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Tuesday August 14</b></p><p class="inside-copy"><b>•Highs:</b> 117 at Bullhead City, Ariz., and Needles, Calif.</p><p class="inside-copy"><b>•Lows:</b> 33 at Eagle, Alaska, and Stanley, Idaho</p><p class="inside-copy">—</p><p class="inside-copy"><b>Monday August 13</b></p><p class="inside-copy"><b>•High:</b> 118 at Needles, Calif.</p><p class="inside-copy"><b>•Low:</b> 31 at Wisdom, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Sunday August 12</b></p><p class="inside-copy"><b>•Highs:</b> 117 at Bullhead City, Ariz., and Thermal, Calif.</p><p class="inside-copy"><b>•Low:</b> 29 at Stanley, Idaho</p><p class="inside-copy">—</p><p class="inside-copy"><b>Saturday August 11</b></p><p class="inside-copy"><b>•Highs:</b> 116 at Bullhead City and Maricopa, Ariz.</p><p class="inside-copy"><b>•Lows:</b> 29 at Barrow, Alaska (contiguous 48 states: 35 at Stanley, Idaho)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Friday August 10</b></p><p class="inside-copy"><b>•High:</b> 114 at Bullhead City, Ariz.</p><p class="inside-copy"><b>•Lows:</b> 30 at Barrow, Alaska (contiguous 48 states: 38 at <a href="http://content.usatoday.com/topics/topic/International+Falls" title="More news, photos about International Falls">International Falls</a> and Togo, Minn.)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Thursday August 9</b></p><p class="inside-copy"><b>•Highs:</b> 114 at Phoenix and Bullhead City, Ariz.</p><p class="inside-copy"><b>•Lows:</b> 33 at Bettles, Alaska (contiguous 48 states: 35 at Seneca, Ore.)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Wednesday August 8</b></p><p class="inside-copy"><b>•High:</b> 119 at Bullhead City, Ariz.</p><p class="inside-copy"><b>•Low:</b> 32 at Cooke City, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Tuesday August 7</b></p><p class="inside-copy"><b>•Highs:</b> 116 at Needles, Calif., and Bullhead City, Ariz.</p><p class="inside-copy"><b>•Low:</b> 34 at West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Monday August 6</b></p><p class="inside-copy"><b>•High:</b> 117 at <a href="http://content.usatoday.com/topics/topic/Ocotillo+Wells" title="More news, photos about Ocotillo Wells">Ocotillo Wells</a>, Calif.</p><p class="inside-copy"><b>•Lows:</b> 32 at Barrow, Alaska (contiguous 48 states: 39 at Truckee, Calif.)</p><p class="inside-copy">—</p><p class="inside-copy"><b>Sunday August 5</b></p><p class="inside-copy"><b>•High:</b> 112 at Bullhead City, Ariz.</p><p class="inside-copy"><b>•Low:</b> 30 at West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Saturday August 4</b></p><p class="inside-copy"><b>•High:</b> 114 at Tacna, Ariz.</p><p class="inside-copy"><b>•Low:</b> 28 at West Yellowstone, Mont.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Friday August 3</b></p><p class="inside-copy"><b>•High:</b> 114 at Guthrie, Okla.</p><p class="inside-copy"><b>•Lows:</b> 31 at Stanley, Idaho</p><p class="inside-copy">—</p><p class="inside-copy"><b>Thursday August 2</b></p><p class="inside-copy"><b>•High:</b> 114 at Tulsa, Okla.</p><p class="inside-copy"><b>•Low:</b> 31 at Chemult, Ore.</p><p class="inside-copy">—</p><p class="inside-copy"><b>Wednesday August 1</b></p><p class="inside-copy"><b>•Highs:</b> 115 at Chandler, Enid, and Okmulgee, Okla.</p><p class="inside-copy"><b>•Lows:</b> 32 at Truckee, Calif., and Minden, Nev.</p><p class="inside-copy"><b>—</b></p></more><div class="clear"><i><!--comment--></i></div></div>
+
+<div class="corrections">
+For more information about <a href="http://www.usatoday.com/marketing/questions.htm?POE=FOOTER#contentLicensingTop">reprints &amp; permissions</a>, visit our FAQ's. To report corrections and clarifications, contact Standards Editor <strong>Brent Jones</strong>. For publication consideration in the newspaper, send comments to <a href="mailto:letters@usatoday.com">letters@usatoday.com</a>. Include name, phone number, city and state for verification. To view our corrections, go to <a href="#">corrections.usatoday.com</a>.
+</div>
+<div class="bottom-tools">
+<p>Posted <script type="text/javascript">document.write(niceDate("7/15/2011 11:20 AM"));</script><span class="bottomPubStatus"> | Updated <script type="text/javascript">document.write(niceDate("8/24/2012 7:18 PM"));</script></span></p>
+<span class="right">
+<div class="share-bottom">
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_compact"><img src="http://i.usatoday.net/_inside2011/_i/_share/plus.png" /></a>
+<!--<a href="http://www.addthis.com/bookmark.php?v=250" class="addthis_button_compact">Share</a>-->
+</div>
+</div>
+</span>
+</div>
+<div id="usatRatings">
+<div class="OUTBRAIN" data-src="http://www.usatoday.com/weather/news/extremes/story/national-temperature-extremes/54875134/1" data-widget-id="AR_1" data-ob-template="gannett"></div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery.getScript("http://widgets.outbrain.com/outbrain.js");
+});
+</script>
+</div>
+<div class="corrections">We've updated the Conversation Guidelines. Changes include a brief review of the moderation process and an explanation on how to use the "Report Abuse" button. <a href="http://www.usatoday.com/community/conversation-guidelines.htm">Read more</a>.
+</div>
+
+
+
+<div id="pluck">
+<a name="uslPageReturn"></a> 
+<div id="uslComments">
+
+<div>
+ 
+<script src="http://sitelife.usatoday.com/ver1.0/Content/ua/scripts/pluckApps.js?skipCSS=true" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="http://sitelife.usatoday.com/ver1.0/USAT/pluck/pluck.css" />
+<link rel="stylesheet" type="text/css" href="http://sitelife.usatoday.com/ver1.0/USAT/pluck/comments/comments.css" />
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="http://sitelife.usatoday.com/ver1.0/USAT/pluck/pluck.ie6.css" />
+<link rel="stylesheet" type="text/css" href="http://sitelife.usatoday.com/ver1.0/USAT/pluck/comments/comments.ie6.css" />
+<![endif]--> 
+
+<pas:USAT_pluck_comments plckCommentOnKeyType="article" plckCommentOnKey="54875134.story"></pas:USAT_pluck_comments>
+
+</div>
+</div>
+</div>
+
+</div>
+<div id="rightrailNew">
+<div id="Adv4">
+<!-- write out featured video here -->
+</div>
+<div id="adContainer"> 
+<banner position="Poster3" size="300x250"></banner>
+<p>Advertisement</p>
+</div>
+<div class="mostpopular">
+<h3 class="rounded mp-label">Most Popular</h3>
+<h4>Stories<span class="transcript-icon"></span></h4>
+<div id="mostpopularstories"></div>
+<ul>
+<li><a href="http://www.usatoday.com/weather/hurricane/story/2012-08-26/isaac-approaches-florida-keys/57324698/1?csp=ip" title="Isaac drenches Haiti, Cuba, heads toward Florida" onclick="s_objectID='usat_rightContent_01|MostPopular|popular-weather|1'">Isaac drenches Haiti, Cuba, heads toward...</a></li>
+<li><a href="http://www.usatoday.com/weather/storms/hurricanes/story/2012-08-25/issac-storm-hurricane/57300368/1?csp=ip" title="Isaac drenches Haiti, Cuba, heads toward Florida" onclick="s_objectID='usat_rightContent_01|MostPopular|popular-weather|2'">Isaac drenches Haiti, Cuba, heads toward...</a></li>
+<li><a href="http://www.usatoday.com/weather/storms/hurricanes/story/2012-08-23/hurricane-forecast-tracker-map/57248916/1?csp=ip" title="Interactive graphic: Track the hurricanes of 2012" onclick="s_objectID='usat_rightContent_01|MostPopular|popular-weather|3'">Interactive graphic: Track the hurricanes...</a></li>
+<li><a href="http://www.usatoday.com/weather/storms/hurricanes/story/2012-08-24/tropical-storm-isaac/57283292/1?csp=ip" title="Tropical Storm Isaac aims for vulnerable Haiti" onclick="s_objectID='usat_rightContent_01|MostPopular|popular-weather|4'">Tropical Storm Isaac aims for vulnerable...</a></li>
+<li><a href="http://www.usatoday.com/weather/storms/hurricanes/story/2012-08-23/tropical-storm-isaac-caribbean-florida/57237618/1?csp=ip" title="Isaac heads for Hispaniola, could threaten Florida" onclick="s_objectID='usat_rightContent_01|MostPopular|popular-weather|5'">Isaac heads for Hispaniola, could threaten...</a></li>
+</ul>
+<h4>Videos<span class="video-icon"></span></h4>
+<ul><li><a href="http://www.usatoday.com/video/1802764543001" title="New evidence in Amelia Earhart's death" onclick="s_objectID='usat_insidePage|MostPopular|popular-videos|1'">New evidence in Amelia Earhart's death</a></li><li><a href="http://www.usatoday.com/video/1804444025001" title="Neil Armstrong talks about space race" onclick="s_objectID='usat_insidePage|MostPopular|popular-videos|2'">Neil Armstrong talks about space race</a></li><li><a href="http://www.usatoday.com/video/1799143250001" title="Dad defends pregnant daughter's accused murderer" onclick="s_objectID='usat_insidePage|MostPopular|popular-videos|3'">Dad defends pregnant daughter's accused murderer</a></li></ul><ul class="addPopularVideos"><li><a href="http://www.usatoday.com/video/1804424208001" title="Neil Armstrong, 1st man on the moon, dies" onclick="s_objectID='usat_insidePage|MostPopular|popular-videos|4'">Neil Armstrong, 1st man on the moon, dies</a></li><li><a href="http://www.usatoday.com/video/1802852079001" title="Isaac gains strength, shifts west" onclick="s_objectID='usat_insidePage|MostPopular|popular-videos|5'">Isaac gains strength, shifts west</a></li></ul>
+<h4>Photos<span class="photo-icon"></span></h4>
+<li><a href="http://mediagallery.usatoday.com/This-week-in-weather/G350?csp=ipmpg" title="The week in weather" onclick="s_objectID='usat_insidePage|MostPopular|popular-photos|1'">The week in weather</a></li><li><a href="http://mediagallery.usatoday.com/Tropical+Storm+Isaac+swirls+in+the+Gulf/G4275?csp=ipmpg" title="Tropical Storm Isaac swirls in the Gulf" onclick="s_objectID='usat_insidePage|MostPopular|popular-photos|2'">Tropical Storm Isaac swirls in the Gulf</a></li><li><a href="http://mediagallery.usatoday.com/Summer+heat/G4045?csp=ipmpg" title="Summer heat" onclick="s_objectID='usat_insidePage|MostPopular|popular-photos|3'">Summer heat</a></li></ul><ul class="addPopularPhotos"><li><a href="http://mediagallery.usatoday.com/Drought+hits+the+Mississippi+River/G4166?csp=ipmpg" title="Drought hits the Mississippi River" onclick="s_objectID='usat_insidePage|MostPopular|popular-photos|4'">Drought hits the Mississippi River</a></li><li><a href="http://mediagallery.usatoday.com/Deadly+storms+leave+damage+in+East/G4082?csp=ipmpg" title="Deadly storms leave damage in East" onclick="s_objectID='usat_insidePage|MostPopular|popular-photos|5'">Deadly storms leave damage in East</a></li>
+</div>
+
+<!-- EdSysObj ID="SSI" FRAGMENTID="41223474" rberthol --><div class="promotion">
+<div class="rounded">
+<h3>Most Popular E-mail Newsletter</h3>
+</div>
+<div class="logo"><a href="http://reg.e.usatoday.com?csp=MostPopnotch" onclick="s_objectID='usat_insidePage|emailsignuppromo|logo'"><img src="http://i.usatoday.net/_inside2011/_i/most-pop-logo.gif"></a></div>
+<h4>Sign up to get:</h4>
+<h1>Top viewed stories, photo galleries and community posts of the day</h1>
+<ul>
+<li class="first">Most popular right now:</li>
+<li><script type="text/javascript" src="http://content.usatoday.net/feed/0d488516-1c13-4e53-9651-328b86dead7e"></script></li>
+</ul>
+<a href="http://reg.e.usatoday.com?csp=MostPopnotch" onclick="s_objectID='usat_insidePage|emailsignuppromo|bottom'"><img src="http://i.usatoday.net/_inside2011/_i/most-pop-signup.jpg"></a>
+</div><!-- /EdSysObj -->
+<div class="editorialPromo">
+<h3><a href="http://mediagallery.usatoday.com/This-week-in-weather/G350">Photo Gallery: The week in weather</a></h3>
+<a href="http://mediagallery.usatoday.com/This-week-in-weather/G350"><img src="http://www.usatoday.com/_common/_includes/_inside2011/_promo/promoimages/2011/weather/brazil-promomanual.jpg" alt="Fiat 500"></a>
+<p>The week's best weather photos from around the world.</p>
+<a class="sectionLink" href="http://www.usatoday.com/weather/stormcenter/default.htm"><span class="sectionLinkHead">Weather:</span> Storm Center</a>
+</div>
+</div>
+<div class="ads-articlebottom">
+<h2>Sponsored Links</h2>
+<script type="text/javascript">adsonar_placementId=1549644;adsonar_pid=2624767;adsonar_ps=0;adsonar_zw=630;adsonar_zh=90;adsonar_jv='ads.adsonar.com';</script>
+<script language="JavaScript" src="http://js.adsonar.com/js/adsonar.js"></script>
+</div>
+<div id="footer"> 
+<div id="usat-footer-01"> 
+<!-- EdSysObj ID="SSI" FRAGMENTID="41224830" appadmin --><div class="usat_footer_01">
+<h5>USA TODAY Digital Services</h5>
+<ul>
+<li class="no-border"><a href="http://www.usatoday.com/mobile/index.htm?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav|services|digital|1';">Mobile</a></li>
+<li><a href="http://email.usatoday.com/" onclick="s_objectID='usat_insidePage|footernav|services|digital|2';">E-Newsletters</a></li>
+<li><a href="http://content.usatoday.com/marketing/rss/index.aspx?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav|services|digital|3';">RSS</a></li>
+<li><a href="http://twitter.usatoday.com  " onclick="s_objectID='usat_insidePage|footernav|services|digital|4';">Twitter</a></li>
+<li><a href="http://content.usatoday.com/marketing/rss/index.aspx#podcast" onclick="s_objectID='usat_insidePage|footernav|services|digital|5';">Podcasts</a></li>
+<li><a href="http://www.usatoday.com/community/widgets/index.htm" onclick="s_objectID='usat_insidePage|footernav|services|digital|6';">Widgets</a></li>
+<li><a href="http://www.usatodaysubscribe.com/eeservice" onclick="s_objectID='usat_insidePage|footernav|services|digital|7';">e-Edition</a></li>
+<li><a href="http://www.usatoday.com/ipad" onclick="s_objectID='usat_insidePage|footernav|services|digital|17';"> USA TODAY for iPad</a></li>
+<li><a href="http://www.amazon.com/USA_TODAY/dp/B001KBZ3D2/ref=o_disp_017_129_242_99_035&amp;tag=partnerlink1-20" onclick="s_objectID='usat_insidePage|footernav|services|digital|8';">Kindle Edition</a></li>
+<!--<li><a href="http://www.usatoday.com/printedition/news/index.htm?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav|services|digital|9';">Print Edition</a></li>-->
+<li><a href="http://www.usatodaysubscribe.com/usatsubscribe" onclick="s_objectID='usat_insidePage|footernav|services|digital|10';">Subscribe to Home Delivery</a></li>
+</ul>
+<ul>
+<li class="no-border"><a href="http://www.usatoday.com/marketing/questions.htm?POE=Footer#reprints" onclick="s_objectID='usat_insidePage|footernav|services|digital|11';">Reprints &amp; Permissions</a></li>
+<li><a href="http://content.usatoday.com/topics/index" onclick="s_objectID='usat_insidePage|footernav|services|digital|12';">USA TODAY Topics</a></li>
+<li><a href="http://content.usatoday.com/topics/ReporterList" onclick="s_objectID='usat_insidePage|footernav|services|digital|13';">Reporter Index</a></li>
+<li><a href="http://www.usatoday.com/news/Corrections-and-clarifications.htm" onclick="s_objectID='usat_insidePage|footernav|services|digital|14';">Corrections/Clarifications</a></li>
+<li><a href="http://www.usatoday.com/marketing/feedback.htm?POE=Footer" onclick="s_objectID='usat_insidePage|footernav|services|digital|15';">Contact Us</a></li>
+<li><a href="http://pqasb.pqarchiver.com/USAToday/search.html?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav|services|digital|16';">Archives</a></li>
+</ul>
+</div><!-- /EdSysObj -->
+</div>
+<div id="usat_Bottom728x90" class="footer.ad"><banner position="Bottom728x90" size="728x90"></banner></div>
+<div id="usat-footer-02"> 
+<!-- EdSysObj ID="SSI" FRAGMENTID="41223458" appadmin --><div class="float-inner">
+<ul class="usat_footer_02">
+<li class="no-border"><a href="http://www.usatoday.com/default.htm" class="ssts_home" onclick="s_objectID='usat_insidePage|footernav_02|nav|home';">Home</a></li>
+<li><a href="http://www.usatoday.com/news/default.htm" class="ssts_news" onclick="s_objectID='usat_insidePage|footernav_02|nav|news';">News</a></li>
+<li><a href="http://travel.usatoday.com/" class="ssts_travel" onclick="s_objectID='usat_insidePage|footernav_02|nav|travel';">Travel</a></li>
+<li><a href="http://www.usatoday.com/money/default.htm" class="ssts_money" onclick="s_objectID='usat_insidePage|footernav_02|nav|money';">Money</a></li>
+<li><a href="http://www.usatoday.com/sports/default.htm" class="ssts_sports" onclick="s_objectID='usat_insidePage|footernav_02|nav|sports';">Sports</a></li>
+<li><a href="http://www.usatoday.com/life/default.htm"  class="ssts_life" onclick="s_objectID='usat_insidePage|footernav_02|nav|life';">Life</a></li>
+<li><a href="http://www.usatoday.com/tech/default.htm" class="ssts_tech" onclick="s_objectID='usat_insidePage|footernav_02|nav|tech';">Tech</a></li>
+<li class="last"><a href="http://www.usatoday.com/weather/default.htm" class="ssts_weather" onclick="s_objectID='usat_insidePage|footernav_02|nav|weather';">Weather</a></li>
+</ul>
+<ul class="usat_footer_03">
+<li class="no-border"><strong>Visit our Partners:</strong></li>
+<li class="no-border"><a href="http://www.usaweekend.com/usatoday.html?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav_03|partners|1';">USA WEEKEND</a></li>
+<!--<li><a href="http://www.usatoday.com/marketing/media_kit/live/brand.html?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav_03|partners|2';">USA TODAY LIVE</a></li>-->
+<li><a href="http://www.mysportsweekly.com/cs" onclick="s_objectID='usat_insidePage|footernav_03|partners|3';">Sports Weekly</a></li>
+<li><a href="http://www.usatoday.com/educate/homesplash.htm?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav_03|partners|5';">Education</a></li>
+<li><a href="http://www.space.com/?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav_03|partners|6';">Space.com</a></li>
+<li><a href="http://traveltips.usatoday.com" onclick="s_objectID='usat_insidePage|footernav_03|partners|7';">Travel Tips</a></li>
+</ul>
+</div>
+<ul class="usat_footer_04">
+<li class="no-border"><a href="http://www.usatoday.com/marketing/feedback.htm?POE=FOOTER" onclick="s_objectID='usat_insidePage|footernav_04|misc|1';">Contact us</a></li>
+<li><a href="http://www.usatoday.com/marketing/media_kit/index.html" onclick="s_objectID='usat_insidePage|footernav_04|misc|2';">Advertise</a></li>
+<li><a href="http://www.usatoday.com/marketing/media_kit/pressroom/press_releases_home.html" onclick="s_objectID='usat_insidePage|footernav_04|misc|3';">Pressroom</a></li>
+<!--<li><a href="http://www.usatoday.com/marketing/media_lounge/index.html" onclick="s_objectID='usat_insidePage|footernav_04|misc|4';">Media Lounge</a></li>-->
+<li><a href="http://www.careerbuilder.com/csh/search.aspx?csh=cshUSAToday" onclick="s_objectID='usat_insidePage|footernav_04|misc|5';">Jobs</a></li>
+<li><a href="http://www.usatoday.com/marketing/faq.htm" onclick="s_objectID='usat_insidePage|footernav_04|misc|6';">FAQ</a></li>
+<li><a href="http://www.usatoday.com/marketing/questions.htm?POE=FOOTER#contentLicensingTop" onclick="s_objectID='usat_insidePage|footernav_04|misc|7';">Reprints/Permissions</a></li>
+<li><a href="http://www.usatoday.com/marketing/privacy-notice.htm" onclick="s_objectID='usat_insidePage|footernav_04|misc|8';">Privacy Notice/Your California Privacy Rights</a></li>
+<li><a href="http://www.usatoday.com/marketing/privacy-notice.htm#adserving" onclick="s_objectID='usat_insidePage|footernav_04|misc|11';">Ad Choices</a></li>
+<li><a href="http://www.usatoday.com/marketing/tos.htm" onclick="s_objectID='usat_insidePage|footernav_04|misc|9';">Terms of Service</a></li>
+<li><a href="http://www.usatoday.com/howtofind-cat.htm" onclick="s_objectID='usat_insidePage|footernav_04|misc|10';">Site Index</a></li>
+</ul>
+<p class="usat_footer_05">&copy; 2012 USA TODAY, a division of <a href="http://www.gannett.com/" onclick="s_objectID='usat_insidePage|footernav_05|gannett|1';">Gannett Co. Inc.</a></p><!-- /EdSysObj -->
+</div>
+<div id="usat-footer-03"> 
+</div>
+</div>
+</div>
+</div>
+<banner position="PageCount" size="1x1"></banner>
+
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/usatv2.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/_omniture/omniturebase.js"></script>
+<script type="text/javascript" src="http://content.usatoday.com/asp/usataj/usataj.js"></script>
+<script type="text/javascript" src="http://www.usatoday.com/asp/uas3/uas.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/gel2011/lib/core/core.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+usatAuth.initialSetup(); 
+});
+</script>
+<script type="text/javascript">
+GEL.config.AdPage = mjx_req;
+GEL.config.AdServer = "gannett.gcion.com";
+GEL.config.AdNetworkId = "5111.1";
+GEL.thepage.initializer.addInitRoutine({
+name: "banners",
+namespace: "widget.AdBanner",
+callback: function () {
+var loader = GEL.thepage.bannerLoader = new GEL.widget.AdBanner.Locator();
+loader.findBanners();
+loader.loadBanners(function () { return this.config.loadOnInit; });
+},
+priority: 10
+});
+GEL.thepage.initializer.init();
+</script>
+<script type="text/javascript">
+var addthis_config = 
+{ 
+username: 'usatshare',
+data_track_clickback:false,
+services_expanded: 'digg,email,facebook,fark,gmail,googlebuzz,linkedin,mixx,posterous,reddit,stumbleupon,tumblr,twitter,buzz',
+services_compact: 'digg,email,facebook,fark,gmail,googlebuzz,linkedin,mixx,posterous,reddit,stumbleupon,tumblr,twitter,buzz'
+};
+var addthis_share = 
+{
+templates: {
+twitter: '{{title}} {{url}} via @USATODAY'
+},
+url_transforms : { 
+shorten: {
+twitter: 'bitly'
+}
+},
+shorteners : {
+bitly : {
+login: 'usatoday',
+apiKey: 'R_fa9e62b61f9dc04aa65ea7c615e5d4f0' 
+}
+}
+};
+</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+<script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/_pluck/pluck4.js"></script>
+</body>
+</html>

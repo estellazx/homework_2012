@@ -1,0 +1,6 @@
+Name: Shun Zhang
+EID : sz4554
+
+running time is 5.71 hours for variation 1
+running time is 7.55 hours for variation 2
+Base memorry: 900M; 1 CPU; in VirtualBox

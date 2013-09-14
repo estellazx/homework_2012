@@ -1,0 +1,544 @@
+<base href="http://www.anat.dote.hu/">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>anatomia</title>
+        <base href="http://www.anat.dote.hu/" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="javascripts/shadowbox/shadowbox.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	 <script src="javascripts/shadowbox/shadowbox.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            Shadowbox.init();
+        </script>
+        <script src="javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <script src="javascripts/education.js" type="text/javascript" charset="utf-8"></script>
+        <!--[if IE 6]>
+          <link rel="stylesheet" href="stylesheets/style.ie6.css" type="text/css" media="screen" charset="utf-8"/>
+          <script src="javascripts/image.js" type="text/javascript" charset="utf-8"></script>
+        <![endif]--> 
+        <!--[if gt IE 6]>
+          <link rel="stylesheet" href="stylesheets/style.ie8.css" type="text/css" media="screen" charset="utf-8"/>
+          <script src="javascripts/image.js" type="text/javascript" charset="utf-8"></script>
+        <![endif]--> 
+    </head>
+
+    <body>
+        <div class="main-container">
+            <div class="sheet-shadow-container">
+                <div class="sheet-left-top-shadow"></div>
+                <div class="sheet-container">
+                    <div class="header-container">
+                        <div class="header-left-container">
+                            <h2><a href="/hu">Debreceni Egyetem<br/>Orvos- és Egészségtudományi Centrum</a></h2>
+                            <h1><a href="/hu">Anatómiai, Szövet- és Fejlődéstani Intézet</a></h1>
+                            <div class="search-container">
+                                <form method="post" action="kereses">
+                                    <input type="text" name="phrase" style="width:140px" />
+                                    <input type="submit" name="search" value="Keresés" class="search button" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header-right-container">
+                            <div class="date">
+                                2012. augusztus 26.                            </div>
+                            <!--
+                            <ul class="top-menu">
+                                <li><a href="hu/koszonto">Köszöntő</a></li>
+                                <li><a href="hu/munkatarsak">Munkatársak</a></li>
+                            </ul>
+                            -->
+                            <ul class="top-menu url-menu"><li><a href="http://www.anat.dote.hu/hu"><img src="http://www.anat.dote.hu/images/hu.gif" alt="Magyar" title="Magyar" /></a></li><li><a href="http://www.anat.dote.hu/en"><img src="http://www.anat.dote.hu/images/en.gif" alt="English" title="English" /></a></li></ul>                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="left-panel-container">
+                            <ul id="nav" class="left-menu">
+                                <li><a href="hu/">Köszöntő</a></li>
+                                <li><a href="hu/bemutatkozas">Az intézet története</a></li>
+                                <li><a href="hu/munkatarsak">Munkatársak</a></li>
+                                <li><a href="hu/kutatas">Kutatás</a></li>
+                                <li><a href="hu/tudomanyos_hirek">Tudományos hírek</a></li>
+                                <li class="education" id="menu_0001">
+                                    <a href="javascript:;" title="Kattintson a kibontáshoz...">Oktatás &raquo;</a>
+                                    <ul>
+                                        <li id="menu_0002">
+                                            <span title="Kattintson a kibontáshoz...">Képzési formák &raquo;</span>
+                                            <ul style="margin: 0px;">
+                                                <li id="menu_0003">
+                                                    <span title="Kattintson a kibontáshoz...">ÁOK &raquo;</span>
+                                                    <ul>
+                                                        <li id="menu_0004">
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia I &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/300">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/301">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/302">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia II &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/310">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/311">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/312">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Neurobiológia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/320">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/321">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/322">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">FOK &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia I &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/400">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/401">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/402">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia II &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/410">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/411">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/412">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Neurobiológia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/420">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/421">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/422">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">Gyógyszerész &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/500">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/501">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/502">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Neurobiológia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/510">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/511">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/512">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">Gyógytornász &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia I &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/600">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/601">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/602">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia II &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/610">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/611">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/612">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <span title="Kattintson a kibontáshoz...">Népeg. ell. &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Anatómia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/250">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/251">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/252">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <span title="Kattintson a kibontáshoz...">OLKDA &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Neuroanatómia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/700">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/701">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/702">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Funkcionális neuroanatómiai vizsgálati módszerek &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/710">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/711">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/712">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Molekuláris morfológiai laboratóriumi gyakorlat &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/720">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/721">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/722">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <span title="Kattintson a kibontáshoz...">Biológus BSc &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Hisztológia, molekuláris embriológia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/800">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/801">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/802">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Mikroszkópia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/810">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/811">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/812">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">Molekuláris Biológus MSc &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Funkcionális neuroanatómia &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/900">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/901">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/902">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Modern neurobiológiai vizsgálómódszerek &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/910">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/911">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/912">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Hisztokémia és hisztotechnika &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/920">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/921">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/922">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Humán szövet- és fejlődéstan I &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/930">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/931">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/932">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Humán szövet- és fejlődéstan II &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/940">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/941">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/942">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">A látás funkcionális anatómiája &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/950">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/951">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/952">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Az agytörzs funkcionális anatómiája &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/960">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/961">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/962">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Az idegi szabályozás válogatott kérdései: neuronok és neuronhálózatok modellezése &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/970">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/971">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/972">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Gerincvelő szintű nociceptív szenzoros ingerületfeldolgozás ép és kóros körülmények között &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/980">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/981">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/982">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">Elektív kurzusok &raquo;</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Az agytörzs funkcionális anatómiája &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1000">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1001">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1002">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">A látás funkcionális anatómiája &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1010">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1011">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1012">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Az idegi szabályozás válogatott kérdései: neuronok és neuronhálózatok modellezése &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1020">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1021">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1022">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Gerincvelő szintű nociceptív szenzoros ingerületfeldolgozás ép és kóros körülmények között &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1030">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1031">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1032">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Tanulás és memória &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1040">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1041">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1042">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Computer Human Anatomy &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1050">Oktatási tematika</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1051">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1052">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span title="Kattintson a kibontáshoz...">Szövettan haladóknak &raquo;</span>
+                                                            <ul>
+                                                                <li><a href="/hu/oktatas/megjelenites/1060">Oktatási tematikák</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1061">Számonkérés</a></li>
+                                                                <li><a href="/hu/oktatas/megjelenites/1062">Segédanyagok</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/hu/oktatas/megjelenites/155">Órarend</a></li>
+                                        <li><a href="/hu/oktatas/megjelenites/156">Csoportbeosztás</a></li>
+                                        <li><a href="/hu/tanulmanyi_felelosok">Tanulmányi felelősök</a></li>
+                                        <li><a href="/hu/oktatasi_informaciok">Oktatási információk</a></li>
+                                        <li><a href="/hu/oktatas/megjelenites/160">Szabályzatok</a></li>
+                                        <li><a href="/hu/oktatas/megjelenites/161">Krompecher verseny</a></li>
+                                        <li><a href="/hu/tudomanyos_diakkor/lista">Diplomamunka/TDK-témák</a></li>
+                                        <li><a href="/hu/oktatas/megjelenites/162">Neptun link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/hu/tudomanyos_diakkor">Tudományos diákkör</a></li>
+                                                                    <li><a href="/hu/tetem_felajanlas">Tetem felajánlás</a></li>
+                                <li class="education">
+                                    <a href="javascript:;" title="Kattintson a kibontáshoz...">Minőségirányítási rendszer &raquo;</a>
+                                    <ul>
+                                        <li><a href="/hu/munkatarsak/megjelenites/36" title="MICS vezető, Juhász Tamás">MICS vezető</a></li>
+                                        <li>
+                                            <span title="Kattintson a kibontáshoz...">Szervezeti egység dokumentumai &raquo;</span>
+                                            <ul>
+                                                <li><a href="/uploads/documents/mukodesi_rend.pdf" title="Működési rend - Letöltés">Működési rend</a></li>
+                                                <li><a href="/uploads/documents/kiserleti_allatok_tartasa.pdf" title="Kísérleti állatok tartásának szabályai - Letöltés">Kísérleti állatok tartásának szabályai</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span title="Kattintson a kibontáshoz...">Hallgatói feedback &raquo;</span>
+                                            <ul>
+                                                <li><a href="/uploads/documents/velemeny_eloado_magyar.pdf" title="Előadó véleményezése - Letöltés">Előadó véleményezése</a></li>
+                                                <li><a href="/uploads/documents/velemeny_gyakorlatvezeto_magyar.pdf" title="Gyakorlatvezető véleményezése - Letöltés">Gyakorlatvezető véleményezése</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                                           
+                                                                
+                                <li class="education">
+                                    <a href="javascript:;" title="Kattintson a kibontáshoz...">Szolgáltató Laboratóriumok &raquo;</a>
+                                    <ul>
+                                        <li>
+                                            <span title="Kattintson a kibontáshoz...">Elektronmikroszkópos Szolgáltató Laboratórium &raquo;</span>
+                                            <ul>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">Munkatársak &raquo;</span>
+                                                    <ul>
+                                                        <li><a href="/hu/munkatarsak/megjelenites/19" title="Dr. Antal Miklós">Dr. Antal Miklós, a laboratórium vezetője</a></li>
+                                                        <li><a href="/hu/munkatarsak/megjelenites/37" title="Kis Gréta">Kis Gréta</a></li>
+                                                        <li><a href="/hu/munkatarsak/megjelenites/26" title="Papp Lajosné">Papp Lajosné</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="/uploads/documents/elekt_szolg_lab_mukodesi_szabalyzat_magyar.pdf" title="Működési szabályzat - Letöltés">Működési szabályzat</a></li>
+                                                <li><a href="/uploads/documents/elekt_szolg_lab_muszerek_magyar.pdf" title="Műszerek - Letöltés">Műszerek</a></li>
+                                                <li><a href="/uploads/documents/elekt_szolg_lab_szolgaltatasok_magyar.pdf" title="Szolgáltatások - Letöltés">Szolgáltatások</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span title="Kattintson a kibontáshoz...">Molekuláris Anatómiai Képalkotó Laboratórium &raquo;</span>
+                                            <ul>
+                                                <li>
+                                                    <span title="Kattintson a kibontáshoz...">Munkatársak &raquo;</span>
+                                                    <ul>
+                                                        <li><a href="/hu/munkatarsak/megjelenites/19" title="Dr. Antal Miklós">Dr. Antal Miklós, a laboratórium vezetője</a></li>
+                                                        <li><a href="/hu/munkatarsak/megjelenites/14" title="Hegyi Zoltán">Hegyi Zoltán</a></li>
+                                                        <li><a href="/hu/munkatarsak/megjelenites/39" title="Hegedűs Krisztina">Hegedűs Krisztina</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href='/uploads/documents/mol_anat_kep_lab_mukodesi_szabalyzat_magyar.pdf' title='Működési szabályzat - Letöltés'>Működési szabályzat</a></li>
+                                                <li><a href='/uploads/documents/mol_anat_kep_lab_muszerek_magyar.pdf' title='Műszerek - Letöltés'>Műszerek</a></li>
+                                                <li><a href='/uploads/documents/mol_anat_kep_lab_szolgaltatasok_magyar.pdf' title='Szolgáltatások - Letöltés'>Szolgáltatások</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="logo-container">
+                                <a href="http://www.unideb.hu"><img src="images/de-logo.jpg" alt="Debreceni Egyetem" title="Debreceni Egyetem" /></a>
+                            </div>
+                        </div>
+                                                    <div class="content-container">
+                            <div class="article show">
+                                <h1>Köszöntő</h1>
+                                                                                                    <div class="body">
+                                        <p>
+	<img align="left" alt="" height="269" hspace="" src="/uploads/images/koszonto/koszonto.jpg" vspace="" width="180" />Üdvözlöm a Debreceni Egyetem, Orvos- és Egészségtudományi Centrum, Anatómiai, Szövet- és Fejlődéstani Intézet honlapján. Remélem, hogy honlapunk segít majd Önnek abban, hogy betekintést nyerjen Intézetünk életébe, és hasznos ismeretekkel gazdagodjon az Intézetünkben folyó oktató-nevelő és tudományos munkával kapcsolatban.<br />
+	<br />
+	A nálunk dolgozó kutatók és oktatók olyan kollegiális, alkotó közösséget formálnak, amely elsődleges feladatának tekinti, hogy stimuláló intellektuális környezetet teremtsen az Intézet minden munkatársa és a nálunk tanuló egyetemi és doktorandusz hallgatók számára egyaránt.<br />
+	<br />
+	Hallgatóinknak az emberi test szerkezetével, a sejtek, a szövetek, a szervek és a szervrendszerek szerveződésével, és a perifériás és központi idegrendszer felépítésével kapcsolatos elméleti és gyakorlati ismereteket tanítunk. Azon kívül, hogy átfogó képet adunk az emberi test szerkezetéről, a szerveződés molekuláris szintjétől a szervrendszerek felépítésének szintjéig, a morfológiai tudományok tanítása során folyamatosan hangsúlyozzuk a morfológiai ismeretek funkcionális és klinikai vonatkozásait. Arra törekszünk, hogy a jövő orvosait, egészségügyi dolgozóit és orvos-biológiai kutatóit olyan funkcionális anatómiai ismeretekkel és készségekkel ruházzuk fel, amelyeknek a birtokában képesek lesznek megfelelni a huszonegyedik század kihívásainak.<br />
+	<br />
+	Az Anatómiai, Szövet- és Fejlődéstani Intézet mindig is a Debreceni Egyetem egyik meghatározó kutatóintézete volt, és ma is az. Tudományos munkánk kiváló és nemzetközileg is elismert elődeink által megteremtett szilárd alapokon nyugszik. Elődeink nyomdokain haladva, minden törekvésünk arra irányul, hogy a tudomány legfontosabb kérdéseire keresve a választ, új felismerésekkel gazdagítsuk a sejt-, szövet- és fejlődésbiológia és az idegtudományok egyes területeit. Az Intézet laboratóriumai a legmodernebb kutatási berendezésekkel vannak felszerelve. A munka hatékonyságát segítik a munkacsoportok közötti folyamatos és hatékony együttműködések is, ami lehetővé teszi, hogy vizsgálatainkat széleskörű módszertani megközelítéssel végezhessük. Munkánk eredményességének azonban, mindemellett és elsősorban, kollégáink lelkesedése és a tudományos kutatás iránti elkötelezettsége az igazi záloga. <br />
+	<br />
+	Kedves Látogató! A honlapunk számos adattal fog szolgálni Önnek az Intézetünk munkatársairól, oktató-nevelő és tudományos tevékenységünkről. Kívánok Önnek kellemes perceket a honlapunk olvasása közben. <br />
+	<br />
+	<br />
+	Dr. Antal Miklós<br />
+	egyetemi tanár<br />
+	intézet igazgató</p>
+                                                                                <div class="clear"></div>
+                                    </div>
+                                                            </div>
+                                                        <div class="right-panel-container">
+                                <div class="items-container">
+                                                                    <div class="latest-news-item">
+                                    <div class="title">Emlős gerincvelő motoros neuronhálózatainak morfológiai vizsgálata című egyetemi doktori (Ph.D.) értekezés nyilvános előzetes vitája</div>
+                                    <div class="lead"></div>
+                                    <div class="read_more"><a href="hu/aktualis_informaciok/megjelenites/1192">Tovább</a></div>
+                                    <div>
+                                        <div class="date"></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="latest-news-item">
+                                    <div class="title">Neuroscience 2012</div>
+                                    <div class="lead"></div>
+                                    <div class="read_more"><a href="hu/aktualis_informaciok/megjelenites/1188">Tovább</a></div>
+                                    <div>
+                                        <div class="date"></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="latest-news-item">
+                                    <div class="title">8th FENS Forum of Neuroscience</div>
+                                    <div class="lead"></div>
+                                    <div class="read_more"><a href="hu/aktualis_informaciok/megjelenites/1187">Tovább</a></div>
+                                    <div>
+                                        <div class="date"></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="latest-news-item">
+                                    <div class="title">A Nemzeti Kiválóság Program ösztöndíj felhívása</div>
+                                    <div class="lead"></div>
+                                    <div class="read_more"><a href="hu/aktualis_informaciok/megjelenites/1186">Tovább</a></div>
+                                    <div>
+                                        <div class="date"></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="latest-news-item">
+                                    <div class="title">A 2011/2012. tanévben megrendezett TDK-konferencián helyezést elért diákkörös hallgatóink</div>
+                                    <div class="lead"></div>
+                                    <div class="read_more"><a href="hu/aktualis_informaciok/megjelenites/1140">Tovább</a></div>
+                                    <div>
+                                        <div class="date"></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="right-panel-bottom"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="content-bottom"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="footer-container">
+                        <div class="bottom-menu">
+                            <ul>
+                                <li><a href="hu/jogi_nyilatkozat">Jogi nyilatkozat</a></li>
+                                <li><a href="hu/kapcsolat">Kapcsolat</a></li>
+                                <li><a href="hu/adatvedelem">Adatvédelem</a></li>
+                                <li><a href="hu/impresszum">Impresszum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sheet-right-top-shadow"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </body>
+</html>

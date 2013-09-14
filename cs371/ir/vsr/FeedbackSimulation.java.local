@@ -1,0 +1,22 @@
+package ir.vsr;
+
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+import ir.utilities.*;
+
+/**
+ * Instead of getting feed back from user's input, this class would look up the
+ * correct retrieval record to simulate feedback.
+ *
+ * @author Shun Zhang
+ */
+
+public class FeedbackSimulation {
+  public FeedbackSimulation(String query, Retrieval[] retrievals, InvertedIndex invertedIndex, ArrayList<DocumentReference> goodDocRefs) {
+		// TODO query -> HashMapVector, construct bad doc ref
+    super(queryVector, retrievals, invertedIndex);
+		this.goodDocRefs = goodDocRefs;
+  }
+}
